@@ -190,9 +190,12 @@ export function assertManifestMatchesPublishedStates(
       );
     }
 
-    if (maybeManifestEntry.registryStatus !== "published") {
+    if (
+      maybeManifestEntry.registryStatus !== "published" &&
+      maybeManifestEntry.registryStatus !== "queued"
+    ) {
       throw new Error(
-        `Manifest entry "${publishedState.slug}" must be marked published when a canonical state file exists`,
+        `Manifest entry "${publishedState.slug}" must be marked queued or published when a canonical state file exists`,
       );
     }
   }
