@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-31)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
-**Current focus:** Research Registry Core
+**Current focus:** Public Site Shell
 
 ## Current Position
 
-Phase: 3 of 5 (Research Registry Core)
+Phase: 4 of 5 (Public Site Shell)
 Plan: 0 of 0 in current phase
 Status: Ready to plan
-Last activity: 2026-04-01 — Captured Phase 3 context for planning
+Last activity: 2026-04-01 — Phase 3 complete and verified
 
-Progress: █████░░░░░ 47%
+Progress: ███████░░░ 67%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 10
 - Average duration: 7 min
-- Total execution time: 0.8 hours
+- Total execution time: 1.2 hours
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: █████░░░░░ 47%
 |-------|-------|-------|----------|
 | 1 | 4 | 20 min | 5 min |
 | 2 | 3 | 26 min | 9 min |
+| 3 | 3 | 25 min | 8 min |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 4 min, 11 min, 9 min, 6 min
+- Last 5 plans: 11 min, 9 min, 6 min, 10 min, 8 min
 - Trend: Stable
 
 ## Accumulated Context
@@ -48,6 +49,8 @@ Recent decisions affecting current work:
 - Use Playwright-based PDF generation with a repo-owned pre-commit hook for Phase 1.
 - Use one primary reserve-financing Bitcoin-backed bond model in the Illinois packet, with bounded alternatives kept secondary.
 - Lead packet persuasion with fiscal discipline, competitiveness, and debt-management logic.
+- Keep the 50-state registry skeleton as a manifest layer rather than fake public records.
+- Treat New Hampshire as an authority-action bond-side signal, not as a legislature-filed reserve bill.
 
 ### Pending Todos
 
@@ -55,10 +58,10 @@ None yet.
 
 ### Blockers/Concerns
 
-- ⚠️ Bond-side official legislative examples are thinner than reserve-side examples, so Phase 3 research coverage may begin smaller and more explanatory.
+- ⚠️ The public site phase needs to preserve the registry's honesty about record types, especially the New Hampshire authority-action entry.
 
 ## Session Continuity
 
-Last session: 2026-04-01 05:08 CDT
-Stopped at: Phase 3 context gathered; ready to plan Phase 3
-Resume file: .planning/phases/03-research-registry-core/03-CONTEXT.md
+Last session: 2026-04-01 06:09 CDT
+Stopped at: Phase 3 complete, verified, and ready to transition to Phase 4
+Resume file: None

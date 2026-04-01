@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation and Trust Contracts** - Establish schemas, content structure, source rules, and the PDF/pre-commit publishing lane. Completed 2026-04-01.
 - [x] **Phase 2: Illinois Flagship Package** - Produce the first serious Illinois policy packet from canonical source documents. Completed 2026-04-01.
-- [ ] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries.
+- [x] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries. Completed 2026-04-01.
 - [ ] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces.
 - [ ] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product.
 
@@ -61,12 +61,12 @@ Plans:
   2. At least 3-5 state entries are fully researched and publishable.
   3. Published state entries include bill metadata, plain-English effects, primary sources, and freshness dates.
   4. The publish workflow clearly separates raw leads from canonical published content.
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Build the 50-state manifest and entry template system.
-- [ ] 03-02: Research and publish the first reserve-side exemplar entries.
-- [ ] 03-03: Add bond-side treatment where evidence supports it and document any gaps explicitly.
+- [x] 03-01: Build the 50-state skeleton, manifest boundary, and registry-aware content pipeline.
+- [x] 03-02: Publish the first Illinois, Texas, and Arizona registry entries.
+- [x] 03-03: Publish the Oklahoma and New Hampshire entries and promote the first registry batch.
 
 ### Phase 4: Public Site Shell
 **Goal**: Deliver the first public-facing website that presents the thesis, methodology, catalog, and state detail surfaces.
@@ -107,6 +107,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation and Trust Contracts | 4/4 | Complete | 2026-04-01 |
 | 2. Illinois Flagship Package | 3/3 | Complete | 2026-04-01 |
-| 3. Research Registry Core | 0/TBD | Not started | - |
+| 3. Research Registry Core | 3/3 | Complete | 2026-04-01 |
 | 4. Public Site Shell | 0/TBD | Not started | - |
 | 5. Editorial Polish and Explainers | 0/TBD | Not started | - |
