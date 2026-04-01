@@ -21,7 +21,7 @@ The reserve should be a rule-bound treasury program, not a trading desk. A serio
 
 ## Bond Concept
 
-The primary Illinois bond model should be a conservative reserve-financing structure: bond buyers help finance long-duration Bitcoin accumulation, the State holds the underlying volatility, and investors receive a bounded return profile that is more competitive than ordinary Treasury debt but more conservative than aggressive private Bitcoin-linked products. Tranche design, percentage splits, and yield mechanics should remain open to legal, fiscal, and securities review.
+The primary Illinois bond model should be a conservative reserve-financing structure: bond buyers help finance long-duration Bitcoin accumulation, the State holds the underlying volatility, and investors receive a bounded return profile without taking direct Bitcoin custody risk. That return should be more competitive than ordinary Treasury debt but more conservative than aggressive private Bitcoin-linked products. Tranche design, percentage splits, and yield mechanics should remain open to legal, fiscal, and securities review.
 
 ## Safeguards and Legislative Ask
 
