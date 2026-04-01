@@ -84,6 +84,10 @@ export default function HomePage() {
             }))}
           />
         </div>
+        <div class="mt-4 flex flex-wrap gap-3 text-xs uppercase tracking-[0.14em] text-ink-subtle">
+          <span class="data-chip">Pathway diagram = financing logic</span>
+          <span class="data-chip">Registry snapshot = current proof layer</span>
+        </div>
       </PageSection>
 
       <PageSection
