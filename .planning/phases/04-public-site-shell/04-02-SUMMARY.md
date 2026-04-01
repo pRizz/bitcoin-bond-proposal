@@ -2,29 +2,29 @@
 phase: 04-public-site-shell
 plan: "02"
 subsystem: ui
-tags: [homepage, methodology, thesis, infographics, public-shell]
+tags: [homepage, methodology, thesis, infographic, trust]
 requires:
   - phase: 04-01
-    provides: SolidStart shell, theme layer, editorial primitives
+    provides: site shell, theme layer, editorial primitives
 provides:
   - Thesis-first homepage
   - Public methodology route
   - Homepage infographic framing
-affects: [public-shell, packet-discovery, trust-surface]
+affects: [site-shell, packet-discovery, public-positioning]
 tech-stack:
   added: []
-  patterns: [thesis-first homepage, policy-memo methodology route]
+  patterns: [thesis-first hero, policy-memo methodology surface]
 key-files:
   created:
     - src/routes/(site)/index.tsx
     - src/routes/(site)/methodology.tsx
   modified: []
 key-decisions:
-  - "The homepage leads with the thesis and the Illinois packet CTA instead of product taxonomy."
-  - "The methodology page declares bias explicitly while keeping source and freshness rules prominent."
+  - "The homepage leads with the thesis and the Illinois packet CTA rather than a generic product overview."
+  - "The methodology page is explicit about bias and trust rules without reading like a defensive disclaimer wall."
 patterns-established:
-  - "Homepage visuals support the thesis instead of acting as decorative dashboard clutter."
-  - "Methodology is a public trust surface, not a buried documentation appendix."
+  - "Homepage visuals support a single strong thesis instead of scattering attention across cards."
+  - "Methodology is treated as a first-class public trust surface."
 requirements-completed: [SITE-01, SITE-02]
 duration: 6 min
 completed: 2026-04-01
@@ -43,9 +43,9 @@ completed: 2026-04-01
 - **Files modified:** 2
 
 ## Accomplishments
-- Built a homepage that leads with the bond-financed reserve thesis and the Illinois model packet.
-- Added a public methodology route that declares bias while foregrounding sourcing and trust rules.
-- Added infographic context cues so the homepage visuals read as explanatory rather than ornamental.
+- Built the homepage around the bond-financed reserve thesis and the Illinois packet CTA.
+- Added a methodology route that makes the site’s bias and trust rules public and explicit.
+- Added infographic context cues so the homepage visuals read as explanatory and deliberate.
 
 ## Task Commits
 
@@ -58,12 +58,12 @@ Each task was committed atomically:
 **Plan metadata:** Pending
 
 ## Files Created/Modified
-- `src/routes/(site)/index.tsx` - Homepage route with thesis, proof strip, packet feature, and visual explanatory blocks.
-- `src/routes/(site)/methodology.tsx` - Methodology route with explicit bias framing and canonical memo rendering.
+- `src/routes/(site)/index.tsx` - Homepage route with thesis hero, proof strip, packet feature, and explanatory visuals.
+- `src/routes/(site)/methodology.tsx` - Methodology route with public bias framing and canonical memo rendering.
 
 ## Decisions Made
-- The homepage should feel like an editorial public-finance brief, not like a site intro or dashboard.
-- The methodology page should say the site is not neutral without sounding apologetic or defensive.
+- The homepage should feel like an editorial public-finance brief, not a dashboard or welcome screen.
+- The methodology page should be source-first and explicit about bias without sounding apologetic.
 
 ## Deviations from Plan
 
@@ -77,8 +77,8 @@ None
 None - no external service configuration required.
 
 ## Next Phase Readiness
-- The public shell now has clear thesis and trust surfaces.
-- The registry browsing routes can plug into the existing shell without inventing a competing visual language.
+- The shell now has its thesis and trust surfaces.
+- The registry browsing routes can slot into the shell without inventing competing visual logic.
 
 ---
 *Phase: 04-public-site-shell*
