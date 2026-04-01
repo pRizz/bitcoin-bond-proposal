@@ -30,6 +30,19 @@ const ProposalSubtypeValueSchema = z.enum([
   "other-explained",
 ]);
 const OutputFormatSchema = z.enum(["pdf"]);
+const RegistryStatusSchema = z.enum(["unresearched", "queued", "published"]);
+const ProposalFocusSchema = z.enum(["bond", "reserve", "both", "unknown"]);
+const EditorialPrioritySchema = z.enum([
+  "bond-priority",
+  "reserve-priority",
+  "neutral",
+]);
+const RecordTypeSchema = z.enum([
+  "legislative-bill",
+  "authority-action",
+  "executive-action",
+  "other-official-record",
+]);
 
 const TaxonomyValueSchema = z.object({
   value: NonEmptyStringSchema,
@@ -44,6 +57,19 @@ const SourceLinkSchema = z
 export const ProposalTaxonomySchema = z.object({
   proposalKinds: z.array(TaxonomyValueSchema).min(1),
   proposalSubtypes: z.array(TaxonomyValueSchema).min(1),
+});
+
+export const StateRegistryManifestEntrySchema = z.object({
+  state: NonEmptyStringSchema,
+  slug: SlugSchema,
+  registryStatus: RegistryStatusSchema,
+  proposalFocus: ProposalFocusSchema,
+  shortNote: NonEmptyStringSchema,
+  editorialPriority: EditorialPrioritySchema,
+});
+
+export const StateRegistryManifestSchema = z.object({
+  states: z.array(StateRegistryManifestEntrySchema).length(50),
 });
 
 export const DocumentFrontmatterSchema = z.object({
@@ -61,6 +87,7 @@ export const StateEntryFrontmatterSchema = z.object({
   slug: SlugSchema,
   summary: NonEmptyStringSchema,
   state: NonEmptyStringSchema,
+  recordType: RecordTypeSchema,
   proposalKind: ProposalKindValueSchema,
   proposalSubtype: ProposalSubtypeValueSchema,
   billId: NonEmptyStringSchema,
@@ -77,6 +104,10 @@ export const StateEntryFrontmatterSchema = z.object({
 });
 
 export type ProposalTaxonomy = z.infer<typeof ProposalTaxonomySchema>;
+export type StateRegistryManifest = z.infer<typeof StateRegistryManifestSchema>;
+export type StateRegistryManifestEntry = z.infer<
+  typeof StateRegistryManifestEntrySchema
+>;
 export type DocumentFrontmatter = z.infer<typeof DocumentFrontmatterSchema>;
 export type StateEntryFrontmatter = z.infer<typeof StateEntryFrontmatterSchema>;
 
@@ -88,6 +119,12 @@ export type MarkdownRecord<TFrontmatter> = {
 
 export function parseProposalTaxonomy(rawTaxonomy: unknown): ProposalTaxonomy {
   return ProposalTaxonomySchema.parse(rawTaxonomy);
+}
+
+export function parseStateRegistryManifest(
+  rawManifest: unknown,
+): StateRegistryManifest {
+  return StateRegistryManifestSchema.parse(rawManifest);
 }
 
 export function parseDocumentFrontmatter(
@@ -134,6 +171,30 @@ export function assertUniqueSlugs(
     }
 
     seenPathsBySlug.set(record.slug, record.path);
+  }
+}
+
+export function assertManifestMatchesPublishedStates(
+  manifestEntries: ReadonlyArray<StateRegistryManifestEntry>,
+  publishedStates: ReadonlyArray<StateEntryFrontmatter>,
+): void {
+  const entriesBySlug = new Map(
+    manifestEntries.map((entry) => [entry.slug, entry] as const),
+  );
+
+  for (const publishedState of publishedStates) {
+    const maybeManifestEntry = entriesBySlug.get(publishedState.slug);
+    if (!maybeManifestEntry) {
+      throw new Error(
+        `Published state entry "${publishedState.slug}" is missing from the registry manifest`,
+      );
+    }
+
+    if (maybeManifestEntry.registryStatus !== "published") {
+      throw new Error(
+        `Manifest entry "${publishedState.slug}" must be marked published when a canonical state file exists`,
+      );
+    }
   }
 }
 

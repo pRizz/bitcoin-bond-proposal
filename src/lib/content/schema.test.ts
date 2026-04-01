@@ -50,6 +50,7 @@ describe("assertKnownProposalClassification", () => {
       slug: "illinois-hb-1844",
       summary: "Strategic reserve proposal",
       state: "Illinois",
+      recordType: "legislative-bill",
       proposalKind: "reserve",
       proposalSubtype: "strategic-reserve",
       billId: "HB 1844",
