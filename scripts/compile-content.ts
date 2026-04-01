@@ -15,7 +15,6 @@ import {
 import { readMarkdownCollection } from "../src/lib/content/load-markdown.ts";
 
 type CompiledContentGraph = {
-  generatedAt: string;
   docs: Array<{
     title: string;
     slug: string;
@@ -104,7 +103,6 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
   );
 
   return {
-    generatedAt: new Date().toISOString(),
     docs: [...docs, ...explainers].map((record) => ({
       title: record.frontmatter.title,
       slug: record.frontmatter.slug,
