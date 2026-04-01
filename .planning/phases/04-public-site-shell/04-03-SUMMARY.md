@@ -2,18 +2,18 @@
 phase: 04-public-site-shell
 plan: "03"
 subsystem: ui
-tags: [catalog, state-detail, registry, record-type, generated-content]
+tags: [catalog, state-detail, registry, generated-content, route-integrity]
 requires:
   - phase: 04-01
-    provides: SolidStart shell, theme layer, editorial primitives
+    provides: site shell, theme layer, editorial primitives
 provides:
   - Catalog route
   - State detail route
   - Generated-content-backed route integration
-affects: [public-shell, registry-discovery, phase-5]
+affects: [site-shell, registry-discovery, phase-5]
 tech-stack:
   added: []
-  patterns: [generated-graph-driven routes, raw markdown rendering with frontmatter stripping]
+  patterns: [generated-graph-backed routes, stripped-markdown rendering]
 key-files:
   created:
     - src/routes/(site)/states/index.tsx
@@ -24,11 +24,11 @@ key-files:
     - scripts/compile-content.ts
     - generated/content-graph.json
 key-decisions:
-  - "State detail pages must preserve honest record typing, especially for the New Hampshire authority-action entry."
-  - "Generated registry data should carry enough state metadata to support the routes directly."
+  - "State detail pages must preserve explicit record typing, especially for the New Hampshire authority-action entry."
+  - "Generated registry data should carry enough display metadata to power the site shell directly."
 patterns-established:
-  - "Catalog cards are medium-density and metadata-rich without becoming spreadsheet clutter."
-  - "State detail routes render canonical markdown bodies only after frontmatter is stripped from raw imports."
+  - "Catalog cards stay medium-density and metadata-rich without becoming spreadsheet clutter."
+  - "State detail pages render canonical markdown bodies only after stripping frontmatter."
 requirements-completed: [SITE-03, SITE-04]
 duration: 8 min
 completed: 2026-04-01
@@ -47,9 +47,9 @@ completed: 2026-04-01
 - **Files modified:** 6
 
 ## Accomplishments
-- Built the catalog route with the first published registry batch, density controls, and basic filters/sorts.
-- Built the dynamic state detail route with record-type visibility and narrative-first structure.
-- Wired the public routes to richer generated registry data and fixed raw markdown rendering to avoid frontmatter leaks.
+- Built the catalog route with the first published registry batch and reader-friendly metadata density.
+- Built the state detail route with visible status/freshness blocks and honest record typing.
+- Wired the routes more directly to generated registry data and fixed the markdown frontmatter leak.
 
 ## Task Commits
 
@@ -66,21 +66,21 @@ Each task was committed atomically:
 - `src/routes/(site)/states/[slug].tsx` - Public state detail route.
 - `src/lib/site/raw-content.ts` - Strips frontmatter before markdown rendering.
 - `src/lib/site/content.ts` - Exposes richer generated state metadata to routes.
-- `scripts/compile-content.ts` - Enriches generated state data for the public shell.
+- `scripts/compile-content.ts` - Enriches generated registry state data for the public shell.
 - `generated/content-graph.json` - Regenerated with route-facing state metadata.
 
 ## Decisions Made
-- The catalog should stay medium-density and reader-friendly rather than imitating a terminal or tracker grid.
-- New Hampshire must remain visibly typed as an authority action, not flattened into a normal bill record.
+- The public shell must present the New Hampshire bond-side signal as an authority action, not as a generic bill record.
+- Generated registry data should carry the fields the site actually needs instead of forcing route-time re-joins.
 
 ## Deviations from Plan
 
 ### Auto-fixed Issues
 
-**1. [Rule 3 - Blocking] Stripped markdown frontmatter before rendering public methodology and state pages**
+**1. [Rule 3 - Blocking] Stripped frontmatter before rendering methodology and state markdown**
 - **Found during:** Task 2 (Build the state detail route with honest record typing)
-- **Issue:** The initial route implementation rendered raw markdown files directly, which surfaced YAML frontmatter on public pages and undermined the shell’s credibility.
-- **Fix:** Added frontmatter stripping in `src/lib/site/raw-content.ts` and updated the state detail route to use the cleaned body plus a human-readable record-type label.
+- **Issue:** The initial route implementation surfaced YAML frontmatter in public pages, which undercut the shell’s credibility.
+- **Fix:** Added frontmatter stripping in `src/lib/site/raw-content.ts` and updated the state detail rendering flow accordingly.
 - **Files modified:** `src/lib/site/raw-content.ts`, `src/routes/(site)/states/[slug].tsx`
 - **Verification:** `bunx tsc --noEmit`, `bun run build`, and live preview fetches confirmed the frontmatter leak disappeared.
 - **Committed in:** `44d985f` (fix)
