@@ -14,10 +14,29 @@ function normalizeContentPath(contentPath: string): string {
   return `../../../${contentPath}`;
 }
 
+function stripFrontmatter(markdownSource: string): string {
+  if (!markdownSource.startsWith("---\n")) {
+    return markdownSource;
+  }
+
+  const frontmatterEndIndex = markdownSource.indexOf("\n---\n", 4);
+  if (frontmatterEndIndex === -1) {
+    return markdownSource;
+  }
+
+  return markdownSource.slice(frontmatterEndIndex + 5).trim();
+}
+
 export function readDocumentBody(contentPath: string): string | undefined {
-  return docsByPath[normalizeContentPath(contentPath)] as string | undefined;
+  const rawDocument = docsByPath[normalizeContentPath(contentPath)] as
+    | string
+    | undefined;
+  return rawDocument ? stripFrontmatter(rawDocument) : undefined;
 }
 
 export function readStateBody(contentPath: string): string | undefined {
-  return statesByPath[normalizeContentPath(contentPath)] as string | undefined;
+  const rawState = statesByPath[normalizeContentPath(contentPath)] as
+    | string
+    | undefined;
+  return rawState ? stripFrontmatter(rawState) : undefined;
 }

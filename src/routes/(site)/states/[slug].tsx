@@ -9,6 +9,10 @@ import { renderMarkdown } from "../../../lib/site/markdown";
 import { readStateBody } from "../../../lib/site/raw-content";
 import { makePageTitle } from "../../../lib/site/seo";
 
+function formatRecordType(recordType: string): string {
+  return recordType.replaceAll("-", " ");
+}
+
 export default function StateDetailPage() {
   const params = useParams();
   const slug = params.slug;
@@ -49,7 +53,7 @@ export default function StateDetailPage() {
               <Badge tone={state.proposalKind === "bond" ? "bond" : state.proposalKind === "reserve" ? "reserve" : "accent"}>
                 {state.proposalKind}
               </Badge>
-              <Badge tone="neutral">{state.recordType}</Badge>
+              <Badge tone="neutral">{formatRecordType(state.recordType)}</Badge>
             </div>
             <dl class="mt-5 grid gap-3 text-sm leading-6 text-ink-subtle">
               <div>
