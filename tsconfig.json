@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
@@ -17,7 +18,7 @@
   "include": [
     "content/**/*.json",
     "scripts/**/*.ts",
-    "src/**/*.ts",
-    "tests/**/*.ts"
-  ]
+    "src/**/*.ts"
+  ],
+  "exclude": ["src/**/*.test.ts"]
 }
