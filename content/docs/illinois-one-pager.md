@@ -1,7 +1,7 @@
 ---
-title: Illinois Bitcoin Reserve and Bond Proposal One-Pager
+title: Illinois Bitcoin Reserve and Bond Framework
 slug: illinois-one-pager
-summary: Legislator-facing one-page overview of an Illinois-first Bitcoin reserve and Bitcoin-backed bond proposal.
+summary: Legislator-facing summary of a disciplined Illinois Bitcoin reserve and bond framework.
 documentKind: one-pager
 audience:
   - legislators
@@ -11,49 +11,18 @@ outputs:
   - pdf
 ---
 
-# Illinois Bitcoin Reserve and Bond Proposal
+## Thesis and Why Illinois
 
-## Overview
-
-Illinois can lead on state-level Bitcoin policy by pairing a disciplined reserve framework with a carefully designed Bitcoin-backed bond strategy. The purpose of this packet is to show what a serious Illinois-first approach could look like in practice, not to claim that the current document is final introduced legislation.
-
-## Core Thesis
-
-- Illinois should study and authorize a strategic Bitcoin reserve framework with explicit safeguards.
-- Illinois should evaluate a Bitcoin-backed bond structure that is transparent, limited, and compatible with state oversight requirements.
-- Illinois can become the model legislative package other states adapt after legal review and state-specific tailoring.
+Illinois should authorize a tightly bounded strategic Bitcoin reserve with explicit safeguards, custody controls, and reporting, while evaluating one conservative Bitcoin-backed bond model that helps finance long-term accumulation without abandoning legislative and fiscal oversight. Illinois is a credible model state because it has visible debt-management pressure, institutional scale, and an existing reserve-bill reference point already on file in the General Assembly.
 
 ## Reserve Concept
 
-The reserve concept assumes a narrow, rule-bound authority for acquiring and holding Bitcoin as a strategic treasury asset. The program should emphasize:
-
-- explicit authorization language;
-- custody and reporting requirements;
-- allocation limits and governance controls;
-- public transparency on holdings and policy changes.
+The reserve should be a rule-bound treasury program, not a trading desk. A serious Illinois model should use expressly authorized funding, impose allocation caps and custody standards, require auditability and reporting, prohibit unauthorized lending or rehypothecation, and define who may authorize purchases and dispositions.
 
 ## Bond Concept
 
-The bond concept assumes a conservative public-finance structure where Bitcoin exposure is clearly disclosed and bounded. The packet treats “Bitcoin-backed bond” as a policy category that still requires state-specific constitutional, tax, and securities review before final legislative text is considered complete.
+The primary Illinois bond model should be a conservative reserve-financing structure: bond buyers help finance long-duration Bitcoin accumulation, the State holds the underlying volatility, and investors receive a bounded return profile that is more competitive than ordinary Treasury debt but more conservative than aggressive private Bitcoin-linked products. Tranche design, percentage splits, and yield mechanics should remain open to legal, fiscal, and securities review.
 
-## Why Illinois
+## Safeguards and Legislative Ask
 
-Illinois is a credible first jurisdiction for a model packet because it combines:
-
-- a large and visible state economy;
-- an existing legislative apparatus that can support serious fiscal review;
-- symbolic value as a template state for later adaptation.
-
-## Safeguards
-
-Any serious Illinois proposal should address:
-
-- authorization limits;
-- reporting cadence;
-- custody and control standards;
-- legislative oversight;
-- plain-language disclosure of risks.
-
-## Working Assumptions
-
-This one-pager is a canonical source document for the packet. It is intentionally concise and print-oriented so later drafting work can sharpen the prose without redesigning the artifact from scratch.
+A serious Illinois packet should make these safeguards explicit: constitutional and debt-structure review before final bond authorization, clear disclosure of proceeds and risks, legislative oversight of reserve operations, and plain-language explanation of what the State is doing and why. The legislative ask is to authorize a disciplined reserve, evaluate one primary Bitcoin-backed bond model with bounded alternatives, and send the structure through formal legal, fiscal, and disclosure review before final enactment.
