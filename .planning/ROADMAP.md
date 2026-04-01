@@ -12,7 +12,7 @@ This roadmap turns the existing project context and research into an Illinois-fi
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation and Trust Contracts** - Establish schemas, content structure, source rules, and the PDF/pre-commit publishing lane.
+- [x] **Phase 1: Foundation and Trust Contracts** - Establish schemas, content structure, source rules, and the PDF/pre-commit publishing lane. Completed 2026-04-01.
 - [ ] **Phase 2: Illinois Flagship Package** - Produce the first serious Illinois policy packet from canonical source documents.
 - [ ] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries.
 - [ ] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces.
@@ -29,12 +29,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The project has explicit reserve-vs-bond taxonomy and visible caution-language rules.
   3. Markdown source documents can be compiled into PDFs through a documented build path.
   4. Pre-commit validation blocks commits when required publish artifacts or validation checks fail.
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 01-01: Define the canonical content model, directory structure, and schema contracts.
-- [ ] 01-02: Build the Markdown-to-PDF pipeline and pre-commit enforcement path.
-- [ ] 01-03: Establish shared methodology, taxonomy, and caution-language conventions.
+- [x] 01-01: Bootstrap the Bun and TypeScript workspace, canonical content tree, and taxonomy seed.
+- [x] 01-02: Implement the schema, validation, and compile layer for canonical content.
+- [x] 01-03: Author the methodology memo and canonical Illinois packet source documents.
+- [x] 01-04: Implement packet PDF generation and the repo-owned pre-commit workflow.
 
 ### Phase 2: Illinois Flagship Package
 **Goal**: Produce the Illinois one-page summary, draft bill, and methodology memo from the canonical content system.
@@ -104,7 +105,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Trust Contracts | 0/TBD | Not started | - |
+| 1. Foundation and Trust Contracts | 4/4 | Complete | 2026-04-01 |
 | 2. Illinois Flagship Package | 0/TBD | Not started | - |
 | 3. Research Registry Core | 0/TBD | Not started | - |
 | 4. Public Site Shell | 0/TBD | Not started | - |
