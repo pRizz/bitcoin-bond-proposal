@@ -1,0 +1,582 @@
+{
+  "generatedAt": "2026-04-01T11:06:10.440Z",
+  "docs": [
+    {
+      "title": "Illinois Bitcoin Reserve and Bond Act Draft",
+      "slug": "illinois-draft-bill",
+      "summary": "Structured first-pass draft bill source for an Illinois Bitcoin reserve and Bitcoin-backed bond proposal.",
+      "documentKind": "draft-bill",
+      "audience": [
+        "legislators",
+        "internal"
+      ],
+      "outputs": [
+        "pdf"
+      ],
+      "updatedAt": "2026-04-01",
+      "path": "content/docs/illinois-draft-bill.md"
+    },
+    {
+      "title": "Illinois Bitcoin Reserve and Bond Framework",
+      "slug": "illinois-one-pager",
+      "summary": "Legislator-facing summary of a disciplined Illinois Bitcoin reserve and bond framework.",
+      "documentKind": "one-pager",
+      "audience": [
+        "legislators",
+        "public"
+      ],
+      "outputs": [
+        "pdf"
+      ],
+      "updatedAt": "2026-04-01",
+      "path": "content/docs/illinois-one-pager.md"
+    },
+    {
+      "title": "Methodology Memo",
+      "slug": "methodology",
+      "summary": "Source hierarchy, freshness rules, classification logic, and publication standards for the Bitcoin Bond Proposal registry and packet.",
+      "documentKind": "methodology",
+      "audience": [
+        "legislators",
+        "public"
+      ],
+      "outputs": [
+        "pdf"
+      ],
+      "updatedAt": "2026-04-01",
+      "path": "content/docs/methodology.md"
+    }
+  ],
+  "states": [
+    {
+      "title": "Arizona SB1025",
+      "slug": "arizona",
+      "state": "Arizona",
+      "recordType": "legislative-bill",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "SB1025",
+      "chamber": "Arizona Senate",
+      "status": "Vetoed by Governor",
+      "statusAsOf": "2025-05-02",
+      "lastReviewed": "2026-04-01",
+      "confidence": "high",
+      "path": "content/states/arizona-sb-1025.md"
+    },
+    {
+      "title": "Illinois HB1844",
+      "slug": "illinois",
+      "state": "Illinois",
+      "recordType": "legislative-bill",
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB1844",
+      "chamber": "Illinois House",
+      "status": "Referred to Rules Committee",
+      "statusAsOf": "2025-01-29",
+      "lastReviewed": "2026-04-01",
+      "confidence": "high",
+      "path": "content/states/illinois-hb-1844.md"
+    },
+    {
+      "title": "New Hampshire BFA Bitcoin-Backed Bond Approval",
+      "slug": "new-hampshire",
+      "state": "New Hampshire",
+      "recordType": "authority-action",
+      "proposalKind": "bond",
+      "proposalSubtype": "bitcoin-collateralized-bond",
+      "billId": "NHBFA Digital Currency Bond Resolution (Nov. 17, 2025)",
+      "chamber": "New Hampshire Business Finance Authority Board of Directors",
+      "status": "Board approved; further approval and counsel condition pending",
+      "statusAsOf": "2025-11-17",
+      "lastReviewed": "2026-04-01",
+      "confidence": "high",
+      "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
+    },
+    {
+      "title": "Oklahoma HB1203",
+      "slug": "oklahoma",
+      "state": "Oklahoma",
+      "recordType": "legislative-bill",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "HB1203",
+      "chamber": "Oklahoma House",
+      "status": "Engrossed to Senate",
+      "statusAsOf": "2025-03-25",
+      "lastReviewed": "2026-04-01",
+      "confidence": "high",
+      "path": "content/states/oklahoma-hb-1203.md"
+    },
+    {
+      "title": "Texas SB21",
+      "slug": "texas",
+      "state": "Texas",
+      "recordType": "legislative-bill",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "SB21",
+      "chamber": "Texas Senate",
+      "status": "Enrolled; effective by law",
+      "statusAsOf": "2025-06-20",
+      "lastReviewed": "2026-04-01",
+      "confidence": "high",
+      "path": "content/states/texas-sb-21.md"
+    }
+  ],
+  "registry": {
+    "manifest": {
+      "states": [
+        {
+          "state": "Alabama",
+          "slug": "alabama",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Alaska",
+          "slug": "alaska",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Arizona",
+          "slug": "arizona",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
+          "shortNote": "High-significance reserve exemplar for the first publishable batch.",
+          "editorialPriority": "reserve-priority"
+        },
+        {
+          "state": "Arkansas",
+          "slug": "arkansas",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "California",
+          "slug": "california",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Colorado",
+          "slug": "colorado",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Connecticut",
+          "slug": "connecticut",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Delaware",
+          "slug": "delaware",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Florida",
+          "slug": "florida",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Georgia",
+          "slug": "georgia",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Hawaii",
+          "slug": "hawaii",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Idaho",
+          "slug": "idaho",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Illinois",
+          "slug": "illinois",
+          "registryStatus": "published",
+          "proposalFocus": "both",
+          "shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
+          "editorialPriority": "bond-priority"
+        },
+        {
+          "state": "Indiana",
+          "slug": "indiana",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Iowa",
+          "slug": "iowa",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Kansas",
+          "slug": "kansas",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Kentucky",
+          "slug": "kentucky",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Louisiana",
+          "slug": "louisiana",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Maine",
+          "slug": "maine",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Maryland",
+          "slug": "maryland",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Massachusetts",
+          "slug": "massachusetts",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Michigan",
+          "slug": "michigan",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Minnesota",
+          "slug": "minnesota",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Mississippi",
+          "slug": "mississippi",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Missouri",
+          "slug": "missouri",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "Possible future reserve-side candidate, not yet part of the first published batch.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Montana",
+          "slug": "montana",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Nebraska",
+          "slug": "nebraska",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Nevada",
+          "slug": "nevada",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "New Hampshire",
+          "slug": "new-hampshire",
+          "registryStatus": "published",
+          "proposalFocus": "bond",
+          "shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
+          "editorialPriority": "bond-priority"
+        },
+        {
+          "state": "New Jersey",
+          "slug": "new-jersey",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "New Mexico",
+          "slug": "new-mexico",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "New York",
+          "slug": "new-york",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "North Carolina",
+          "slug": "north-carolina",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "North Dakota",
+          "slug": "north-dakota",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Ohio",
+          "slug": "ohio",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Oklahoma",
+          "slug": "oklahoma",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
+          "shortNote": "Reserve-side exemplar for the first published batch.",
+          "editorialPriority": "reserve-priority"
+        },
+        {
+          "state": "Oregon",
+          "slug": "oregon",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Pennsylvania",
+          "slug": "pennsylvania",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Rhode Island",
+          "slug": "rhode-island",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "South Carolina",
+          "slug": "south-carolina",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "South Dakota",
+          "slug": "south-dakota",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Tennessee",
+          "slug": "tennessee",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Texas",
+          "slug": "texas",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
+          "shortNote": "High-significance reserve-law benchmark for the first published batch.",
+          "editorialPriority": "reserve-priority"
+        },
+        {
+          "state": "Utah",
+          "slug": "utah",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Vermont",
+          "slug": "vermont",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Virginia",
+          "slug": "virginia",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Washington",
+          "slug": "washington",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "West Virginia",
+          "slug": "west-virginia",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Wisconsin",
+          "slug": "wisconsin",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        },
+        {
+          "state": "Wyoming",
+          "slug": "wyoming",
+          "registryStatus": "unresearched",
+          "proposalFocus": "unknown",
+          "shortNote": "No publishable reserve or bond record added yet.",
+          "editorialPriority": "neutral"
+        }
+      ]
+    },
+    "publishedSlugs": [
+      "arizona",
+      "illinois",
+      "new-hampshire",
+      "oklahoma",
+      "texas"
+    ]
+  },
+  "taxonomy": {
+    "proposalKinds": [
+      {
+        "value": "reserve",
+        "description": "Proposal centered on state Bitcoin or digital-asset reserve policy."
+      },
+      {
+        "value": "bond",
+        "description": "Proposal centered on Bitcoin-linked or Bitcoin-backed bond policy."
+      },
+      {
+        "value": "both",
+        "description": "Proposal that materially combines reserve and bond policy in one record."
+      }
+    ],
+    "proposalSubtypes": [
+      {
+        "value": "strategic-reserve",
+        "description": "A strategic reserve or treasury-holding proposal focused on Bitcoin or explicit digital-asset reserve exposure."
+      },
+      {
+        "value": "reserve-financing-bond",
+        "description": "A bond proposal where proceeds materially finance reserve acquisition or reserve-related treasury policy."
+      },
+      {
+        "value": "bitcoin-linked-bond",
+        "description": "A bond whose economics or terms are materially linked to Bitcoin exposure."
+      },
+      {
+        "value": "bitcoin-collateralized-bond",
+        "description": "A bond collateralized or secured by Bitcoin holdings or equivalent Bitcoin-linked collateral."
+      },
+      {
+        "value": "mixed-digital-asset-reserve",
+        "description": "A reserve proposal that includes Bitcoin within a broader digital-asset reserve concept."
+      },
+      {
+        "value": "other-explained",
+        "description": "An edge case that remains publishable only with an explicit editorial explanation of classification."
+      }
+    ]
+  }
+}
