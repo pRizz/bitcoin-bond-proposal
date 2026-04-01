@@ -96,8 +96,18 @@ Each task was committed atomically:
 
 ---
 
-**Total deviations:** 1 auto-fixed (1 blocking)
-**Impact on plan:** The fix preserved the strict verification lane and did not expand scope beyond the PDF renderer’s actual dependency surface.
+**2. [Rule 3 - Blocking] Made PDF generation skip unchanged packet sources to keep the repo clean under the active hook**
+- **Found during:** Phase-level verification after Task 3 (Wire the repo-owned git hook path)
+- **Issue:** The live pre-commit hook correctly rebuilt PDFs, but repeated hook runs dirtied the tree even when the source documents were unchanged.
+- **Fix:** Updated the PDF builder to track source hashes and skip regeneration when packet inputs and renderer assets are unchanged, then refreshed the committed PDFs once against the corrected workflow.
+- **Files modified:** `scripts/build-pdf.ts`, `pdf/illinois-one-pager.pdf`, `pdf/illinois-draft-bill.pdf`, `pdf/methodology.pdf`
+- **Verification:** `bunx tsc --noEmit`, `bun test`, `bun run validate:content`, `bun run compile:content`, `bun run build:pdf`, `bun run precommit`, and `git status --short` after the correction.
+- **Committed in:** Pending orchestrator correction commit
+
+---
+
+**Total deviations:** 2 auto-fixed (2 blocking)
+**Impact on plan:** Both fixes were required to keep the strict verification lane and the repo-owned hook usable in practice. No scope creep.
 
 ## Issues Encountered
 None
