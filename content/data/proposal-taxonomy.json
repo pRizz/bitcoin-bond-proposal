@@ -1,0 +1,42 @@
+{
+  "proposalKinds": [
+    {
+      "value": "reserve",
+      "description": "Proposal centered on state Bitcoin or digital-asset reserve policy."
+    },
+    {
+      "value": "bond",
+      "description": "Proposal centered on Bitcoin-linked or Bitcoin-backed bond policy."
+    },
+    {
+      "value": "both",
+      "description": "Proposal that materially combines reserve and bond policy in one record."
+    }
+  ],
+  "proposalSubtypes": [
+    {
+      "value": "strategic-reserve",
+      "description": "A strategic reserve or treasury-holding proposal focused on Bitcoin or explicit digital-asset reserve exposure."
+    },
+    {
+      "value": "reserve-financing-bond",
+      "description": "A bond proposal where proceeds materially finance reserve acquisition or reserve-related treasury policy."
+    },
+    {
+      "value": "bitcoin-linked-bond",
+      "description": "A bond whose economics or terms are materially linked to Bitcoin exposure."
+    },
+    {
+      "value": "bitcoin-collateralized-bond",
+      "description": "A bond collateralized or secured by Bitcoin holdings or equivalent Bitcoin-linked collateral."
+    },
+    {
+      "value": "mixed-digital-asset-reserve",
+      "description": "A reserve proposal that includes Bitcoin within a broader digital-asset reserve concept."
+    },
+    {
+      "value": "other-explained",
+      "description": "An edge case that remains publishable only with an explicit editorial explanation of classification."
+    }
+  ]
+}
