@@ -26,6 +26,10 @@ type GraphState = {
   state: string;
   summary: string;
   recordType: RecordType;
+  registryStatus: RegistryStatus;
+  proposalFocus: ProposalFocus;
+  shortNote: string;
+  editorialPriority: EditorialPriority;
   proposalKind: "reserve" | "bond" | "both";
   proposalSubtype: string;
   billId: string;
@@ -70,18 +74,16 @@ export function getMethodologyDocument() {
 }
 
 export function getPublishedStates() {
-  const manifestBySlug = new Map(
-    contentGraph.registry.manifest.states.map((entry) => [entry.slug, entry] as const),
-  );
-
   return [...contentGraph.states]
     .map((state) => ({
       ...state,
-      manifest: manifestBySlug.get(state.slug),
+      manifest: contentGraph.registry.manifest.states.find(
+        (entry) => entry.slug === state.slug,
+      ),
     }))
     .sort((left, right) => {
-      const leftPriority = priorityWeight[left.manifest?.editorialPriority ?? "neutral"];
-      const rightPriority = priorityWeight[right.manifest?.editorialPriority ?? "neutral"];
+      const leftPriority = priorityWeight[left.editorialPriority];
+      const rightPriority = priorityWeight[right.editorialPriority];
 
       if (leftPriority !== rightPriority) {
         return leftPriority - rightPriority;
@@ -92,9 +94,6 @@ export function getPublishedStates() {
 }
 
 export function getStateBySlug(slug: string) {
-  const manifestEntry = contentGraph.registry.manifest.states.find(
-    (entry) => entry.slug === slug,
-  );
   const stateEntry = contentGraph.states.find((entry) => entry.slug === slug);
 
   if (!stateEntry) {
@@ -103,7 +102,7 @@ export function getStateBySlug(slug: string) {
 
   return {
     ...stateEntry,
-    manifest: manifestEntry,
+    manifest: contentGraph.registry.manifest.states.find((entry) => entry.slug === slug),
   };
 }
 
@@ -113,10 +112,10 @@ export function getRegistryStats() {
   return {
     publishedCount: publishedStates.length,
     bondPriorityCount: publishedStates.filter(
-      (state) => state.manifest?.editorialPriority === "bond-priority",
+      (state) => state.editorialPriority === "bond-priority",
     ).length,
     reservePriorityCount: publishedStates.filter(
-      (state) => state.manifest?.editorialPriority === "reserve-priority",
+      (state) => state.editorialPriority === "reserve-priority",
     ).length,
     latestReview: publishedStates
       .map((state) => state.lastReviewed)

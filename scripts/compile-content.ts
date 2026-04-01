@@ -31,6 +31,10 @@ type CompiledContentGraph = {
     state: string;
     summary: string;
     recordType: string;
+    registryStatus: string;
+    proposalFocus: string;
+    shortNote: string;
+    editorialPriority: string;
     proposalKind: string;
     proposalSubtype: string;
     billId: string;
@@ -114,22 +118,38 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
       updatedAt: record.frontmatter.updatedAt,
       path: path.relative(process.cwd(), record.path),
     })),
-    states: states.map((record) => ({
-      title: record.frontmatter.title,
-      slug: record.frontmatter.slug,
-      state: record.frontmatter.state,
-      summary: record.frontmatter.summary,
-      recordType: record.frontmatter.recordType,
-      proposalKind: record.frontmatter.proposalKind,
-      proposalSubtype: record.frontmatter.proposalSubtype,
-      billId: record.frontmatter.billId,
-      chamber: record.frontmatter.chamber,
-      status: record.frontmatter.status,
-      statusAsOf: record.frontmatter.statusAsOf,
-      lastReviewed: record.frontmatter.lastReviewed,
-      confidence: record.frontmatter.confidence,
-      path: path.relative(process.cwd(), record.path),
-    })),
+    states: states.map((record) => {
+      const manifestEntry = registryManifest.states.find(
+        (entry) => entry.slug === record.frontmatter.slug,
+      );
+
+      if (!manifestEntry) {
+        throw new Error(
+          `Missing manifest entry for published state "${record.frontmatter.slug}"`,
+        );
+      }
+
+      return {
+        title: record.frontmatter.title,
+        slug: record.frontmatter.slug,
+        state: record.frontmatter.state,
+        summary: record.frontmatter.summary,
+        recordType: record.frontmatter.recordType,
+        registryStatus: manifestEntry.registryStatus,
+        proposalFocus: manifestEntry.proposalFocus,
+        shortNote: manifestEntry.shortNote,
+        editorialPriority: manifestEntry.editorialPriority,
+        proposalKind: record.frontmatter.proposalKind,
+        proposalSubtype: record.frontmatter.proposalSubtype,
+        billId: record.frontmatter.billId,
+        chamber: record.frontmatter.chamber,
+        status: record.frontmatter.status,
+        statusAsOf: record.frontmatter.statusAsOf,
+        lastReviewed: record.frontmatter.lastReviewed,
+        confidence: record.frontmatter.confidence,
+        path: path.relative(process.cwd(), record.path),
+      };
+    }),
     registry: {
       manifest: registryManifest,
       publishedSlugs: states.map((record) => record.frontmatter.slug),
