@@ -116,4 +116,4 @@ This Act takes effect upon becoming law.
 
 - Final bill text should be reviewed by Illinois legislative drafting staff and qualified counsel.
 - Bond language should be narrowed further only after state-specific constitutional, debt-structure, securities, and fiscal analysis.
-- This draft intentionally presents one primary reserve-financing bond model while leaving tranche design, percentage splits, and exact yield mechanics open for later legal and finance review.
+- This draft intentionally presents one primary reserve-financing Bitcoin-backed bond model while leaving tranche design, percentage splits, and exact yield mechanics open for later legal and finance review.

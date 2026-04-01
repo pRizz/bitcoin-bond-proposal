@@ -13,7 +13,7 @@ outputs:
 
 ## Thesis and Why Illinois
 
-Illinois should authorize a tightly bounded strategic Bitcoin reserve with explicit safeguards, custody controls, and reporting, while evaluating one conservative Bitcoin-backed bond model that helps finance long-term accumulation without abandoning legislative and fiscal oversight. Illinois is a credible model state because it has visible debt-management pressure, institutional scale, and an existing reserve-bill reference point already on file in the General Assembly.
+Illinois should authorize a tightly bounded strategic Bitcoin reserve with explicit safeguards, custody controls, and reporting, while evaluating one conservative reserve-financing Bitcoin-backed bond model that helps finance long-term accumulation without abandoning legislative and fiscal oversight. Illinois is a credible model state because it has visible debt-management pressure, institutional scale, and an existing reserve-bill reference point already on file in the General Assembly.
 
 ## Reserve Concept
 
@@ -25,4 +25,4 @@ The primary Illinois bond model should be a conservative reserve-financing struc
 
 ## Safeguards and Legislative Ask
 
-A serious Illinois packet should make these safeguards explicit: constitutional and debt-structure review before final bond authorization, clear disclosure of proceeds and risks, legislative oversight of reserve operations, and plain-language explanation of what the State is doing and why. The legislative ask is to authorize a disciplined reserve, evaluate one primary Bitcoin-backed bond model with bounded alternatives, and send the structure through formal legal, fiscal, and disclosure review before final enactment.
+A serious Illinois packet should make these safeguards explicit: constitutional and debt-structure review before final bond authorization, clear disclosure of proceeds and risks, legislative oversight of reserve operations, and plain-language explanation of what the State is doing and why. The legislative ask is to authorize a disciplined reserve, evaluate one primary reserve-financing Bitcoin-backed bond model with bounded alternatives, and send the structure through formal legal, fiscal, and disclosure review before final enactment.
