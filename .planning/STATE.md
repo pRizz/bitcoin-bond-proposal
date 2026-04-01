@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-31)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
-**Current focus:** Public Site Shell
+**Current focus:** Editorial Polish and Explainers
 
 ## Current Position
 
-Phase: 4 of 5 (Public Site Shell)
+Phase: 5 of 5 (Editorial Polish and Explainers)
 Plan: 0 of 0 in current phase
 Status: Ready to plan
-Last activity: 2026-04-01 — Captured Phase 4 context for planning
+Last activity: 2026-04-01 — Phase 4 complete and verified
 
-Progress: ███████░░░ 67%
+Progress: █████████░ 87%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 7 min
-- Total execution time: 1.2 hours
+- Total plans completed: 13
+- Average duration: 8 min
+- Total execution time: 1.6 hours
 
 **By Phase:**
 
@@ -30,9 +30,10 @@ Progress: ███████░░░ 67%
 | 1 | 4 | 20 min | 5 min |
 | 2 | 3 | 26 min | 9 min |
 | 3 | 3 | 25 min | 8 min |
+| 4 | 3 | 26 min | 9 min |
 
 **Recent Trend:**
-- Last 5 plans: 11 min, 9 min, 6 min, 10 min, 8 min
+- Last 5 plans: 10 min, 8 min, 12 min, 6 min, 8 min
 - Trend: Stable
 
 ## Accumulated Context
@@ -51,6 +52,8 @@ Recent decisions affecting current work:
 - Lead packet persuasion with fiscal discipline, competitiveness, and debt-management logic.
 - Keep the 50-state registry skeleton as a manifest layer rather than fake public records.
 - Treat New Hampshire as an authority-action bond-side signal, not as a legislature-filed reserve bill.
+- Make the public shell read like an editorial policy brief rather than a tracker dashboard or crypto-marketing page.
+- Keep the Illinois packet featured as the concrete model while the registry serves as the credibility layer.
 
 ### Pending Todos
 
@@ -58,10 +61,11 @@ None yet.
 
 ### Blockers/Concerns
 
-- ⚠️ The public site phase needs to preserve the registry's honesty about record types, especially the New Hampshire authority-action entry.
+- ⚠️ Phase 5 should preserve the shell's editorial seriousness while adding polish and explainers, rather than sliding into dashboard clutter or crypto-hype aesthetics.
+- ⚠️ Any future debt-modeling work should remain a separate research-and-analysis capability rather than quietly expanding the current shell scope.
 
 ## Session Continuity
 
-Last session: 2026-04-01 06:09 CDT
-Stopped at: Phase 4 context gathered; ready to plan Phase 4
-Resume file: .planning/phases/04-public-site-shell/04-CONTEXT.md
+Last session: 2026-04-01 07:22 CDT
+Stopped at: Phase 4 complete, verified, and ready to transition to Phase 5
+Resume file: None
