@@ -71,8 +71,9 @@ In this Act:
 2. describe the proposed use of proceeds;
 3. disclose the role of Bitcoin exposure in the proposed financing;
 4. identify the manner of repayment or support;
-5. identify the principal risk factors, including volatility and legal-structure risk; and
-6. identify any tranche, tier, reserve-account, or return-support features proposed for the issuance.
+5. describe the expected investor return profile and any bounded return-support features;
+6. identify the principal risk factors, including volatility and legal-structure risk; and
+7. identify any tranche, tier, or reserve-account features proposed for the issuance.
 
 (c) A reserve-financing bond proposal may provide for the use of proceeds across one or more of the following purposes, to the extent otherwise permitted by law:
 
