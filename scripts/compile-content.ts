@@ -5,9 +5,11 @@ import path from "node:path";
 
 import {
   assertKnownProposalClassification,
+  assertManifestMatchesPublishedStates,
   assertUniqueSlugs,
   parseDocumentFrontmatter,
   parseProposalTaxonomy,
+  parseStateRegistryManifest,
   parseStateEntryFrontmatter,
 } from "../src/lib/content/schema.ts";
 import { readMarkdownCollection } from "../src/lib/content/load-markdown.ts";
@@ -28,6 +30,7 @@ type CompiledContentGraph = {
     title: string;
     slug: string;
     state: string;
+    recordType: string;
     proposalKind: string;
     proposalSubtype: string;
     billId: string;
@@ -38,6 +41,10 @@ type CompiledContentGraph = {
     confidence: string;
     path: string;
   }>;
+  registry: {
+    manifest: ReturnType<typeof parseStateRegistryManifest>;
+    publishedSlugs: string[];
+  };
   taxonomy: ReturnType<typeof parseProposalTaxonomy>;
 };
 
@@ -50,6 +57,14 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
   );
   const rawTaxonomy = await readFile(taxonomyPath, "utf8");
   const taxonomy = parseProposalTaxonomy(JSON.parse(rawTaxonomy));
+  const manifestPath = path.join(
+    process.cwd(),
+    "content",
+    "data",
+    "state-registry-manifest.json",
+  );
+  const rawManifest = await readFile(manifestPath, "utf8");
+  const registryManifest = parseStateRegistryManifest(JSON.parse(rawManifest));
 
   const [docs, explainers, states] = await Promise.all([
     readMarkdownCollection(
@@ -70,10 +85,21 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
     assertKnownProposalClassification(stateEntry.frontmatter, taxonomy);
   }
 
+  assertManifestMatchesPublishedStates(
+    registryManifest.states,
+    states.map((record) => record.frontmatter),
+  );
+
   assertUniqueSlugs(
     [...docs, ...explainers, ...states].map((record) => ({
       path: path.relative(process.cwd(), record.path),
       slug: record.frontmatter.slug,
+    })),
+  );
+  assertUniqueSlugs(
+    registryManifest.states.map((entry) => ({
+      path: "content/data/state-registry-manifest.json",
+      slug: entry.slug,
     })),
   );
 
@@ -93,6 +119,7 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
       title: record.frontmatter.title,
       slug: record.frontmatter.slug,
       state: record.frontmatter.state,
+      recordType: record.frontmatter.recordType,
       proposalKind: record.frontmatter.proposalKind,
       proposalSubtype: record.frontmatter.proposalSubtype,
       billId: record.frontmatter.billId,
@@ -103,6 +130,10 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
       confidence: record.frontmatter.confidence,
       path: path.relative(process.cwd(), record.path),
     })),
+    registry: {
+      manifest: registryManifest,
+      publishedSlugs: states.map((record) => record.frontmatter.slug),
+    },
     taxonomy,
   };
 }
