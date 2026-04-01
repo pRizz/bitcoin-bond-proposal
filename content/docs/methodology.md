@@ -115,6 +115,28 @@ If either date is missing, the entry is not publishable.
 
 Broad digital-asset proposals belong in the canonical public set only when their Bitcoin relevance is explicit enough to defend in plain English. If the Bitcoin connection is too indirect or speculative, the proposal should remain a lead or deferred research item instead of being published as a core entry.
 
+## Illinois Packet Application
+
+The Illinois flagship packet is intended to present one primary reserve model and one primary bond model, not a menu of equally weighted structures.
+
+For the Illinois packet:
+
+- the reserve side should be presented as a tightly bounded strategic reserve program with explicit custody, reporting, and allocation controls;
+- the bond side should be presented primarily as a conservative reserve-financing structure, not as an open-ended speculative instrument;
+- bounded variants may be discussed in drafting notes or methodology support text, but they should remain secondary to the main Illinois model.
+
+This packet-level discipline is deliberate. The project should look decisive enough for legislative review while remaining honest about open legal and fiscal questions.
+
+## Illinois Legal and Fiscal Caveats
+
+When the Illinois packet discusses a Bitcoin-backed bond model, it must continue to make the following points explicit:
+
+- any final bond structure remains subject to Illinois constitutional review, including Article IX debt constraints;
+- securities, disclosure, and debt-management analysis remain necessary before any final issuance structure could be treated as settled;
+- tranche design, percentage splits, and exact investor-return mechanics remain open until that review is complete.
+
+The Illinois packet may therefore present a primary model for discussion without implying that all legal structure questions are already resolved.
+
 ## Expected Public Wording
 
 Where public entries present legislative status or legal effect, the preferred pattern is:
