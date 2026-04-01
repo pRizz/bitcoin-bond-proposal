@@ -29,6 +29,7 @@ type CompiledContentGraph = {
     title: string;
     slug: string;
     state: string;
+    summary: string;
     recordType: string;
     proposalKind: string;
     proposalSubtype: string;
@@ -117,6 +118,7 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
       title: record.frontmatter.title,
       slug: record.frontmatter.slug,
       state: record.frontmatter.state,
+      summary: record.frontmatter.summary,
       recordType: record.frontmatter.recordType,
       proposalKind: record.frontmatter.proposalKind,
       proposalSubtype: record.frontmatter.proposalSubtype,
