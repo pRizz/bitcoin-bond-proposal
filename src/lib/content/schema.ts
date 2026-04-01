@@ -8,10 +8,17 @@ const SlugSchema = NonEmptyStringSchema.regex(
   slugPattern,
   "slug must use lowercase letters, numbers, and hyphens",
 );
-const IsoDateSchema = NonEmptyStringSchema.regex(
+const IsoDateStringSchema = NonEmptyStringSchema.regex(
   isoDatePattern,
   "date must use YYYY-MM-DD format",
 );
+const IsoDateSchema = z.preprocess((value) => {
+  if (value instanceof Date) {
+    return value.toISOString().slice(0, 10);
+  }
+
+  return value;
+}, IsoDateStringSchema);
 
 const ProposalKindValueSchema = z.enum(["reserve", "bond", "both"]);
 const ProposalSubtypeValueSchema = z.enum([
