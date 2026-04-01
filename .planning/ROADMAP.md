@@ -13,7 +13,7 @@ This roadmap turns the existing project context and research into an Illinois-fi
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation and Trust Contracts** - Establish schemas, content structure, source rules, and the PDF/pre-commit publishing lane. Completed 2026-04-01.
-- [ ] **Phase 2: Illinois Flagship Package** - Produce the first serious Illinois policy packet from canonical source documents.
+- [x] **Phase 2: Illinois Flagship Package** - Produce the first serious Illinois policy packet from canonical source documents. Completed 2026-04-01.
 - [ ] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries.
 - [ ] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces.
 - [ ] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product.
@@ -45,12 +45,12 @@ Plans:
   1. An Illinois one-page summary exists and can be exported as a polished PDF.
   2. A longer Illinois draft bill exists as a serious first-pass legislative document.
   3. A methodology memo exists and explains the project’s research and publication rules clearly.
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: Draft the Illinois one-page summary and aligned terminology set.
-- [ ] 02-02: Draft the Illinois bill structure and substantive legislative language.
-- [ ] 02-03: Finalize the methodology memo and align it with the Illinois packet.
+- [x] 02-01: Rework the Illinois one-pager into a serious packet front page and single-page PDF.
+- [x] 02-02: Draft a counsel-serious Illinois reserve-and-bond act and regenerate its PDF.
+- [x] 02-03: Align methodology, terminology, and packet PDFs into one coherent Illinois deliverable set.
 
 ### Phase 3: Research Registry Core
 **Goal**: Create the national skeleton and publish the first trustworthy batch of reserve/bond state records.
@@ -106,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Trust Contracts | 4/4 | Complete | 2026-04-01 |
-| 2. Illinois Flagship Package | 0/TBD | Not started | - |
+| 2. Illinois Flagship Package | 3/3 | Complete | 2026-04-01 |
 | 3. Research Registry Core | 0/TBD | Not started | - |
 | 4. Public Site Shell | 0/TBD | Not started | - |
 | 5. Editorial Polish and Explainers | 0/TBD | Not started | - |
