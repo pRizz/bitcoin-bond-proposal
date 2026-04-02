@@ -16,6 +16,10 @@ export function RegistrySnapshot(props: RegistrySnapshotProps) {
   return (
     <div class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
       <p class="eyebrow">Registry snapshot</p>
+      <p class="mt-3 max-w-2xl text-sm leading-7 text-ink-subtle">
+        Not every state matters for the same reason. This proof layer groups the
+        first batch by what actually strengthens the financing case.
+      </p>
       <div class="mt-6 grid gap-3">
         <For each={props.states}>
           {(state) => (
