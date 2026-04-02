@@ -23,15 +23,18 @@ export default function HomePage() {
 
       <section class="story-grid gap-6 lg:items-start">
         <div class="poster-frame grain-overlay overflow-hidden rounded-[calc(var(--radius-soft)+0.25rem)] p-7 sm:p-10">
-          <p class="eyebrow text-accent-soft">Public site shell</p>
+          <p class="eyebrow text-accent-soft">Public case</p>
           <h1 class="mt-4 max-w-4xl text-5xl text-canvas-soft sm:text-6xl">
             States can finance long-horizon Bitcoin reserve accumulation without
             pretending taxpayer-funded accumulation is the only path.
           </h1>
           <p class="mt-6 max-w-3xl text-lg leading-8 text-white/82">
             This is a public-finance case, not a generic Bitcoin allocation pitch.
-            The Illinois packet is the model. The registry is the proof layer. The
-            financing structure is the real argument.
+            The Illinois packet is the model. The financing explainer is the
+            argument. The registry is the proof.
+          </p>
+          <p class="mt-4 text-sm uppercase tracking-[0.18em] text-white/52">
+            Model / Argument / Proof
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <ActionLink href="/states/illinois" intent="primary">
@@ -76,7 +79,7 @@ export default function HomePage() {
       <PageSection
         eyebrow="Signal"
         title="The financing case comes first. The registry proves it second."
-        lead="The first serious reading path is deliberate: understand the financing logic, then inspect the live state evidence that supports or limits it."
+        lead="The first reading path is deliberate: understand the financing logic, then inspect the live state evidence that supports or limits it."
       >
         <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <BondReservePathway />
