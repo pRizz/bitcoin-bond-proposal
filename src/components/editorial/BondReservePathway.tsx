@@ -9,6 +9,9 @@ export function BondReservePathway() {
         The distinction that matters is structural: financing design changes the
         public argument, not just the branding around Bitcoin reserve policy.
       </p>
+      <p class="mt-3 text-xs uppercase tracking-[0.16em] text-white/48">
+        Outside capital in / state-level volatility held / bounded return out
+      </p>
       <div class="mt-8 grid gap-4 lg:grid-cols-3">
         <div class="signal-card rounded-[var(--radius-card)] border border-white/12 bg-white/6 p-4 transition-transform duration-300 hover:-translate-y-1">
           <p class="eyebrow text-accent-soft">1</p>
@@ -40,6 +43,11 @@ export function BondReservePathway() {
             receive a bounded public-finance return profile.
           </p>
         </div>
+      </div>
+      <div class="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.16em] text-white/46">
+        <span>Financing path</span>
+        <span class="h-px flex-1 bg-white/12" />
+        <span>Not taxpayer spot buying</span>
       </div>
     </div>
   );
