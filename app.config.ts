@@ -25,9 +25,9 @@ export default defineConfig({
       crawlLinks: true,
       routes: [
         "/",
+        "/explainers/bond-financed-reserve-accumulation",
         "/methodology",
         "/states",
-        "/explainers/bond-financed-reserve-accumulation",
         ...readPublishedStateRoutes(),
       ],
     },
