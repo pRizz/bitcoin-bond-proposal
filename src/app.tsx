@@ -40,7 +40,7 @@ export default function App() {
               secondary={
                 <>
                   Featured packet:
-                  <A class="underline-offset-4 hover:underline" href="/states/illinois">
+                  <A class="underline-offset-4 hover:underline" href="/packet/illinois">
                     Illinois model
                   </A>
                 </>

@@ -37,7 +37,7 @@ export default function HomePage() {
             Model / Argument / Proof
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <ActionLink href="/states/illinois" intent="primary">
+            <ActionLink href="/packet/illinois" intent="primary">
               Read the Illinois model packet
             </ActionLink>
             <ActionLink

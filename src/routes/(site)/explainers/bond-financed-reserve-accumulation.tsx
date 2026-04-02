@@ -43,7 +43,7 @@ export default function BondFinancedReserveAccumulationExplainerPage() {
                 record set that supports or limits it.
               </p>
               <div class="mt-4 flex flex-col gap-3">
-                <ActionLink href="/states/illinois" intent="primary">
+                <ActionLink href="/packet/illinois" intent="primary">
                   Read the Illinois model packet
                 </ActionLink>
                 <ActionLink href="/states" intent="secondary">

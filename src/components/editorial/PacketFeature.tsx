@@ -11,7 +11,7 @@ export function PacketFeature() {
         bond-financed reserve accumulation.
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <ActionLink href="/states/illinois" intent="primary">
+        <ActionLink href="/packet/illinois" intent="primary">
           Read the Illinois model packet
         </ActionLink>
         <ActionLink href="/methodology" intent="secondary">
