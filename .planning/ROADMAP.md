@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries. Completed 2026-04-01.
 - [x] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces. Completed 2026-04-01.
 - [x] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product. Completed 2026-04-02.
-- [ ] **Phase 6: Public Packet Access and Illinois Model Separation** - Expose the Illinois packet as a real public model layer and stop routing packet CTAs into the descriptive Illinois registry record.
+- [x] **Phase 6: Public Packet Access and Illinois Model Separation** - Expose the Illinois packet as a real public model layer and stop routing packet CTAs into the descriptive Illinois registry record. Completed 2026-04-02.
 - [ ] **Phase 7: Tooling Guardrail Cleanup** - Repair the formatting and lint guardrails so source-only checks are trustworthy again.
 
 ## Phase Details
@@ -111,11 +111,11 @@ Plans:
   2. The homepage, explainer, and footer no longer label the Illinois HB1844 registry page as the Illinois model packet.
   3. The public shell preserves a clear distinction between the normative packet layer and the descriptive registry layer.
   4. The intended `model / argument / proof` reading path is navigable end to end in the built shell.
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: Expose the Illinois packet through public routes or honest public packet links.
-- [ ] 06-02: Rewire packet CTAs and Illinois navigation so model and registry surfaces stay distinct.
+- [x] 06-01: Expose the Illinois packet through public routes or honest public packet links.
+- [x] 06-02: Rewire packet CTAs and Illinois navigation so model and registry surfaces stay distinct.
 
 ### Phase 7: Tooling Guardrail Cleanup
 **Goal**: Restore formatting and lint guardrails so the repository's source-level checks are useful again.
@@ -144,5 +144,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 3. Research Registry Core | 3/3 | Complete | 2026-04-01 |
 | 4. Public Site Shell | 3/3 | Complete | 2026-04-01 |
 | 5. Editorial Polish and Explainers | 3/3 | Complete | 2026-04-02 |
-| 6. Public Packet Access and Illinois Model Separation | 0/TBD | Not started | - |
+| 6. Public Packet Access and Illinois Model Separation | 2/2 | Complete | 2026-04-02 |
 | 7. Tooling Guardrail Cleanup | 0/TBD | Not started | - |

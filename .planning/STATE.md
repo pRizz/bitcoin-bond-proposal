@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-31)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
-**Current focus:** Milestone audit and archive
+**Current focus:** Tooling Guardrail Cleanup
 
 ## Current Position
 
-Phase: 5 of 5 (Editorial Polish and Explainers)
-Plan: 3 of 3 in current phase
-Status: Phase complete; ready for milestone audit
-Last activity: 2026-04-02 — Completed Phase 5 and verified the public editorial shell
+Phase: 7 of 7 (Tooling Guardrail Cleanup)
+Plan: 0 of 0 in current phase
+Status: Ready to plan
+Last activity: 2026-04-02 — Completed Phase 6 and verified public packet access plus Illinois packet/registry separation
 
-Progress: ██████████ 100%
+Progress: █████████░ 90%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16
+- Total plans completed: 18
 - Average duration: 7 min
-- Total execution time: 2.0 hours
+- Total execution time: 2.2 hours
 
 **By Phase:**
 
@@ -32,9 +32,10 @@ Progress: ██████████ 100%
 | 3 | 3 | 25 min | 8 min |
 | 4 | 3 | 26 min | 9 min |
 | 5 | 3 | 22 min | 7 min |
+| 6 | 2 | 14 min | 7 min |
 
 **Recent Trend:**
-- Last 5 plans: 6 min, 8 min, 9 min, 7 min, 6 min
+- Last 5 plans: 9 min, 7 min, 6 min, 10 min, 4 min
 - Trend: Stable
 
 ## Accumulated Context
@@ -57,18 +58,20 @@ Recent decisions affecting current work:
 - Keep the Illinois packet featured as the concrete model while the registry serves as the credibility layer.
 - Make the first explainer argue the financing distinction directly rather than restating reserve basics.
 - Frame the public shell as model / argument / proof while keeping status, source, and methodology trust surfaces neutral.
+- Expose the Illinois packet as a real public packet route rather than implying it through the Illinois HB1844 registry page.
+- Keep the Illinois packet and Illinois registry record as linked but explicitly separate surfaces in the public shell.
 
 ### Pending Todos
 
-None.
+- Resolve the remaining formatting and lint guardrail debt in Phase 7.
 
 ### Blockers/Concerns
 
-- No active blockers in the v1 milestone.
+- The remaining blocker to milestone archive is tooling guardrail cleanup in Phase 7.
 - Any future debt-modeling work should remain a separate research-and-analysis capability rather than quietly expanding the public shell scope.
 
 ## Session Continuity
 
-Last session: 2026-04-02 03:21 CDT
-Stopped at: Phase 5 complete; milestone ready for audit
-Resume file: .planning/phases/05-editorial-polish-and-explainers/05-VERIFICATION.md
+Last session: 2026-04-02 05:31 CDT
+Stopped at: Phase 6 complete; ready to plan Phase 7
+Resume file: .planning/phases/06-public-packet-access-and-illinois-model-separation/06-VERIFICATION.md
