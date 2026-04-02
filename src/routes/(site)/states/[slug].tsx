@@ -83,6 +83,13 @@ export default function StateDetailPage() {
                 <p class="mt-2">{state.manifest.shortNote}</p>
               </div>
             ) : null}
+            <div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
+              <p class="font-semibold text-ink">Read the financing case</p>
+              <p class="mt-2">
+                This page stays descriptive. The sharper argument about why
+                financing structure matters lives in the first explainer.
+              </p>
+            </div>
           </aside>
           <div class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
             <MarkdownContent html={renderMarkdown(body)} />

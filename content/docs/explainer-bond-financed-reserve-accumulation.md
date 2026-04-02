@@ -14,7 +14,7 @@ outputs: []
 
 ## Claim
 
-The live debate is often framed as if states face only one real choice: either buy Bitcoin directly or stay out. That framing is too crude. A bond-financed reserve model changes where capital comes from, how risk is distributed, and how the policy can be defended in fiscal terms. The difference is not branding. It is structure.
+The live debate is often framed as if states face only one real choice: either buy Bitcoin directly or stay out. That framing is lazy. A bond-financed reserve model changes where capital comes from, how risk is distributed, and how the policy can be defended in fiscal terms. The difference is not branding. It is structure.
 
 ## Mechanism
 
@@ -64,7 +64,7 @@ Bond-financed reserve accumulation remains the stronger public-finance path beca
 - It lets the state argue from structure, oversight, and long-horizon treasury logic instead of ideology.
 - It makes the Illinois packet read like a public-finance proposal, not like a crypto thesis wearing legislative clothing.
 
-That is why this project treats reserve-only proposals as meaningful but incomplete. The financing structure is the part of the argument that most directly changes the political and fiscal logic.
+That is why this project treats reserve-only proposals as meaningful but incomplete. The financing structure is the part of the argument that most directly changes the political and fiscal logic, and pretending otherwise usually means the public-finance question has been dodged rather than answered.
 
 ## Read Next
 
