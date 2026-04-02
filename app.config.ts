@@ -23,7 +23,13 @@ export default defineConfig({
   server: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/methodology", "/states", ...readPublishedStateRoutes()],
+      routes: [
+        "/",
+        "/methodology",
+        "/states",
+        "/explainers/bond-financed-reserve-accumulation",
+        ...readPublishedStateRoutes(),
+      ],
     },
   },
   vite: {
