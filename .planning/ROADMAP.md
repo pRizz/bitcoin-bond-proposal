@@ -17,6 +17,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries. Completed 2026-04-01.
 - [x] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces. Completed 2026-04-01.
 - [x] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product. Completed 2026-04-02.
+- [ ] **Phase 6: Public Packet Access and Illinois Model Separation** - Expose the Illinois packet as a real public model layer and stop routing packet CTAs into the descriptive Illinois registry record.
+- [ ] **Phase 7: Tooling Guardrail Cleanup** - Repair the formatting and lint guardrails so source-only checks are trustworthy again.
 
 ## Phase Details
 
@@ -99,10 +101,41 @@ Plans:
 - [x] 05-02: Refine editorial hierarchy, visual language, and initial infographic treatment.
 - [x] 05-03: Integrate the explainer into the shell and complete the editorial coherence pass.
 
+### Phase 6: Public Packet Access and Illinois Model Separation
+**Goal**: Make the Illinois packet actually reachable in the public shell and restore the distinction between the normative packet and the descriptive Illinois registry record.
+**Depends on**: Phase 5
+**Requirements**: DOCS-01, DOCS-02, SITE-01, SITE-05, SITE-06
+**Gap Closure**: Closes the v1.0 milestone audit integration and flow gaps around packet access and misleading Illinois packet CTAs.
+**Success Criteria** (what must be TRUE):
+  1. Readers can reach the Illinois one-pager and draft bill from the public shell through honest labels or dedicated packet routes.
+  2. The homepage, explainer, and footer no longer label the Illinois HB1844 registry page as the Illinois model packet.
+  3. The public shell preserves a clear distinction between the normative packet layer and the descriptive registry layer.
+  4. The intended `model / argument / proof` reading path is navigable end to end in the built shell.
+**Plans**: TBD
+
+Plans:
+- [ ] 06-01: Expose the Illinois packet through public routes or honest public packet links.
+- [ ] 06-02: Rewire packet CTAs and Illinois navigation so model and registry surfaces stay distinct.
+
+### Phase 7: Tooling Guardrail Cleanup
+**Goal**: Restore formatting and lint guardrails so the repository's source-level checks are useful again.
+**Depends on**: Phase 6
+**Requirements**: PIPE-02
+**Gap Closure**: Closes the v1.0 milestone audit tooling debt around Biome formatting and lint scope.
+**Success Criteria** (what must be TRUE):
+  1. `bun run format` no longer aborts on the Tailwind v4 CSS syntax used by the public shell.
+  2. `bun run lint` targets source files rather than generated `.output/public` artifacts.
+  3. The repo regains a practical source-only formatting and linting loop without weakening the existing pre-commit trust contract.
+**Plans**: TBD
+
+Plans:
+- [ ] 07-01: Fix Biome or formatter configuration for the Tailwind v4 CSS layer.
+- [ ] 07-02: Restrict lint scope to source-controlled authoring and runtime files.
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -111,3 +144,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 3. Research Registry Core | 3/3 | Complete | 2026-04-01 |
 | 4. Public Site Shell | 3/3 | Complete | 2026-04-01 |
 | 5. Editorial Polish and Explainers | 3/3 | Complete | 2026-04-02 |
+| 6. Public Packet Access and Illinois Model Separation | 0/TBD | Not started | - |
+| 7. Tooling Guardrail Cleanup | 0/TBD | Not started | - |
