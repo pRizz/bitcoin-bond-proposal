@@ -1,6 +1,19 @@
 {
   "docs": [
     {
+      "title": "Why Bond-Financed Reserve Accumulation Is Not the Same as Buying Bitcoin With Taxpayer Funds",
+      "slug": "explainer-bond-financed-reserve-accumulation",
+      "summary": "A policy explainer on why financing structure changes the fiscal and political logic of state Bitcoin reserve accumulation.",
+      "documentKind": "explainer",
+      "audience": [
+        "legislators",
+        "public"
+      ],
+      "outputs": [],
+      "updatedAt": "2026-04-02",
+      "path": "content/docs/explainer-bond-financed-reserve-accumulation.md"
+    },
+    {
       "title": "Illinois Bitcoin Reserve and Bond Act Draft",
       "slug": "illinois-draft-bill",
       "summary": "Structured first-pass draft bill source for an Illinois Bitcoin reserve and Bitcoin-backed bond proposal.",

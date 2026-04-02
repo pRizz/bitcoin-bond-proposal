@@ -5,16 +5,16 @@ import { MarkdownContent } from "../../../components/editorial/MarkdownContent";
 import { PageSection } from "../../../components/editorial/PageSection";
 import { getDocumentBySlug } from "../../../lib/site/content";
 import { renderMarkdown } from "../../../lib/site/markdown";
-import { readExplainerBody } from "../../../lib/site/raw-content";
+import { readDocumentBody } from "../../../lib/site/raw-content";
 import { makePageTitle } from "../../../lib/site/seo";
 
-export default function BondFinancedReserveExplainerPage() {
+export default function BondFinancedReserveAccumulationExplainerPage() {
   const explainer = getDocumentBySlug("explainer-bond-financed-reserve-accumulation");
-  const body = explainer ? readExplainerBody(explainer.path) ?? "" : "";
+  const body = explainer ? readDocumentBody(explainer.path) ?? "" : "";
 
   return (
     <>
-      <Title>{makePageTitle("Bond-financed reserve accumulation")}</Title>
+      <Title>{makePageTitle("Bond-financed reserve accumulation explainer")}</Title>
       <Meta name="description" content={explainer?.summary} />
 
       <PageSection
@@ -28,13 +28,16 @@ export default function BondFinancedReserveExplainerPage() {
           </div>
           <aside class="proof-rail space-y-4">
             <div class="poster-frame grain-overlay rounded-[calc(var(--radius-soft)+0.25rem)] p-6">
-              <p class="eyebrow text-accent-soft">Read this as</p>
+              <p class="eyebrow text-accent-soft">Interpretive lens</p>
               <p class="mt-4 text-lg leading-8 text-white/82">
-                a financing argument, not a generic “buy Bitcoin” argument.
+                Read this page as a financing argument first, not as a generic
+                Bitcoin allocation argument. The structure is simple: claim,
+                mechanism, objections, limits, then why the preferred model still
+                matters.
               </p>
             </div>
             <div class="panel-wash rounded-[var(--radius-card)] p-6">
-              <p class="eyebrow">Next paths</p>
+              <p class="eyebrow">Continue through the site</p>
               <div class="mt-4 flex flex-col gap-3">
                 <ActionLink href="/states/illinois" intent="primary">
                   Read the Illinois model packet
