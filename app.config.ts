@@ -27,6 +27,7 @@ export default defineConfig({
         "/",
         "/explainers/bond-financed-reserve-accumulation",
         "/methodology",
+        "/packet/illinois",
         "/states",
         ...readPublishedStateRoutes(),
       ],
