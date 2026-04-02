@@ -1,6 +1,7 @@
 import { Meta, Title } from "@solidjs/meta";
 import { useParams } from "@solidjs/router";
 
+import { ActionLink } from "../../../components/editorial/ActionLink";
 import { Badge } from "../../../components/editorial/Badge";
 import { MarkdownContent } from "../../../components/editorial/MarkdownContent";
 import { PageSection } from "../../../components/editorial/PageSection";
@@ -81,6 +82,21 @@ export default function StateDetailPage() {
               <div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
                 <p class="font-semibold text-ink">Registry note</p>
                 <p class="mt-2">{state.manifest.shortNote}</p>
+              </div>
+            ) : null}
+            {state.slug === "illinois" ? (
+              <div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
+                <p class="font-semibold text-ink">Illinois model packet</p>
+                <p class="mt-2">
+                  This HB1844 page is the descriptive registry record. The
+                  normative Illinois packet lives separately as the project&apos;s
+                  one-pager and draft bill model.
+                </p>
+                <div class="mt-4">
+                  <ActionLink href="/packet/illinois" intent="secondary">
+                    Open the Illinois packet
+                  </ActionLink>
+                </div>
               </div>
             ) : null}
             <div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
