@@ -1,11 +1,17 @@
 import { Meta, Title } from "@solidjs/meta";
 
+import { ActionLink } from "../../../components/editorial/ActionLink";
 import { MarkdownContent } from "../../../components/editorial/MarkdownContent";
 import { PageSection } from "../../../components/editorial/PageSection";
 import { getDocumentBySlug } from "../../../lib/site/content";
 import { renderMarkdown } from "../../../lib/site/markdown";
 import { readDocumentBody } from "../../../lib/site/raw-content";
 import { makePageTitle } from "../../../lib/site/seo";
+import onePagerPdfUrl from "../../../../pdf/illinois-one-pager.pdf?url";
+import draftBillPdfUrl from "../../../../pdf/illinois-draft-bill.pdf?url";
+
+const packetDownloadClass =
+  "inline-flex items-center justify-center rounded-full border border-border-strong bg-white/70 px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-white hover:text-ink";
 
 function readPacketDocumentBody(slug: string): string {
   const document = getDocumentBySlug(slug);
@@ -45,6 +51,22 @@ export default function IllinoisPacketPage() {
               <p class="mt-3 text-sm leading-6 text-ink-subtle">
                 The one-pager provides the concise case. The draft bill shows the
                 longer-form legislative structure behind it.
+              </p>
+              <div class="mt-5 flex flex-col gap-3">
+                <a class={packetDownloadClass} href={onePagerPdfUrl}>
+                  Download one-pager PDF
+                </a>
+                <a class={packetDownloadClass} href={draftBillPdfUrl}>
+                  Download draft bill PDF
+                </a>
+                <ActionLink href="/states/illinois" intent="secondary">
+                  Review the descriptive HB1844 record
+                </ActionLink>
+              </div>
+              <p class="mt-4 text-sm leading-6 text-ink-subtle">
+                The packet is the project&apos;s normative model. The HB1844 page is
+                the descriptive registry record about what Illinois lawmakers
+                actually filed.
               </p>
             </div>
           </aside>
