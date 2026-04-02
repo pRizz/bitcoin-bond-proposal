@@ -68,6 +68,6 @@ That is why this project treats reserve-only proposals as meaningful but incompl
 
 ## Read Next
 
-- [Read the Illinois model packet](/states/illinois)
+- [Read the Illinois model packet](/packet/illinois)
 - [Browse the state registry](/states)
 - [Review the methodology](/methodology)

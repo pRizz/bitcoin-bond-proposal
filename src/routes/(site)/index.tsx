@@ -114,6 +114,11 @@ export default function HomePage() {
               methodology aligned around a reserve-financing Bitcoin-backed bond
               pathway.
             </p>
+            <div class="mt-5">
+              <ActionLink href="/packet/illinois" intent="secondary">
+                Open the packet
+              </ActionLink>
+            </div>
           </div>
           <div class="panel-wash rounded-[var(--radius-card)] p-6">
             <p class="eyebrow">First explainer</p>
