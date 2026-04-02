@@ -79,8 +79,8 @@
 | SITE-02 | Phase 4 | Complete |
 | SITE-03 | Phase 4 | Complete |
 | SITE-04 | Phase 4 | Complete |
-| SITE-05 | Phase 5 | Pending |
-| SITE-06 | Phase 5 | Pending |
+| SITE-05 | Phase 5 | Complete |
+| SITE-06 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 19 total
@@ -89,4 +89,4 @@
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-04-01 after Phase 4 completion*
+*Last updated: 2026-04-02 after Phase 5 completion*

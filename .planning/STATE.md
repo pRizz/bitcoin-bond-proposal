@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-31)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
-**Current focus:** Editorial Polish and Explainers
+**Current focus:** Milestone audit and archive
 
 ## Current Position
 
 Phase: 5 of 5 (Editorial Polish and Explainers)
-Plan: 0 of 0 in current phase
-Status: Ready to plan
-Last activity: 2026-04-02 — Captured Phase 5 context for planning
+Plan: 3 of 3 in current phase
+Status: Phase complete; ready for milestone audit
+Last activity: 2026-04-02 — Completed Phase 5 and verified the public editorial shell
 
-Progress: █████████░ 87%
+Progress: ██████████ 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 8 min
-- Total execution time: 1.6 hours
+- Total plans completed: 16
+- Average duration: 7 min
+- Total execution time: 2.0 hours
 
 **By Phase:**
 
@@ -31,9 +31,10 @@ Progress: █████████░ 87%
 | 2 | 3 | 26 min | 9 min |
 | 3 | 3 | 25 min | 8 min |
 | 4 | 3 | 26 min | 9 min |
+| 5 | 3 | 22 min | 7 min |
 
 **Recent Trend:**
-- Last 5 plans: 10 min, 8 min, 12 min, 6 min, 8 min
+- Last 5 plans: 6 min, 8 min, 9 min, 7 min, 6 min
 - Trend: Stable
 
 ## Accumulated Context
@@ -54,18 +55,20 @@ Recent decisions affecting current work:
 - Treat New Hampshire as an authority-action bond-side signal, not as a legislature-filed reserve bill.
 - Make the public shell read like an editorial policy brief rather than a tracker dashboard or crypto-marketing page.
 - Keep the Illinois packet featured as the concrete model while the registry serves as the credibility layer.
+- Make the first explainer argue the financing distinction directly rather than restating reserve basics.
+- Frame the public shell as model / argument / proof while keeping status, source, and methodology trust surfaces neutral.
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
-- ⚠️ Phase 5 should preserve the shell's editorial seriousness while adding polish and explainers, rather than sliding into dashboard clutter or crypto-hype aesthetics.
-- ⚠️ Any future debt-modeling work should remain a separate research-and-analysis capability rather than quietly expanding the current shell scope.
+- No active blockers in the v1 milestone.
+- Any future debt-modeling work should remain a separate research-and-analysis capability rather than quietly expanding the public shell scope.
 
 ## Session Continuity
 
-Last session: 2026-04-02 00:00 CDT
-Stopped at: Phase 5 context gathered; ready to plan Phase 5
-Resume file: .planning/phases/05-editorial-polish-and-explainers/05-CONTEXT.md
+Last session: 2026-04-02 03:21 CDT
+Stopped at: Phase 5 complete; milestone ready for audit
+Resume file: .planning/phases/05-editorial-polish-and-explainers/05-VERIFICATION.md

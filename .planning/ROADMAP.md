@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Illinois Flagship Package** - Produce the first serious Illinois policy packet from canonical source documents. Completed 2026-04-01.
 - [x] **Phase 3: Research Registry Core** - Build the 50-state skeleton and publish the first 3-5 researched state entries. Completed 2026-04-01.
 - [x] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces. Completed 2026-04-01.
-- [ ] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product.
+- [x] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product. Completed 2026-04-02.
 
 ## Phase Details
 
@@ -92,11 +92,12 @@ Plans:
   1. At least one deeper explainer article exists and supports the project thesis with clear sourcing.
   2. The site has a coherent editorial voice and visual system aligned with the `free-the-world` reference without becoming a clone.
   3. The homepage and explainer layer make the reserve-and-bond thesis understandable to non-specialists.
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: Write and publish the first explainer article.
-- [ ] 05-02: Refine editorial hierarchy, visual language, and initial infographic treatment.
+- [x] 05-01: Write and publish the first explainer article.
+- [x] 05-02: Refine editorial hierarchy, visual language, and initial infographic treatment.
+- [x] 05-03: Integrate the explainer into the shell and complete the editorial coherence pass.
 
 ## Progress
 
@@ -109,4 +110,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Illinois Flagship Package | 3/3 | Complete | 2026-04-01 |
 | 3. Research Registry Core | 3/3 | Complete | 2026-04-01 |
 | 4. Public Site Shell | 3/3 | Complete | 2026-04-01 |
-| 5. Editorial Polish and Explainers | 0/TBD | Not started | - |
+| 5. Editorial Polish and Explainers | 3/3 | Complete | 2026-04-02 |
