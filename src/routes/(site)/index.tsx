@@ -37,6 +37,12 @@ export default function HomePage() {
             <ActionLink href="/states/illinois" intent="primary">
               Read the Illinois model packet
             </ActionLink>
+            <ActionLink
+              href="/explainers/bond-financed-reserve-accumulation"
+              intent="secondary"
+            >
+              Read the financing explainer
+            </ActionLink>
             <ActionLink href="/states" intent="secondary">
               Browse state proposals
             </ActionLink>
@@ -94,10 +100,10 @@ export default function HomePage() {
 
       <PageSection
         eyebrow="Read first"
-        title="Start with the Illinois packet, then inspect the registry"
-        lead="The public shell is built around one serious flagship artifact and one credibility layer. Readers should understand the argument first, then check how the current state evidence supports or limits it."
+        title="Start with the Illinois packet, then read the financing case, then inspect the registry"
+        lead="The site now has three layers: the Illinois model, the financing argument, and the descriptive registry. They should read like parts of one finished product, not three adjacent surfaces."
       >
-        <div class="grid gap-4 lg:grid-cols-2">
+        <div class="grid gap-4 lg:grid-cols-3">
           <div class="panel-wash rounded-[var(--radius-card)] p-6">
             <p class="eyebrow">Illinois packet</p>
             <p class="mt-4 text-base leading-7 text-ink-subtle">
@@ -105,6 +111,22 @@ export default function HomePage() {
               methodology aligned around a reserve-financing Bitcoin-backed bond
               pathway.
             </p>
+          </div>
+          <div class="panel-wash rounded-[var(--radius-card)] p-6">
+            <p class="eyebrow">First explainer</p>
+            <p class="mt-4 text-base leading-7 text-ink-subtle">
+              The first deep explainer makes the key argument explicit: financing
+              structure changes the public-finance logic. That is the difference
+              between a serious model and a loose reserve slogan.
+            </p>
+            <div class="mt-5">
+              <ActionLink
+                href="/explainers/bond-financed-reserve-accumulation"
+                intent="secondary"
+              >
+                Open the explainer
+              </ActionLink>
+            </div>
           </div>
           <div class="panel-wash rounded-[var(--radius-card)] p-6">
             <p class="eyebrow">Registry proof</p>

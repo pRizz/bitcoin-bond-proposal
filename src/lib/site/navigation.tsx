@@ -22,6 +22,11 @@ export const siteNavigation: NavigationLink[] = [
     label: "States",
     description: "Browse the current registry batch and supporting facts.",
   },
+  {
+    href: "/explainers/bond-financed-reserve-accumulation",
+    label: "Explainer",
+    description: "Why the financing structure changes the whole public-finance argument.",
+  },
 ];
 
 export type BrandedLabel = JSX.Element;
