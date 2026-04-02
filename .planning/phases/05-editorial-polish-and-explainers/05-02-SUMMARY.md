@@ -2,18 +2,18 @@
 phase: 05-editorial-polish-and-explainers
 plan: "02"
 subsystem: ui
-tags: [homepage, polish, infographic, pacing, shell]
+tags: [homepage, polish, infographic, pacing, visuals]
 requires:
   - phase: 05-01
-    provides: First explainer route and article
+    provides: first explainer route and article
 provides:
-  - Tighter homepage hero and rhythm
-  - Upgraded reserve-vs-bond pathway visual
-  - Refined registry proof visual
-affects: [homepage, editorial-voice, public-shell]
+  - tighter hero and section rhythm
+  - upgraded pathway visual
+  - refined registry proof visual
+affects: [homepage, editorial-voice, explainer-discovery]
 tech-stack:
   added: []
-  patterns: [restrained editorial polish, explanatory visuals over dashboard clutter]
+  patterns: [restrained visual refinement, explanatory over ornamental motion]
 key-files:
   created: []
   modified:
@@ -22,11 +22,11 @@ key-files:
     - src/components/editorial/RegistrySnapshot.tsx
     - src/styles/app.css
 key-decisions:
-  - "Polish should sharpen the shell without adding new sections or controls."
-  - "The pathway and registry proof visuals should become more explanatory, not more decorative."
+  - "Homepage polish should sharpen the existing shell instead of adding new sections or controls."
+  - "Visual refinement should make the financing logic more legible, not more decorative."
 patterns-established:
-  - "Hero copy now treats the site as a model / argument / proof product, not just a shell."
-  - "Visual refinement stays within the editorial-financial briefing aesthetic."
+  - "Hero copy now frames the site as model / argument / proof."
+  - "The pathway and proof visuals now function as explanatory editorial objects rather than shell placeholders."
 requirements-completed: [SITE-06]
 duration: 7 min
 completed: 2026-04-02
@@ -34,7 +34,7 @@ completed: 2026-04-02
 
 # Phase 5 Plan 02: Editorial polish Summary
 
-**Sharper homepage pacing, clearer financing diagram, and more deliberate registry proof view**
+**Homepage pacing, financing diagram, and registry proof visual refined into a more authored editorial shell**
 
 ## Performance
 
@@ -45,9 +45,9 @@ completed: 2026-04-02
 - **Files modified:** 4
 
 ## Accomplishments
-- Tightened the homepage hero and the first section rhythm.
-- Upgraded the reserve-versus-bond pathway visual into a clearer explanatory diagram.
-- Refined the registry proof block so it reads more like editorial evidence and less like a generic list.
+- Tightened the homepage hero and first reading path.
+- Upgraded the reserve-versus-bond pathway into a clearer explanatory visual.
+- Refined the registry proof block so it reads more like editorial evidence than a widget.
 
 ## Task Commits
 
@@ -60,14 +60,14 @@ Each task was committed atomically:
 **Plan metadata:** Pending
 
 ## Files Created/Modified
-- `src/routes/(site)/index.tsx` - Sharper hero framing and stronger “read first” sequencing.
+- `src/routes/(site)/index.tsx` - Stronger hero and reading-path framing.
 - `src/components/editorial/BondReservePathway.tsx` - Clearer financing-path explanation.
-- `src/components/editorial/RegistrySnapshot.tsx` - More intentional proof presentation.
-- `src/styles/app.css` - Supporting polish styles for the refined visuals.
+- `src/components/editorial/RegistrySnapshot.tsx` - Stronger editorial proof presentation.
+- `src/styles/app.css` - Supporting shell-level visual refinements.
 
 ## Decisions Made
-- The shell should now feel authored rather than merely assembled.
-- Visual changes must remain explanatory and policy-briefing-oriented, not decorative.
+- The shell should feel more authored, but not busier.
+- Visuals should explain financing logic and evidence hierarchy, not imitate dashboards.
 
 ## Deviations from Plan
 
@@ -81,8 +81,8 @@ None
 None - no external service configuration required.
 
 ## Next Phase Readiness
-- The shell now has stronger editorial confidence and a clearer visual hierarchy.
-- The final integration pass can focus on coherence and voice instead of raw polish.
+- The shell now has the pacing and clarity needed for a final editorial coherence pass.
+- The explainer can be integrated into a site that already feels more finished and intentional.
 
 ---
 *Phase: 05-editorial-polish-and-explainers*

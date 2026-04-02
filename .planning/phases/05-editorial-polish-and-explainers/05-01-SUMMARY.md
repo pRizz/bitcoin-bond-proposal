@@ -2,30 +2,29 @@
 phase: 05-editorial-polish-and-explainers
 plan: "01"
 subsystem: docs
-tags: [explainer, editorial, shell, prerender, markdown]
+tags: [explainer, route, prerender, editorial, markdown]
 requires: []
 provides:
-  - First deep explainer article
-  - Public explainer route
-  - Prerendered explainer page
-affects: [homepage, methodology, editorial-voice]
+  - canonical bond-financed reserve explainer
+  - public explainer route
+  - explainer prerender path
+affects: [homepage, editorial-voice, milestone]
 tech-stack:
   added: []
-  patterns: [canonical explainer markdown, prerendered article route]
+  patterns: [canonical explainer markdown, public article route]
 key-files:
   created:
     - content/docs/explainer-bond-financed-reserve-accumulation.md
     - src/routes/(site)/explainers/bond-financed-reserve-accumulation.tsx
   modified:
-    - app.config.ts
-    - generated/content-graph.json
     - src/lib/site/content.ts
+    - app.config.ts
 key-decisions:
-  - "The first explainer should explain the financing distinction, not re-teach reserve basics."
-  - "The explainer belongs in the public shell as a first-class route rather than as an isolated article file."
+  - "The first explainer should sharpen the financing argument, not re-teach reserve basics."
+  - "Explainers belong inside the same public shell as the packet and registry."
 patterns-established:
-  - "Explainers are canonical markdown docs with dedicated public routes."
-  - "Prerendered article routes can be added to the shell without widening the data model."
+  - "Explainers are canonical markdown files rendered through the same route shell as the rest of the site."
+  - "New public editorial pages are prerendered explicitly rather than left to crawl-only discovery."
 requirements-completed: [SITE-05]
 duration: 9 min
 completed: 2026-04-02
@@ -33,7 +32,7 @@ completed: 2026-04-02
 
 # Phase 5 Plan 01: First explainer Summary
 
-**First deep explainer on bond-financed reserve accumulation, published as a prerendered public route**
+**First deep explainer published as a canonical article and prerendered public route**
 
 ## Performance
 
@@ -41,12 +40,12 @@ completed: 2026-04-02
 - **Started:** 2026-04-02T07:55:00Z
 - **Completed:** 2026-04-02T08:04:00Z
 - **Tasks:** 3
-- **Files modified:** 5
+- **Files modified:** 4
 
 ## Accomplishments
-- Authored the first deep explainer as canonical markdown.
-- Added a first-class public route for the explainer.
-- Added the explainer to the prerendered public shell.
+- Wrote the first canonical explainer on bond-financed reserve accumulation.
+- Added a public explainer route inside the existing site shell.
+- Explicitly prerendered the explainer as part of the public output.
 
 ## Task Commits
 
@@ -61,13 +60,12 @@ Each task was committed atomically:
 ## Files Created/Modified
 - `content/docs/explainer-bond-financed-reserve-accumulation.md` - Canonical explainer article.
 - `src/routes/(site)/explainers/bond-financed-reserve-accumulation.tsx` - Public route for the explainer.
-- `app.config.ts` - Prerender config updated to include the explainer route.
-- `src/lib/site/content.ts` - Uses generated docs metadata for explainer lookup.
-- `generated/content-graph.json` - Updated to include the new explainer in the docs graph.
+- `app.config.ts` - Prerender route added for the explainer.
+- `src/lib/site/content.ts` - Explainer lookup support through the generated docs graph.
 
 ## Decisions Made
-- The first explainer should sharpen the financing case, not just restate the packet.
-- The explainer should sit inside the same shell and route system as the rest of the public product.
+- The first explainer should answer the financing question directly instead of drifting into generic reserve advocacy.
+- The explainer should sit in the same public shell as the packet and registry, not in a disconnected article layer.
 
 ## Deviations from Plan
 
@@ -81,8 +79,8 @@ None
 None - no external service configuration required.
 
 ## Next Phase Readiness
-- The site now has an argument layer that can be integrated more visibly into the shell.
-- The homepage and visual polish can now sharpen around a real explainer rather than a hypothetical one.
+- The site now has a first real editorial argument layer.
+- Homepage and visual polish can now sharpen around a visible explainer rather than a hypothetical one.
 
 ---
 *Phase: 05-editorial-polish-and-explainers*
