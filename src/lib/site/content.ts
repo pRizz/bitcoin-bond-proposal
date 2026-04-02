@@ -73,6 +73,10 @@ export function getMethodologyDocument() {
   return contentGraph.docs.find((doc) => doc.slug === "methodology");
 }
 
+export function getDocumentBySlug(slug: string) {
+  return contentGraph.docs.find((doc) => doc.slug === slug);
+}
+
 export function getPublishedStates() {
   return [...contentGraph.states]
     .map((state) => ({

@@ -4,6 +4,12 @@ const docsByPath = import.meta.glob("../../../content/docs/*.md", {
   query: "?raw",
 });
 
+const explainersByPath = import.meta.glob("../../../content/docs/*.md", {
+  eager: true,
+  import: "default",
+  query: "?raw",
+});
+
 const statesByPath = import.meta.glob("../../../content/states/*.md", {
   eager: true,
   import: "default",
@@ -32,6 +38,13 @@ export function readDocumentBody(contentPath: string): string | undefined {
     | string
     | undefined;
   return rawDocument ? stripFrontmatter(rawDocument) : undefined;
+}
+
+export function readExplainerBody(contentPath: string): string | undefined {
+  const rawExplainer = explainersByPath[normalizeContentPath(contentPath)] as
+    | string
+    | undefined;
+  return rawExplainer ? stripFrontmatter(rawExplainer) : undefined;
 }
 
 export function readStateBody(contentPath: string): string | undefined {
