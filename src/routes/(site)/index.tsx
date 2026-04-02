@@ -29,9 +29,9 @@ export default function HomePage() {
             pretending taxpayer-funded accumulation is the only path.
           </h1>
           <p class="mt-6 max-w-3xl text-lg leading-8 text-white/82">
-            Bitcoin Bond Proposal argues for disciplined, bond-financed reserve
-            accumulation as a serious public-finance strategy. The Illinois packet is
-            the model. The registry is the proof layer.
+            This is a public-finance case, not a generic Bitcoin allocation pitch.
+            The Illinois packet is the model. The registry is the proof layer. The
+            financing structure is the real argument.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <ActionLink href="/states/illinois" intent="primary">
@@ -69,8 +69,8 @@ export default function HomePage() {
 
       <PageSection
         eyebrow="Signal"
-        title="The shell should read like a policy brief, not a dashboard"
-        lead="Phase 4 favors a few strong visuals over a grid of cards and charts. The first view should say what the project believes, why Illinois matters, and what the current registry already proves."
+        title="The financing case comes first. The registry proves it second."
+        lead="The first serious reading path is deliberate: understand the financing logic, then inspect the live state evidence that supports or limits it."
       >
         <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <BondReservePathway />
@@ -79,7 +79,9 @@ export default function HomePage() {
               slug: state.slug,
               state: state.state,
               proposalKind: state.proposalKind,
+              editorialPriority: state.editorialPriority,
               status: state.status,
+              note: state.shortNote,
               lastReviewed: state.lastReviewed,
             }))}
           />
