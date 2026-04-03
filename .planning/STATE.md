@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-31)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
-**Current focus:** Tooling Guardrail Cleanup
+**Current focus:** Milestone audit and archive
 
 ## Current Position
 
 Phase: 7 of 7 (Tooling Guardrail Cleanup)
-Plan: 0 of 0 in current phase
-Status: Ready to plan
-Last activity: 2026-04-03 — Captured Phase 7 tooling guardrail decisions for planning
+Plan: 2 of 2 in current phase
+Status: Phase complete; milestone ready for re-audit
+Last activity: 2026-04-03 — Completed Phase 7 and restored trusted source-level formatting, linting, and pre-commit guardrails
 
-Progress: █████████░ 90%
+Progress: ██████████ 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 18
+- Total plans completed: 20
 - Average duration: 7 min
-- Total execution time: 2.2 hours
+- Total execution time: 2.5 hours
 
 **By Phase:**
 
@@ -33,9 +33,10 @@ Progress: █████████░ 90%
 | 4 | 3 | 26 min | 9 min |
 | 5 | 3 | 22 min | 7 min |
 | 6 | 2 | 14 min | 7 min |
+| 7 | 2 | 17 min | 9 min |
 
 **Recent Trend:**
-- Last 5 plans: 9 min, 7 min, 6 min, 10 min, 4 min
+- Last 5 plans: 6 min, 10 min, 4 min, 11 min, 6 min
 - Trend: Stable
 
 ## Accumulated Context
@@ -60,19 +61,21 @@ Recent decisions affecting current work:
 - Frame the public shell as model / argument / proof while keeping status, source, and methodology trust surfaces neutral.
 - Expose the Illinois packet as a real public packet route rather than implying it through the Illinois HB1844 registry page.
 - Keep the Illinois packet and Illinois registry record as linked but explicitly separate surfaces in the public shell.
+- Keep `bun run format` as a single top-level entrypoint, but scope it through explicit Biome config and Tailwind-aware parsing.
+- Promote the restored source-level formatter and linter into the repo-owned pre-commit contract once they are reliable.
 - Restore formatting and linting as reliable source-level commands and add them to pre-commit once they are trustworthy.
 
 ### Pending Todos
 
-- Resolve the remaining formatting and lint guardrail debt in Phase 7.
+None.
 
 ### Blockers/Concerns
 
-- The remaining blocker to milestone archive is tooling guardrail cleanup in Phase 7.
+- No active blockers remain inside the milestone.
 - Any future debt-modeling work should remain a separate research-and-analysis capability rather than quietly expanding the public shell scope.
 
 ## Session Continuity
 
-Last session: 2026-04-03 03:07 CDT
-Stopped at: Phase 7 context gathered; ready to plan Phase 7
-Resume file: .planning/phases/07-tooling-guardrail-cleanup/07-CONTEXT.md
+Last session: 2026-04-03 03:28 CDT
+Stopped at: Phase 7 complete; milestone ready for re-audit
+Resume file: .planning/phases/07-tooling-guardrail-cleanup/07-VERIFICATION.md

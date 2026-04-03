@@ -18,7 +18,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 4: Public Site Shell** - Deliver the minimal thesis-led website and public research surfaces. Completed 2026-04-01.
 - [x] **Phase 5: Editorial Polish and Explainers** - Add the first deeper explainer layer and refine the site into a coherent public-facing product. Completed 2026-04-02.
 - [x] **Phase 6: Public Packet Access and Illinois Model Separation** - Expose the Illinois packet as a real public model layer and stop routing packet CTAs into the descriptive Illinois registry record. Completed 2026-04-02.
-- [ ] **Phase 7: Tooling Guardrail Cleanup** - Repair the formatting and lint guardrails so source-only checks are trustworthy again.
+- [x] **Phase 7: Tooling Guardrail Cleanup** - Repair the formatting and lint guardrails so source-only checks are trustworthy again. Completed 2026-04-03.
 
 ## Phase Details
 
@@ -126,11 +126,11 @@ Plans:
   1. `bun run format` no longer aborts on the Tailwind v4 CSS syntax used by the public shell.
   2. `bun run lint` targets source files rather than generated `.output/public` artifacts.
   3. The repo regains a practical source-only formatting and linting loop without weakening the existing pre-commit trust contract.
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: Fix Biome or formatter configuration for the Tailwind v4 CSS layer.
-- [ ] 07-02: Restrict lint scope to source-controlled authoring and runtime files.
+- [x] 07-01: Fix Biome or formatter configuration for the Tailwind v4 CSS layer.
+- [x] 07-02: Restrict lint scope to source-controlled authoring and runtime files.
 
 ## Progress
 
@@ -145,4 +145,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 4. Public Site Shell | 3/3 | Complete | 2026-04-01 |
 | 5. Editorial Polish and Explainers | 3/3 | Complete | 2026-04-02 |
 | 6. Public Packet Access and Illinois Model Separation | 2/2 | Complete | 2026-04-02 |
-| 7. Tooling Guardrail Cleanup | 0/TBD | Not started | - |
+| 7. Tooling Guardrail Cleanup | 2/2 | Complete | 2026-04-03 |
