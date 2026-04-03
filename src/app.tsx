@@ -4,14 +4,18 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 
 import { SiteFooter } from "./components/editorial/SiteFooter";
+import { getRouterBasePath } from "./lib/site/base-path";
 import { SiteHeader } from "./components/editorial/SiteHeader";
 import { siteNavigation } from "./lib/site/navigation";
 import "./styles/app.css";
 
 export default function App() {
+	const routerBasePath = getRouterBasePath(import.meta.env.BASE_URL);
+
 	return (
 		<MetaProvider>
 			<Router
+				base={routerBasePath}
 				root={(props) => (
 					<div class="min-h-screen bg-canvas text-ink antialiased">
 						<a

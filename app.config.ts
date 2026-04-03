@@ -19,8 +19,21 @@ function readPublishedStateRoutes(): string[] {
 	return publishedSlugs.map((slug) => `/states/${slug}`);
 }
 
+function normalizePublicBasePath(maybeBasePath: string | undefined): string {
+	if (!maybeBasePath || maybeBasePath === "/") {
+		return "/";
+	}
+
+	const trimmedBasePath = maybeBasePath.trim().replace(/^\/+|\/+$/g, "");
+
+	return trimmedBasePath ? `/${trimmedBasePath}/` : "/";
+}
+
+const publicBasePath = normalizePublicBasePath(process.env.PUBLIC_BASE_PATH);
+
 export default defineConfig({
 	server: {
+		baseURL: publicBasePath,
 		prerender: {
 			crawlLinks: true,
 			routes: [
@@ -34,6 +47,7 @@ export default defineConfig({
 		},
 	},
 	vite: {
+		base: publicBasePath,
 		plugins: [tailwindcss()],
 	},
 });
