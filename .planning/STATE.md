@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-03-31)
 Phase: 7 of 7 (Tooling Guardrail Cleanup)
 Plan: 0 of 0 in current phase
 Status: Ready to plan
-Last activity: 2026-04-02 — Completed Phase 6 and verified public packet access plus Illinois packet/registry separation
+Last activity: 2026-04-03 — Captured Phase 7 tooling guardrail decisions for planning
 
 Progress: █████████░ 90%
 
@@ -60,6 +60,7 @@ Recent decisions affecting current work:
 - Frame the public shell as model / argument / proof while keeping status, source, and methodology trust surfaces neutral.
 - Expose the Illinois packet as a real public packet route rather than implying it through the Illinois HB1844 registry page.
 - Keep the Illinois packet and Illinois registry record as linked but explicitly separate surfaces in the public shell.
+- Restore formatting and linting as reliable source-level commands and add them to pre-commit once they are trustworthy.
 
 ### Pending Todos
 
@@ -72,6 +73,6 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-04-02 05:31 CDT
-Stopped at: Phase 6 complete; ready to plan Phase 7
-Resume file: .planning/phases/06-public-packet-access-and-illinois-model-separation/06-VERIFICATION.md
+Last session: 2026-04-03 03:07 CDT
+Stopped at: Phase 7 context gathered; ready to plan Phase 7
+Resume file: .planning/phases/07-tooling-guardrail-cleanup/07-CONTEXT.md
