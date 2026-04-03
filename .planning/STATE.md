@@ -46,7 +46,7 @@ Recent decisions are archived in:
 
 ### Pending Todos
 
-- Enable periodic GitHub Pages deployment (`tooling`)
+None.
 
 ### Blockers/Concerns
 
