@@ -12,7 +12,7 @@
 		"format": "bunx @biomejs/biome format --write .",
 		"format:check": "bunx @biomejs/biome check --formatter-enabled=true --linter-enabled=false --assist-enabled=false .",
 		"hooks:install": "git config core.hooksPath .githooks",
-		"lint": "bunx @biomejs/biome lint .",
+    "lint": "bunx @biomejs/biome lint --error-on-warnings .",
 		"precommit": "bun scripts/precommit.ts",
 		"start": "vinxi start",
 		"test": "bun test",
