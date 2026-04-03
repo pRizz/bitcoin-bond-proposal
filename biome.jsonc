@@ -1,27 +1,27 @@
 {
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
-  "files": {
-    "ignoreUnknown": true,
-    "includes": [
-      "app.config.ts",
-      "biome.jsonc",
-      "package.json",
-      "tsconfig.json",
-      "scripts/**/*.ts",
-      "src/**/*.ts",
-      "src/**/*.tsx",
-      "src/**/*.css",
-      "content/**/*.json",
-      "content/**/*.md"
-    ]
-  },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    }
-  }
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"includes": [
+			"app.config.ts",
+			"biome.jsonc",
+			"package.json",
+			"tsconfig.json",
+			"scripts/**/*.ts",
+			"src/**/*.ts",
+			"src/**/*.tsx",
+			"src/**/*.css",
+			"content/**/*.json",
+			"content/**/*.md"
+		]
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	}
 }

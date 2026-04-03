@@ -5,18 +5,21 @@ import MarkdownIt from "markdown-it";
 import type { DocumentFrontmatter, MarkdownRecord } from "./schema";
 
 const markdown = new MarkdownIt({
-  html: false,
-  linkify: true,
-  typographer: true,
+	html: false,
+	linkify: true,
+	typographer: true,
 });
 
 export async function renderPdfHtml(
-  document: MarkdownRecord<DocumentFrontmatter>,
+	document: MarkdownRecord<DocumentFrontmatter>,
 ): Promise<string> {
-  const stylesheet = await readFile(new URL("./pdf-theme.css", import.meta.url), "utf8");
-  const bodyHtml = markdown.render(document.body);
+	const stylesheet = await readFile(
+		new URL("./pdf-theme.css", import.meta.url),
+		"utf8",
+	);
+	const bodyHtml = markdown.render(document.body);
 
-  return `<!doctype html>
+	return `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -39,10 +42,10 @@ export async function renderPdfHtml(
 }
 
 function escapeHtml(value: string): string {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+	return value
+		.replaceAll("&", "&amp;")
+		.replaceAll("<", "&lt;")
+		.replaceAll(">", "&gt;")
+		.replaceAll('"', "&quot;")
+		.replaceAll("'", "&#39;");
 }

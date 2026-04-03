@@ -1,3 +1,3 @@
 export function makePageTitle(pageTitle: string): string {
-  return `${pageTitle} | Bitcoin Bond Proposal`;
+	return `${pageTitle} | Bitcoin Bond Proposal`;
 }

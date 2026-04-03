@@ -1,102 +1,102 @@
 @page {
-  margin: 0.75in;
-  size: letter;
+	margin: 0.75in;
+	size: letter;
 }
 
 :root {
-  color: #111827;
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 11pt;
-  line-height: 1.45;
+	color: #111827;
+	font-family: "Georgia", "Times New Roman", serif;
+	font-size: 11pt;
+	line-height: 1.45;
 }
 
 body {
-  color: #111827;
-  margin: 0;
+	color: #111827;
+	margin: 0;
 }
 
 main {
-  margin: 0 auto;
-  max-width: 7.5in;
+	margin: 0 auto;
+	max-width: 7.5in;
 }
 
 header {
-  border-bottom: 1px solid #d1d5db;
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
+	border-bottom: 1px solid #d1d5db;
+	margin-bottom: 1rem;
+	padding-bottom: 0.75rem;
 }
 
 .eyebrow {
-  color: #4b5563;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  margin: 0 0 0.5rem;
-  text-transform: uppercase;
+	color: #4b5563;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	margin: 0 0 0.5rem;
+	text-transform: uppercase;
 }
 
 h1,
 h2,
 h3 {
-  color: #0f172a;
-  line-height: 1.2;
-  page-break-after: avoid;
+	color: #0f172a;
+	line-height: 1.2;
+	page-break-after: avoid;
 }
 
 h1 {
-  font-size: 1.8rem;
-  margin: 0;
+	font-size: 1.8rem;
+	margin: 0;
 }
 
 h2 {
-  border-top: 1px solid #e5e7eb;
-  font-size: 1.15rem;
-  margin-top: 1.5rem;
-  padding-top: 0.75rem;
+	border-top: 1px solid #e5e7eb;
+	font-size: 1.15rem;
+	margin-top: 1.5rem;
+	padding-top: 0.75rem;
 }
 
 p,
 li,
 blockquote {
-  orphans: 3;
-  widows: 3;
+	orphans: 3;
+	widows: 3;
 }
 
 ul,
 ol {
-  margin: 0.4rem 0 0.9rem 1.3rem;
-  padding: 0;
+	margin: 0.4rem 0 0.9rem 1.3rem;
+	padding: 0;
 }
 
 li + li {
-  margin-top: 0.2rem;
+	margin-top: 0.2rem;
 }
 
 blockquote {
-  border-left: 3px solid #d1d5db;
-  color: #374151;
-  margin-left: 0;
-  padding-left: 1rem;
+	border-left: 3px solid #d1d5db;
+	color: #374151;
+	margin-left: 0;
+	padding-left: 1rem;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid #e5e7eb;
-  margin: 1.25rem 0;
+	border: 0;
+	border-top: 1px solid #e5e7eb;
+	margin: 1.25rem 0;
 }
 
 code {
-  background: #f3f4f6;
-  border-radius: 3px;
-  font-family: "SFMono-Regular", "Menlo", monospace;
-  font-size: 0.92em;
-  padding: 0.1rem 0.25rem;
+	background: #f3f4f6;
+	border-radius: 3px;
+	font-family: "SFMono-Regular", "Menlo", monospace;
+	font-size: 0.92em;
+	padding: 0.1rem 0.25rem;
 }
 
 pre code {
-  display: block;
-  overflow-wrap: anywhere;
-  padding: 0.75rem;
-  white-space: pre-wrap;
+	display: block;
+	overflow-wrap: anywhere;
+	padding: 0.75rem;
+	white-space: pre-wrap;
 }
