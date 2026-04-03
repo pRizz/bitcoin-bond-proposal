@@ -38,6 +38,8 @@ function assertRequiredArtifactsExist() {
 
 function run() {
 	try {
+		runStep("Check formatting", "bun", ["run", "format:check"]);
+		runStep("Lint source", "bun", ["run", "lint"]);
 		runStep("Validate content", "bun", ["run", "validate:content"]);
 		runStep("Compile content graph", "bun", ["run", "compile:content"]);
 		runStep("Build packet PDFs", "bun", ["run", "build:pdf"]);
