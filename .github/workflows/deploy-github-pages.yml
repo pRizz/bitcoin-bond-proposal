@@ -28,10 +28,14 @@ jobs:
       - name: Compute public base path
         id: base-path
         shell: bash
+        env:
+          PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
         run: |
           repo_name="${GITHUB_REPOSITORY#*/}"
 
-          if [[ "$repo_name" == *.github.io ]]; then
+          if [[ -n "$PAGES_BASE_PATH" ]]; then
+            echo "public_base_path=$PAGES_BASE_PATH" >> "$GITHUB_OUTPUT"
+          elif [[ "$repo_name" == *.github.io ]]; then
             echo "public_base_path=/" >> "$GITHUB_OUTPUT"
           else
             echo "public_base_path=/$repo_name/" >> "$GITHUB_OUTPUT"
