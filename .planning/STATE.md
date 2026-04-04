@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-04-04)
 
 Phase: 9 of 9 (Route Polish and Readability QA)  
 Plan: 0 of 0 in current phase  
-Status: Phase 8 complete; ready to discuss Phase 9  
-Last activity: 2026-04-04 — Completed Phase 8 and established the shared dark-theme foundation
+Status: Phase 8 complete; ready to plan Phase 9  
+Last activity: 2026-04-04 — Captured Phase 9 route polish and readability decisions
 
 Progress: █████░░░░░ 50%
 
@@ -34,6 +34,7 @@ Recent decisions remain archived in:
 - Phase 8 should establish a dark-by-default editorial foundation using warm near-black neutrals and restrained Bitcoin-orange accents.
 - Route-specific polish, readability QA, and regression cleanup stay deferred to Phase 9.
 - Phase 8 completed the shared dark theme system across tokens, shell chrome, proof surfaces, and core components.
+- Phase 9 should preserve the current route structure and focus on readability, interaction clarity, and dark-mode consistency.
 
 ### Pending Todos
 
@@ -47,5 +48,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-04-04 03:36 CDT  
-Stopped at: Phase 8 complete; ready to discuss Phase 9  
-Resume file: .planning/phases/08-dark-theme-foundation/08-VERIFICATION.md
+Stopped at: Phase 9 context gathered; ready to plan Phase 9  
+Resume file: .planning/phases/09-route-polish-and-readability-qa/09-CONTEXT.md
