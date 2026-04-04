@@ -20,7 +20,7 @@ export function StateCard(props: StateCardProps) {
 	return (
 		<A
 			class={cn(
-				"panel-wash block rounded-[var(--radius-card)] p-5 transition-transform duration-200",
+				"panel-wash block rounded-[var(--radius-card)] p-5 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
 				"hover:-translate-y-0.5 hover:border-accent-muted hover:bg-panel-strong/90",
 			)}
 			href={props.href}
@@ -48,7 +48,9 @@ export function StateCard(props: StateCardProps) {
 			</div>
 			<p class="mt-4 text-sm font-medium text-ink">{props.status}</p>
 			<p class="mt-3 text-sm leading-6 text-ink-subtle">{props.summary}</p>
-			<p class="mt-4 text-sm leading-6 text-ink-subtle">{props.significance}</p>
+			<p class="mt-4 text-sm leading-6 text-ink-subtle/90">
+				{props.significance}
+			</p>
 			<p class="mt-5 text-xs uppercase tracking-[0.14em] text-ink-subtle">
 				Reviewed {props.lastReviewed}
 			</p>

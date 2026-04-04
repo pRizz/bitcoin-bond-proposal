@@ -24,16 +24,16 @@ export default function HomePage() {
 			<section class="story-grid gap-6 lg:items-start">
 				<div class="poster-frame grain-overlay overflow-hidden rounded-[calc(var(--radius-soft)+0.25rem)] p-7 sm:p-10">
 					<p class="eyebrow text-accent-soft">Public case</p>
-					<h1 class="mt-4 max-w-4xl text-5xl text-ink sm:text-6xl">
+					<h1 class="mt-4 max-w-4xl text-balance text-5xl text-ink sm:text-6xl">
 						States can finance long-horizon Bitcoin reserve accumulation without
 						pretending taxpayer-funded accumulation is the only path.
 					</h1>
-					<p class="mt-6 max-w-3xl text-lg leading-8 text-white/82">
+					<p class="mt-6 max-w-3xl text-lg leading-8 text-ink-subtle">
 						This is a public-finance case, not a generic Bitcoin allocation
 						pitch. The Illinois packet is the model. The financing explainer is
 						the argument. The registry is the proof.
 					</p>
-					<p class="mt-4 text-sm uppercase tracking-[0.18em] text-white/52">
+					<p class="mt-4 text-sm uppercase tracking-[0.18em] text-accent-soft/75">
 						Model / Argument / Proof
 					</p>
 					<div class="mt-8 flex flex-wrap gap-3">

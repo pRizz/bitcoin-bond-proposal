@@ -23,16 +23,20 @@ export function RegistrySnapshot(props: RegistrySnapshotProps) {
 			<div class="mt-6 grid gap-3">
 				<For each={props.states}>
 					{(state) => (
-						<div class="evidence-card flex flex-wrap items-start justify-between gap-3 rounded-[var(--radius-card)] border border-border-soft/80 bg-panel-strong/80 px-4 py-3 transition-transform duration-300 hover:-translate-y-0.5 hover:border-accent-muted/80 hover:bg-panel-strong">
-							<div class="space-y-1">
-								<p class="text-sm font-semibold text-ink">{state.state}</p>
-								<p class="text-sm text-ink-subtle">{state.status}</p>
-								<p class="max-w-md text-sm leading-6 text-ink-subtle">
+						<div class="evidence-card flex flex-wrap items-start justify-between gap-4 rounded-[var(--radius-card)] border border-border-soft/80 bg-panel-strong/85 px-4 py-4 transition-transform duration-300 hover:-translate-y-0.5 hover:border-accent-muted/80 hover:bg-panel-strong">
+							<div class="space-y-2">
+								<p class="text-sm font-semibold tracking-[0.01em] text-ink">
+									{state.state}
+								</p>
+								<p class="text-sm font-medium text-ink-subtle">
+									{state.status}
+								</p>
+								<p class="max-w-md text-sm leading-6 text-ink-subtle/90">
 									{state.note}
 								</p>
 							</div>
 							<div class="flex flex-wrap gap-2">
-								<span class="data-chip text-[0.72rem] font-medium uppercase tracking-[0.12em]">
+								<span class="data-chip text-[0.72rem] font-medium uppercase tracking-[0.12em] text-ink">
 									{state.proposalKind}
 								</span>
 								<span class="data-chip text-[0.72rem] uppercase tracking-[0.12em]">

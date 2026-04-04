@@ -49,10 +49,10 @@ export default function StatesIndexPage() {
 				lead="The first shell keeps the catalog medium-density: enough signal to scan quickly, enough metadata to trust what you are looking at."
 			>
 				<div class="mb-6 flex flex-wrap gap-3">
-					<label class="data-chip text-[0.72rem]">
+					<label class="data-chip min-w-[10rem] justify-between text-[0.72rem]">
 						<span>Focus</span>
 						<select
-							class="bg-transparent text-[0.72rem] uppercase tracking-[0.12em] outline-none"
+							class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
 							value={proposalFocusFilter()}
 							onInput={(event) =>
 								setProposalFocusFilter(event.currentTarget.value)
@@ -64,10 +64,10 @@ export default function StatesIndexPage() {
 							<option value="both">Both</option>
 						</select>
 					</label>
-					<label class="data-chip text-[0.72rem]">
+					<label class="data-chip min-w-[10rem] justify-between text-[0.72rem]">
 						<span>Sort</span>
 						<select
-							class="bg-transparent text-[0.72rem] uppercase tracking-[0.12em] outline-none"
+							class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
 							value={sortMode()}
 							onInput={(event) => setSortMode(event.currentTarget.value)}
 						>
