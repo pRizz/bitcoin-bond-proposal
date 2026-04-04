@@ -24,7 +24,7 @@ export default function HomePage() {
 			<section class="story-grid gap-6 lg:items-start">
 				<div class="poster-frame grain-overlay overflow-hidden rounded-[calc(var(--radius-soft)+0.25rem)] p-7 sm:p-10">
 					<p class="eyebrow text-accent-soft">Public case</p>
-					<h1 class="mt-4 max-w-4xl text-5xl text-canvas-soft sm:text-6xl">
+					<h1 class="mt-4 max-w-4xl text-5xl text-ink sm:text-6xl">
 						States can finance long-horizon Bitcoin reserve accumulation without
 						pretending taxpayer-funded accumulation is the only path.
 					</h1>

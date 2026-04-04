@@ -11,7 +11,7 @@ import onePagerPdfUrl from "../../../../pdf/illinois-one-pager.pdf?url";
 import draftBillPdfUrl from "../../../../pdf/illinois-draft-bill.pdf?url";
 
 const packetDownloadClass =
-	"inline-flex items-center justify-center rounded-full border border-border-strong bg-white/70 px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-white hover:text-ink";
+	"inline-flex items-center justify-center rounded-full border border-border-strong bg-panel-strong px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-muted hover:bg-panel hover:text-ink";
 
 function readPacketDocumentBody(slug: string): string {
 	const document = getDocumentBySlug(slug);

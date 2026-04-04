@@ -87,13 +87,13 @@ export default function StateDetailPage() {
 							</div>
 						</dl>
 						{state.manifest?.shortNote ? (
-							<div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
+							<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
 								<p class="font-semibold text-ink">Registry note</p>
 								<p class="mt-2">{state.manifest.shortNote}</p>
 							</div>
 						) : null}
 						{state.slug === "illinois" ? (
-							<div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
+							<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
 								<p class="font-semibold text-ink">Illinois model packet</p>
 								<p class="mt-2">
 									This HB1844 page is the descriptive registry record. The
@@ -107,7 +107,7 @@ export default function StateDetailPage() {
 								</div>
 							</div>
 						) : null}
-						<div class="mt-6 rounded-[var(--radius-card)] bg-white/65 p-4 text-sm leading-6 text-ink-subtle">
+						<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
 							<p class="font-semibold text-ink">Read the financing case</p>
 							<p class="mt-2">
 								This page stays descriptive. The sharper argument about why

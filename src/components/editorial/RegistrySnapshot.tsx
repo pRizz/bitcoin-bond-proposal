@@ -23,7 +23,7 @@ export function RegistrySnapshot(props: RegistrySnapshotProps) {
 			<div class="mt-6 grid gap-3">
 				<For each={props.states}>
 					{(state) => (
-						<div class="evidence-card flex flex-wrap items-start justify-between gap-3 rounded-[var(--radius-card)] border border-border-soft bg-white/55 px-4 py-3 transition-transform duration-300 hover:-translate-y-0.5">
+						<div class="evidence-card flex flex-wrap items-start justify-between gap-3 rounded-[var(--radius-card)] border border-border-soft/80 bg-panel-strong/80 px-4 py-3 transition-transform duration-300 hover:-translate-y-0.5 hover:border-accent-muted/80 hover:bg-panel-strong">
 							<div class="space-y-1">
 								<p class="text-sm font-semibold text-ink">{state.state}</p>
 								<p class="text-sm text-ink-subtle">{state.status}</p>
