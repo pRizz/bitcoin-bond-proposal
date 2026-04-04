@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-04-04)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Route Polish and Readability QA
+**Current focus:** Milestone audit and closeout
 
 ## Current Position
 
 Phase: 9 of 9 (Route Polish and Readability QA)  
-Plan: 0 of 0 in current phase  
-Status: Phase 8 complete; ready to plan Phase 9  
-Last activity: 2026-04-04 — Captured Phase 9 route polish and readability decisions
+Plan: 2 of 2 in current phase  
+Status: Phase 9 complete; ready to audit milestone v1.1  
+Last activity: 2026-04-04 — Completed route polish, browser QA, and final Phase 9 verification
 
-Progress: █████░░░░░ 50%
+Progress: ██████████ 100%
 
 ## Performance Metrics
 
@@ -32,9 +32,9 @@ Recent decisions remain archived in:
 - `.planning/milestones/v1.0-ROADMAP.md`
 - `.planning/PROJECT.md`
 - Phase 8 should establish a dark-by-default editorial foundation using warm near-black neutrals and restrained Bitcoin-orange accents.
-- Route-specific polish, readability QA, and regression cleanup stay deferred to Phase 9.
 - Phase 8 completed the shared dark theme system across tokens, shell chrome, proof surfaces, and core components.
-- Phase 9 should preserve the current route structure and focus on readability, interaction clarity, and dark-mode consistency.
+- Phase 9 preserved the route structure while completing readability, interaction, and mobile dark-mode QA.
+- Milestone v1.1 is ready for audit.
 
 ### Pending Todos
 
@@ -42,11 +42,10 @@ None.
 
 ### Blockers/Concerns
 
-- Keep Phase 9 focused on route-level polish and readability rather than inventing a second theme system.
-- Preserve editorial seriousness and trust cues while tuning the new dark foundation.
+None currently blocking milestone audit.
 
 ## Session Continuity
 
-Last session: 2026-04-04 03:36 CDT  
-Stopped at: Phase 9 context gathered; ready to plan Phase 9  
-Resume file: .planning/phases/09-route-polish-and-readability-qa/09-CONTEXT.md
+Last session: 2026-04-04 04:09 CDT  
+Stopped at: Phase 9 verified complete; milestone ready for audit  
+Resume file: .planning/phases/09-route-polish-and-readability-qa/09-VERIFICATION.md

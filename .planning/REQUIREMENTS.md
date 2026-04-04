@@ -8,14 +8,14 @@
 
 ### Dark Theme
 
-- [ ] **THEME-01**: Reader sees the public site in dark mode by default across all shipped routes.
-- [ ] **THEME-02**: Reader sees restrained Bitcoin-orange accents in navigation, actions, proof surfaces, and key emphasis states.
-- [ ] **THEME-03**: Reader can distinguish packet, explainer, methodology, and registry surfaces through hierarchy and contrast in dark mode.
+- [x] **THEME-01**: Reader sees the public site in dark mode by default across all shipped routes.
+- [x] **THEME-02**: Reader sees restrained Bitcoin-orange accents in navigation, actions, proof surfaces, and key emphasis states.
+- [x] **THEME-03**: Reader can distinguish packet, explainer, methodology, and registry surfaces through hierarchy and contrast in dark mode.
 
 ### Readability and QA
 
-- [ ] **THEME-04**: Reader can read and use the site on desktop and mobile without light-theme artifacts or low-contrast regressions.
-- [ ] **THEME-05**: Reader can navigate current interactive, diagram, and card surfaces without losing hover, active, focus, or status clarity in dark mode.
+- [x] **THEME-04**: Reader can read and use the site on desktop and mobile without light-theme artifacts or low-contrast regressions.
+- [x] **THEME-05**: Reader can navigate current interactive, diagram, and card surfaces without losing hover, active, focus, or status clarity in dark mode.
 
 ## Future Requirements
 
@@ -40,9 +40,9 @@
 |-------------|-------|--------|
 | THEME-01 | Phase 8 | Complete |
 | THEME-02 | Phase 8 | Complete |
-| THEME-03 | Phase 9 | Pending |
-| THEME-04 | Phase 9 | Pending |
-| THEME-05 | Phase 9 | Pending |
+| THEME-03 | Phase 9 | Complete |
+| THEME-04 | Phase 9 | Complete |
+| THEME-05 | Phase 9 | Complete |
 
 **Coverage:**
 - current milestone requirements: 5 total

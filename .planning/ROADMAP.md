@@ -43,10 +43,11 @@ This phase is the theme-system and shared-surface refactor. It should not yet wi
   1. Homepage, methodology, packet, explainer, catalog, and state-detail routes all use the dark editorial system consistently.
   2. Typography, diagrams, cards, tables, hover states, active states, and focus states remain readable and usable on desktop and mobile.
   3. No obvious light-theme artifacts or low-contrast regressions remain in the built and prerendered output.
-**Plans**: 0 plans
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD (run `$gsd-plan-phase 9` to break down)
+- [x] 09-01: Tune homepage readability and proof/catalog scanability.
+- [x] 09-02: Polish long-form reading surfaces and complete route QA.
 
 **Details:**
 This phase finishes the route-level dark refactor and verifies that the system still feels serious, editorial, and trustworthy rather than merely inverted.
@@ -59,4 +60,4 @@ Phases execute in numeric order: 8 → 9
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 8. Dark Theme Foundation | v1.1 | 2/2 | Complete | 2026-04-04 |
-| 9. Route Polish and Readability QA | v1.1 | 0/0 | Not started | - |
+| 9. Route Polish and Readability QA | v1.1 | 2/2 | Complete | 2026-04-04 |
