@@ -17,7 +17,7 @@ export default function App() {
 			<Router
 				base={routerBasePath}
 				root={(props) => (
-					<div class="min-h-screen bg-canvas text-ink antialiased">
+					<div class="site-shell min-h-screen bg-canvas text-ink antialiased">
 						<a
 							href="#content"
 							class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-accent-strong focus:px-4 focus:py-2 focus:text-[0.78rem] focus:font-semibold focus:text-ink"
@@ -35,7 +35,7 @@ export default function App() {
 						/>
 						<main
 							id="content"
-							class="mx-auto flex w-full max-w-7xl flex-col px-4 pb-16 pt-8 sm:px-6 lg:px-8"
+							class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-4 pb-16 pt-8 sm:px-6 lg:px-8"
 						>
 							<Suspense>{props.children}</Suspense>
 						</main>
