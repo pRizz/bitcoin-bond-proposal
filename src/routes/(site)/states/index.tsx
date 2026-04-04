@@ -48,51 +48,72 @@ export default function StatesIndexPage() {
 				title="State proposals"
 				lead="The first shell keeps the catalog medium-density: enough signal to scan quickly, enough metadata to trust what you are looking at."
 			>
-				<div class="mb-6 flex flex-wrap gap-3">
-					<label class="data-chip min-w-[10rem] justify-between text-[0.72rem]">
-						<span>Focus</span>
-						<select
-							class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
-							value={proposalFocusFilter()}
-							onInput={(event) =>
-								setProposalFocusFilter(event.currentTarget.value)
-							}
-						>
-							<option value="all">All</option>
-							<option value="bond">Bond</option>
-							<option value="reserve">Reserve</option>
-							<option value="both">Both</option>
-						</select>
-					</label>
-					<label class="data-chip min-w-[10rem] justify-between text-[0.72rem]">
-						<span>Sort</span>
-						<select
-							class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
-							value={sortMode()}
-							onInput={(event) => setSortMode(event.currentTarget.value)}
-						>
-							<option value="priority">Priority</option>
-							<option value="state">State</option>
-							<option value="reviewed">Reviewed</option>
-						</select>
-					</label>
+				<div class="panel-wash mb-6 rounded-[var(--radius-card)] p-4 sm:p-5">
+					<div class="flex flex-wrap items-center justify-between gap-4">
+						<div>
+							<p class="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-accent-soft">
+								Published states
+							</p>
+							<p class="mt-2 text-sm leading-7 text-ink-subtle">
+								Showing {visibleStates().length} of {publishedStates.length}{" "}
+								published records.
+							</p>
+						</div>
+						<div class="flex flex-wrap gap-3">
+							<label class="data-chip min-w-[10.75rem] justify-between gap-4 text-[0.72rem] focus-within:border-accent-muted">
+								<span>Focus</span>
+								<select
+									aria-label="Focus"
+									class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
+									value={proposalFocusFilter()}
+									onInput={(event) =>
+										setProposalFocusFilter(event.currentTarget.value)
+									}
+								>
+									<option value="all">All</option>
+									<option value="bond">Bond</option>
+									<option value="reserve">Reserve</option>
+									<option value="both">Both</option>
+								</select>
+							</label>
+							<label class="data-chip min-w-[10.75rem] justify-between gap-4 text-[0.72rem] focus-within:border-accent-muted">
+								<span>Sort</span>
+								<select
+									aria-label="Sort"
+									class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
+									value={sortMode()}
+									onInput={(event) => setSortMode(event.currentTarget.value)}
+								>
+									<option value="priority">Priority</option>
+									<option value="state">State</option>
+									<option value="reviewed">Reviewed</option>
+								</select>
+							</label>
+						</div>
+					</div>
 				</div>
-				<div class="grid gap-4 lg:grid-cols-2">
-					{visibleStates().map((state) => (
-						<StateCard
-							href={`/states/${state.slug}`}
-							state={state.state}
-							billId={state.billId}
-							status={state.status}
-							proposalKind={state.proposalKind}
-							summary={state.summary}
-							significance={
-								state.manifest?.shortNote ?? "Published registry entry."
-							}
-							lastReviewed={state.lastReviewed}
-						/>
-					))}
-				</div>
+				{visibleStates().length ? (
+					<div class="grid gap-4 lg:grid-cols-2">
+						{visibleStates().map((state) => (
+							<StateCard
+								href={`/states/${state.slug}`}
+								state={state.state}
+								billId={state.billId}
+								status={state.status}
+								proposalKind={state.proposalKind}
+								summary={state.summary}
+								significance={
+									state.manifest?.shortNote ?? "Published registry entry."
+								}
+								lastReviewed={state.lastReviewed}
+							/>
+						))}
+					</div>
+				) : (
+					<div class="panel-wash rounded-[var(--radius-card)] p-6 text-sm leading-7 text-ink-subtle">
+						No published records match the current filters.
+					</div>
+				)}
 			</PageSection>
 		</>
 	);

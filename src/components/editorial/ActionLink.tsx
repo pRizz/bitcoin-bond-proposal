@@ -5,7 +5,7 @@ import type { JSX } from "solid-js";
 import { cn } from "../../lib/site/cn";
 
 const actionLinkVariants = cva(
-	"inline-flex items-center justify-center rounded-full px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] transition-colors",
+	"inline-flex items-center justify-center rounded-full px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] transition-[background-color,border-color,color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-soft focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
 	{
 		variants: {
 			intent: {

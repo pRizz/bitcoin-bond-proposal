@@ -27,22 +27,22 @@ export default function BondFinancedReserveAccumulationExplainerPage() {
 				lead="This is the argument layer of the site: the financing case that sits between the Illinois model packet and the descriptive registry."
 			>
 				<div class="story-grid gap-6 lg:items-start">
-					<div class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
+					<div class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 						<MarkdownContent html={renderMarkdown(body)} />
 					</div>
 					<aside class="proof-rail space-y-4">
 						<div class="poster-frame grain-overlay rounded-[calc(var(--radius-soft)+0.25rem)] p-6">
 							<p class="eyebrow text-accent-soft">Interpretive lens</p>
-							<p class="mt-4 text-lg leading-8 text-white/82">
+							<p class="mt-4 text-lg leading-8 text-ink-subtle">
 								Read this page as a financing argument first, not as a generic
 								Bitcoin allocation argument. The structure is simple: claim,
 								mechanism, objections, limits, then why the preferred model
 								still matters.
 							</p>
 						</div>
-						<div class="panel-wash rounded-[var(--radius-card)] p-6">
+						<div class="support-panel rounded-[var(--radius-card)] p-6">
 							<p class="eyebrow">Continue through the site</p>
-							<p class="mt-3 text-sm leading-6 text-ink-subtle">
+							<p class="mt-3 text-sm leading-7 text-ink-subtle">
 								Start with the model, sharpen the argument here, then inspect
 								the record set that supports or limits it.
 							</p>

@@ -28,14 +28,20 @@ export default function HomePage() {
 						States can finance long-horizon Bitcoin reserve accumulation without
 						pretending taxpayer-funded accumulation is the only path.
 					</h1>
-					<p class="mt-6 max-w-3xl text-lg leading-8 text-ink-subtle">
+					<p class="mt-6 max-w-[42rem] text-lg leading-8 text-ink-subtle">
 						This is a public-finance case, not a generic Bitcoin allocation
 						pitch. The Illinois packet is the model. The financing explainer is
 						the argument. The registry is the proof.
 					</p>
-					<p class="mt-4 text-sm uppercase tracking-[0.18em] text-accent-soft/75">
-						Model / Argument / Proof
-					</p>
+					<div class="mt-6 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.16em] text-ink-subtle/80">
+						<span class="text-accent-soft">Model / Argument / Proof</span>
+						<span class="h-px w-8 bg-border-soft/80" />
+						<span>Illinois packet</span>
+						<span class="h-px w-5 bg-border-soft/70" />
+						<span>Financing explainer</span>
+						<span class="h-px w-5 bg-border-soft/70" />
+						<span>Registry proof</span>
+					</div>
 					<div class="mt-8 flex flex-wrap gap-3">
 						<ActionLink href="/packet/illinois" intent="primary">
 							Read the Illinois model packet
@@ -107,27 +113,27 @@ export default function HomePage() {
 				lead="The site now has three layers: the Illinois model, the financing argument, and the descriptive registry. They should read like parts of one finished product, not three adjacent surfaces."
 			>
 				<div class="grid gap-4 lg:grid-cols-3">
-					<div class="panel-wash rounded-[var(--radius-card)] p-6">
+					<div class="panel-wash flex h-full flex-col rounded-[var(--radius-card)] p-6">
 						<p class="eyebrow">Illinois packet</p>
-						<p class="mt-4 text-base leading-7 text-ink-subtle">
+						<p class="mt-4 text-base leading-8 text-ink-subtle">
 							The Illinois packet is the normative model: one-pager, draft bill,
 							and methodology aligned around a reserve-financing Bitcoin-backed
 							bond pathway.
 						</p>
-						<div class="mt-5">
+						<div class="mt-6">
 							<ActionLink href="/packet/illinois" intent="secondary">
 								Open the packet
 							</ActionLink>
 						</div>
 					</div>
-					<div class="panel-wash rounded-[var(--radius-card)] p-6">
+					<div class="panel-wash flex h-full flex-col rounded-[var(--radius-card)] p-6">
 						<p class="eyebrow">First explainer</p>
-						<p class="mt-4 text-base leading-7 text-ink-subtle">
+						<p class="mt-4 text-base leading-8 text-ink-subtle">
 							The first deep explainer makes the key argument explicit:
 							financing structure changes the public-finance logic. That is the
 							difference between a serious model and a loose reserve slogan.
 						</p>
-						<div class="mt-5">
+						<div class="mt-6">
 							<ActionLink
 								href="/explainers/bond-financed-reserve-accumulation"
 								intent="secondary"
@@ -136,13 +142,18 @@ export default function HomePage() {
 							</ActionLink>
 						</div>
 					</div>
-					<div class="panel-wash rounded-[var(--radius-card)] p-6">
+					<div class="panel-wash flex h-full flex-col rounded-[var(--radius-card)] p-6">
 						<p class="eyebrow">Registry proof</p>
-						<p class="mt-4 text-base leading-7 text-ink-subtle">
+						<p class="mt-4 text-base leading-8 text-ink-subtle">
 							The registry is descriptive, source-first, and willing to say when
 							a proposal is reserve-heavy, weak, symbolic, or not meaningfully
 							bond-relevant.
 						</p>
+						<div class="mt-6">
+							<ActionLink href="/states" intent="secondary">
+								Open the registry
+							</ActionLink>
+						</div>
 					</div>
 				</div>
 			</PageSection>

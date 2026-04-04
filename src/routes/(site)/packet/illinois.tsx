@@ -11,7 +11,7 @@ import onePagerPdfUrl from "../../../../pdf/illinois-one-pager.pdf?url";
 import draftBillPdfUrl from "../../../../pdf/illinois-draft-bill.pdf?url";
 
 const packetDownloadClass =
-	"inline-flex items-center justify-center rounded-full border border-border-strong bg-panel-strong px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-muted hover:bg-panel hover:text-ink";
+	"inline-flex items-center justify-center rounded-full border border-border-strong bg-panel-strong px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ink transition-[background-color,border-color,color,box-shadow] duration-200 hover:border-accent-muted hover:bg-panel hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-soft focus-visible:ring-offset-2 focus-visible:ring-offset-canvas";
 
 function readPacketDocumentBody(slug: string): string {
 	const document = getDocumentBySlug(slug);
@@ -41,14 +41,14 @@ export default function IllinoisPacketPage() {
 					<aside class="proof-rail space-y-4">
 						<div class="poster-frame grain-overlay rounded-[calc(var(--radius-soft)+0.25rem)] p-6">
 							<p class="eyebrow text-accent-soft">What this page is</p>
-							<p class="mt-4 text-lg leading-8 text-white/82">
+							<p class="mt-4 text-lg leading-8 text-ink-subtle">
 								The model layer: a normative Illinois packet built from the
 								project&apos;s canonical one-pager and draft bill sources.
 							</p>
 						</div>
-						<div class="panel-wash rounded-[var(--radius-card)] p-6">
+						<div class="support-panel rounded-[var(--radius-card)] p-6">
 							<p class="eyebrow">Packet contents</p>
-							<p class="mt-3 text-sm leading-6 text-ink-subtle">
+							<p class="mt-3 text-sm leading-7 text-ink-subtle">
 								The one-pager provides the concise case. The draft bill shows
 								the longer-form legislative structure behind it.
 							</p>
@@ -63,7 +63,7 @@ export default function IllinoisPacketPage() {
 									Review the descriptive HB1844 record
 								</ActionLink>
 							</div>
-							<p class="mt-4 text-sm leading-6 text-ink-subtle">
+							<p class="mt-4 text-sm leading-7 text-ink-subtle">
 								The packet is the project&apos;s normative model. The HB1844
 								page is the descriptive registry record about what Illinois
 								lawmakers actually filed.
@@ -71,12 +71,12 @@ export default function IllinoisPacketPage() {
 						</div>
 					</aside>
 					<div class="grid gap-6">
-						<section class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
+						<section class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 							<p class="eyebrow">Illinois one-pager</p>
 							<h2 class="mt-3 text-3xl text-ink sm:text-4xl">
 								{onePager?.title ?? "Illinois one-pager"}
 							</h2>
-							<p class="mt-4 text-base leading-7 text-ink-subtle">
+							<p class="mt-4 text-base leading-8 text-ink-subtle">
 								{onePager?.summary}
 							</p>
 							<div class="mt-6">
@@ -84,12 +84,12 @@ export default function IllinoisPacketPage() {
 							</div>
 						</section>
 
-						<section class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
+						<section class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 							<p class="eyebrow">Illinois draft bill</p>
 							<h2 class="mt-3 text-3xl text-ink sm:text-4xl">
 								{draftBill?.title ?? "Illinois draft bill"}
 							</h2>
-							<p class="mt-4 text-base leading-7 text-ink-subtle">
+							<p class="mt-4 text-base leading-8 text-ink-subtle">
 								{draftBill?.summary}
 							</p>
 							<div class="mt-6">

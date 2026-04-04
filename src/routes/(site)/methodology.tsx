@@ -27,23 +27,23 @@ export default function MethodologyPage() {
 				lead="Bitcoin Bond Proposal favors disciplined, bond-financed Bitcoin reserve accumulation. That bias is explicit. The obligation to label records honestly, preserve source hierarchy, and surface confidence and freshness is non-negotiable."
 			>
 				<div class="grid gap-4 lg:grid-cols-3">
-					<div class="panel-wash rounded-[var(--radius-card)] p-5">
+					<div class="support-panel rounded-[var(--radius-card)] p-5">
 						<p class="eyebrow">Bias</p>
-						<p class="mt-3 text-sm leading-6 text-ink-subtle">
+						<p class="mt-3 text-sm leading-7 text-ink-subtle">
 							The site argues for a specific public-finance pathway instead of
 							pretending all reserve and bond ideas are equally compelling.
 						</p>
 					</div>
-					<div class="panel-wash rounded-[var(--radius-card)] p-5">
+					<div class="support-panel rounded-[var(--radius-card)] p-5">
 						<p class="eyebrow">Trust rule</p>
-						<p class="mt-3 text-sm leading-6 text-ink-subtle">
+						<p class="mt-3 text-sm leading-7 text-ink-subtle">
 							Primary legislative or authority records remain the floor for
 							every publishable entry.
 						</p>
 					</div>
-					<div class="panel-wash rounded-[var(--radius-card)] p-5">
+					<div class="support-panel rounded-[var(--radius-card)] p-5">
 						<p class="eyebrow">Caveat</p>
-						<p class="mt-3 text-sm leading-6 text-ink-subtle">
+						<p class="mt-3 text-sm leading-7 text-ink-subtle">
 							Weak, symbolic, or only indirectly relevant records may still
 							appear, but they will be labeled as such rather than inflated.
 						</p>
@@ -56,7 +56,7 @@ export default function MethodologyPage() {
 				title={methodologyDocument?.title ?? "Methodology memo"}
 				lead={methodologyDocument?.summary}
 			>
-				<div class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
+				<div class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 					<MarkdownContent html={renderMarkdown(body)} />
 				</div>
 			</PageSection>

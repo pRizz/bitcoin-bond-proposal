@@ -10,18 +10,20 @@ type ProofStripProps = {
 
 export function ProofStrip(props: ProofStripProps) {
 	return (
-		<div class="grid gap-3 sm:grid-cols-3">
+		<div class="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
 			<For each={props.items}>
 				{(item) => (
-					<div class="panel-wash rounded-[var(--radius-card)] border border-border-soft/80 bg-panel-strong/85 p-4">
+					<div class="panel-wash rounded-[var(--radius-card)] border border-border-soft/80 bg-panel-strong/85 p-5">
 						<p class="eyebrow text-accent-soft">{item.label}</p>
-						<p class="mt-3 font-serif text-4xl tracking-[-0.05em] text-ink">
+						<p class="mt-4 font-serif text-4xl tracking-[-0.05em] text-ink">
 							{item.value}
 						</p>
 						{item.note ? (
-							<p class="mt-2 max-w-[28ch] text-sm leading-6 text-ink-subtle/90">
-								{item.note}
-							</p>
+							<div class="mt-4 border-t border-border-soft/80 pt-4">
+								<p class="max-w-[30ch] text-sm leading-7 text-ink-subtle/90">
+									{item.note}
+								</p>
+							</div>
 						) : null}
 					</div>
 				)}

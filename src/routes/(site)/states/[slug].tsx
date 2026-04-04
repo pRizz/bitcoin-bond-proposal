@@ -49,7 +49,7 @@ export default function StateDetailPage() {
 				lead={state.summary}
 			>
 				<div class="grid gap-6 lg:grid-cols-[0.72fr_1fr]">
-					<aside class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6">
+					<aside class="support-panel rounded-[calc(var(--radius-soft)+0.25rem)] p-6">
 						<div class="flex flex-wrap gap-2">
 							<Badge
 								tone={
@@ -64,36 +64,46 @@ export default function StateDetailPage() {
 							</Badge>
 							<Badge tone="neutral">{formatRecordType(state.recordType)}</Badge>
 						</div>
-						<dl class="mt-5 grid gap-3 text-sm leading-6 text-ink-subtle">
+						<dl class="mt-5 grid gap-3 text-sm leading-6 text-ink-subtle sm:grid-cols-2 lg:grid-cols-1">
 							<div>
-								<dt class="font-semibold text-ink">Status</dt>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Status
+								</dt>
 								<dd>{state.status}</dd>
 							</div>
 							<div>
-								<dt class="font-semibold text-ink">Status as of</dt>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Status as of
+								</dt>
 								<dd>{state.statusAsOf}</dd>
 							</div>
 							<div>
-								<dt class="font-semibold text-ink">Last reviewed</dt>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Last reviewed
+								</dt>
 								<dd>{state.lastReviewed}</dd>
 							</div>
 							<div>
-								<dt class="font-semibold text-ink">Confidence</dt>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Confidence
+								</dt>
 								<dd class="capitalize">{state.confidence}</dd>
 							</div>
 							<div>
-								<dt class="font-semibold text-ink">Chamber / authority</dt>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Chamber / authority
+								</dt>
 								<dd>{state.chamber}</dd>
 							</div>
 						</dl>
 						{state.manifest?.shortNote ? (
-							<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
+							<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
 								<p class="font-semibold text-ink">Registry note</p>
 								<p class="mt-2">{state.manifest.shortNote}</p>
 							</div>
 						) : null}
 						{state.slug === "illinois" ? (
-							<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
+							<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
 								<p class="font-semibold text-ink">Illinois model packet</p>
 								<p class="mt-2">
 									This HB1844 page is the descriptive registry record. The
@@ -107,7 +117,7 @@ export default function StateDetailPage() {
 								</div>
 							</div>
 						) : null}
-						<div class="mt-6 rounded-[var(--radius-card)] border border-border-soft bg-panel-strong/80 p-4 text-sm leading-6 text-ink-subtle">
+						<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
 							<p class="font-semibold text-ink">Read the financing case</p>
 							<p class="mt-2">
 								This page stays descriptive. The sharper argument about why
@@ -115,7 +125,7 @@ export default function StateDetailPage() {
 							</p>
 						</div>
 					</aside>
-					<div class="panel-wash rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
+					<div class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 						<MarkdownContent html={renderMarkdown(body)} />
 					</div>
 				</div>
