@@ -25,10 +25,11 @@
   1. The public shell defaults to a dark visual system without requiring a theme toggle or runtime theme switch.
   2. Shared surfaces such as header, footer, cards, buttons, badges, and section wrappers use a restrained Bitcoin-orange accent system rather than the current light palette.
   3. Local build and prerender output remain healthy after the dark-theme foundation is introduced.
-**Plans**: 0 plans
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD (run `$gsd-plan-phase 8` to break down)
+- [x] 08-01: Establish the dark-first token layer and root shell foundation.
+- [x] 08-02: Adopt the dark system across shared editorial components.
 
 **Details:**
 This phase is the theme-system and shared-surface refactor. It should not yet widen into route-by-route polish beyond what is necessary to establish the dark default cleanly.
@@ -57,5 +58,5 @@ Phases execute in numeric order: 8 → 9
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 8. Dark Theme Foundation | v1.1 | 0/0 | Not started | - |
+| 8. Dark Theme Foundation | v1.1 | 2/2 | Complete | 2026-04-04 |
 | 9. Route Polish and Readability QA | v1.1 | 0/0 | Not started | - |

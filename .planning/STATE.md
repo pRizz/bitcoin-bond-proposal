@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-04-04)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** v1.1 Dark Mode Editorial Refactor
+**Current focus:** Route Polish and Readability QA
 
 ## Current Position
 
-Phase: 8 of 9 (Dark Theme Foundation)  
-Plan: —  
-Status: Milestone initialized; ready to plan Phase 8  
-Last activity: 2026-04-04 — Captured Phase 8 dark-theme foundation decisions
+Phase: 9 of 9 (Route Polish and Readability QA)  
+Plan: 0 of 0 in current phase  
+Status: Phase 8 complete; ready to discuss Phase 9  
+Last activity: 2026-04-04 — Completed Phase 8 and established the shared dark-theme foundation
 
-Progress: ░░░░░░░░░░ 0%
+Progress: █████░░░░░ 50%
 
 ## Performance Metrics
 
@@ -33,6 +33,7 @@ Recent decisions remain archived in:
 - `.planning/PROJECT.md`
 - Phase 8 should establish a dark-by-default editorial foundation using warm near-black neutrals and restrained Bitcoin-orange accents.
 - Route-specific polish, readability QA, and regression cleanup stay deferred to Phase 9.
+- Phase 8 completed the shared dark theme system across tokens, shell chrome, proof surfaces, and core components.
 
 ### Pending Todos
 
@@ -40,11 +41,11 @@ None.
 
 ### Blockers/Concerns
 
-- Keep v1.1 scoped to the webapp visual system rather than turning it into a content-expansion milestone.
-- Preserve editorial seriousness and trust cues while moving to a dark-first visual language.
+- Keep Phase 9 focused on route-level polish and readability rather than inventing a second theme system.
+- Preserve editorial seriousness and trust cues while tuning the new dark foundation.
 
 ## Session Continuity
 
-Last session: 2026-04-04 00:00 CDT  
-Stopped at: Phase 8 context gathered; ready to plan Phase 8  
-Resume file: .planning/phases/08-dark-theme-foundation/08-CONTEXT.md
+Last session: 2026-04-04 03:36 CDT  
+Stopped at: Phase 8 complete; ready to discuss Phase 9  
+Resume file: .planning/phases/08-dark-theme-foundation/08-VERIFICATION.md

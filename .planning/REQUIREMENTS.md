@@ -38,8 +38,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| THEME-01 | Phase 8 | Pending |
-| THEME-02 | Phase 8 | Pending |
+| THEME-01 | Phase 8 | Complete |
+| THEME-02 | Phase 8 | Complete |
 | THEME-03 | Phase 9 | Pending |
 | THEME-04 | Phase 9 | Pending |
 | THEME-05 | Phase 9 | Pending |
