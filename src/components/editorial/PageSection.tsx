@@ -15,9 +15,11 @@ export function PageSection(props: PageSectionProps) {
 		<section class={cn("section-divider", props.class)}>
 			<div class="mb-6 max-w-3xl space-y-2">
 				{props.eyebrow ? <p class="eyebrow">{props.eyebrow}</p> : null}
-				<h2 class="text-3xl text-ink sm:text-4xl">{props.title}</h2>
+				<h2 class="text-balance text-3xl text-ink sm:text-4xl">
+					{props.title}
+				</h2>
 				{props.lead ? (
-					<p class="text-base leading-7 text-ink-subtle sm:text-lg">
+					<p class="max-w-3xl text-base leading-7 text-ink-subtle sm:text-lg">
 						{props.lead}
 					</p>
 				) : null}

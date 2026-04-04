@@ -10,7 +10,7 @@ type SiteFooterProps = {
 
 export function SiteFooter(props: SiteFooterProps) {
 	return (
-		<footer class="border-t border-border-soft">
+		<footer class="border-t border-border-soft/80 bg-canvas-soft/55">
 			<div class="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.25fr_0.75fr] lg:px-8">
 				<div class="space-y-2">
 					<p class="eyebrow">Public research shell</p>
@@ -22,7 +22,10 @@ export function SiteFooter(props: SiteFooterProps) {
 				<div class="space-y-3 text-sm text-ink-subtle">
 					<div class="flex flex-wrap gap-3">
 						{props.links.map((link) => (
-							<A class="underline-offset-4 hover:underline" href={link.href}>
+							<A
+								class="underline-offset-4 transition-colors hover:text-accent-soft hover:underline"
+								href={link.href}
+							>
 								{link.label}
 							</A>
 						))}
