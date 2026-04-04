@@ -21,7 +21,7 @@ export function StateCard(props: StateCardProps) {
 		<A
 			class={cn(
 				"panel-wash block rounded-[var(--radius-card)] p-5 transition-transform duration-200",
-				"hover:-translate-y-0.5 hover:border-border-strong hover:bg-white/70",
+				"hover:-translate-y-0.5 hover:border-accent-muted hover:bg-panel-strong/90",
 			)}
 			href={props.href}
 			onFocus={() => preload(props.href)}
@@ -29,7 +29,7 @@ export function StateCard(props: StateCardProps) {
 		>
 			<div class="flex flex-wrap items-center justify-between gap-3">
 				<div>
-					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-soft">
 						{props.state}
 					</p>
 					<h3 class="mt-2 text-2xl text-ink">{props.billId}</h3>

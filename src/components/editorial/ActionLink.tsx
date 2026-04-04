@@ -10,9 +10,9 @@ const actionLinkVariants = cva(
 		variants: {
 			intent: {
 				primary:
-					"bg-accent-strong text-ink hover:bg-accent hover:text-canvas-soft",
+					"bg-accent-strong text-canvas shadow-[0_10px_30px_rgba(0,0,0,0.22)] hover:bg-accent-soft hover:text-canvas",
 				secondary:
-					"border border-border-strong bg-white/70 text-ink hover:bg-white hover:text-ink",
+					"border border-border-strong bg-panel text-ink hover:border-accent-muted hover:bg-panel-strong hover:text-ink",
 			},
 		},
 		defaultVariants: {

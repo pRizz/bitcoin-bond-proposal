@@ -19,7 +19,9 @@ export function ProofStrip(props: ProofStripProps) {
 							{item.value}
 						</p>
 						{item.note ? (
-							<p class="mt-2 text-sm leading-6 text-ink-subtle">{item.note}</p>
+							<p class="mt-2 text-sm leading-6 text-ink-subtle/90">
+								{item.note}
+							</p>
 						) : null}
 					</div>
 				)}

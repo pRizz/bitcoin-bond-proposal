@@ -8,10 +8,11 @@ const badgeVariants = cva(
 	{
 		variants: {
 			tone: {
-				neutral: "bg-white/65 text-ink border border-border-soft",
-				accent: "bg-accent-soft text-ink border border-border-strong",
-				bond: "bg-ink text-canvas-soft border border-ink",
-				reserve: "bg-success/15 text-success border border-success/35",
+				neutral: "border border-border-soft bg-panel-strong/85 text-ink-subtle",
+				accent:
+					"border border-accent-muted/70 bg-accent-wash/85 text-accent-soft",
+				bond: "border border-accent-muted/60 bg-panel-strong text-accent-soft",
+				reserve: "border border-success/35 bg-success/12 text-success",
 			},
 		},
 		defaultVariants: {
