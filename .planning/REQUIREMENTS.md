@@ -50,9 +50,9 @@
 |-------------|-------|--------|
 | CATA-07 | Phase 11 | Pending |
 | CATA-08 | Phase 11 | Pending |
-| PIPE-04 | Phase 10 | Pending |
-| PIPE-05 | Phase 10 | Pending |
-| PIPE-06 | Phase 10 | Pending |
+| PIPE-04 | Phase 10 | Complete |
+| PIPE-05 | Phase 10 | Complete |
+| PIPE-06 | Phase 10 | Complete |
 | SITE-07 | Phase 12 | Pending |
 | SITE-08 | Phase 12 | Pending |
 | SITE-09 | Phase 13 | Pending |

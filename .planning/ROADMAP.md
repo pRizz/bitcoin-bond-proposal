@@ -20,9 +20,9 @@ This milestone moves the project from a five-state proof of concept toward a bro
 **Plans**: 3 plans
 
 Plans:
-- [ ] 10-01: Extend schema, manifest handling, and compiled content graph for refresh-aware registry state.
-- [ ] 10-02: Add repo-owned refresh audit and review-report tooling for published entries.
-- [ ] 10-03: Tighten authoring validation and workflow guidance for new or refreshed state entries.
+- [x] 10-01: Extend schema, manifest handling, and compiled content graph for refresh-aware registry state.
+- [x] 10-02: Add repo-owned refresh audit and review-report tooling for published entries.
+- [x] 10-03: Tighten authoring validation and workflow guidance for new or refreshed state entries.
 
 Success criteria:
 1. Maintainer can run a repo-owned command that surfaces published entries due for review.

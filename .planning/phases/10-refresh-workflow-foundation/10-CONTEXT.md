@@ -1,3 +1,11 @@
+---
+phase: 10-refresh-workflow-foundation
+generated_by: gsd-discuss-phase
+lifecycle_mode: yolo
+phase_lifecycle_id: phase-20260409T080705Z
+generated_at: 2026-04-09T08:07:05.742Z
+---
+
 # Phase 10: Refresh Workflow Foundation - Context
 
 **Gathered:** 2026-04-09
