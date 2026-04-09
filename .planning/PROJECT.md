@@ -56,6 +56,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Decide whether the next visual step is a theme toggle or continued dark-first refinement.
 - Broaden the public research product with richer comparison or cluster surfaces only where they improve understanding materially.
 - Design semi-automated refresh workflows and broader coverage expansion without weakening the trust model.
+- Evaluate selective `mystic-ui` adoption for the public webapp only where it strengthens motion, hierarchy, or component polish without forcing a Tailwind CSS v3-style setup or weakening the current editorial trust model.
 
 ## Context
 
