@@ -85,6 +85,30 @@
       "path": "content/states/arizona-sb-1025.md"
     },
     {
+      "title": "Florida HB487",
+      "slug": "florida",
+      "state": "Florida",
+      "summary": "Florida House bill to authorize the Chief Financial Officer and State Board of Administration to invest certain public funds in Bitcoin, subject to custody, lending, and account-level cap rules.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "shortNote": "Large-state public-funds bitcoin investment proposal that advanced out of one subcommittee before stalling.",
+      "editorialPriority": "reserve-priority",
+      "reviewCadenceDays": 30,
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB487",
+      "chamber": "Florida House",
+      "status": "Died in Government Operations Subcommittee",
+      "statusAsOf": "2025-06-16",
+      "lastReviewed": "2026-04-09",
+      "nextReviewDue": "2026-05-09",
+      "daysUntilReviewDue": 30,
+      "reviewStatus": "current",
+      "confidence": "high",
+      "path": "content/states/florida-hb-487.md"
+    },
+    {
       "title": "Illinois HB1844",
       "slug": "illinois",
       "state": "Illinois",
@@ -109,6 +133,30 @@
       "path": "content/states/illinois-hb-1844.md"
     },
     {
+      "title": "Maryland HB1389",
+      "slug": "maryland",
+      "state": "Maryland",
+      "summary": "Maryland House bill to create a Maryland Bitcoin Reserve Fund capitalized through certain seized gambling proceeds and other state money, with Bitcoin as the reserve asset.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "shortNote": "Reserve-fund proposal tied to seized gambling proceeds rather than a broad treasury-allocation model.",
+      "editorialPriority": "neutral",
+      "reviewCadenceDays": 30,
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB1389",
+      "chamber": "Maryland House",
+      "status": "Hearing noticed in Judiciary",
+      "statusAsOf": "2025-02-27",
+      "lastReviewed": "2026-04-09",
+      "nextReviewDue": "2026-05-09",
+      "daysUntilReviewDue": 30,
+      "reviewStatus": "current",
+      "confidence": "medium",
+      "path": "content/states/maryland-hb-1389.md"
+    },
+    {
       "title": "New Hampshire BFA Bitcoin-Backed Bond Approval",
       "slug": "new-hampshire",
       "state": "New Hampshire",
@@ -131,6 +179,54 @@
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
+    },
+    {
+      "title": "North Carolina S327",
+      "slug": "north-carolina",
+      "state": "North Carolina",
+      "summary": "North Carolina Senate bill to establish a state Bitcoin reserve, permit up to 10 percent public-fund allocation to BTC, and explicitly allow reserve-backed bond use for public projects.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "both",
+      "shortNote": "Notable hybrid reserve bill with explicit language allowing the reserve to back public bonds.",
+      "editorialPriority": "bond-priority",
+      "reviewCadenceDays": 30,
+      "proposalKind": "both",
+      "proposalSubtype": "reserve-financing-bond",
+      "billId": "S327",
+      "chamber": "North Carolina Senate",
+      "status": "Referred to Rules and Operations of the Senate",
+      "statusAsOf": "2025-03-19",
+      "lastReviewed": "2026-04-09",
+      "nextReviewDue": "2026-05-09",
+      "daysUntilReviewDue": 30,
+      "reviewStatus": "current",
+      "confidence": "high",
+      "path": "content/states/north-carolina-s327.md"
+    },
+    {
+      "title": "Ohio SB57",
+      "slug": "ohio",
+      "state": "Ohio",
+      "summary": "Ohio Senate bill to create an Ohio bitcoin reserve fund, authorize state Bitcoin investment from interim money and reserve-fund deposits, and require state entities to accept cryptocurrency payments.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "shortNote": "Broader reserve bill that pairs a bitcoin fund with mandatory state-entity crypto payment acceptance.",
+      "editorialPriority": "neutral",
+      "reviewCadenceDays": 30,
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "SB57",
+      "chamber": "Ohio Senate",
+      "status": "1st Hearing in Financial Institutions, Insurance and Technology Committee",
+      "statusAsOf": "2025-02-11",
+      "lastReviewed": "2026-04-09",
+      "nextReviewDue": "2026-05-09",
+      "daysUntilReviewDue": 30,
+      "reviewStatus": "current",
+      "confidence": "high",
+      "path": "content/states/ohio-sb-57.md"
     },
     {
       "title": "Oklahoma HB1203",
@@ -179,6 +275,30 @@
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
+    },
+    {
+      "title": "Wyoming HB0201",
+      "slug": "wyoming",
+      "state": "Wyoming",
+      "summary": "Wyoming House bill to authorize the State Treasurer to invest the general fund and permanent state funds in Bitcoin, subject to 3 percent caps and custody rules.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "shortNote": "Direct state-funds bitcoin investment bill reaching both general and permanent Wyoming funds.",
+      "editorialPriority": "reserve-priority",
+      "reviewCadenceDays": 30,
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB0201",
+      "chamber": "Wyoming House",
+      "status": "Died in Committee Returned Bill Pursuant to HR 5-4",
+      "statusAsOf": "2025-03-03",
+      "lastReviewed": "2026-04-09",
+      "nextReviewDue": "2026-05-09",
+      "daysUntilReviewDue": 30,
+      "reviewStatus": "current",
+      "confidence": "high",
+      "path": "content/states/wyoming-hb-0201.md"
     }
   ],
   "registry": {
@@ -252,10 +372,11 @@
         {
           "state": "Florida",
           "slug": "florida",
-          "registryStatus": "queued",
+          "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "Large-state public-funds bitcoin investment proposal that advanced out of one subcommittee before stalling.",
-          "editorialPriority": "reserve-priority"
+          "editorialPriority": "reserve-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Georgia",
@@ -341,10 +462,11 @@
         {
           "state": "Maryland",
           "slug": "maryland",
-          "registryStatus": "queued",
+          "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "Reserve-fund proposal tied to seized gambling proceeds rather than a broad treasury-allocation model.",
-          "editorialPriority": "neutral"
+          "editorialPriority": "neutral",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Massachusetts",
@@ -446,10 +568,11 @@
         {
           "state": "North Carolina",
           "slug": "north-carolina",
-          "registryStatus": "queued",
+          "registryStatus": "published",
           "proposalFocus": "both",
           "shortNote": "Notable hybrid reserve bill with explicit language allowing the reserve to back public bonds.",
-          "editorialPriority": "bond-priority"
+          "editorialPriority": "bond-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "North Dakota",
@@ -462,10 +585,11 @@
         {
           "state": "Ohio",
           "slug": "ohio",
-          "registryStatus": "queued",
+          "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "Broader reserve bill that pairs a bitcoin fund with mandatory state-entity crypto payment acceptance.",
-          "editorialPriority": "neutral"
+          "editorialPriority": "neutral",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Oklahoma",
@@ -584,30 +708,30 @@
         {
           "state": "Wyoming",
           "slug": "wyoming",
-          "registryStatus": "queued",
+          "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "Direct state-funds bitcoin investment bill reaching both general and permanent Wyoming funds.",
-          "editorialPriority": "reserve-priority"
+          "editorialPriority": "reserve-priority",
+          "reviewCadenceDays": 30
         }
       ]
     },
     "publishedSlugs": [
       "arizona",
-      "illinois",
-      "new-hampshire",
-      "oklahoma",
-      "texas"
-    ],
-    "queuedSlugs": [
       "florida",
+      "illinois",
       "maryland",
+      "new-hampshire",
       "north-carolina",
       "ohio",
+      "oklahoma",
+      "texas",
       "wyoming"
     ],
+    "queuedSlugs": [],
     "statusCounts": {
-      "published": 5,
-      "queued": 5,
+      "published": 10,
+      "queued": 0,
       "unresearched": 40
     }
   },
