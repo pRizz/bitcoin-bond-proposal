@@ -68,10 +68,10 @@
 		{
 			"state": "Florida",
 			"slug": "florida",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"registryStatus": "queued",
+			"proposalFocus": "reserve",
+			"shortNote": "Large-state public-funds bitcoin investment proposal that advanced out of one subcommittee before stalling.",
+			"editorialPriority": "reserve-priority"
 		},
 		{
 			"state": "Georgia",
@@ -157,9 +157,9 @@
 		{
 			"state": "Maryland",
 			"slug": "maryland",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
+			"registryStatus": "queued",
+			"proposalFocus": "reserve",
+			"shortNote": "Reserve-fund proposal tied to seized gambling proceeds rather than a broad treasury-allocation model.",
 			"editorialPriority": "neutral"
 		},
 		{
@@ -262,10 +262,10 @@
 		{
 			"state": "North Carolina",
 			"slug": "north-carolina",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"registryStatus": "queued",
+			"proposalFocus": "both",
+			"shortNote": "Notable hybrid reserve bill with explicit language allowing the reserve to back public bonds.",
+			"editorialPriority": "bond-priority"
 		},
 		{
 			"state": "North Dakota",
@@ -278,9 +278,9 @@
 		{
 			"state": "Ohio",
 			"slug": "ohio",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
+			"registryStatus": "queued",
+			"proposalFocus": "reserve",
+			"shortNote": "Broader reserve bill that pairs a bitcoin fund with mandatory state-entity crypto payment acceptance.",
 			"editorialPriority": "neutral"
 		},
 		{
@@ -400,10 +400,10 @@
 		{
 			"state": "Wyoming",
 			"slug": "wyoming",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"registryStatus": "queued",
+			"proposalFocus": "reserve",
+			"shortNote": "Direct state-funds bitcoin investment bill reaching both general and permanent Wyoming funds.",
+			"editorialPriority": "reserve-priority"
 		}
 	]
 }
