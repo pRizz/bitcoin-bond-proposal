@@ -24,8 +24,17 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Illinois packet route
   - financing explainer route
   - state catalog
-  - five published state-detail pages
+- five published state-detail pages
 - Source-level format and lint checks remain restored and enforced in pre-commit alongside the content/PDF trust contract.
+
+## Current Milestone: v1.2 Registry Expansion and Refresh Workflows
+
+**Goal:** Expand the registry beyond the first five published states, add repo-owned refresh workflow support, and selectively upgrade public UI surfaces where `mystic-ui` materially improves hierarchy or motion without weakening the editorial trust model.
+
+**Target features:**
+- Broader publishable state coverage with explicit freshness metadata and unchanged source-first trust cues.
+- Repo-owned refresh workflow support that helps maintainers identify stale records and update them without implying real-time legislative tracking.
+- Selective `mystic-ui` adoption on high-signal public surfaces only where SolidStart and Tailwind CSS v4 compatibility is clear.
 
 ## Requirements
 
@@ -42,7 +51,9 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ### Active
 
-(Define in the next milestone.)
+- [ ] Broaden the registry beyond the initial five-state batch while preserving canonical Markdown and source-first publication rules.
+- [ ] Add repo-owned refresh workflow support so stale or due-for-review state records are easier to find and update.
+- [ ] Improve public registry and editorial surfaces, including selective `mystic-ui` adoption where it strengthens the product without turning into a full component-library rewrite.
 
 ### Out of Scope
 
@@ -50,13 +61,6 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Real-time legislative tracking automation — snapshot-based research remains more credible than pseudo-live status claims.
 - Municipal or non-state proposal coverage — future milestones should broaden state coverage first.
 - Database-first architecture or admin UI — repo-tracked content still fits the editorial model.
-
-## Next Milestone Goals
-
-- Decide whether the next visual step is a theme toggle or continued dark-first refinement.
-- Broaden the public research product with richer comparison or cluster surfaces only where they improve understanding materially.
-- Design semi-automated refresh workflows and broader coverage expansion without weakening the trust model.
-- Evaluate selective `mystic-ui` adoption for the public webapp only where it strengthens motion, hierarchy, or component polish without forcing a Tailwind CSS v3-style setup or weakening the current editorial trust model.
 
 ## Context
 
@@ -104,6 +108,8 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Promote restored format/lint checks into pre-commit only once trustworthy | Tooling guardrails should help, not add noise | ✓ Implemented in Phase 7 |
 | Make the webapp dark by default in v1.1 | The next milestone is a focused editorial visual refactor rather than a capability expansion | ✓ Implemented in Phases 8-9 |
 | Preserve route structure while improving dark-mode readability and interaction clarity | The visual refactor should clarify the reading path, not redesign the product | ✓ Implemented in Phase 9 |
+| Make v1.2 a coverage-and-refresh milestone instead of another visual-only pass | Broader state coverage and maintainer workflows advance the project's core value more directly than a theme follow-up | — Pending |
+| Treat `mystic-ui` as selective, compatibility-checked adoption | The webapp must preserve Tailwind CSS v4 compatibility, existing dark tokens, and trust cues rather than absorb a foreign design system wholesale | — Pending |
 
 <details>
 <summary>Archived v1.1 milestone framing</summary>
@@ -121,5 +127,22 @@ Target features:
 
 </details>
 
+## Evolution
+
+This document evolves at phase transitions and milestone boundaries.
+
+**After each phase transition** (via `/gsd-transition`):
+1. Requirements invalidated? → Move to Out of Scope with reason
+2. Requirements validated? → Move to Validated with phase reference
+3. New requirements emerged? → Add to Active
+4. Decisions to log? → Add to Key Decisions
+5. "What This Is" still accurate? → Update if drifted
+
+**After each milestone** (via `/gsd-complete-milestone`):
+1. Full review of all sections
+2. Core Value check — still the right priority?
+3. Audit Out of Scope — reasons still valid?
+4. Update Context with current state
+
 ---
-*Last updated: 2026-04-04 after v1.1 milestone*
+*Last updated: 2026-04-09 after starting milestone v1.2*

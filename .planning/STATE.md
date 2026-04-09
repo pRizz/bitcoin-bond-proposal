@@ -2,19 +2,20 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-04-04)
+See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Define the next milestone
+**Current focus:** Define v1.2 requirements and roadmap
 
 ## Current Position
 
-Milestone: `v1.1` archived  
-Active phase: none  
-Status: Ready for next milestone definition  
-Last activity: 2026-04-04 — Archived v1.1 and created the historical planning record
+Milestone: `v1.2` active  
+Active phase: Not started (defining requirements)  
+Plan: —  
+Status: Defining requirements  
+Last activity: 2026-04-09 — Started milestone v1.2 Registry Expansion and Refresh Workflows
 
-Progress: ██████████ 100%
+Progress: ░░░░░░░░░░ 0%
 
 ## Performance Metrics
 
@@ -59,5 +60,5 @@ Any future theme-mode expansion should be treated as a new milestone choice rath
 ## Session Continuity
 
 Last session: 2026-04-04 04:48 CDT  
-Stopped at: v1.1 archived; ready to define the next milestone  
-Resume file: .planning/MILESTONES.md
+Stopped at: Milestone v1.2 started; defining requirements and roadmap  
+Resume file: .planning/REQUIREMENTS.md
