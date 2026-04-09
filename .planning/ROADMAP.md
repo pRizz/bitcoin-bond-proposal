@@ -37,9 +37,9 @@ Success criteria:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 11-01: Select the next publication batch and align manifest status for newly targeted states.
-- [ ] 11-02: Author and verify the first half of the new state entry batch.
-- [ ] 11-03: Author and verify the remaining state entries and promote the expanded batch.
+- [x] 11-01: Select the next publication batch and align manifest status for newly targeted states.
+- [x] 11-02: Author and verify the first half of the new state entry batch.
+- [x] 11-03: Author and verify the remaining state entries and promote the expanded batch.
 
 Success criteria:
 1. The site exposes a clearly larger published batch than the initial five-state set.
