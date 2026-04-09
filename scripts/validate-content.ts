@@ -6,6 +6,9 @@ import path from "node:path";
 import {
 	assertKnownProposalClassification,
 	assertManifestMatchesPublishedStates,
+	assertPublishedManifestEntriesHaveRefreshCadence,
+	assertPublishedManifestEntriesHaveStateFiles,
+	assertStateEntryFreshnessChronology,
 	assertUniqueSlugs,
 	parseDocumentFrontmatter,
 	parseProposalTaxonomy,
@@ -71,6 +74,7 @@ async function validateStateEntries() {
 
 	for (const stateEntry of stateEntries) {
 		assertKnownProposalClassification(stateEntry.frontmatter, taxonomy);
+		assertStateEntryFreshnessChronology(stateEntry.frontmatter);
 	}
 
 	return stateEntries.map((record) => ({
@@ -98,6 +102,11 @@ async function validateContent(): Promise<ValidationResult> {
 		stateManifest.states,
 		stateRecords.map((record) => record.frontmatter),
 	);
+	assertPublishedManifestEntriesHaveStateFiles(
+		stateManifest.states,
+		stateRecords.map((record) => record.frontmatter),
+	);
+	assertPublishedManifestEntriesHaveRefreshCadence(stateManifest.states);
 
 	return {
 		canonicalDocumentCount: documentRecords.length,
@@ -113,7 +122,7 @@ async function run() {
 		console.log(
 			`Validated ${result.canonicalDocumentCount} document(s), ${result.manifestStateCount} manifest state entr${
 				result.manifestStateCount === 1 ? "y" : "ies"
-			}, and ${result.stateEntryCount} published state entr${
+			}, and ${result.stateEntryCount} canonical state entr${
 				result.stateEntryCount === 1 ? "y" : "ies"
 			}.`,
 		);
