@@ -5,6 +5,7 @@
 	"type": "module",
 	"packageManager": "bun@1.3.9",
 	"scripts": {
+		"audit:refresh": "bun scripts/audit-registry-refresh.ts",
 		"build": "vinxi build",
 		"build:pdf": "bun scripts/build-pdf.ts",
 		"compile:content": "bun scripts/compile-content.ts",
