@@ -48,20 +48,20 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CATA-07 | TBD | Pending |
-| CATA-08 | TBD | Pending |
-| PIPE-04 | TBD | Pending |
-| PIPE-05 | TBD | Pending |
-| PIPE-06 | TBD | Pending |
-| SITE-07 | TBD | Pending |
-| SITE-08 | TBD | Pending |
-| SITE-09 | TBD | Pending |
+| CATA-07 | Phase 11 | Pending |
+| CATA-08 | Phase 11 | Pending |
+| PIPE-04 | Phase 10 | Pending |
+| PIPE-05 | Phase 10 | Pending |
+| PIPE-06 | Phase 10 | Pending |
+| SITE-07 | Phase 12 | Pending |
+| SITE-08 | Phase 12 | Pending |
+| SITE-09 | Phase 13 | Pending |
 
 **Coverage:**
 - v1.2 requirements: 8 total
-- Mapped to phases: 0
-- Unmapped: 8 ⚠️
+- Mapped to phases: 8
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-09*
-*Last updated: 2026-04-09 after initial milestone v1.2 definition*
+*Last updated: 2026-04-09 after milestone v1.2 roadmap creation*

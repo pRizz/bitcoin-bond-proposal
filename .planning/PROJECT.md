@@ -24,7 +24,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Illinois packet route
   - financing explainer route
   - state catalog
-- five published state-detail pages
+  - five published state-detail pages
 - Source-level format and lint checks remain restored and enforced in pre-commit alongside the content/PDF trust contract.
 
 ## Current Milestone: v1.2 Registry Expansion and Refresh Workflows
