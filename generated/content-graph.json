@@ -70,6 +70,7 @@
       "proposalFocus": "reserve",
       "shortNote": "High-significance reserve exemplar for the first publishable batch.",
       "editorialPriority": "reserve-priority",
+      "reviewCadenceDays": 30,
       "proposalKind": "reserve",
       "proposalSubtype": "mixed-digital-asset-reserve",
       "billId": "SB1025",
@@ -77,6 +78,9 @@
       "status": "Vetoed by Governor",
       "statusAsOf": "2025-05-02",
       "lastReviewed": "2026-04-01",
+      "nextReviewDue": "2026-05-01",
+      "daysUntilReviewDue": 22,
+      "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/arizona-sb-1025.md"
     },
@@ -90,6 +94,7 @@
       "proposalFocus": "both",
       "shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
       "editorialPriority": "bond-priority",
+      "reviewCadenceDays": 30,
       "proposalKind": "reserve",
       "proposalSubtype": "strategic-reserve",
       "billId": "HB1844",
@@ -97,6 +102,9 @@
       "status": "Referred to Rules Committee",
       "statusAsOf": "2025-01-29",
       "lastReviewed": "2026-04-01",
+      "nextReviewDue": "2026-05-01",
+      "daysUntilReviewDue": 22,
+      "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
     },
@@ -110,6 +118,7 @@
       "proposalFocus": "bond",
       "shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
       "editorialPriority": "bond-priority",
+      "reviewCadenceDays": 30,
       "proposalKind": "bond",
       "proposalSubtype": "bitcoin-collateralized-bond",
       "billId": "NHBFA Digital Currency Bond Resolution (Nov. 17, 2025)",
@@ -117,6 +126,9 @@
       "status": "Board approved; further approval and counsel condition pending",
       "statusAsOf": "2025-11-17",
       "lastReviewed": "2026-04-01",
+      "nextReviewDue": "2026-05-01",
+      "daysUntilReviewDue": 22,
+      "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
     },
@@ -130,6 +142,7 @@
       "proposalFocus": "reserve",
       "shortNote": "Reserve-side exemplar for the first published batch.",
       "editorialPriority": "reserve-priority",
+      "reviewCadenceDays": 30,
       "proposalKind": "reserve",
       "proposalSubtype": "mixed-digital-asset-reserve",
       "billId": "HB1203",
@@ -137,6 +150,9 @@
       "status": "Engrossed to Senate",
       "statusAsOf": "2025-03-25",
       "lastReviewed": "2026-04-01",
+      "nextReviewDue": "2026-05-01",
+      "daysUntilReviewDue": 22,
+      "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
     },
@@ -150,6 +166,7 @@
       "proposalFocus": "reserve",
       "shortNote": "High-significance reserve-law benchmark for the first published batch.",
       "editorialPriority": "reserve-priority",
+      "reviewCadenceDays": 30,
       "proposalKind": "reserve",
       "proposalSubtype": "mixed-digital-asset-reserve",
       "billId": "SB21",
@@ -157,6 +174,9 @@
       "status": "Enrolled; effective by law",
       "statusAsOf": "2025-06-20",
       "lastReviewed": "2026-04-01",
+      "nextReviewDue": "2026-05-01",
+      "daysUntilReviewDue": 22,
+      "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
     }
@@ -186,7 +206,8 @@
           "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "High-significance reserve exemplar for the first publishable batch.",
-          "editorialPriority": "reserve-priority"
+          "editorialPriority": "reserve-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Arkansas",
@@ -266,7 +287,8 @@
           "registryStatus": "published",
           "proposalFocus": "both",
           "shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
-          "editorialPriority": "bond-priority"
+          "editorialPriority": "bond-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Indiana",
@@ -394,7 +416,8 @@
           "registryStatus": "published",
           "proposalFocus": "bond",
           "shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
-          "editorialPriority": "bond-priority"
+          "editorialPriority": "bond-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "New Jersey",
@@ -450,7 +473,8 @@
           "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "Reserve-side exemplar for the first published batch.",
-          "editorialPriority": "reserve-priority"
+          "editorialPriority": "reserve-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Oregon",
@@ -506,7 +530,8 @@
           "registryStatus": "published",
           "proposalFocus": "reserve",
           "shortNote": "High-significance reserve-law benchmark for the first published batch.",
-          "editorialPriority": "reserve-priority"
+          "editorialPriority": "reserve-priority",
+          "reviewCadenceDays": 30
         },
         {
           "state": "Utah",
@@ -572,7 +597,13 @@
       "new-hampshire",
       "oklahoma",
       "texas"
-    ]
+    ],
+    "queuedSlugs": [],
+    "statusCounts": {
+      "published": 5,
+      "queued": 0,
+      "unresearched": 45
+    }
   },
   "taxonomy": {
     "proposalKinds": [

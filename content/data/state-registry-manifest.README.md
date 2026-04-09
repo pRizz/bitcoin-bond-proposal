@@ -13,6 +13,7 @@ Each state entry should contain only:
 - `proposalFocus`
 - `shortNote`
 - `editorialPriority`
+- `reviewCadenceDays` for `published` states
 
 Status meanings:
 
@@ -20,8 +21,17 @@ Status meanings:
 - `queued`: targeted for near-term research but not publishable
 - `published`: has a canonical state-entry file in `content/states/`
 
+Refresh cadence:
+
+- `reviewCadenceDays` is required for `published` states.
+- `reviewCadenceDays` remains optional for `queued` and `unresearched` states because they are not yet in the public freshness contract.
+- Public freshness still comes from canonical snapshot dates in the state-entry file:
+  - `statusAsOf`
+  - `lastReviewed`
+
 Important boundary:
 
 - the manifest is not a public-facing record file;
 - publishable entries live in `content/states/`;
 - queued or incomplete work should not masquerade as published state pages.
+- a canonical state-entry file may exist while a state is still `queued`, but compile and route generation must only treat manifest-`published` states as public records.

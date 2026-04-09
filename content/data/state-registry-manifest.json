@@ -22,7 +22,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "High-significance reserve exemplar for the first publishable batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"reviewCadenceDays": 30
 		},
 		{
 			"state": "Arkansas",
@@ -102,7 +103,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "both",
 			"shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
-			"editorialPriority": "bond-priority"
+			"editorialPriority": "bond-priority",
+			"reviewCadenceDays": 30
 		},
 		{
 			"state": "Indiana",
@@ -230,7 +232,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "bond",
 			"shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
-			"editorialPriority": "bond-priority"
+			"editorialPriority": "bond-priority",
+			"reviewCadenceDays": 30
 		},
 		{
 			"state": "New Jersey",
@@ -286,7 +289,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "Reserve-side exemplar for the first published batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"reviewCadenceDays": 30
 		},
 		{
 			"state": "Oregon",
@@ -342,7 +346,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "High-significance reserve-law benchmark for the first published batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"reviewCadenceDays": 30
 		},
 		{
 			"state": "Utah",

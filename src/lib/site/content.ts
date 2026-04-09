@@ -6,6 +6,7 @@ export type EditorialPriority =
 	| "bond-priority"
 	| "reserve-priority"
 	| "neutral";
+export type ReviewStatus = "current" | "due-soon" | "overdue";
 export type RecordType =
 	| "legislative-bill"
 	| "authority-action"
@@ -33,6 +34,7 @@ type GraphState = {
 	proposalFocus: ProposalFocus;
 	shortNote: string;
 	editorialPriority: EditorialPriority;
+	reviewCadenceDays: number;
 	proposalKind: "reserve" | "bond" | "both";
 	proposalSubtype: string;
 	billId: string;
@@ -40,6 +42,9 @@ type GraphState = {
 	status: string;
 	statusAsOf: string;
 	lastReviewed: string;
+	nextReviewDue: string;
+	daysUntilReviewDue: number;
+	reviewStatus: ReviewStatus;
 	confidence: "high" | "medium" | "low";
 	path: string;
 };
@@ -51,6 +56,7 @@ type GraphManifestEntry = {
 	proposalFocus: ProposalFocus;
 	shortNote: string;
 	editorialPriority: EditorialPriority;
+	reviewCadenceDays?: number;
 };
 
 type ContentGraph = {
@@ -61,6 +67,12 @@ type ContentGraph = {
 			states: GraphManifestEntry[];
 		};
 		publishedSlugs: string[];
+		queuedSlugs: string[];
+		statusCounts: {
+			published: number;
+			queued: number;
+			unresearched: number;
+		};
 	};
 };
 
@@ -126,6 +138,14 @@ export function getRegistryStats() {
 		reservePriorityCount: publishedStates.filter(
 			(state) => state.editorialPriority === "reserve-priority",
 		).length,
+		dueSoonCount: publishedStates.filter(
+			(state) => state.reviewStatus === "due-soon",
+		).length,
+		overdueCount: publishedStates.filter(
+			(state) => state.reviewStatus === "overdue",
+		).length,
+		queuedCount: contentGraph.registry.statusCounts.queued,
+		unresearchedCount: contentGraph.registry.statusCounts.unresearched,
 		latestReview: publishedStates
 			.map((state) => state.lastReviewed)
 			.sort((left, right) => right.localeCompare(left))[0],

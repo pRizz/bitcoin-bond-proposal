@@ -2,7 +2,11 @@ import { describe, expect, test } from "bun:test";
 
 import {
 	assertKnownProposalClassification,
+	assertPublishedManifestEntriesHaveRefreshCadence,
+	assertPublishedManifestEntriesHaveStateFiles,
+	assertStateEntryFreshnessChronology,
 	assertUniqueSlugs,
+	parseStateRegistryManifest,
 	parseProposalTaxonomy,
 	parseStateEntryFrontmatter,
 	toDateLabel,
@@ -90,6 +94,87 @@ describe("assertUniqueSlugs", () => {
 		// Assert
 		expect(execution).toThrow(
 			'Duplicate slug "methodology" in content/docs/methodology.md and content/states/illinois.md',
+		);
+	});
+});
+
+describe("refresh-aware manifest validation", () => {
+	test("rejects published manifest entries without review cadence", () => {
+		// Arrange
+		const manifest = parseStateRegistryManifest({
+			states: Array.from({ length: 50 }, (_, index) => ({
+				state: `State ${index + 1}`,
+				slug: `state-${index + 1}`,
+				registryStatus: index === 0 ? "published" : "unresearched",
+				proposalFocus: index === 0 ? "reserve" : "unknown",
+				shortNote: "Registry note",
+				editorialPriority: "neutral",
+			})),
+		});
+
+		// Act
+		const execution = () =>
+			assertPublishedManifestEntriesHaveRefreshCadence(manifest.states);
+
+		// Assert
+		expect(execution).toThrow(
+			'Published manifest entry "state-1" must define reviewCadenceDays',
+		);
+	});
+
+	test("rejects published manifest entries without canonical state files", () => {
+		// Arrange
+		const manifest = parseStateRegistryManifest({
+			states: Array.from({ length: 50 }, (_, index) => ({
+				state: `State ${index + 1}`,
+				slug: `state-${index + 1}`,
+				registryStatus: index === 0 ? "published" : "unresearched",
+				proposalFocus: index === 0 ? "reserve" : "unknown",
+				shortNote: "Registry note",
+				editorialPriority: "neutral",
+				reviewCadenceDays: index === 0 ? 30 : undefined,
+			})),
+		});
+
+		// Act
+		const execution = () =>
+			assertPublishedManifestEntriesHaveStateFiles(manifest.states, []);
+
+		// Assert
+		expect(execution).toThrow(
+			'Manifest entry "state-1" is marked published but has no canonical state-entry file',
+		);
+	});
+});
+
+describe("assertStateEntryFreshnessChronology", () => {
+	test("rejects states reviewed before the recorded status date", () => {
+		// Arrange
+		const stateEntry = parseStateEntryFrontmatter({
+			title: "Illinois HB 1844",
+			slug: "illinois-hb-1844",
+			summary: "Strategic reserve proposal",
+			state: "Illinois",
+			recordType: "legislative-bill",
+			proposalKind: "reserve",
+			proposalSubtype: "strategic-reserve",
+			billId: "HB 1844",
+			chamber: "House",
+			status: "Introduced",
+			statusAsOf: "2026-04-10",
+			lastReviewed: "2026-04-01",
+			sponsors: ["Rep. Example"],
+			primarySources: ["https://example.com/bill"],
+			confidence: "high",
+			effect: "Would authorize a Bitcoin reserve.",
+		});
+
+		// Act
+		const execution = () => assertStateEntryFreshnessChronology(stateEntry);
+
+		// Assert
+		expect(execution).toThrow(
+			'State entry "illinois-hb-1844" must not have lastReviewed before statusAsOf',
 		);
 	});
 });

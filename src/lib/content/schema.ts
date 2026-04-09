@@ -37,6 +37,7 @@ const EditorialPrioritySchema = z.enum([
 	"reserve-priority",
 	"neutral",
 ]);
+const ReviewCadenceDaysSchema = z.number().int().positive().max(365);
 const RecordTypeSchema = z.enum([
 	"legislative-bill",
 	"authority-action",
@@ -66,6 +67,7 @@ export const StateRegistryManifestEntrySchema = z.object({
 	proposalFocus: ProposalFocusSchema,
 	shortNote: NonEmptyStringSchema,
 	editorialPriority: EditorialPrioritySchema,
+	reviewCadenceDays: ReviewCadenceDaysSchema.optional(),
 });
 
 export const StateRegistryManifestSchema = z.object({
@@ -198,6 +200,51 @@ export function assertManifestMatchesPublishedStates(
 				`Manifest entry "${publishedState.slug}" must be marked queued or published when a canonical state file exists`,
 			);
 		}
+	}
+}
+
+export function assertPublishedManifestEntriesHaveStateFiles(
+	manifestEntries: ReadonlyArray<StateRegistryManifestEntry>,
+	publishedStates: ReadonlyArray<StateEntryFrontmatter>,
+): void {
+	const publishedSlugs = new Set(publishedStates.map((entry) => entry.slug));
+
+	for (const manifestEntry of manifestEntries) {
+		if (manifestEntry.registryStatus !== "published") {
+			continue;
+		}
+
+		if (!publishedSlugs.has(manifestEntry.slug)) {
+			throw new Error(
+				`Manifest entry "${manifestEntry.slug}" is marked published but has no canonical state-entry file`,
+			);
+		}
+	}
+}
+
+export function assertPublishedManifestEntriesHaveRefreshCadence(
+	manifestEntries: ReadonlyArray<StateRegistryManifestEntry>,
+): void {
+	for (const manifestEntry of manifestEntries) {
+		if (manifestEntry.registryStatus !== "published") {
+			continue;
+		}
+
+		if (manifestEntry.reviewCadenceDays === undefined) {
+			throw new Error(
+				`Published manifest entry "${manifestEntry.slug}" must define reviewCadenceDays`,
+			);
+		}
+	}
+}
+
+export function assertStateEntryFreshnessChronology(
+	entry: StateEntryFrontmatter,
+): void {
+	if (entry.lastReviewed < entry.statusAsOf) {
+		throw new Error(
+			`State entry "${entry.slug}" must not have lastReviewed before statusAsOf`,
+		);
 	}
 }
 
