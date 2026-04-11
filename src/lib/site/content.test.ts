@@ -2,38 +2,58 @@ import { expect, test } from "bun:test";
 
 import graph from "../../../generated/content-graph.json";
 import {
+	buildConfidenceCue,
 	buildStatesIndexModel,
 	type ContentGraph,
+	getStateBySlug,
 	getStatesIndexModel,
 	summarizeStateFreshness,
 } from "./content";
 
 const contentGraph = graph as ContentGraph;
 
+function getFixtureState(slug: string) {
+	const maybeState = contentGraph.states.find((state) => state.slug === slug);
+
+	if (!maybeState) {
+		throw new Error(`Missing state fixture for slug: ${slug}`);
+	}
+
+	return maybeState;
+}
+
 test("buildStatesIndexModel groups published states by region, proposal focus, and legislative status", () => {
 	// Arrange
 	const fixtureGraph = structuredClone(contentGraph);
+
+	// Assert
+	const expectedRegionCounts = {
+		midwest: 3,
+		northeast: 1,
+		south: 5,
+		west: 1,
+	};
 
 	// Act
 	const model = buildStatesIndexModel(fixtureGraph);
 
 	// Assert
 	expect(
-		model.groups.byRegion.map((group) => [group.key, group.count]),
-	).toEqual([
-		["northeast", 1],
-		["midwest", 1],
-		["south", 2],
-		["west", 1],
-	]);
+		Object.fromEntries(
+			model.groups.byRegion.map((group) => [group.key, group.count]),
+		),
+	).toEqual(expectedRegionCounts);
 	expect(
-		model.groups.byProposalFocus.find((group) => group.key === "both")?.states,
-	).toMatchObject([{ slug: "illinois" }]);
+		model.groups.byProposalFocus
+			.find((group) => group.key === "both")
+			?.states.map((state) => state.slug)
+			.sort(),
+	).toEqual(["illinois", "north-carolina"]);
 	expect(
-		model.groups.byLegislativeStatusGroup.find(
-			(group) => group.key === "enacted",
-		)?.states,
-	).toMatchObject([{ slug: "texas" }]);
+		model.groups.byLegislativeStatusGroup
+			.find((group) => group.key === "enacted")
+			?.states.map((state) => state.slug),
+	).toEqual(["texas"]);
 });
 
 test("summarizeStateFreshness exposes stable review and status age facts without mutating the source array", () => {
@@ -68,30 +88,81 @@ test("summarizeStateFreshness exposes stable review and status age facts without
 	});
 });
 
-test("getStatesIndexModel returns the grouped and freshness-aware route model without requiring a manifest join", () => {
+test("high-confidence legislative entries describe stage without exposing raw score labels", () => {
+	// Arrange
+	const introducedState = getFixtureState("illinois");
+	const advancedState = getFixtureState("michigan");
+	const enactedState = getFixtureState("texas");
+
+	// Act
+	const introducedCue = buildConfidenceCue(introducedState);
+	const advancedCue = buildConfidenceCue(advancedState);
+	const enactedCue = buildConfidenceCue(enactedState);
+
+	// Assert
+	expect(introducedCue).toEqual({
+		title: "Early-stage bill with clear official footing",
+		detail:
+			"Official bill text and dated status are present, but the measure remains at an early legislative stage.",
+	});
+	expect(advancedCue).toEqual({
+		title: "Advanced bill with clear official footing",
+		detail:
+			"Official bill text and dated status are present, and the measure has moved beyond introduction.",
+	});
+	expect(enactedCue).toEqual({
+		title: "Enacted bill with clear official footing",
+		detail:
+			"Official bill text and dated status are present, and the measure has reached enacted-law status.",
+	});
+	expect(
+		[introducedCue.title, advancedCue.title, enactedCue.title].join(" "),
+	).not.toMatch(/\bhigh\b|\bmedium\b|\blow\b/i);
+});
+
+test("authority-action records keep their record-type distinction in the confidence cue", () => {
+	// Arrange
+	const authorityActionState = getFixtureState("new-hampshire");
+
+	// Act
+	const cue = buildConfidenceCue(authorityActionState);
+
+	// Assert
+	expect(cue).toEqual({
+		title: "Authority action with clear official footing",
+		detail:
+			"The record rests on official authority action rather than a legislature-filed bill, with the approval posture reflected in the source trail.",
+	});
+});
+
+test("getStatesIndexModel and getStateBySlug expose the same shared confidence cue shape", () => {
 	// Arrange
 
 	// Act
-	const model = getStatesIndexModel();
+	const statesIndexModel = getStatesIndexModel();
+	const maybeIndexState = statesIndexModel.states.find(
+		(state) => state.slug === "maryland",
+	);
+	const maybeDetailState = getStateBySlug("maryland");
 
 	// Assert
-	expect(model.states[0]).toMatchObject({
-		slug: "illinois",
-		shortNote:
-			"Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
-		region: "midwest",
-		legislativeStatusGroup: "introduced",
-		reviewAgeDays: 10,
-		statusAgeDays: 437,
+	expect(maybeIndexState).toMatchObject({
+		slug: "maryland",
+		confidenceCue: {
+			title: "Early-stage bill with developing official footing",
+			detail:
+				"Official bill text and dated status are present, but the measure remains at an early legislative stage.",
+		},
 	});
-	expect(model.stats).toMatchObject({
-		publishedCount: 5,
-		bondPriorityCount: 2,
-		reservePriorityCount: 3,
-		latestReview:
-			contentGraph.registry.generatedAt.slice(0, 10) >= "2026-04-01"
-				? "2026-04-01"
-				: undefined,
+	expect(maybeDetailState).toMatchObject({
+		slug: "maryland",
+		confidenceCue: {
+			title: "Early-stage bill with developing official footing",
+			detail:
+				"Official bill text and dated status are present, but the measure remains at an early legislative stage.",
+		},
 	});
-	expect(model.freshness.generatedAt).toBe(contentGraph.registry.generatedAt);
+	expect(maybeDetailState?.confidenceCue).toEqual(
+		maybeIndexState?.confidenceCue,
+	);
 });
