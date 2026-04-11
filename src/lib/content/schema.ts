@@ -32,10 +32,18 @@ const ProposalSubtypeValueSchema = z.enum([
 const OutputFormatSchema = z.enum(["pdf"]);
 const RegistryStatusSchema = z.enum(["unresearched", "queued", "published"]);
 const ProposalFocusSchema = z.enum(["bond", "reserve", "both", "unknown"]);
+export const RegionSchema = z.enum(["northeast", "midwest", "south", "west"]);
 const EditorialPrioritySchema = z.enum([
 	"bond-priority",
 	"reserve-priority",
 	"neutral",
+]);
+export const LegislativeStatusGroupSchema = z.enum([
+	"introduced",
+	"advanced",
+	"approved",
+	"enacted",
+	"failed",
 ]);
 const RecordTypeSchema = z.enum([
 	"legislative-bill",
@@ -64,6 +72,7 @@ export const StateRegistryManifestEntrySchema = z.object({
 	slug: SlugSchema,
 	registryStatus: RegistryStatusSchema,
 	proposalFocus: ProposalFocusSchema,
+	region: RegionSchema,
 	shortNote: NonEmptyStringSchema,
 	editorialPriority: EditorialPrioritySchema,
 });
@@ -93,6 +102,7 @@ export const StateEntryFrontmatterSchema = z.object({
 	billId: NonEmptyStringSchema,
 	chamber: NonEmptyStringSchema,
 	status: NonEmptyStringSchema,
+	legislativeStatusGroup: LegislativeStatusGroupSchema,
 	statusAsOf: IsoDateSchema,
 	lastReviewed: IsoDateSchema,
 	sponsors: z.array(NonEmptyStringSchema).min(1),
@@ -104,6 +114,10 @@ export const StateEntryFrontmatterSchema = z.object({
 });
 
 export type ProposalTaxonomy = z.infer<typeof ProposalTaxonomySchema>;
+export type Region = z.infer<typeof RegionSchema>;
+export type LegislativeStatusGroup = z.infer<
+	typeof LegislativeStatusGroupSchema
+>;
 export type StateRegistryManifest = z.infer<typeof StateRegistryManifestSchema>;
 export type StateRegistryManifestEntry = z.infer<
 	typeof StateRegistryManifestEntrySchema
