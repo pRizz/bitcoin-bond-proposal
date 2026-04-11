@@ -1,7 +1,11 @@
 import graph from "../../../generated/content-graph.json";
+import type {
+	LegislativeStatusGroup,
+	ProposalFocus,
+	Region,
+} from "../content/schema";
 
 export type RegistryStatus = "unresearched" | "queued" | "published";
-export type ProposalFocus = "bond" | "reserve" | "both" | "unknown";
 export type EditorialPriority =
 	| "bond-priority"
 	| "reserve-priority"
@@ -11,6 +15,13 @@ export type RecordType =
 	| "authority-action"
 	| "executive-action"
 	| "other-official-record";
+export type ProposalKind = "reserve" | "bond" | "both";
+export type StatesIndexSortMode = "priority" | "state" | "reviewed";
+
+type GroupBucket<TBucket extends string> = Record<
+	TBucket,
+	{ count: number; slugs: string[] }
+>;
 
 type GraphDocument = {
 	title: string;
@@ -31,15 +42,19 @@ type GraphState = {
 	recordType: RecordType;
 	registryStatus: RegistryStatus;
 	proposalFocus: ProposalFocus;
+	region: Region;
 	shortNote: string;
 	editorialPriority: EditorialPriority;
-	proposalKind: "reserve" | "bond" | "both";
+	proposalKind: ProposalKind;
 	proposalSubtype: string;
 	billId: string;
 	chamber: string;
 	status: string;
+	legislativeStatusGroup: LegislativeStatusGroup;
 	statusAsOf: string;
+	statusAgeDays: number;
 	lastReviewed: string;
+	reviewAgeDays: number;
 	confidence: "high" | "medium" | "low";
 	path: string;
 };
@@ -49,11 +64,12 @@ type GraphManifestEntry = {
 	slug: string;
 	registryStatus: RegistryStatus;
 	proposalFocus: ProposalFocus;
+	region: Region;
 	shortNote: string;
 	editorialPriority: EditorialPriority;
 };
 
-type ContentGraph = {
+export type ContentGraph = {
 	docs: GraphDocument[];
 	states: GraphState[];
 	registry: {
@@ -61,7 +77,53 @@ type ContentGraph = {
 			states: GraphManifestEntry[];
 		};
 		publishedSlugs: string[];
+		generatedAt: string;
+		groups: {
+			byRegion: GroupBucket<Region>;
+			byProposalFocus: GroupBucket<ProposalFocus>;
+			byLegislativeStatusGroup: GroupBucket<LegislativeStatusGroup>;
+		};
 	};
+};
+
+export type PublishedState = GraphState & {
+	manifest: GraphManifestEntry | undefined;
+};
+
+export type StateGroup<TBucket extends string> = {
+	key: TBucket;
+	count: number;
+	states: PublishedState[];
+};
+
+export type FreshnessSummary = {
+	generatedAt: string;
+	latestReview: string | undefined;
+	freshestReviewAgeDays: number | undefined;
+	stalestReviewAgeDays: number | undefined;
+	freshestStatusAgeDays: number | undefined;
+	stalestStatusAgeDays: number | undefined;
+};
+
+export type RegistryStats = {
+	publishedCount: number;
+	bondPriorityCount: number;
+	reservePriorityCount: number;
+	latestReview: string | undefined;
+	generatedAt: string;
+	stalestReviewAgeDays: number | undefined;
+	stalestStatusAgeDays: number | undefined;
+};
+
+export type StatesIndexModel = {
+	states: PublishedState[];
+	groups: {
+		byRegion: Array<StateGroup<Region>>;
+		byProposalFocus: Array<StateGroup<ProposalFocus>>;
+		byLegislativeStatusGroup: Array<StateGroup<LegislativeStatusGroup>>;
+	};
+	freshness: FreshnessSummary;
+	stats: RegistryStats;
 };
 
 const contentGraph = graph as ContentGraph;
@@ -72,6 +134,151 @@ const priorityWeight: Record<EditorialPriority, number> = {
 	neutral: 2,
 };
 
+const manifestBySlug = new Map(
+	contentGraph.registry.manifest.states.map(
+		(entry) => [entry.slug, entry] as const,
+	),
+);
+
+function attachManifest(
+	states: ReadonlyArray<GraphState>,
+	manifestLookup: ReadonlyMap<string, GraphManifestEntry>,
+): PublishedState[] {
+	return states.map((state) => ({
+		...state,
+		manifest: manifestLookup.get(state.slug),
+	}));
+}
+
+function sortPublishedStates(
+	states: ReadonlyArray<PublishedState>,
+	sortMode: StatesIndexSortMode,
+): PublishedState[] {
+	switch (sortMode) {
+		case "state":
+			return [...states].sort((left, right) =>
+				left.state.localeCompare(right.state),
+			);
+		case "reviewed":
+			return [...states].sort((left, right) =>
+				right.lastReviewed.localeCompare(left.lastReviewed),
+			);
+		default:
+			return [...states].sort((left, right) => {
+				const leftPriority = priorityWeight[left.editorialPriority];
+				const rightPriority = priorityWeight[right.editorialPriority];
+
+				if (leftPriority !== rightPriority) {
+					return leftPriority - rightPriority;
+				}
+
+				return left.state.localeCompare(right.state);
+			});
+	}
+}
+
+function mapStateGroups<TBucket extends string>(
+	states: ReadonlyArray<PublishedState>,
+	buckets: GroupBucket<TBucket>,
+): Array<StateGroup<TBucket>> {
+	const statesBySlug = new Map(
+		states.map((state) => [state.slug, state] as const),
+	);
+	const bucketEntries = Object.entries(buckets) as Array<
+		[TBucket, GroupBucket<TBucket>[TBucket]]
+	>;
+
+	return bucketEntries.map(([key, bucket]) => ({
+		key,
+		count: bucket.count,
+		states: bucket.slugs.flatMap((slug) => {
+			const maybeState = statesBySlug.get(slug);
+			return maybeState ? [maybeState] : [];
+		}),
+	}));
+}
+
+export function summarizeStateFreshness(
+	states: ReadonlyArray<GraphState>,
+	generatedAt: string,
+): FreshnessSummary {
+	const latestReview = [...states]
+		.map((state) => state.lastReviewed)
+		.sort((left, right) => right.localeCompare(left))[0];
+	const reviewAgeDays = states.map((state) => state.reviewAgeDays);
+	const statusAgeDays = states.map((state) => state.statusAgeDays);
+	const freshestReviewAgeDays =
+		reviewAgeDays.length > 0 ? Math.min(...reviewAgeDays) : undefined;
+	const stalestReviewAgeDays =
+		reviewAgeDays.length > 0 ? Math.max(...reviewAgeDays) : undefined;
+	const freshestStatusAgeDays =
+		statusAgeDays.length > 0 ? Math.min(...statusAgeDays) : undefined;
+	const stalestStatusAgeDays =
+		statusAgeDays.length > 0 ? Math.max(...statusAgeDays) : undefined;
+
+	return {
+		generatedAt,
+		latestReview,
+		freshestReviewAgeDays,
+		stalestReviewAgeDays,
+		freshestStatusAgeDays,
+		stalestStatusAgeDays,
+	};
+}
+
+export function buildStatesIndexModel(
+	graphData: ContentGraph,
+): StatesIndexModel {
+	const publishedStates = sortPublishedStates(
+		attachManifest(
+			graphData.states,
+			new Map(
+				graphData.registry.manifest.states.map(
+					(entry) => [entry.slug, entry] as const,
+				),
+			),
+		),
+		"priority",
+	);
+	const freshness = summarizeStateFreshness(
+		publishedStates,
+		graphData.registry.generatedAt,
+	);
+	const stats = {
+		publishedCount: publishedStates.length,
+		bondPriorityCount: publishedStates.filter(
+			(state) => state.editorialPriority === "bond-priority",
+		).length,
+		reservePriorityCount: publishedStates.filter(
+			(state) => state.editorialPriority === "reserve-priority",
+		).length,
+		latestReview: freshness.latestReview,
+		generatedAt: freshness.generatedAt,
+		stalestReviewAgeDays: freshness.stalestReviewAgeDays,
+		stalestStatusAgeDays: freshness.stalestStatusAgeDays,
+	} satisfies RegistryStats;
+
+	return {
+		states: publishedStates,
+		groups: {
+			byRegion: mapStateGroups(
+				publishedStates,
+				graphData.registry.groups.byRegion,
+			),
+			byProposalFocus: mapStateGroups(
+				publishedStates,
+				graphData.registry.groups.byProposalFocus,
+			),
+			byLegislativeStatusGroup: mapStateGroups(
+				publishedStates,
+				graphData.registry.groups.byLegislativeStatusGroup,
+			),
+		},
+		freshness,
+		stats,
+	};
+}
+
 export function getMethodologyDocument() {
 	return contentGraph.docs.find((doc) => doc.slug === "methodology");
 }
@@ -81,53 +288,32 @@ export function getDocumentBySlug(slug: string) {
 }
 
 export function getPublishedStates() {
-	return [...contentGraph.states]
-		.map((state) => ({
-			...state,
-			manifest: contentGraph.registry.manifest.states.find(
-				(entry) => entry.slug === state.slug,
-			),
-		}))
-		.sort((left, right) => {
-			const leftPriority = priorityWeight[left.editorialPriority];
-			const rightPriority = priorityWeight[right.editorialPriority];
-
-			if (leftPriority !== rightPriority) {
-				return leftPriority - rightPriority;
-			}
-
-			return left.state.localeCompare(right.state);
-		});
+	return attachManifest(contentGraph.states, manifestBySlug);
 }
 
 export function getStateBySlug(slug: string) {
-	const stateEntry = contentGraph.states.find((entry) => entry.slug === slug);
+	const maybeStateEntry = contentGraph.states.find(
+		(entry) => entry.slug === slug,
+	);
 
-	if (!stateEntry) {
+	if (!maybeStateEntry) {
 		return undefined;
 	}
 
 	return {
-		...stateEntry,
-		manifest: contentGraph.registry.manifest.states.find(
-			(entry) => entry.slug === slug,
-		),
+		...maybeStateEntry,
+		manifest: manifestBySlug.get(slug),
 	};
 }
 
 export function getRegistryStats() {
-	const publishedStates = getPublishedStates();
+	return buildStatesIndexModel(contentGraph).stats;
+}
 
-	return {
-		publishedCount: publishedStates.length,
-		bondPriorityCount: publishedStates.filter(
-			(state) => state.editorialPriority === "bond-priority",
-		).length,
-		reservePriorityCount: publishedStates.filter(
-			(state) => state.editorialPriority === "reserve-priority",
-		).length,
-		latestReview: publishedStates
-			.map((state) => state.lastReviewed)
-			.sort((left, right) => right.localeCompare(left))[0],
-	};
+export function getStatesIndexModel() {
+	return buildStatesIndexModel(contentGraph);
+}
+
+export function getSortedPublishedStates(sortMode: StatesIndexSortMode) {
+	return sortPublishedStates(getPublishedStates(), sortMode);
 }
