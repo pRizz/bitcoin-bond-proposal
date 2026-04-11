@@ -3,9 +3,11 @@ import { expect, test } from "bun:test";
 import graph from "../../../generated/content-graph.json";
 import {
 	buildConfidenceCue,
+	buildStatesClusterModel,
 	buildStatesIndexModel,
 	type ContentGraph,
 	getStateBySlug,
+	getStatesClusterModel,
 	getStatesIndexModel,
 	summarizeStateFreshness,
 } from "./content";
@@ -20,6 +22,19 @@ function getFixtureState(slug: string) {
 	}
 
 	return maybeState;
+}
+
+function getClusterSection(
+	model: ReturnType<typeof buildStatesClusterModel>,
+	key: ReturnType<typeof buildStatesClusterModel>["sections"][number]["key"],
+) {
+	const maybeSection = model.sections.find((section) => section.key === key);
+
+	if (!maybeSection) {
+		throw new Error(`Missing cluster section for key: ${key}`);
+	}
+
+	return maybeSection;
 }
 
 test("buildStatesIndexModel groups published states by region, proposal focus, and legislative status", () => {
@@ -164,5 +179,141 @@ test("getStatesIndexModel and getStateBySlug expose the same shared confidence c
 	});
 	expect(maybeDetailState?.confidenceCue).toEqual(
 		maybeIndexState?.confidenceCue,
+	);
+});
+
+test("buildStatesClusterModel returns editorial sections for legislative status, proposal focus, and region", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+
+	// Act
+	const model = buildStatesClusterModel(fixtureGraph);
+	const legislativeStatusSection = getClusterSection(
+		model,
+		"legislative-status",
+	);
+	const proposalFocusSection = getClusterSection(model, "proposal-focus");
+	const regionSection = getClusterSection(model, "region");
+
+	// Assert
+	expect(model.sections.map((section) => section.key)).toEqual([
+		"legislative-status",
+		"proposal-focus",
+		"region",
+	]);
+	expect(legislativeStatusSection.title).toBe("Browse by legislative status");
+	expect(proposalFocusSection.title).toBe("Browse by proposal focus");
+	expect(regionSection.title).toBe("Browse by region");
+	expect(
+		legislativeStatusSection.buckets.map((bucket) => [
+			bucket.key,
+			bucket.count,
+		]),
+	).toEqual([
+		["introduced", 4],
+		["advanced", 3],
+		["approved", 1],
+		["enacted", 1],
+		["failed", 1],
+	]);
+	expect(
+		proposalFocusSection.buckets
+			.find((bucket) => bucket.key === "both")
+			?.states.map((state) => state.slug),
+	).toEqual(["illinois", "north-carolina"]);
+	expect(
+		regionSection.buckets
+			.find((bucket) => bucket.key === "south")
+			?.states.map((state) => state.slug),
+	).toEqual([
+		"north-carolina",
+		"maryland",
+		"oklahoma",
+		"south-carolina",
+		"texas",
+	]);
+});
+
+test("getStatesClusterModel keeps canonical state detail links in every cluster entry", () => {
+	// Arrange
+
+	// Act
+	const model = getStatesClusterModel();
+	const entries = model.sections.flatMap((section) =>
+		section.buckets.flatMap((bucket) => bucket.states),
+	);
+	const southernCluster = getClusterSection(model, "region").buckets.find(
+		(bucket) => bucket.key === "south",
+	);
+
+	// Assert
+	expect(entries.length).toBeGreaterThan(0);
+	expect(
+		entries.every((state) => state.href === `/states/${state.slug}`),
+	).toBeTrue();
+	expect(southernCluster?.states[0]).toMatchObject({
+		slug: "north-carolina",
+		href: "/states/north-carolina",
+	});
+});
+
+test("buildStatesClusterModel reuses the shared grouped registry model for cluster buckets", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+	const statesIndexModel = buildStatesIndexModel(fixtureGraph);
+
+	// Act
+	const clusterModel = buildStatesClusterModel(fixtureGraph);
+	const legislativeStatusSection = getClusterSection(
+		clusterModel,
+		"legislative-status",
+	);
+	const proposalFocusSection = getClusterSection(
+		clusterModel,
+		"proposal-focus",
+	);
+	const regionSection = getClusterSection(clusterModel, "region");
+
+	// Assert
+	expect(
+		legislativeStatusSection.buckets.map((bucket) => ({
+			key: bucket.key,
+			count: bucket.count,
+			slugs: bucket.states.map((state) => state.slug),
+		})),
+	).toEqual(
+		statesIndexModel.groups.byLegislativeStatusGroup.map((group) => ({
+			key: group.key,
+			count: group.count,
+			slugs: group.states.map((state) => state.slug),
+		})),
+	);
+	expect(
+		proposalFocusSection.buckets.map((bucket) => ({
+			key: bucket.key,
+			count: bucket.count,
+			slugs: bucket.states.map((state) => state.slug),
+		})),
+	).toEqual(
+		statesIndexModel.groups.byProposalFocus
+			.filter((group) => group.count > 0)
+			.map((group) => ({
+				key: group.key,
+				count: group.count,
+				slugs: group.states.map((state) => state.slug),
+			})),
+	);
+	expect(
+		regionSection.buckets.map((bucket) => ({
+			key: bucket.key,
+			count: bucket.count,
+			slugs: bucket.states.map((state) => state.slug),
+		})),
+	).toEqual(
+		statesIndexModel.groups.byRegion.map((group) => ({
+			key: group.key,
+			count: group.count,
+			slugs: group.states.map((state) => state.slug),
+		})),
 	);
 });
