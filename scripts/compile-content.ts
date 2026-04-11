@@ -8,11 +8,19 @@ import {
 	assertManifestMatchesPublishedStates,
 	assertUniqueSlugs,
 	parseDocumentFrontmatter,
+	type LegislativeStatusGroup,
 	parseProposalTaxonomy,
 	parseStateRegistryManifest,
 	parseStateEntryFrontmatter,
+	type ProposalFocus,
+	type Region,
 } from "../src/lib/content/schema.ts";
 import { readMarkdownCollection } from "../src/lib/content/load-markdown.ts";
+
+type GroupBucket<TBucket extends string> = Record<
+	TBucket,
+	{ count: number; slugs: string[] }
+>;
 
 type CompiledContentGraph = {
 	docs: Array<{
@@ -32,7 +40,8 @@ type CompiledContentGraph = {
 		summary: string;
 		recordType: string;
 		registryStatus: string;
-		proposalFocus: string;
+		proposalFocus: ProposalFocus;
+		region: Region;
 		shortNote: string;
 		editorialPriority: string;
 		proposalKind: string;
@@ -40,19 +49,120 @@ type CompiledContentGraph = {
 		billId: string;
 		chamber: string;
 		status: string;
+		legislativeStatusGroup: LegislativeStatusGroup;
 		statusAsOf: string;
+		statusAgeDays: number;
 		lastReviewed: string;
+		reviewAgeDays: number;
 		confidence: string;
 		path: string;
 	}>;
 	registry: {
 		manifest: ReturnType<typeof parseStateRegistryManifest>;
 		publishedSlugs: string[];
+		generatedAt: string;
+		groups: {
+			byRegion: GroupBucket<Region>;
+			byProposalFocus: GroupBucket<ProposalFocus>;
+			byLegislativeStatusGroup: GroupBucket<LegislativeStatusGroup>;
+		};
 	};
 	taxonomy: ReturnType<typeof parseProposalTaxonomy>;
 };
 
-async function compileContentGraph(): Promise<CompiledContentGraph> {
+type CompiledState = CompiledContentGraph["states"][number];
+
+const millisecondsPerDay = 24 * 60 * 60 * 1000;
+
+const regionValues: Region[] = ["northeast", "midwest", "south", "west"];
+const proposalFocusValues: ProposalFocus[] = [
+	"bond",
+	"reserve",
+	"both",
+	"unknown",
+];
+const legislativeStatusGroupValues: LegislativeStatusGroup[] = [
+	"introduced",
+	"advanced",
+	"approved",
+	"enacted",
+	"failed",
+];
+
+const editorialPriorityWeight = {
+	"bond-priority": 0,
+	"reserve-priority": 1,
+	neutral: 2,
+} as const;
+
+function toUtcDate(value: string): Date {
+	const [year, month, day] = value.split("-").map(Number);
+
+	return new Date(Date.UTC(year ?? 0, (month ?? 1) - 1, day ?? 1));
+}
+
+function getAgeDays(fromDate: string, toDate: string): number {
+	const differenceInMilliseconds =
+		toUtcDate(toDate).getTime() - toUtcDate(fromDate).getTime();
+
+	return Math.max(0, Math.floor(differenceInMilliseconds / millisecondsPerDay));
+}
+
+function createGroupBuckets<TBucket extends string>(
+	groupValues: ReadonlyArray<TBucket>,
+): GroupBucket<TBucket> {
+	return Object.fromEntries(
+		groupValues.map((value) => [value, { count: 0, slugs: [] as string[] }]),
+	) as GroupBucket<TBucket>;
+}
+
+function sortCompiledStates(states: ReadonlyArray<CompiledState>) {
+	return [...states].sort((left, right) => {
+		const leftPriority =
+			editorialPriorityWeight[
+				left.editorialPriority as keyof typeof editorialPriorityWeight
+			];
+		const rightPriority =
+			editorialPriorityWeight[
+				right.editorialPriority as keyof typeof editorialPriorityWeight
+			];
+
+		if (leftPriority !== rightPriority) {
+			return leftPriority - rightPriority;
+		}
+
+		return left.state.localeCompare(right.state);
+	});
+}
+
+function buildRegistryGroups(
+	states: ReadonlyArray<CompiledState>,
+): CompiledContentGraph["registry"]["groups"] {
+	const byRegion = createGroupBuckets(regionValues);
+	const byProposalFocus = createGroupBuckets(proposalFocusValues);
+	const byLegislativeStatusGroup = createGroupBuckets(
+		legislativeStatusGroupValues,
+	);
+
+	for (const state of states) {
+		byRegion[state.region].count += 1;
+		byRegion[state.region].slugs.push(state.slug);
+		byProposalFocus[state.proposalFocus].count += 1;
+		byProposalFocus[state.proposalFocus].slugs.push(state.slug);
+		byLegislativeStatusGroup[state.legislativeStatusGroup].count += 1;
+		byLegislativeStatusGroup[state.legislativeStatusGroup].slugs.push(
+			state.slug,
+		);
+	}
+
+	return {
+		byRegion,
+		byProposalFocus,
+		byLegislativeStatusGroup,
+	};
+}
+
+export async function compileContentGraph(): Promise<CompiledContentGraph> {
 	const taxonomyPath = path.join(
 		process.cwd(),
 		"content",
@@ -69,6 +179,8 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
 	);
 	const rawManifest = await readFile(manifestPath, "utf8");
 	const registryManifest = parseStateRegistryManifest(JSON.parse(rawManifest));
+	const generatedAt = new Date().toISOString();
+	const generatedOn = generatedAt.slice(0, 10);
 
 	const [docs, explainers, states] = await Promise.all([
 		readMarkdownCollection(
@@ -107,23 +219,13 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
 		})),
 	);
 
-	return {
-		docs: [...docs, ...explainers].map((record) => ({
-			title: record.frontmatter.title,
-			slug: record.frontmatter.slug,
-			summary: record.frontmatter.summary,
-			documentKind: record.frontmatter.documentKind,
-			audience: record.frontmatter.audience,
-			outputs: record.frontmatter.outputs,
-			updatedAt: record.frontmatter.updatedAt,
-			path: path.relative(process.cwd(), record.path),
-		})),
-		states: states.map((record) => {
-			const manifestEntry = registryManifest.states.find(
+	const compiledStates = sortCompiledStates(
+		states.map((record) => {
+			const maybeManifestEntry = registryManifest.states.find(
 				(entry) => entry.slug === record.frontmatter.slug,
 			);
 
-			if (!manifestEntry) {
+			if (!maybeManifestEntry) {
 				throw new Error(
 					`Missing manifest entry for published state "${record.frontmatter.slug}"`,
 				);
@@ -135,24 +237,44 @@ async function compileContentGraph(): Promise<CompiledContentGraph> {
 				state: record.frontmatter.state,
 				summary: record.frontmatter.summary,
 				recordType: record.frontmatter.recordType,
-				registryStatus: manifestEntry.registryStatus,
-				proposalFocus: manifestEntry.proposalFocus,
-				shortNote: manifestEntry.shortNote,
-				editorialPriority: manifestEntry.editorialPriority,
+				registryStatus: maybeManifestEntry.registryStatus,
+				proposalFocus: maybeManifestEntry.proposalFocus,
+				region: maybeManifestEntry.region,
+				shortNote: maybeManifestEntry.shortNote,
+				editorialPriority: maybeManifestEntry.editorialPriority,
 				proposalKind: record.frontmatter.proposalKind,
 				proposalSubtype: record.frontmatter.proposalSubtype,
 				billId: record.frontmatter.billId,
 				chamber: record.frontmatter.chamber,
 				status: record.frontmatter.status,
+				legislativeStatusGroup: record.frontmatter.legislativeStatusGroup,
 				statusAsOf: record.frontmatter.statusAsOf,
+				statusAgeDays: getAgeDays(record.frontmatter.statusAsOf, generatedOn),
 				lastReviewed: record.frontmatter.lastReviewed,
+				reviewAgeDays: getAgeDays(record.frontmatter.lastReviewed, generatedOn),
 				confidence: record.frontmatter.confidence,
 				path: path.relative(process.cwd(), record.path),
 			};
 		}),
+	);
+
+	return {
+		docs: [...docs, ...explainers].map((record) => ({
+			title: record.frontmatter.title,
+			slug: record.frontmatter.slug,
+			summary: record.frontmatter.summary,
+			documentKind: record.frontmatter.documentKind,
+			audience: record.frontmatter.audience,
+			outputs: record.frontmatter.outputs,
+			updatedAt: record.frontmatter.updatedAt,
+			path: path.relative(process.cwd(), record.path),
+		})),
+		states: compiledStates,
 		registry: {
 			manifest: registryManifest,
-			publishedSlugs: states.map((record) => record.frontmatter.slug),
+			publishedSlugs: compiledStates.map((state) => state.slug),
+			generatedAt,
+			groups: buildRegistryGroups(compiledStates),
 		},
 		taxonomy,
 	};

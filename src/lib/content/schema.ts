@@ -115,6 +115,7 @@ export const StateEntryFrontmatterSchema = z.object({
 
 export type ProposalTaxonomy = z.infer<typeof ProposalTaxonomySchema>;
 export type Region = z.infer<typeof RegionSchema>;
+export type ProposalFocus = z.infer<typeof ProposalFocusSchema>;
 export type LegislativeStatusGroup = z.infer<
 	typeof LegislativeStatusGroupSchema
 >;

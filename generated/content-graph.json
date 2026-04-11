@@ -61,26 +61,6 @@
   ],
   "states": [
     {
-      "title": "Arizona SB1025",
-      "slug": "arizona",
-      "state": "Arizona",
-      "summary": "Arizona Senate bill to permit public-fund investment in virtual currency holdings up to a defined cap, later vetoed by the Governor.",
-      "recordType": "legislative-bill",
-      "registryStatus": "published",
-      "proposalFocus": "reserve",
-      "shortNote": "High-significance reserve exemplar for the first publishable batch.",
-      "editorialPriority": "reserve-priority",
-      "proposalKind": "reserve",
-      "proposalSubtype": "mixed-digital-asset-reserve",
-      "billId": "SB1025",
-      "chamber": "Arizona Senate",
-      "status": "Vetoed by Governor",
-      "statusAsOf": "2025-05-02",
-      "lastReviewed": "2026-04-01",
-      "confidence": "high",
-      "path": "content/states/arizona-sb-1025.md"
-    },
-    {
       "title": "Illinois HB1844",
       "slug": "illinois",
       "state": "Illinois",
@@ -88,6 +68,7 @@
       "recordType": "legislative-bill",
       "registryStatus": "published",
       "proposalFocus": "both",
+      "region": "midwest",
       "shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
       "editorialPriority": "bond-priority",
       "proposalKind": "reserve",
@@ -95,8 +76,11 @@
       "billId": "HB1844",
       "chamber": "Illinois House",
       "status": "Referred to Rules Committee",
+      "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-01-29",
+      "statusAgeDays": 437,
       "lastReviewed": "2026-04-01",
+      "reviewAgeDays": 10,
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
     },
@@ -108,6 +92,7 @@
       "recordType": "authority-action",
       "registryStatus": "published",
       "proposalFocus": "bond",
+      "region": "northeast",
       "shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
       "editorialPriority": "bond-priority",
       "proposalKind": "bond",
@@ -115,10 +100,37 @@
       "billId": "NHBFA Digital Currency Bond Resolution (Nov. 17, 2025)",
       "chamber": "New Hampshire Business Finance Authority Board of Directors",
       "status": "Board approved; further approval and counsel condition pending",
+      "legislativeStatusGroup": "approved",
       "statusAsOf": "2025-11-17",
+      "statusAgeDays": 145,
       "lastReviewed": "2026-04-01",
+      "reviewAgeDays": 10,
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
+    },
+    {
+      "title": "Arizona SB1025",
+      "slug": "arizona",
+      "state": "Arizona",
+      "summary": "Arizona Senate bill to permit public-fund investment in virtual currency holdings up to a defined cap, later vetoed by the Governor.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "west",
+      "shortNote": "High-significance reserve exemplar for the first publishable batch.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "SB1025",
+      "chamber": "Arizona Senate",
+      "status": "Vetoed by Governor",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2025-05-02",
+      "statusAgeDays": 344,
+      "lastReviewed": "2026-04-01",
+      "reviewAgeDays": 10,
+      "confidence": "high",
+      "path": "content/states/arizona-sb-1025.md"
     },
     {
       "title": "Oklahoma HB1203",
@@ -128,6 +140,7 @@
       "recordType": "legislative-bill",
       "registryStatus": "published",
       "proposalFocus": "reserve",
+      "region": "south",
       "shortNote": "Reserve-side exemplar for the first published batch.",
       "editorialPriority": "reserve-priority",
       "proposalKind": "reserve",
@@ -135,8 +148,11 @@
       "billId": "HB1203",
       "chamber": "Oklahoma House",
       "status": "Engrossed to Senate",
+      "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-25",
+      "statusAgeDays": 382,
       "lastReviewed": "2026-04-01",
+      "reviewAgeDays": 10,
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
     },
@@ -148,6 +164,7 @@
       "recordType": "legislative-bill",
       "registryStatus": "published",
       "proposalFocus": "reserve",
+      "region": "south",
       "shortNote": "High-significance reserve-law benchmark for the first published batch.",
       "editorialPriority": "reserve-priority",
       "proposalKind": "reserve",
@@ -155,8 +172,11 @@
       "billId": "SB21",
       "chamber": "Texas Senate",
       "status": "Enrolled; effective by law",
+      "legislativeStatusGroup": "enacted",
       "statusAsOf": "2025-06-20",
+      "statusAgeDays": 295,
       "lastReviewed": "2026-04-01",
+      "reviewAgeDays": 10,
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
     }
@@ -617,12 +637,100 @@
       ]
     },
     "publishedSlugs": [
-      "arizona",
       "illinois",
       "new-hampshire",
+      "arizona",
       "oklahoma",
       "texas"
-    ]
+    ],
+    "generatedAt": "2026-04-11T19:46:57.213Z",
+    "groups": {
+      "byRegion": {
+        "northeast": {
+          "count": 1,
+          "slugs": [
+            "new-hampshire"
+          ]
+        },
+        "midwest": {
+          "count": 1,
+          "slugs": [
+            "illinois"
+          ]
+        },
+        "south": {
+          "count": 2,
+          "slugs": [
+            "oklahoma",
+            "texas"
+          ]
+        },
+        "west": {
+          "count": 1,
+          "slugs": [
+            "arizona"
+          ]
+        }
+      },
+      "byProposalFocus": {
+        "bond": {
+          "count": 1,
+          "slugs": [
+            "new-hampshire"
+          ]
+        },
+        "reserve": {
+          "count": 3,
+          "slugs": [
+            "arizona",
+            "oklahoma",
+            "texas"
+          ]
+        },
+        "both": {
+          "count": 1,
+          "slugs": [
+            "illinois"
+          ]
+        },
+        "unknown": {
+          "count": 0,
+          "slugs": []
+        }
+      },
+      "byLegislativeStatusGroup": {
+        "introduced": {
+          "count": 1,
+          "slugs": [
+            "illinois"
+          ]
+        },
+        "advanced": {
+          "count": 1,
+          "slugs": [
+            "oklahoma"
+          ]
+        },
+        "approved": {
+          "count": 1,
+          "slugs": [
+            "new-hampshire"
+          ]
+        },
+        "enacted": {
+          "count": 1,
+          "slugs": [
+            "texas"
+          ]
+        },
+        "failed": {
+          "count": 1,
+          "slugs": [
+            "arizona"
+          ]
+        }
+      }
+    }
   },
   "taxonomy": {
     "proposalKinds": [
