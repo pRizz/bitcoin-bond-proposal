@@ -86,8 +86,14 @@ export type ContentGraph = {
 	};
 };
 
+export type ConfidenceCue = {
+	title: string;
+	detail: string;
+};
+
 export type PublishedState = GraphState & {
 	manifest: GraphManifestEntry | undefined;
+	confidenceCue: ConfidenceCue;
 };
 
 export type StateGroup<TBucket extends string> = {
@@ -140,14 +146,104 @@ const manifestBySlug = new Map(
 	),
 );
 
-function attachManifest(
+function describeConfidenceFooting(
+	confidence: GraphState["confidence"],
+): string {
+	switch (confidence) {
+		case "medium":
+			return "developing official footing";
+		case "low":
+			return "limited official footing";
+		default:
+			return "clear official footing";
+	}
+}
+
+function describeLegislativeStage(
+	legislativeStatusGroup: GraphState["legislativeStatusGroup"],
+): string {
+	switch (legislativeStatusGroup) {
+		case "advanced":
+			return "Advanced bill";
+		case "approved":
+			return "Approved bill";
+		case "enacted":
+			return "Enacted bill";
+		case "failed":
+			return "Failed bill";
+		default:
+			return "Early-stage bill";
+	}
+}
+
+function describeLegislativeCueDetail(
+	legislativeStatusGroup: GraphState["legislativeStatusGroup"],
+): string {
+	switch (legislativeStatusGroup) {
+		case "advanced":
+			return "Official bill text and dated status are present, and the measure has moved beyond introduction.";
+		case "approved":
+			return "Official bill text and dated status are present, and the measure has cleared a formal approval step.";
+		case "enacted":
+			return "Official bill text and dated status are present, and the measure has reached enacted-law status.";
+		case "failed":
+			return "Official bill text and dated status are present, and the measure remains useful because it reached an official veto or failure point.";
+		default:
+			return "Official bill text and dated status are present, but the measure remains at an early legislative stage.";
+	}
+}
+
+export function buildConfidenceCue(
+	state: Pick<
+		GraphState,
+		"confidence" | "recordType" | "legislativeStatusGroup"
+	>,
+): ConfidenceCue {
+	const footing = describeConfidenceFooting(state.confidence);
+
+	switch (state.recordType) {
+		case "authority-action":
+			return {
+				title: `Authority action with ${footing}`,
+				detail:
+					"The record rests on official authority action rather than a legislature-filed bill, with the approval posture reflected in the source trail.",
+			};
+		case "executive-action":
+			return {
+				title: `Executive action with ${footing}`,
+				detail:
+					"The record rests on official executive action rather than a legislature-filed bill, with the current posture reflected in the source trail.",
+			};
+		case "other-official-record":
+			return {
+				title: `Official record with ${footing}`,
+				detail:
+					"The record rests on official published materials, with the current posture reflected in the source trail.",
+			};
+		default:
+			return {
+				title: `${describeLegislativeStage(state.legislativeStatusGroup)} with ${footing}`,
+				detail: describeLegislativeCueDetail(state.legislativeStatusGroup),
+			};
+	}
+}
+
+function buildPublishedState(
+	state: GraphState,
+	manifestLookup: ReadonlyMap<string, GraphManifestEntry>,
+): PublishedState {
+	return {
+		...state,
+		manifest: manifestLookup.get(state.slug),
+		confidenceCue: buildConfidenceCue(state),
+	};
+}
+
+function buildPublishedStates(
 	states: ReadonlyArray<GraphState>,
 	manifestLookup: ReadonlyMap<string, GraphManifestEntry>,
 ): PublishedState[] {
-	return states.map((state) => ({
-		...state,
-		manifest: manifestLookup.get(state.slug),
-	}));
+	return states.map((state) => buildPublishedState(state, manifestLookup));
 }
 
 function sortPublishedStates(
@@ -230,7 +326,7 @@ export function buildStatesIndexModel(
 	graphData: ContentGraph,
 ): StatesIndexModel {
 	const publishedStates = sortPublishedStates(
-		attachManifest(
+		buildPublishedStates(
 			graphData.states,
 			new Map(
 				graphData.registry.manifest.states.map(
@@ -288,7 +384,7 @@ export function getDocumentBySlug(slug: string) {
 }
 
 export function getPublishedStates() {
-	return attachManifest(contentGraph.states, manifestBySlug);
+	return buildPublishedStates(contentGraph.states, manifestBySlug);
 }
 
 export function getStateBySlug(slug: string) {
@@ -301,8 +397,7 @@ export function getStateBySlug(slug: string) {
 	}
 
 	return {
-		...maybeStateEntry,
-		manifest: manifestBySlug.get(slug),
+		...buildPublishedState(maybeStateEntry, manifestBySlug),
 	};
 }
 
