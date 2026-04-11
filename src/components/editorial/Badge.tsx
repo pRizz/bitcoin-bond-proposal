@@ -26,6 +26,8 @@ type BadgeProps = {
 	class?: string;
 } & VariantProps<typeof badgeVariants>;
 
+export type BadgeTone = NonNullable<VariantProps<typeof badgeVariants>["tone"]>;
+
 export function Badge(props: BadgeProps) {
 	return (
 		<span class={cn(badgeVariants({ tone: props.tone }), props.class)}>

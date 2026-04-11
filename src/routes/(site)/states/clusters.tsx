@@ -33,6 +33,8 @@ function ClusterBucketPanel(props: { bucket: StatesClusterBucket }) {
 						billId={state.billId}
 						status={state.status}
 						proposalKind={state.proposalKind}
+						badgeLabel={state.badgeLabel}
+						badgeTone={state.badgeTone}
 						summary={state.summary}
 						significance={state.manifest?.shortNote ?? state.shortNote}
 						confidenceCue={state.confidenceCue}

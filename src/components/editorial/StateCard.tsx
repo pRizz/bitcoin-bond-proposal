@@ -2,6 +2,7 @@ import { A, usePreloadRoute } from "@solidjs/router";
 
 import type { ConfidenceCue } from "../../lib/site/content";
 import { cn } from "../../lib/site/cn";
+import type { BadgeTone } from "./Badge";
 import { Badge } from "./Badge";
 
 type StateCardProps = {
@@ -14,10 +15,26 @@ type StateCardProps = {
 	significance: string;
 	confidenceCue: ConfidenceCue;
 	lastReviewed: string;
+	badgeLabel?: string;
+	badgeTone?: BadgeTone;
 };
+
+function getProposalKindBadgeTone(proposalKind: string): BadgeTone {
+	switch (proposalKind) {
+		case "bond":
+			return "bond";
+		case "reserve":
+			return "reserve";
+		default:
+			return "accent";
+	}
+}
 
 export function StateCard(props: StateCardProps) {
 	const preload = usePreloadRoute();
+	const badgeLabel = props.badgeLabel ?? props.proposalKind;
+	const badgeTone =
+		props.badgeTone ?? getProposalKindBadgeTone(props.proposalKind);
 
 	return (
 		<A
@@ -41,17 +58,7 @@ export function StateCard(props: StateCardProps) {
 						{props.status}
 					</p>
 				</div>
-				<Badge
-					tone={
-						props.proposalKind === "bond"
-							? "bond"
-							: props.proposalKind === "reserve"
-								? "reserve"
-								: "accent"
-					}
-				>
-					{props.proposalKind}
-				</Badge>
+				<Badge tone={badgeTone}>{badgeLabel}</Badge>
 			</div>
 			<p class="mt-4 text-sm leading-7 text-ink-subtle">{props.summary}</p>
 			<div class="mt-5 rounded-[var(--radius-soft)] border border-border-soft/80 bg-panel/40 p-4">

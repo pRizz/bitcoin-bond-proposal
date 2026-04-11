@@ -3,6 +3,7 @@ import type {
 	ProposalFocus,
 	Region,
 } from "../content/schema";
+import type { BadgeTone } from "../../components/editorial/Badge";
 import type { PublishedState, StateGroup, StatesIndexModel } from "./content";
 
 export type ClusterSectionKey =
@@ -12,6 +13,8 @@ export type ClusterSectionKey =
 
 export type ClusterState = PublishedState & {
 	href: string;
+	badgeLabel: string;
+	badgeTone: BadgeTone;
 };
 
 export type StatesClusterBucket<TBucket extends string = string> = {
@@ -45,6 +48,8 @@ export type ComparisonSectionKey =
 
 export type ComparisonState = PublishedState & {
 	href: string;
+	badgeLabel: string;
+	badgeTone: BadgeTone;
 };
 
 export type StatesComparisonSection = {
@@ -176,6 +181,8 @@ function mapClusterStates(
 	return states.map((state) => ({
 		...state,
 		href: `/states/${state.slug}`,
+		badgeLabel: getProposalFocusBadgeLabel(state.proposalFocus),
+		badgeTone: getProposalFocusBadgeTone(state.proposalFocus),
 	}));
 }
 
@@ -194,17 +201,55 @@ function mapClusterBuckets<TBucket extends string>(
 		}));
 }
 
+function getProposalFocusBadgeLabel(proposalFocus: ProposalFocus): string {
+	switch (proposalFocus) {
+		case "bond":
+			return "bond focus";
+		case "reserve":
+			return "reserve focus";
+		case "both":
+			return "reserve + bond";
+		default:
+			return "unknown";
+	}
+}
+
+function getProposalFocusBadgeTone(proposalFocus: ProposalFocus): BadgeTone {
+	switch (proposalFocus) {
+		case "bond":
+			return "bond";
+		case "reserve":
+			return "reserve";
+		case "both":
+			return "accent";
+		default:
+			return "neutral";
+	}
+}
+
+function getRequiredComparisonState(
+	statesBySlug: ReadonlyMap<string, PublishedState>,
+	slug: string,
+): ComparisonState {
+	const maybeState = statesBySlug.get(slug);
+
+	if (!maybeState) {
+		throw new Error(`Missing comparison state: ${slug}`);
+	}
+
+	return {
+		...maybeState,
+		href: `/states/${maybeState.slug}`,
+		badgeLabel: getProposalFocusBadgeLabel(maybeState.proposalFocus),
+		badgeTone: getProposalFocusBadgeTone(maybeState.proposalFocus),
+	};
+}
+
 function mapComparisonStates(
 	statesBySlug: ReadonlyMap<string, PublishedState>,
 	slugs: ReadonlyArray<string>,
 ): Array<ComparisonState> {
-	return slugs.flatMap((slug) => {
-		const maybeState = statesBySlug.get(slug);
-
-		return maybeState
-			? [{ ...maybeState, href: `/states/${maybeState.slug}` }]
-			: [];
-	});
+	return slugs.map((slug) => getRequiredComparisonState(statesBySlug, slug));
 }
 
 export function buildStatesClusterModelFromIndexModel(

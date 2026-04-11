@@ -168,7 +168,7 @@ export default function StatesIndexPage() {
 					</div>
 					<div class="mt-5 space-y-3 text-[0.72rem] uppercase tracking-[0.12em] text-ink-subtle">
 						<div class="flex flex-wrap items-center gap-2">
-							<span class="text-accent-soft">Focus mix</span>
+							<span class="text-accent-soft">Overall focus mix</span>
 							{proposalFocusGroups.map((group) => (
 								<span class="data-chip">
 									{proposalFocusLabels[group.key]} {group.count}
@@ -176,7 +176,7 @@ export default function StatesIndexPage() {
 							))}
 						</div>
 						<div class="flex flex-wrap items-center gap-2">
-							<span class="text-accent-soft">Region mix</span>
+							<span class="text-accent-soft">Overall region mix</span>
 							{regionGroups.map((group) => (
 								<span class="data-chip">
 									{regionLabels[group.key]} {group.count}
@@ -184,7 +184,7 @@ export default function StatesIndexPage() {
 							))}
 						</div>
 						<div class="flex flex-wrap items-center gap-2">
-							<span class="text-accent-soft">Status mix</span>
+							<span class="text-accent-soft">Overall status mix</span>
 							{legislativeStatusGroups.map((group) => (
 								<span class="data-chip">
 									{legislativeStatusLabels[group.key]} {group.count}

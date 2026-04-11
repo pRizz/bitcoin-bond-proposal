@@ -391,6 +391,7 @@ test("getStatesComparisonModel keeps canonical state detail links in every compa
 	).toMatchObject({
 		slug: "new-hampshire",
 		href: "/states/new-hampshire",
+		badgeLabel: "bond focus",
 	});
 });
 
@@ -418,4 +419,17 @@ test("buildStatesComparisonModel stays selective and narrative instead of turnin
 			(section) => section.lead.length > 0 && section.comparison.length > 0,
 		),
 	).toBeTrue();
+});
+
+test("buildStatesComparisonModel fails loudly if a configured comparison state is missing", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+	fixtureGraph.states = fixtureGraph.states.filter(
+		(state) => state.slug !== "north-carolina",
+	);
+
+	// Act / Assert
+	expect(() => buildStatesComparisonModel(fixtureGraph)).toThrow(
+		"Missing comparison state: north-carolina",
+	);
 });
