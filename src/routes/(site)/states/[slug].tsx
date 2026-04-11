@@ -14,6 +14,10 @@ function formatRecordType(recordType: string): string {
 	return recordType.replaceAll("-", " ");
 }
 
+function formatReviewStatusLabel(reviewStatus: string): string {
+	return reviewStatus.replaceAll("-", " ");
+}
+
 export default function StateDetailPage() {
 	const params = useParams();
 	const slug = params.slug;
@@ -63,6 +67,11 @@ export default function StateDetailPage() {
 								{state.proposalKind}
 							</Badge>
 							<Badge tone="neutral">{formatRecordType(state.recordType)}</Badge>
+							<Badge
+								tone={state.reviewStatus === "current" ? "success" : "warning"}
+							>
+								{formatReviewStatusLabel(state.reviewStatus)}
+							</Badge>
 						</div>
 						<dl class="mt-5 grid gap-3 text-sm leading-6 text-ink-subtle sm:grid-cols-2 lg:grid-cols-1">
 							<div>
@@ -85,6 +94,18 @@ export default function StateDetailPage() {
 							</div>
 							<div>
 								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Next review due
+								</dt>
+								<dd>{state.nextReviewDue}</dd>
+							</div>
+							<div>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Review cadence
+								</dt>
+								<dd>Every {state.reviewCadenceDays} days</dd>
+							</div>
+							<div>
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
 									Confidence
 								</dt>
 								<dd class="capitalize">{state.confidence}</dd>
@@ -102,6 +123,15 @@ export default function StateDetailPage() {
 								<p class="mt-2">{state.manifest.shortNote}</p>
 							</div>
 						) : null}
+						<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
+							<p class="font-semibold text-ink">Source and freshness posture</p>
+							<p class="mt-2">
+								This is a descriptive, snapshot-based registry record anchored
+								in official legislative sources. The summary reflects the record
+								as of {state.statusAsOf} and was last reviewed on{" "}
+								{state.lastReviewed}; it is not a live tracking feed.
+							</p>
+						</div>
 						{state.slug === "illinois" ? (
 							<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
 								<p class="font-semibold text-ink">Illinois model packet</p>
