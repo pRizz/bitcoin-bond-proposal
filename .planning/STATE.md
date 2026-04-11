@@ -2,19 +2,25 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-04-04)
+See: .planning/PROJECT.md (updated 2026-04-11)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Define the next milestone
+**Current focus:** Phase 10 — Coverage Expansion Contract and Data Shape
 
 ## Current Position
 
-Milestone: `v1.1` archived  
-Active phase: none  
-Status: Ready for next milestone definition  
-Last activity: 2026-04-04 — Archived v1.1 and created the historical planning record
+**Current Phase:** 10
+**Current Phase Name:** Coverage Expansion Contract and Data Shape
+**Current Plan:** 0
+**Total Phases:** 13
+**Total Plans in Phase:** 2
+**Status:** Ready to discuss and plan Phase 10
+**Last Activity:** 2026-04-11 — Initialized milestone v1.2 with fresh research, requirements, and roadmap
+Phase: 10 of 13 (Coverage Expansion Contract and Data Shape)
+Plan: 0 of 2 in current phase
 
-Progress: ██████████ 100%
+Progress: ░░░░░░░░░░ 0%
+**Progress:** 0%
 
 ## Performance Metrics
 
@@ -47,17 +53,21 @@ Recent decisions are archived in:
 - `.planning/milestones/v1.1-ROADMAP.md`
 - `.planning/PROJECT.md`
 
+Current milestone decisions:
+- Broader national coverage, comparison, and refresh workflows are the primary v1.2 scope.
+- `mystic-ui` remains backlog support work, not a milestone driver.
+
 ### Pending Todos
 
 None.
 
 ### Blockers/Concerns
 
-No active blockers remain in the archived v1.1 milestone.
-Any future theme-mode expansion should be treated as a new milestone choice rather than assumed continuation work.
+No active blockers at milestone start.
+Comparison work must stay anchored to canonical state data and explicit freshness signals.
 
-## Session Continuity
+## Session
 
-Last session: 2026-04-04 04:48 CDT  
-Stopped at: v1.1 archived; ready to define the next milestone  
-Resume file: .planning/MILESTONES.md
+**Last Date:** 2026-04-11 13:41 CDT
+**Stopped At:** v1.2 initialized; Phase 10 ready for discuss/plan
+**Resume File:** .planning/ROADMAP.md

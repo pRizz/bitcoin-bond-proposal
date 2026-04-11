@@ -12,6 +12,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 - Shipped `v1.0` on 2026-04-03.
 - Shipped `v1.1` on 2026-04-04.
+- Started `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-11.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -42,7 +43,9 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ### Active
 
-(Define in the next milestone.)
+- [ ] Broaden the published state registry beyond the first five entries without weakening the existing source and freshness contract.
+- [ ] Add comparison and cluster surfaces that help readers understand proposal patterns by status, type, and region.
+- [ ] Add repo-owned refresh workflow support and visible freshness cues so broader coverage stays maintainable and honest.
 
 ### Out of Scope
 
@@ -50,13 +53,18 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Real-time legislative tracking automation — snapshot-based research remains more credible than pseudo-live status claims.
 - Municipal or non-state proposal coverage — future milestones should broaden state coverage first.
 - Database-first architecture or admin UI — repo-tracked content still fits the editorial model.
+- Broad visual-system rewrites or wholesale `mystic-ui` adoption — defer unless a specific comparison or refresh surface proves the editorial value clearly.
+- Full 50-state deep publication in a single milestone — the next credible batch plus reusable comparison and refresh contracts has higher leverage.
 
-## Next Milestone Goals
+## Current Milestone: v1.2 National Coverage, Comparison, and Refresh
 
-- Decide whether the next visual step is a theme toggle or continued dark-first refinement.
-- Broaden the public research product with richer comparison or cluster surfaces only where they improve understanding materially.
-- Design semi-automated refresh workflows and broader coverage expansion without weakening the trust model.
-- Evaluate selective `mystic-ui` adoption for the public webapp only where it strengthens motion, hierarchy, or component polish without forcing a Tailwind CSS v3-style setup or weakening the current editorial trust model.
+**Goal:** Turn the Illinois-first product into a broader national research surface that can compare states credibly and stay fresh without pretending to be live.
+
+**Target features:**
+- broader publishable national coverage beyond the initial five state entries
+- cluster and comparison surfaces for status, proposal type, and regional pattern reading
+- repo-owned refresh queue and freshness cues across registry surfaces
+- only selective UI experimentation when it directly strengthens comprehension or trust
 
 ## Context
 
@@ -78,6 +86,13 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Tailwind CSS v4
   - Playwright
   - Biome
+- The next milestone builds on the existing canonical content and generated content graph surfaces:
+  - `content/data/state-registry-manifest.json`
+  - `content/states/*.md`
+  - `src/lib/content/schema.ts`
+  - `scripts/compile-content.ts`
+  - `src/lib/site/content.ts`
+  - `src/routes/(site)/states/*`
 
 ## Constraints
 
@@ -87,6 +102,8 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - **Freshness**: Snapshot-based research with visible dates remains preferable to implied real-time certainty.
 - **Architecture**: The site should stay close to the content-first research pattern unless future milestones create clear pressure to change it.
 - **Workflow**: The repository should continue to enforce source-level and content/PDF guardrails through repo-owned automation.
+- **Comparisons**: Cluster and comparison pages must explain, not gamify, the legislative landscape.
+- **UI scope**: Theme and component experimentation stays secondary to coverage, comparison clarity, and refresh operability.
 
 ## Key Decisions
 
@@ -104,6 +121,8 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Promote restored format/lint checks into pre-commit only once trustworthy | Tooling guardrails should help, not add noise | ✓ Implemented in Phase 7 |
 | Make the webapp dark by default in v1.1 | The next milestone is a focused editorial visual refactor rather than a capability expansion | ✓ Implemented in Phases 8-9 |
 | Preserve route structure while improving dark-mode readability and interaction clarity | The visual refactor should clarify the reading path, not redesign the product | ✓ Implemented in Phase 9 |
+| Make broader coverage, comparison, and refresh the v1.2 driver | The next leverage point is research utility and maintainability, not another shell-only polish cycle | — Pending |
+| Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
 
 <details>
 <summary>Archived v1.1 milestone framing</summary>
@@ -121,5 +140,22 @@ Target features:
 
 </details>
 
+## Evolution
+
+This document evolves at phase transitions and milestone boundaries.
+
+**After each phase transition** (via `/gsd-transition`):
+1. Requirements invalidated? → Move to Out of Scope with reason
+2. Requirements validated? → Move to Validated with phase reference
+3. New requirements emerged? → Add to Active
+4. Decisions to log? → Add to Key Decisions
+5. "What This Is" still accurate? → Update if drifted
+
+**After each milestone** (via `/gsd-complete-milestone`):
+1. Full review of all sections
+2. Core Value check — still the right priority?
+3. Audit Out of Scope — reasons still valid?
+4. Update Context with current state
+
 ---
-*Last updated: 2026-04-04 after v1.1 milestone*
+*Last updated: 2026-04-11 after starting v1.2 milestone*
