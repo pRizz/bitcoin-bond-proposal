@@ -174,10 +174,10 @@
 		{
 			"state": "Maryland",
 			"slug": "maryland",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Bitcoin reserve fund bill tied to seized-gambling proceeds, with official hearing and custody details on the Maryland General Assembly record.",
+			"editorialPriority": "reserve-priority",
 			"region": "south"
 		},
 		{
@@ -192,10 +192,10 @@
 		{
 			"state": "Michigan",
 			"slug": "michigan",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Strategic bitcoin reserve bill would let the treasurer invest capped state funds in cryptocurrency through official custody channels.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
@@ -219,10 +219,10 @@
 		{
 			"state": "Missouri",
 			"slug": "missouri",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "Possible future reserve-side candidate, not yet part of the first published batch.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Bitcoin strategic reserve fund bill pairs direct treasury custody with a five-year holding rule and a completed House public hearing.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
@@ -291,10 +291,10 @@
 		{
 			"state": "North Carolina",
 			"slug": "north-carolina",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "both",
+			"shortNote": "Official reserve bill also contemplates Bitcoin-backed bond use, making it the clearest crossover signal in the expanded batch.",
+			"editorialPriority": "bond-priority",
 			"region": "south"
 		},
 		{
@@ -354,10 +354,10 @@
 		{
 			"state": "South Carolina",
 			"slug": "south-carolina",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Strategic digital assets reserve bill would authorize capped treasury investment, donations, custody controls, and biennial reporting.",
+			"editorialPriority": "reserve-priority",
 			"region": "south"
 		},
 		{
