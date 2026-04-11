@@ -1,5 +1,6 @@
 import { A, usePreloadRoute } from "@solidjs/router";
 
+import type { ConfidenceCue } from "../../lib/site/content";
 import { cn } from "../../lib/site/cn";
 import { Badge } from "./Badge";
 
@@ -11,6 +12,7 @@ type StateCardProps = {
 	proposalKind: string;
 	summary: string;
 	significance: string;
+	confidenceCue: ConfidenceCue;
 	lastReviewed: string;
 };
 
@@ -52,6 +54,17 @@ export function StateCard(props: StateCardProps) {
 				</Badge>
 			</div>
 			<p class="mt-4 text-sm leading-7 text-ink-subtle">{props.summary}</p>
+			<div class="mt-5 rounded-[var(--radius-soft)] border border-border-soft/80 bg-panel/40 p-4">
+				<p class="text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-accent-soft">
+					Record footing
+				</p>
+				<p class="mt-2 text-sm font-medium leading-6 text-ink">
+					{props.confidenceCue.title}
+				</p>
+				<p class="mt-2 text-sm leading-6 text-ink-subtle">
+					{props.confidenceCue.detail}
+				</p>
+			</div>
 			<div class="mt-5 border-t border-border-soft/80 pt-4">
 				<p class="text-sm leading-7 text-ink-subtle/90">{props.significance}</p>
 				<p class="mt-4 text-xs uppercase tracking-[0.14em] text-ink-subtle">

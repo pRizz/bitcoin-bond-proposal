@@ -78,13 +78,13 @@ export default function StatesIndexPage() {
 			<Title>{makePageTitle("States")}</Title>
 			<Meta
 				name="description"
-				content="Browse the first published batch of state reserve and bond records with visible freshness and significance cues."
+				content="Browse published state reserve and bond records with visible freshness, significance, and record-footing cues."
 			/>
 
 			<PageSection
 				eyebrow="Registry"
 				title="State proposals"
-				lead="The registry stays medium-density: enough structure to compare the first published records by focus, region, and legislative position without pretending this surface is a live tracker."
+				lead="The registry stays medium-density: enough structure to browse published records by focus, region, and legislative position while keeping record footing visible without pretending this surface is a live tracker."
 			>
 				<div class="panel-wash mb-6 rounded-[var(--radius-card)] p-4 sm:p-5">
 					<div class="flex flex-wrap items-start justify-between gap-4">
@@ -104,6 +104,12 @@ export default function StatesIndexPage() {
 								{statesIndexModel.freshness.stalestStatusAgeDays ??
 									"Unavailable"}{" "}
 								days because this catalog remains explicitly dated.
+							</p>
+							<p class="mt-3 text-sm leading-7 text-ink-subtle">
+								Each card notes whether the record is an early-stage bill, an
+								advanced or enacted measure, or an authority action so the
+								coverage posture stays visible without turning this page into a
+								scorecard.
 							</p>
 						</div>
 						<div class="flex flex-wrap gap-3">
@@ -182,6 +188,7 @@ export default function StatesIndexPage() {
 								proposalKind={state.proposalKind}
 								summary={state.summary}
 								significance={state.shortNote}
+								confidenceCue={state.confidenceCue}
 								lastReviewed={state.lastReviewed}
 							/>
 						))}
