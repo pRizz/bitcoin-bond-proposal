@@ -85,15 +85,22 @@ export default function StateDetailPage() {
 							</div>
 							<div>
 								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
-									Confidence
-								</dt>
-								<dd class="capitalize">{state.confidence}</dd>
-							</div>
-							<div>
-								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
 									Chamber / authority
 								</dt>
 								<dd>{state.chamber}</dd>
+							</div>
+							<div class="sm:col-span-2 lg:col-span-1">
+								<dt class="text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">
+									Record footing
+								</dt>
+								<dd>
+									<p class="font-medium text-ink">
+										{state.confidenceCue.title}
+									</p>
+									<p class="mt-2 text-sm leading-6 text-ink-subtle">
+										{state.confidenceCue.detail}
+									</p>
+								</dd>
 							</div>
 						</dl>
 						{state.manifest?.shortNote ? (
