@@ -55,8 +55,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 12-01: Build cluster reading paths for the expanded registry.
-- [ ] 12-02: Build comparison storytelling surfaces and cross-links back to state detail pages.
+- [x] 12-01: Build cluster reading paths for the expanded registry.
+- [x] 12-02: Build comparison storytelling surfaces and cross-links back to state detail pages.
 
 #### Phase 13: Refresh Workflow and Freshness QA
 **Goal**: Make broader coverage maintainable through repo-owned refresh workflow support and cross-surface freshness QA.
@@ -78,7 +78,7 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 10. Coverage Expansion Contract and Data Shape | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 11. Broader National Publication Batch | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 12. Cluster and Comparison Surfaces | v1.2 | 0/2 | Not started | - |
+| 12. Cluster and Comparison Surfaces | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 13. Refresh Workflow and Freshness QA | v1.2 | 0/2 | Not started | - |
 
 ## Backlog

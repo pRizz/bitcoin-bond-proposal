@@ -13,9 +13,9 @@
 
 ### Comparison and Cluster Surfaces
 
-- [ ] **SITE-07**: Reader can browse cluster views grouped by legislative status, proposal type, or region.
-- [ ] **SITE-08**: Reader can compare states through editorial comparison surfaces that explain meaningful differences without requiring raw bill reading.
-- [ ] **SITE-09**: Reader can move from cluster or comparison surfaces into the canonical state detail page without losing context.
+- [x] **SITE-07**: Reader can browse cluster views grouped by legislative status, proposal type, or region.
+- [x] **SITE-08**: Reader can compare states through editorial comparison surfaces that explain meaningful differences without requiring raw bill reading.
+- [x] **SITE-09**: Reader can move from cluster or comparison surfaces into the canonical state detail page without losing context.
 
 ### Refresh Workflow
 
@@ -52,9 +52,9 @@
 | CATA-07 | Phase 11 | Complete |
 | CATA-08 | Phase 10 | Complete |
 | CATA-09 | Phase 11 | Complete |
-| SITE-07 | Phase 12 | Pending |
-| SITE-08 | Phase 12 | Pending |
-| SITE-09 | Phase 12 | Pending |
+| SITE-07 | Phase 12 | Complete |
+| SITE-08 | Phase 12 | Complete |
+| SITE-09 | Phase 12 | Complete |
 | REFR-01 | Phase 13 | Pending |
 | REFR-02 | Phase 10 | Complete |
 | REFR-03 | Phase 13 | Pending |
@@ -66,4 +66,4 @@
 
 ---
 *Requirements defined: 2026-04-11*
-*Last updated: 2026-04-11 after Phase 11 completion*
+*Last updated: 2026-04-11 after Phase 12 completion*

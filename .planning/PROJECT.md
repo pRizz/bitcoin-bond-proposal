@@ -15,6 +15,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Started `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-11.
 - Completed Phase 10 on 2026-04-11, locking the registry grouping contract, grouped content graph, and `/states` browse cues for v1.2.
 - Completed Phase 11 on 2026-04-11, expanding the published registry to ten state records and integrating calm confidence/completeness cues across the existing registry surfaces.
+- Completed Phase 12 on 2026-04-11, adding dedicated cluster and comparison reading paths while keeping canonical state detail pages as the source-backed destination.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -46,10 +47,11 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Maintainer can distinguish refresh workflow artifacts from published canonical state content through the `generated/refresh/` boundary and supporting docs — `Phase 10 / v1.2`
 - ✓ Reader can access an expanded ten-state publishable registry batch beyond the initial five records without weakening the source and freshness contract — `Phase 11 / v1.2`
 - ✓ Reader can see calm confidence/completeness cues when coverage depth varies across states on the existing catalog and detail surfaces — `Phase 11 / v1.2`
+- ✓ Reader can browse dedicated cluster views grouped by status, proposal type, and region under the existing states subtree — `Phase 12 / v1.2`
+- ✓ Reader can use an editorial comparison surface with direct links back to canonical state detail pages — `Phase 12 / v1.2`
 
 ### Active
 
-- [ ] Add comparison and cluster surfaces that help readers understand proposal patterns by status, type, and region.
 - [ ] Complete repo-owned refresh queue execution and visible freshness cues across catalog, comparison, and state-detail surfaces so broader coverage stays maintainable and honest.
 
 ### Out of Scope
@@ -163,4 +165,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-11 after Phase 11 completion*
+*Last updated: 2026-04-11 after Phase 12 completion*
