@@ -13,6 +13,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Shipped `v1.0` on 2026-04-03.
 - Shipped `v1.1` on 2026-04-04.
 - Started `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-11.
+- Completed Phase 10 on 2026-04-11, locking the registry grouping contract, grouped content graph, and `/states` browse cues for v1.2.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -40,12 +41,14 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Public site defaults to a dark editorial shell across shipped routes — `v1.1`
 - ✓ Restrained Bitcoin-orange emphasis now carries navigation, actions, proof surfaces, and key labels without drifting into hype styling — `v1.1`
 - ✓ Desktop/mobile readability and interaction QA passed across homepage, methodology, packet, explainer, catalog, and state-detail surfaces — `v1.1`
+- ✓ Reader can browse richer registry metadata by status, proposal type, and region through the canonical registry contract and `/states` surface — `Phase 10 / v1.2`
+- ✓ Maintainer can distinguish refresh workflow artifacts from published canonical state content through the `generated/refresh/` boundary and supporting docs — `Phase 10 / v1.2`
 
 ### Active
 
 - [ ] Broaden the published state registry beyond the first five entries without weakening the existing source and freshness contract.
 - [ ] Add comparison and cluster surfaces that help readers understand proposal patterns by status, type, and region.
-- [ ] Add repo-owned refresh workflow support and visible freshness cues so broader coverage stays maintainable and honest.
+- [ ] Complete repo-owned refresh queue execution and visible freshness cues across catalog, comparison, and state-detail surfaces so broader coverage stays maintainable and honest.
 
 ### Out of Scope
 
@@ -158,4 +161,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-11 after starting v1.2 milestone*
+*Last updated: 2026-04-11 after Phase 10 completion*

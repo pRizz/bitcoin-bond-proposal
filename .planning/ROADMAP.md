@@ -27,8 +27,8 @@ v1.2 turns the shipped Illinois-first product into a broader national research s
 **Plans**: 2 plans
 
 Plans:
-- [ ] 10-01: Extend canonical schemas and manifest fields for comparison and refresh contracts.
-- [ ] 10-02: Propagate grouped and freshness-aware data through the compile pipeline and site loaders.
+- [x] 10-01: Extend canonical schemas and manifest fields for comparison and refresh contracts.
+- [x] 10-02: Propagate grouped and freshness-aware data through the compile pipeline and site loaders.
 
 #### Phase 11: Broader National Publication Batch
 **Goal**: Publish the next deliberate batch of state entries under the stronger registry contract and visible confidence/freshness rules.
@@ -76,7 +76,7 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 10. Coverage Expansion Contract and Data Shape | v1.2 | 0/2 | Not started | - |
+| 10. Coverage Expansion Contract and Data Shape | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 11. Broader National Publication Batch | v1.2 | 0/2 | Not started | - |
 | 12. Cluster and Comparison Surfaces | v1.2 | 0/2 | Not started | - |
 | 13. Refresh Workflow and Freshness QA | v1.2 | 0/2 | Not started | - |

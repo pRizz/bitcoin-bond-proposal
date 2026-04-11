@@ -8,7 +8,7 @@
 ### Coverage Expansion
 
 - [ ] **CATA-07**: Reader can access an expanded batch of publishable state entries beyond the first five, each meeting the existing source and freshness contract.
-- [ ] **CATA-08**: Reader can browse richer registry metadata that supports grouping entries by status, proposal type, and region.
+- [x] **CATA-08**: Reader can browse richer registry metadata that supports grouping entries by status, proposal type, and region.
 - [ ] **CATA-09**: Reader can see confidence or completeness cues when coverage depth varies across states.
 
 ### Comparison and Cluster Surfaces
@@ -20,7 +20,7 @@
 ### Refresh Workflow
 
 - [ ] **REFR-01**: Maintainer can generate a repo-owned refresh queue for entries whose review dates or legislative status need attention.
-- [ ] **REFR-02**: Maintainer can distinguish refresh workflow artifacts from published canonical state content.
+- [x] **REFR-02**: Maintainer can distinguish refresh workflow artifacts from published canonical state content.
 - [ ] **REFR-03**: Reader can see visible freshness cues across catalog, comparison, and state-detail surfaces.
 
 ## Future Requirements
@@ -50,13 +50,13 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | CATA-07 | Phase 11 | Pending |
-| CATA-08 | Phase 10 | Pending |
+| CATA-08 | Phase 10 | Complete |
 | CATA-09 | Phase 11 | Pending |
 | SITE-07 | Phase 12 | Pending |
 | SITE-08 | Phase 12 | Pending |
 | SITE-09 | Phase 12 | Pending |
 | REFR-01 | Phase 13 | Pending |
-| REFR-02 | Phase 10 | Pending |
+| REFR-02 | Phase 10 | Complete |
 | REFR-03 | Phase 13 | Pending |
 
 **Coverage:**
@@ -66,4 +66,4 @@
 
 ---
 *Requirements defined: 2026-04-11*
-*Last updated: 2026-04-11 after milestone initialization*
+*Last updated: 2026-04-11 after Phase 10 completion*
