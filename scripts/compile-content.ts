@@ -22,7 +22,7 @@ type GroupBucket<TBucket extends string> = Record<
 	{ count: number; slugs: string[] }
 >;
 
-type CompiledContentGraph = {
+export type CompiledContentGraph = {
 	docs: Array<{
 		title: string;
 		slug: string;
@@ -302,4 +302,6 @@ async function run() {
 	}
 }
 
-await run();
+if (import.meta.main) {
+	await run();
+}

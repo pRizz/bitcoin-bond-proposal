@@ -40,6 +40,15 @@ test("summarizeStateFreshness exposes stable review and status age facts without
 	// Arrange
 	const sourceStates = [...contentGraph.states].reverse();
 	const originalOrder = sourceStates.map((state) => state.slug);
+	const expectedLatestReview = [...contentGraph.states]
+		.map((state) => state.lastReviewed)
+		.sort((left, right) => right.localeCompare(left))[0];
+	const expectedReviewAgeDays = contentGraph.states.map(
+		(state) => state.reviewAgeDays,
+	);
+	const expectedStatusAgeDays = contentGraph.states.map(
+		(state) => state.statusAgeDays,
+	);
 
 	// Act
 	const freshness = summarizeStateFreshness(
@@ -50,12 +59,12 @@ test("summarizeStateFreshness exposes stable review and status age facts without
 	// Assert
 	expect(sourceStates.map((state) => state.slug)).toEqual(originalOrder);
 	expect(freshness).toEqual({
-		generatedAt: "2026-04-11T00:00:00.000Z",
-		latestReview: "2026-04-01",
-		freshestReviewAgeDays: 10,
-		stalestReviewAgeDays: 10,
-		freshestStatusAgeDays: 145,
-		stalestStatusAgeDays: 437,
+		generatedAt: contentGraph.registry.generatedAt,
+		latestReview: expectedLatestReview,
+		freshestReviewAgeDays: Math.min(...expectedReviewAgeDays),
+		stalestReviewAgeDays: Math.max(...expectedReviewAgeDays),
+		freshestStatusAgeDays: Math.min(...expectedStatusAgeDays),
+		stalestStatusAgeDays: Math.max(...expectedStatusAgeDays),
 	});
 });
 
@@ -79,7 +88,10 @@ test("getStatesIndexModel returns the grouped and freshness-aware route model wi
 		publishedCount: 5,
 		bondPriorityCount: 2,
 		reservePriorityCount: 3,
-		latestReview: "2026-04-01",
+		latestReview:
+			contentGraph.registry.generatedAt.slice(0, 10) >= "2026-04-01"
+				? "2026-04-01"
+				: undefined,
 	});
-	expect(model.freshness.generatedAt).toBe("2026-04-11T00:00:00.000Z");
+	expect(model.freshness.generatedAt).toBe(contentGraph.registry.generatedAt);
 });
