@@ -3,37 +3,75 @@ import { createMemo, createSignal } from "solid-js";
 
 import { PageSection } from "../../../components/editorial/PageSection";
 import { StateCard } from "../../../components/editorial/StateCard";
-import { getPublishedStates } from "../../../lib/site/content";
+import {
+	getStatesIndexModel,
+	type ProposalKind,
+	type StatesIndexSortMode,
+} from "../../../lib/site/content";
 import { makePageTitle } from "../../../lib/site/seo";
 
+const proposalFocusLabels = {
+	bond: "Bond focus",
+	reserve: "Reserve focus",
+	both: "Reserve + bond",
+	unknown: "Unknown",
+} as const;
+
+const regionLabels = {
+	northeast: "Northeast",
+	midwest: "Midwest",
+	south: "South",
+	west: "West",
+} as const;
+
+const legislativeStatusLabels = {
+	introduced: "Introduced",
+	advanced: "Advanced",
+	approved: "Approved",
+	enacted: "Enacted",
+	failed: "Failed",
+} as const;
+
 export default function StatesIndexPage() {
-	const publishedStates = getPublishedStates();
-	const [proposalFocusFilter, setProposalFocusFilter] = createSignal("all");
-	const [sortMode, setSortMode] = createSignal("priority");
+	const statesIndexModel = getStatesIndexModel();
+	const [proposalKindFilter, setProposalKindFilter] = createSignal<
+		ProposalKind | "all"
+	>("all");
+	const [sortMode, setSortMode] = createSignal<StatesIndexSortMode>("priority");
 
 	const visibleStates = createMemo(() => {
-		const filtered = publishedStates.filter((state) => {
-			const selectedFocus = proposalFocusFilter();
-			if (selectedFocus === "all") {
-				return true;
-			}
-
-			return state.proposalKind === selectedFocus;
-		});
+		const selectedProposalKind = proposalKindFilter();
+		const filteredStates =
+			selectedProposalKind === "all"
+				? statesIndexModel.states
+				: statesIndexModel.states.filter(
+						(state) => state.proposalKind === selectedProposalKind,
+					);
 
 		switch (sortMode()) {
 			case "state":
-				return [...filtered].sort((left, right) =>
+				return [...filteredStates].sort((left, right) =>
 					left.state.localeCompare(right.state),
 				);
 			case "reviewed":
-				return [...filtered].sort((left, right) =>
+				return [...filteredStates].sort((left, right) =>
 					right.lastReviewed.localeCompare(left.lastReviewed),
 				);
 			default:
-				return filtered;
+				return filteredStates;
 		}
 	});
+
+	const proposalFocusGroups = statesIndexModel.groups.byProposalFocus.filter(
+		(group) => group.count > 0,
+	);
+	const regionGroups = statesIndexModel.groups.byRegion.filter(
+		(group) => group.count > 0,
+	);
+	const legislativeStatusGroups =
+		statesIndexModel.groups.byLegislativeStatusGroup.filter(
+			(group) => group.count > 0,
+		);
 
 	return (
 		<>
@@ -46,28 +84,39 @@ export default function StatesIndexPage() {
 			<PageSection
 				eyebrow="Registry"
 				title="State proposals"
-				lead="The first shell keeps the catalog medium-density: enough signal to scan quickly, enough metadata to trust what you are looking at."
+				lead="The registry stays medium-density: enough structure to compare the first published records by focus, region, and legislative position without pretending this surface is a live tracker."
 			>
 				<div class="panel-wash mb-6 rounded-[var(--radius-card)] p-4 sm:p-5">
-					<div class="flex flex-wrap items-center justify-between gap-4">
-						<div>
+					<div class="flex flex-wrap items-start justify-between gap-4">
+						<div class="max-w-2xl">
 							<p class="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-accent-soft">
 								Published states
 							</p>
 							<p class="mt-2 text-sm leading-7 text-ink-subtle">
-								Showing {visibleStates().length} of {publishedStates.length}{" "}
-								published records.
+								Showing {visibleStates().length} of{" "}
+								{statesIndexModel.stats.publishedCount} published records.
+								Latest review{" "}
+								{statesIndexModel.stats.latestReview ?? "Unavailable"}. Status
+								snapshots currently span{" "}
+								{statesIndexModel.freshness.freshestStatusAgeDays ??
+									"Unavailable"}{" "}
+								to{" "}
+								{statesIndexModel.freshness.stalestStatusAgeDays ??
+									"Unavailable"}{" "}
+								days because this catalog remains explicitly dated.
 							</p>
 						</div>
 						<div class="flex flex-wrap gap-3">
 							<label class="data-chip min-w-[10.75rem] justify-between gap-4 text-[0.72rem] focus-within:border-accent-muted">
-								<span>Focus</span>
+								<span>Type</span>
 								<select
-									aria-label="Focus"
+									aria-label="Type"
 									class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
-									value={proposalFocusFilter()}
+									value={proposalKindFilter()}
 									onInput={(event) =>
-										setProposalFocusFilter(event.currentTarget.value)
+										setProposalKindFilter(
+											event.currentTarget.value as ProposalKind | "all",
+										)
 									}
 								>
 									<option value="all">All</option>
@@ -82,13 +131,43 @@ export default function StatesIndexPage() {
 									aria-label="Sort"
 									class="min-w-[5.5rem] bg-transparent text-right text-[0.72rem] uppercase tracking-[0.12em] text-ink outline-none focus-visible:outline-none"
 									value={sortMode()}
-									onInput={(event) => setSortMode(event.currentTarget.value)}
+									onInput={(event) =>
+										setSortMode(
+											event.currentTarget.value as StatesIndexSortMode,
+										)
+									}
 								>
 									<option value="priority">Priority</option>
 									<option value="state">State</option>
 									<option value="reviewed">Reviewed</option>
 								</select>
 							</label>
+						</div>
+					</div>
+					<div class="mt-5 space-y-3 text-[0.72rem] uppercase tracking-[0.12em] text-ink-subtle">
+						<div class="flex flex-wrap items-center gap-2">
+							<span class="text-accent-soft">Focus mix</span>
+							{proposalFocusGroups.map((group) => (
+								<span class="data-chip">
+									{proposalFocusLabels[group.key]} {group.count}
+								</span>
+							))}
+						</div>
+						<div class="flex flex-wrap items-center gap-2">
+							<span class="text-accent-soft">Region mix</span>
+							{regionGroups.map((group) => (
+								<span class="data-chip">
+									{regionLabels[group.key]} {group.count}
+								</span>
+							))}
+						</div>
+						<div class="flex flex-wrap items-center gap-2">
+							<span class="text-accent-soft">Status mix</span>
+							{legislativeStatusGroups.map((group) => (
+								<span class="data-chip">
+									{legislativeStatusLabels[group.key]} {group.count}
+								</span>
+							))}
 						</div>
 					</div>
 				</div>
@@ -102,9 +181,7 @@ export default function StatesIndexPage() {
 								status={state.status}
 								proposalKind={state.proposalKind}
 								summary={state.summary}
-								significance={
-									state.manifest?.shortNote ?? "Published registry entry."
-								}
+								significance={state.shortNote}
 								lastReviewed={state.lastReviewed}
 							/>
 						))}
