@@ -41,8 +41,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 11-01: Research and publish the next state batch using the stronger registry contract.
-- [ ] 11-02: Integrate the expanded batch into existing registry surfaces with confidence cues.
+- [x] 11-01: Research and publish the next state batch using the stronger registry contract.
+- [x] 11-02: Integrate the expanded batch into existing registry surfaces with confidence cues.
 
 #### Phase 12: Cluster and Comparison Surfaces
 **Goal**: Ship editorial cluster and comparison surfaces that help readers understand legislative patterns without leaving the canonical source trail.
@@ -77,7 +77,7 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 10. Coverage Expansion Contract and Data Shape | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 11. Broader National Publication Batch | v1.2 | 0/2 | Not started | - |
+| 11. Broader National Publication Batch | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 12. Cluster and Comparison Surfaces | v1.2 | 0/2 | Not started | - |
 | 13. Refresh Workflow and Freshness QA | v1.2 | 0/2 | Not started | - |
 

@@ -14,6 +14,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Shipped `v1.1` on 2026-04-04.
 - Started `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-11.
 - Completed Phase 10 on 2026-04-11, locking the registry grouping contract, grouped content graph, and `/states` browse cues for v1.2.
+- Completed Phase 11 on 2026-04-11, expanding the published registry to ten state records and integrating calm confidence/completeness cues across the existing registry surfaces.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -26,7 +27,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Illinois packet route
   - financing explainer route
   - state catalog
-  - five published state-detail pages
+  - ten published state-detail pages
 - Source-level format and lint checks remain restored and enforced in pre-commit alongside the content/PDF trust contract.
 
 ## Requirements
@@ -43,10 +44,11 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Desktop/mobile readability and interaction QA passed across homepage, methodology, packet, explainer, catalog, and state-detail surfaces — `v1.1`
 - ✓ Reader can browse richer registry metadata by status, proposal type, and region through the canonical registry contract and `/states` surface — `Phase 10 / v1.2`
 - ✓ Maintainer can distinguish refresh workflow artifacts from published canonical state content through the `generated/refresh/` boundary and supporting docs — `Phase 10 / v1.2`
+- ✓ Reader can access an expanded ten-state publishable registry batch beyond the initial five records without weakening the source and freshness contract — `Phase 11 / v1.2`
+- ✓ Reader can see calm confidence/completeness cues when coverage depth varies across states on the existing catalog and detail surfaces — `Phase 11 / v1.2`
 
 ### Active
 
-- [ ] Broaden the published state registry beyond the first five entries without weakening the existing source and freshness contract.
 - [ ] Add comparison and cluster surfaces that help readers understand proposal patterns by status, type, and region.
 - [ ] Complete repo-owned refresh queue execution and visible freshness cues across catalog, comparison, and state-detail surfaces so broader coverage stays maintainable and honest.
 
@@ -161,4 +163,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-11 after Phase 10 completion*
+*Last updated: 2026-04-11 after Phase 11 completion*

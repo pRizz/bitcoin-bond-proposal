@@ -2,18 +2,18 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: National Coverage, Comparison, and Refresh
-current_phase: 11
-current_phase_name: Broader National Publication Batch
-current_plan: 1
-status: executing
-stopped_at: Phase 11 context gathered
-last_updated: "2026-04-11T21:22:06.786Z"
+current_phase: 12
+current_phase_name: Cluster and Comparison Surfaces
+current_plan: Not started
+status: planning
+stopped_at: Phase 11 complete; Phase 12 ready to discuss
+last_updated: "2026-04-11T21:52:34.881Z"
 last_activity: 2026-04-11
 progress:
-  total_phases: 5
-  completed_phases: 1
-  total_plans: 4
-  completed_plans: 2
+  total_phases: 4
+  completed_phases: 2
+  total_plans: 8
+  completed_plans: 4
   percent: 50
 ---
 
@@ -24,28 +24,28 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-11)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Phase 11 — Broader National Publication Batch
+**Current focus:** Phase 12 — Cluster and Comparison Surfaces
 
 ## Current Position
 
-**Current Phase:** 11
-**Current Phase Name:** Broader National Publication Batch
-**Current Plan:** 1
+**Current Phase:** 12
+**Current Phase Name:** Cluster and Comparison Surfaces
+**Current Plan:** Not started
 **Total Phases:** 13
 **Total Plans in Phase:** 2
-**Status:** Executing Phase 11
+**Status:** Ready to plan
 **Last Activity:** 2026-04-11
-Phase: 11 (Broader National Publication Batch) — EXECUTING
-Plan: 1 of 2
+Phase: 12 of 13 (Cluster and Comparison Surfaces)
+Plan: Not started
 
-Progress: ██░░░░░░░░ 25%
-**Progress:** 25%
+Progress: █████░░░░░ 50%
+**Progress:** 50%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 26
+- Total plans completed: 28
 - Average duration: 8 min
 - Total execution time: 3.1 hours
 
@@ -63,6 +63,7 @@ Progress: ██░░░░░░░░ 25%
 | 8 | 2 | 16 min | 8 min |
 | 9 | 2 | 17 min | 9 min |
 | 10 | 2 | - | - |
+| 11 | 2 | - | - |
 
 ## Accumulated Context
 
@@ -91,6 +92,6 @@ Comparison work must stay anchored to canonical state data and explicit freshnes
 
 ## Session
 
-**Last Date:** 2026-04-11T21:00:49.894Z
-**Stopped At:** Phase 11 context gathered
-**Resume File:** .planning/phases/11-broader-national-publication-batch/11-CONTEXT.md
+**Last Date:** 2026-04-11T22:01:00Z
+**Stopped At:** Phase 11 complete; Phase 12 ready to discuss
+**Resume File:** .planning/ROADMAP.md

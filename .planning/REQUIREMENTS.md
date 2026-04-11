@@ -7,9 +7,9 @@
 
 ### Coverage Expansion
 
-- [ ] **CATA-07**: Reader can access an expanded batch of publishable state entries beyond the first five, each meeting the existing source and freshness contract.
+- [x] **CATA-07**: Reader can access an expanded batch of publishable state entries beyond the first five, each meeting the existing source and freshness contract.
 - [x] **CATA-08**: Reader can browse richer registry metadata that supports grouping entries by status, proposal type, and region.
-- [ ] **CATA-09**: Reader can see confidence or completeness cues when coverage depth varies across states.
+- [x] **CATA-09**: Reader can see confidence or completeness cues when coverage depth varies across states.
 
 ### Comparison and Cluster Surfaces
 
@@ -49,9 +49,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CATA-07 | Phase 11 | Pending |
+| CATA-07 | Phase 11 | Complete |
 | CATA-08 | Phase 10 | Complete |
-| CATA-09 | Phase 11 | Pending |
+| CATA-09 | Phase 11 | Complete |
 | SITE-07 | Phase 12 | Pending |
 | SITE-08 | Phase 12 | Pending |
 | SITE-09 | Phase 12 | Pending |
@@ -66,4 +66,4 @@
 
 ---
 *Requirements defined: 2026-04-11*
-*Last updated: 2026-04-11 after Phase 10 completion*
+*Last updated: 2026-04-11 after Phase 11 completion*
