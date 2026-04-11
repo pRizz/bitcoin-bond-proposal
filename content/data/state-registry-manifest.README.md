@@ -11,8 +11,16 @@ Each state entry should contain only:
 - `slug`
 - `registryStatus`
 - `proposalFocus`
+- `region`
 - `shortNote`
 - `editorialPriority`
+
+Controlled `region` values:
+
+- `northeast`
+- `midwest`
+- `south`
+- `west`
 
 Status meanings:
 
@@ -24,4 +32,6 @@ Important boundary:
 
 - the manifest is not a public-facing record file;
 - publishable entries live in `content/states/`;
-- queued or incomplete work should not masquerade as published state pages.
+- queued or incomplete work should not masquerade as published state pages;
+- refresh-only queues or reports belong in `generated/refresh/`, not in canonical
+  published content.

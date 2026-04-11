@@ -6,7 +6,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Alaska",
@@ -14,7 +15,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Arizona",
@@ -22,7 +24,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "High-significance reserve exemplar for the first publishable batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"region": "west"
 		},
 		{
 			"state": "Arkansas",
@@ -30,7 +33,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "California",
@@ -38,7 +42,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Colorado",
@@ -46,7 +51,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Connecticut",
@@ -54,7 +60,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "Delaware",
@@ -62,7 +69,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Florida",
@@ -70,7 +78,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Georgia",
@@ -78,7 +87,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Hawaii",
@@ -86,7 +96,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Idaho",
@@ -94,7 +105,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Illinois",
@@ -102,7 +114,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "both",
 			"shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
-			"editorialPriority": "bond-priority"
+			"editorialPriority": "bond-priority",
+			"region": "midwest"
 		},
 		{
 			"state": "Indiana",
@@ -110,7 +123,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Iowa",
@@ -118,7 +132,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Kansas",
@@ -126,7 +141,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Kentucky",
@@ -134,7 +150,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Louisiana",
@@ -142,7 +159,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Maine",
@@ -150,7 +168,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "Maryland",
@@ -158,7 +177,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Massachusetts",
@@ -166,7 +186,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "Michigan",
@@ -174,7 +195,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Minnesota",
@@ -182,7 +204,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Mississippi",
@@ -190,7 +213,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Missouri",
@@ -198,7 +222,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "Possible future reserve-side candidate, not yet part of the first published batch.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Montana",
@@ -206,7 +231,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Nebraska",
@@ -214,7 +240,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Nevada",
@@ -222,7 +249,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "New Hampshire",
@@ -230,7 +258,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "bond",
 			"shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
-			"editorialPriority": "bond-priority"
+			"editorialPriority": "bond-priority",
+			"region": "northeast"
 		},
 		{
 			"state": "New Jersey",
@@ -238,7 +267,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "New Mexico",
@@ -246,7 +276,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "New York",
@@ -254,7 +285,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "North Carolina",
@@ -262,7 +294,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "North Dakota",
@@ -270,7 +303,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Ohio",
@@ -278,7 +312,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Oklahoma",
@@ -286,7 +321,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "Reserve-side exemplar for the first published batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"region": "south"
 		},
 		{
 			"state": "Oregon",
@@ -294,7 +330,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Pennsylvania",
@@ -302,7 +339,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "Rhode Island",
@@ -310,7 +348,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "South Carolina",
@@ -318,7 +357,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "South Dakota",
@@ -326,7 +366,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Tennessee",
@@ -334,7 +375,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Texas",
@@ -342,7 +384,8 @@
 			"registryStatus": "published",
 			"proposalFocus": "reserve",
 			"shortNote": "High-significance reserve-law benchmark for the first published batch.",
-			"editorialPriority": "reserve-priority"
+			"editorialPriority": "reserve-priority",
+			"region": "south"
 		},
 		{
 			"state": "Utah",
@@ -350,7 +393,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "Vermont",
@@ -358,7 +402,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "northeast"
 		},
 		{
 			"state": "Virginia",
@@ -366,7 +411,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Washington",
@@ -374,7 +420,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		},
 		{
 			"state": "West Virginia",
@@ -382,7 +429,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "south"
 		},
 		{
 			"state": "Wisconsin",
@@ -390,7 +438,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "midwest"
 		},
 		{
 			"state": "Wyoming",
@@ -398,7 +447,8 @@
 			"registryStatus": "unresearched",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral"
+			"editorialPriority": "neutral",
+			"region": "west"
 		}
 	]
 }
