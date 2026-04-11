@@ -13,6 +13,8 @@ const badgeVariants = cva(
 					"border border-accent-muted/70 bg-accent-wash/85 text-accent-soft",
 				bond: "border border-accent-muted/60 bg-panel-strong text-accent-soft",
 				reserve: "border border-success/35 bg-success/12 text-success",
+				success: "border border-success/35 bg-success/12 text-success",
+				warning: "border border-warning/35 bg-warning/12 text-warning",
 			},
 		},
 		defaultVariants: {

@@ -79,7 +79,7 @@
       "statusAsOf": "2025-05-02",
       "lastReviewed": "2026-04-01",
       "nextReviewDue": "2026-05-01",
-      "daysUntilReviewDue": 22,
+      "daysUntilReviewDue": 20,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/arizona-sb-1025.md"
@@ -103,7 +103,7 @@
       "statusAsOf": "2025-06-16",
       "lastReviewed": "2026-04-09",
       "nextReviewDue": "2026-05-09",
-      "daysUntilReviewDue": 30,
+      "daysUntilReviewDue": 28,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/florida-hb-487.md"
@@ -127,7 +127,7 @@
       "statusAsOf": "2025-01-29",
       "lastReviewed": "2026-04-01",
       "nextReviewDue": "2026-05-01",
-      "daysUntilReviewDue": 22,
+      "daysUntilReviewDue": 20,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
@@ -151,7 +151,7 @@
       "statusAsOf": "2025-02-27",
       "lastReviewed": "2026-04-09",
       "nextReviewDue": "2026-05-09",
-      "daysUntilReviewDue": 30,
+      "daysUntilReviewDue": 28,
       "reviewStatus": "current",
       "confidence": "medium",
       "path": "content/states/maryland-hb-1389.md"
@@ -175,7 +175,7 @@
       "statusAsOf": "2025-11-17",
       "lastReviewed": "2026-04-01",
       "nextReviewDue": "2026-05-01",
-      "daysUntilReviewDue": 22,
+      "daysUntilReviewDue": 20,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
@@ -199,7 +199,7 @@
       "statusAsOf": "2025-03-19",
       "lastReviewed": "2026-04-09",
       "nextReviewDue": "2026-05-09",
-      "daysUntilReviewDue": 30,
+      "daysUntilReviewDue": 28,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/north-carolina-s327.md"
@@ -223,7 +223,7 @@
       "statusAsOf": "2025-02-11",
       "lastReviewed": "2026-04-09",
       "nextReviewDue": "2026-05-09",
-      "daysUntilReviewDue": 30,
+      "daysUntilReviewDue": 28,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/ohio-sb-57.md"
@@ -247,7 +247,7 @@
       "statusAsOf": "2025-03-25",
       "lastReviewed": "2026-04-01",
       "nextReviewDue": "2026-05-01",
-      "daysUntilReviewDue": 22,
+      "daysUntilReviewDue": 20,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
@@ -271,7 +271,7 @@
       "statusAsOf": "2025-06-20",
       "lastReviewed": "2026-04-01",
       "nextReviewDue": "2026-05-01",
-      "daysUntilReviewDue": 22,
+      "daysUntilReviewDue": 20,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
@@ -295,7 +295,7 @@
       "statusAsOf": "2025-03-03",
       "lastReviewed": "2026-04-09",
       "nextReviewDue": "2026-05-09",
-      "daysUntilReviewDue": 30,
+      "daysUntilReviewDue": 28,
       "reviewStatus": "current",
       "confidence": "high",
       "path": "content/states/wyoming-hb-0201.md"

@@ -59,6 +59,10 @@ type GraphManifestEntry = {
 	reviewCadenceDays?: number;
 };
 
+export type RegistryCoverageEntry = GraphManifestEntry & {
+	maybePublishedState?: GraphState;
+};
+
 type ContentGraph = {
 	docs: GraphDocument[];
 	states: GraphState[];
@@ -112,6 +116,40 @@ export function getPublishedStates() {
 		});
 }
 
+export function getRegistryCoverageEntries() {
+	const statesBySlug = new Map(
+		contentGraph.states.map((state) => [state.slug, state] as const),
+	);
+	const statusWeight: Record<RegistryStatus, number> = {
+		published: 0,
+		queued: 1,
+		unresearched: 2,
+	};
+
+	return [...contentGraph.registry.manifest.states]
+		.map((entry) => ({
+			...entry,
+			maybePublishedState: statesBySlug.get(entry.slug),
+		}))
+		.sort((left, right) => {
+			const leftStatusWeight = statusWeight[left.registryStatus];
+			const rightStatusWeight = statusWeight[right.registryStatus];
+
+			if (leftStatusWeight !== rightStatusWeight) {
+				return leftStatusWeight - rightStatusWeight;
+			}
+
+			const leftPriority = priorityWeight[left.editorialPriority];
+			const rightPriority = priorityWeight[right.editorialPriority];
+
+			if (leftPriority !== rightPriority) {
+				return leftPriority - rightPriority;
+			}
+
+			return left.state.localeCompare(right.state);
+		});
+}
+
 export function getStateBySlug(slug: string) {
 	const stateEntry = contentGraph.states.find((entry) => entry.slug === slug);
 
@@ -131,6 +169,10 @@ export function getRegistryStats() {
 	const publishedStates = getPublishedStates();
 
 	return {
+		totalTrackedCount:
+			contentGraph.registry.statusCounts.published +
+			contentGraph.registry.statusCounts.queued +
+			contentGraph.registry.statusCounts.unresearched,
 		publishedCount: publishedStates.length,
 		bondPriorityCount: publishedStates.filter(
 			(state) => state.editorialPriority === "bond-priority",
