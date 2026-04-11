@@ -5,6 +5,7 @@ import {
 	assertUniqueSlugs,
 	parseProposalTaxonomy,
 	parseStateEntryFrontmatter,
+	parseStateRegistryManifest,
 	toDateLabel,
 } from "./schema";
 
@@ -56,6 +57,7 @@ describe("assertKnownProposalClassification", () => {
 			billId: "HB 1844",
 			chamber: "House",
 			status: "Introduced",
+			legislativeStatusGroup: "introduced",
 			statusAsOf: "2026-04-01",
 			lastReviewed: "2026-04-01",
 			sponsors: ["Rep. Example"],
@@ -73,6 +75,110 @@ describe("assertKnownProposalClassification", () => {
 
 		// Assert
 		expect(execution).toThrow("Unknown proposal subtype: other-explained");
+	});
+});
+
+describe("parseStateRegistryManifest", () => {
+	test("accepts manifest entries with a controlled region", () => {
+		// Arrange
+		const manifest = {
+			states: Array.from({ length: 50 }, (_, index) => ({
+				state: `State ${index + 1}`,
+				slug: `state-${index + 1}`,
+				registryStatus: "unresearched",
+				proposalFocus: "unknown",
+				region: "midwest",
+				shortNote: "Not yet researched.",
+				editorialPriority: "neutral",
+			})),
+		};
+
+		// Act
+		const result = parseStateRegistryManifest(manifest);
+
+		// Assert
+		expect(result.states[0]?.region).toBe("midwest");
+	});
+
+	test("rejects manifest entries with an invalid region", () => {
+		// Arrange
+		const manifest = {
+			states: Array.from({ length: 50 }, (_, index) => ({
+				state: `State ${index + 1}`,
+				slug: `state-${index + 1}`,
+				registryStatus: "unresearched",
+				proposalFocus: "unknown",
+				region: index === 0 ? "plains" : "midwest",
+				shortNote: "Not yet researched.",
+				editorialPriority: "neutral",
+			})),
+		};
+
+		// Act
+		const execution = () => parseStateRegistryManifest(manifest);
+
+		// Assert
+		expect(execution).toThrow();
+	});
+});
+
+describe("parseStateEntryFrontmatter", () => {
+	test("accepts frontmatter with a controlled legislative status group", () => {
+		// Arrange
+		const frontmatter = {
+			title: "Illinois HB 1844",
+			slug: "illinois-hb-1844",
+			summary: "Strategic reserve proposal",
+			state: "Illinois",
+			recordType: "legislative-bill",
+			proposalKind: "reserve",
+			proposalSubtype: "strategic-reserve",
+			billId: "HB 1844",
+			chamber: "House",
+			status: "Introduced",
+			legislativeStatusGroup: "introduced",
+			statusAsOf: "2026-04-01",
+			lastReviewed: "2026-04-01",
+			sponsors: ["Rep. Example"],
+			primarySources: ["https://example.com/bill"],
+			confidence: "high",
+			effect: "Would authorize a Bitcoin reserve.",
+		};
+
+		// Act
+		const result = parseStateEntryFrontmatter(frontmatter);
+
+		// Assert
+		expect(result.legislativeStatusGroup).toBe("introduced");
+	});
+
+	test("rejects frontmatter with an invalid legislative status group", () => {
+		// Arrange
+		const frontmatter = {
+			title: "Illinois HB 1844",
+			slug: "illinois-hb-1844",
+			summary: "Strategic reserve proposal",
+			state: "Illinois",
+			recordType: "legislative-bill",
+			proposalKind: "reserve",
+			proposalSubtype: "strategic-reserve",
+			billId: "HB 1844",
+			chamber: "House",
+			status: "Introduced",
+			legislativeStatusGroup: "live-tracker",
+			statusAsOf: "2026-04-01",
+			lastReviewed: "2026-04-01",
+			sponsors: ["Rep. Example"],
+			primarySources: ["https://example.com/bill"],
+			confidence: "high",
+			effect: "Would authorize a Bitcoin reserve.",
+		};
+
+		// Act
+		const execution = () => parseStateEntryFrontmatter(frontmatter);
+
+		// Assert
+		expect(execution).toThrow();
 	});
 });
 
