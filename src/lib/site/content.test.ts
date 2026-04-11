@@ -3,10 +3,12 @@ import { expect, test } from "bun:test";
 import graph from "../../../generated/content-graph.json";
 import {
 	buildConfidenceCue,
+	buildStatesComparisonModel,
 	buildStatesClusterModel,
 	buildStatesIndexModel,
 	type ContentGraph,
 	getStateBySlug,
+	getStatesComparisonModel,
 	getStatesClusterModel,
 	getStatesIndexModel,
 	summarizeStateFreshness,
@@ -32,6 +34,19 @@ function getClusterSection(
 
 	if (!maybeSection) {
 		throw new Error(`Missing cluster section for key: ${key}`);
+	}
+
+	return maybeSection;
+}
+
+function getComparisonSection(
+	model: ReturnType<typeof buildStatesComparisonModel>,
+	key: ReturnType<typeof buildStatesComparisonModel>["sections"][number]["key"],
+) {
+	const maybeSection = model.sections.find((section) => section.key === key);
+
+	if (!maybeSection) {
+		throw new Error(`Missing comparison section for key: ${key}`);
 	}
 
 	return maybeSection;
@@ -316,4 +331,91 @@ test("buildStatesClusterModel reuses the shared grouped registry model for clust
 			slugs: group.states.map((state) => state.slug),
 		})),
 	);
+});
+
+test("buildStatesComparisonModel returns editorial comparison frames for reserve benchmarks, crossover records, and bond-side official signals", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+
+	// Act
+	const model = buildStatesComparisonModel(fixtureGraph);
+	const reserveBenchmarksSection = getComparisonSection(
+		model,
+		"reserve-benchmarks",
+	);
+	const crossoverSection = getComparisonSection(model, "crossover-records");
+	const bondSideSection = getComparisonSection(model, "bond-side-signals");
+
+	// Assert
+	expect(model.sections.map((section) => section.key)).toEqual([
+		"reserve-benchmarks",
+		"crossover-records",
+		"bond-side-signals",
+	]);
+	expect(reserveBenchmarksSection.title).toBe(
+		"Reserve benchmarks now split between enacted, advanced, and earlier-stage signals",
+	);
+	expect(
+		reserveBenchmarksSection.featuredStates.map((state) => state.slug),
+	).toEqual(["texas", "missouri", "oklahoma", "michigan"]);
+	expect(
+		reserveBenchmarksSection.supportingStates.map((state) => state.slug),
+	).toEqual(["maryland", "south-carolina", "arizona"]);
+	expect(crossoverSection.featuredStates.map((state) => state.slug)).toEqual([
+		"north-carolina",
+		"illinois",
+	]);
+	expect(bondSideSection.featuredStates.map((state) => state.slug)).toEqual([
+		"new-hampshire",
+		"north-carolina",
+	]);
+});
+
+test("getStatesComparisonModel keeps canonical state detail links in every comparison section", () => {
+	// Arrange
+
+	// Act
+	const model = getStatesComparisonModel();
+	const entries = model.sections.flatMap((section) => [
+		...section.featuredStates,
+		...section.supportingStates,
+	]);
+
+	// Assert
+	expect(entries.length).toBeGreaterThan(0);
+	expect(
+		entries.every((state) => state.href === `/states/${state.slug}`),
+	).toBeTrue();
+	expect(
+		getComparisonSection(model, "bond-side-signals").featuredStates[0],
+	).toMatchObject({
+		slug: "new-hampshire",
+		href: "/states/new-hampshire",
+	});
+});
+
+test("buildStatesComparisonModel stays selective and narrative instead of turning the registry into a matrix", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+
+	// Act
+	const model = buildStatesComparisonModel(fixtureGraph);
+
+	// Assert
+	expect(model.sections).toHaveLength(3);
+	expect(
+		model.sections.every((section) => section.featuredStates.length <= 4),
+	).toBeTrue();
+	expect(
+		model.sections.every(
+			(section) =>
+				section.featuredStates.length + section.supportingStates.length <
+				contentGraph.states.length,
+		),
+	).toBeTrue();
+	expect(
+		model.sections.every(
+			(section) => section.lead.length > 0 && section.comparison.length > 0,
+		),
+	).toBeTrue();
 });
