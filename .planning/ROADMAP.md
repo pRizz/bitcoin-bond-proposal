@@ -54,8 +54,8 @@ Success criteria:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 12-01: Update the states catalog to show published, queued, and unresearched coverage status with freshness cues.
-- [ ] 12-02: Refine state detail surfaces to emphasize review recency, source context, and trust boundaries.
+- [x] 12-01: Update the states catalog to show published, queued, and unresearched coverage status with freshness cues.
+- [x] 12-02: Refine state detail surfaces to emphasize review recency, source context, and trust boundaries.
 
 Success criteria:
 1. Readers can tell at a glance whether a state is published, queued, or unresearched.

@@ -53,8 +53,8 @@
 | PIPE-04 | Phase 10 | Complete |
 | PIPE-05 | Phase 10 | Complete |
 | PIPE-06 | Phase 10 | Complete |
-| SITE-07 | Phase 12 | Pending |
-| SITE-08 | Phase 12 | Pending |
+| SITE-07 | Phase 12 | Complete |
+| SITE-08 | Phase 12 | Complete |
 | SITE-09 | Phase 13 | Pending |
 
 **Coverage:**
@@ -64,4 +64,4 @@
 
 ---
 *Requirements defined: 2026-04-09*
-*Last updated: 2026-04-09 after completing Phase 11*
+*Last updated: 2026-04-11 after completing Phase 12*
