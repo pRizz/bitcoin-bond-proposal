@@ -116,10 +116,15 @@ export default function StatesIndexPage() {
 								<ActionLink href="/states/clusters" intent="secondary">
 									Open cluster reading paths
 								</ActionLink>
+								<ActionLink href="/states/compare" intent="secondary">
+									Open comparison surfaces
+								</ActionLink>
 								<p class="text-sm leading-7 text-ink-subtle">
 									Prefer the same ten published records grouped by status,
 									proposal focus, and region? Use <code>/states/clusters</code>{" "}
-									for the editorial cluster surface.
+									for the editorial cluster surface. Want the strongest reserve,
+									crossover, and bond-side comparisons? Use{" "}
+									<code>/states/compare</code>.
 								</p>
 							</div>
 						</div>
