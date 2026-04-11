@@ -109,6 +109,30 @@
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
     },
     {
+      "title": "North Carolina S327",
+      "slug": "north-carolina",
+      "state": "North Carolina",
+      "summary": "North Carolina Senate bill to establish a Bitcoin reserve, authorize the State Treasurer to allocate public funds into bitcoin, and expressly permit the reserve to back bonds for public projects.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "both",
+      "region": "south",
+      "shortNote": "Official reserve bill also contemplates Bitcoin-backed bond use, making it the clearest crossover signal in the expanded batch.",
+      "editorialPriority": "bond-priority",
+      "proposalKind": "both",
+      "proposalSubtype": "reserve-financing-bond",
+      "billId": "S327",
+      "chamber": "North Carolina Senate",
+      "status": "Ref To Com On Rules and Operations of the Senate",
+      "legislativeStatusGroup": "introduced",
+      "statusAsOf": "2025-03-19",
+      "statusAgeDays": 388,
+      "lastReviewed": "2026-04-11",
+      "reviewAgeDays": 0,
+      "confidence": "medium",
+      "path": "content/states/north-carolina-s-327.md"
+    },
+    {
       "title": "Arizona SB1025",
       "slug": "arizona",
       "state": "Arizona",
@@ -133,6 +157,78 @@
       "path": "content/states/arizona-sb-1025.md"
     },
     {
+      "title": "Maryland HB1389",
+      "slug": "maryland",
+      "state": "Maryland",
+      "summary": "Maryland House bill to create a Maryland Bitcoin Reserve Fund, capitalized in part with certain seized gambling proceeds and invested only in bitcoin under State Treasurer custody rules.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "south",
+      "shortNote": "Bitcoin reserve fund bill tied to seized-gambling proceeds, with official hearing and custody details on the Maryland General Assembly record.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB1389",
+      "chamber": "Maryland House",
+      "status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
+      "legislativeStatusGroup": "introduced",
+      "statusAsOf": "2025-03-11",
+      "statusAgeDays": 396,
+      "lastReviewed": "2026-04-11",
+      "reviewAgeDays": 0,
+      "confidence": "medium",
+      "path": "content/states/maryland-hb-1389.md"
+    },
+    {
+      "title": "Michigan HB4087",
+      "slug": "michigan",
+      "state": "Michigan",
+      "summary": "Michigan House bill to establish a strategic bitcoin reserve by allowing the State Treasurer to invest capped portions of the general fund and budget stabilization fund in cryptocurrency with regulated custody options.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Strategic bitcoin reserve bill would let the treasurer invest capped state funds in cryptocurrency through official custody channels.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "HB4087",
+      "chamber": "Michigan House",
+      "status": "Referred to Committee on Communications and Technology",
+      "legislativeStatusGroup": "advanced",
+      "statusAsOf": "2026-03-19",
+      "statusAgeDays": 23,
+      "lastReviewed": "2026-04-11",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/michigan-hb-4087.md"
+    },
+    {
+      "title": "Missouri HB1217",
+      "slug": "missouri",
+      "state": "Missouri",
+      "summary": "Missouri House bill to create a Bitcoin Strategic Reserve Fund, require a five-year holding period for contributed bitcoin, and broaden the State Treasurer's authority to invest in and hold cryptocurrency.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Bitcoin strategic reserve fund bill pairs direct treasury custody with a five-year holding rule and a completed House public hearing.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "HB1217",
+      "chamber": "Missouri House",
+      "status": "Public Hearing Completed (House)",
+      "legislativeStatusGroup": "advanced",
+      "statusAsOf": "2025-03-24",
+      "statusAgeDays": 383,
+      "lastReviewed": "2026-04-11",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/missouri-hb-1217.md"
+    },
+    {
       "title": "Oklahoma HB1203",
       "slug": "oklahoma",
       "state": "Oklahoma",
@@ -155,6 +251,30 @@
       "reviewAgeDays": 10,
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
+    },
+    {
+      "title": "South Carolina H4256",
+      "slug": "south-carolina",
+      "state": "South Carolina",
+      "summary": "South Carolina House bill to create a Strategic Digital Assets Reserve, authorize capped treasury investment in digital assets including bitcoin, and require custody, reporting, and donation procedures.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "south",
+      "shortNote": "Strategic digital assets reserve bill would authorize capped treasury investment, donations, custody controls, and biennial reporting.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "H4256",
+      "chamber": "South Carolina House",
+      "status": "Referred to Committee on Ways and Means",
+      "legislativeStatusGroup": "introduced",
+      "statusAsOf": "2025-03-27",
+      "statusAgeDays": 380,
+      "lastReviewed": "2026-04-11",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/south-carolina-h-4256.md"
     },
     {
       "title": "Texas SB21",
@@ -358,11 +478,11 @@
         {
           "state": "Maryland",
           "slug": "maryland",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "south",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Bitcoin reserve fund bill tied to seized-gambling proceeds, with official hearing and custody details on the Maryland General Assembly record.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Massachusetts",
@@ -376,11 +496,11 @@
         {
           "state": "Michigan",
           "slug": "michigan",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Strategic bitcoin reserve bill would let the treasurer invest capped state funds in cryptocurrency through official custody channels.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Minnesota",
@@ -403,11 +523,11 @@
         {
           "state": "Missouri",
           "slug": "missouri",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "Possible future reserve-side candidate, not yet part of the first published batch.",
-          "editorialPriority": "neutral"
+          "shortNote": "Bitcoin strategic reserve fund bill pairs direct treasury custody with a five-year holding rule and a completed House public hearing.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Montana",
@@ -475,11 +595,11 @@
         {
           "state": "North Carolina",
           "slug": "north-carolina",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "both",
           "region": "south",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Official reserve bill also contemplates Bitcoin-backed bond use, making it the clearest crossover signal in the expanded batch.",
+          "editorialPriority": "bond-priority"
         },
         {
           "state": "North Dakota",
@@ -538,11 +658,11 @@
         {
           "state": "South Carolina",
           "slug": "south-carolina",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "south",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Strategic digital assets reserve bill would authorize capped treasury investment, donations, custody controls, and biennial reporting.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "South Dakota",
@@ -639,8 +759,13 @@
     "publishedSlugs": [
       "illinois",
       "new-hampshire",
+      "north-carolina",
       "arizona",
+      "maryland",
+      "michigan",
+      "missouri",
       "oklahoma",
+      "south-carolina",
       "texas"
     ],
     "generatedAt": "2026-04-11T00:00:00.000Z",
@@ -653,15 +778,20 @@
           ]
         },
         "midwest": {
-          "count": 1,
+          "count": 3,
           "slugs": [
-            "illinois"
+            "illinois",
+            "michigan",
+            "missouri"
           ]
         },
         "south": {
-          "count": 2,
+          "count": 5,
           "slugs": [
+            "north-carolina",
+            "maryland",
             "oklahoma",
+            "south-carolina",
             "texas"
           ]
         },
@@ -680,17 +810,22 @@
           ]
         },
         "reserve": {
-          "count": 3,
+          "count": 7,
           "slugs": [
             "arizona",
+            "maryland",
+            "michigan",
+            "missouri",
             "oklahoma",
+            "south-carolina",
             "texas"
           ]
         },
         "both": {
-          "count": 1,
+          "count": 2,
           "slugs": [
-            "illinois"
+            "illinois",
+            "north-carolina"
           ]
         },
         "unknown": {
@@ -700,14 +835,19 @@
       },
       "byLegislativeStatusGroup": {
         "introduced": {
-          "count": 1,
+          "count": 4,
           "slugs": [
-            "illinois"
+            "illinois",
+            "north-carolina",
+            "maryland",
+            "south-carolina"
           ]
         },
         "advanced": {
-          "count": 1,
+          "count": 3,
           "slugs": [
+            "michigan",
+            "missouri",
             "oklahoma"
           ]
         },
