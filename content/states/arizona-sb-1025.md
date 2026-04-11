@@ -9,6 +9,7 @@ proposalSubtype: mixed-digital-asset-reserve
 billId: SB1025
 chamber: Arizona Senate
 status: Vetoed by Governor
+legislativeStatusGroup: failed
 statusAsOf: 2025-05-02
 lastReviewed: 2026-04-01
 sponsors:

@@ -9,6 +9,7 @@ proposalSubtype: mixed-digital-asset-reserve
 billId: SB21
 chamber: Texas Senate
 status: Enrolled; effective by law
+legislativeStatusGroup: enacted
 statusAsOf: 2025-06-20
 lastReviewed: 2026-04-01
 sponsors:

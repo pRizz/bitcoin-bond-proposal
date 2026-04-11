@@ -9,6 +9,7 @@ proposalSubtype: bitcoin-collateralized-bond
 billId: NHBFA Digital Currency Bond Resolution (Nov. 17, 2025)
 chamber: New Hampshire Business Finance Authority Board of Directors
 status: Board approved; further approval and counsel condition pending
+legislativeStatusGroup: approved
 statusAsOf: 2025-11-17
 lastReviewed: 2026-04-01
 sponsors:

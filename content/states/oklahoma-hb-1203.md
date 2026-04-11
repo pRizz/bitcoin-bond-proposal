@@ -9,6 +9,7 @@ proposalSubtype: mixed-digital-asset-reserve
 billId: HB1203
 chamber: Oklahoma House
 status: Engrossed to Senate
+legislativeStatusGroup: advanced
 statusAsOf: 2025-03-25
 lastReviewed: 2026-04-01
 sponsors:

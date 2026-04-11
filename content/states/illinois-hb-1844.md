@@ -9,6 +9,7 @@ proposalSubtype: strategic-reserve
 billId: HB1844
 chamber: Illinois House
 status: Referred to Rules Committee
+legislativeStatusGroup: introduced
 statusAsOf: 2025-01-29
 lastReviewed: 2026-04-01
 sponsors:

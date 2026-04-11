@@ -169,6 +169,7 @@
           "slug": "alabama",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -177,6 +178,7 @@
           "slug": "alaska",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -185,6 +187,7 @@
           "slug": "arizona",
           "registryStatus": "published",
           "proposalFocus": "reserve",
+          "region": "west",
           "shortNote": "High-significance reserve exemplar for the first publishable batch.",
           "editorialPriority": "reserve-priority"
         },
@@ -193,6 +196,7 @@
           "slug": "arkansas",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -201,6 +205,7 @@
           "slug": "california",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -209,6 +214,7 @@
           "slug": "colorado",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -217,6 +223,7 @@
           "slug": "connecticut",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -225,6 +232,7 @@
           "slug": "delaware",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -233,6 +241,7 @@
           "slug": "florida",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -241,6 +250,7 @@
           "slug": "georgia",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -249,6 +259,7 @@
           "slug": "hawaii",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -257,6 +268,7 @@
           "slug": "idaho",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -265,6 +277,7 @@
           "slug": "illinois",
           "registryStatus": "published",
           "proposalFocus": "both",
+          "region": "midwest",
           "shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
           "editorialPriority": "bond-priority"
         },
@@ -273,6 +286,7 @@
           "slug": "indiana",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -281,6 +295,7 @@
           "slug": "iowa",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -289,6 +304,7 @@
           "slug": "kansas",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -297,6 +313,7 @@
           "slug": "kentucky",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -305,6 +322,7 @@
           "slug": "louisiana",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -313,6 +331,7 @@
           "slug": "maine",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -321,6 +340,7 @@
           "slug": "maryland",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -329,6 +349,7 @@
           "slug": "massachusetts",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -337,6 +358,7 @@
           "slug": "michigan",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -345,6 +367,7 @@
           "slug": "minnesota",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -353,6 +376,7 @@
           "slug": "mississippi",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -361,6 +385,7 @@
           "slug": "missouri",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "Possible future reserve-side candidate, not yet part of the first published batch.",
           "editorialPriority": "neutral"
         },
@@ -369,6 +394,7 @@
           "slug": "montana",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -377,6 +403,7 @@
           "slug": "nebraska",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -385,6 +412,7 @@
           "slug": "nevada",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -393,6 +421,7 @@
           "slug": "new-hampshire",
           "registryStatus": "published",
           "proposalFocus": "bond",
+          "region": "northeast",
           "shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
           "editorialPriority": "bond-priority"
         },
@@ -401,6 +430,7 @@
           "slug": "new-jersey",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -409,6 +439,7 @@
           "slug": "new-mexico",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -417,6 +448,7 @@
           "slug": "new-york",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -425,6 +457,7 @@
           "slug": "north-carolina",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -433,6 +466,7 @@
           "slug": "north-dakota",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -441,6 +475,7 @@
           "slug": "ohio",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -449,6 +484,7 @@
           "slug": "oklahoma",
           "registryStatus": "published",
           "proposalFocus": "reserve",
+          "region": "south",
           "shortNote": "Reserve-side exemplar for the first published batch.",
           "editorialPriority": "reserve-priority"
         },
@@ -457,6 +493,7 @@
           "slug": "oregon",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -465,6 +502,7 @@
           "slug": "pennsylvania",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -473,6 +511,7 @@
           "slug": "rhode-island",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -481,6 +520,7 @@
           "slug": "south-carolina",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -489,6 +529,7 @@
           "slug": "south-dakota",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -497,6 +538,7 @@
           "slug": "tennessee",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -505,6 +547,7 @@
           "slug": "texas",
           "registryStatus": "published",
           "proposalFocus": "reserve",
+          "region": "south",
           "shortNote": "High-significance reserve-law benchmark for the first published batch.",
           "editorialPriority": "reserve-priority"
         },
@@ -513,6 +556,7 @@
           "slug": "utah",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -521,6 +565,7 @@
           "slug": "vermont",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "northeast",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -529,6 +574,7 @@
           "slug": "virginia",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -537,6 +583,7 @@
           "slug": "washington",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -545,6 +592,7 @@
           "slug": "west-virginia",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "south",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -553,6 +601,7 @@
           "slug": "wisconsin",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "midwest",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         },
@@ -561,6 +610,7 @@
           "slug": "wyoming",
           "registryStatus": "unresearched",
           "proposalFocus": "unknown",
+          "region": "west",
           "shortNote": "No publishable reserve or bond record added yet.",
           "editorialPriority": "neutral"
         }
