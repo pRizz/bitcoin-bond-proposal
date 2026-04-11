@@ -179,8 +179,8 @@ export async function compileContentGraph(): Promise<CompiledContentGraph> {
 	);
 	const rawManifest = await readFile(manifestPath, "utf8");
 	const registryManifest = parseStateRegistryManifest(JSON.parse(rawManifest));
-	const generatedAt = new Date().toISOString();
-	const generatedOn = generatedAt.slice(0, 10);
+	const generatedOn = new Date().toISOString().slice(0, 10);
+	const generatedAt = `${generatedOn}T00:00:00.000Z`;
 
 	const [docs, explainers, states] = await Promise.all([
 		readMarkdownCollection(
