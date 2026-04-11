@@ -1,6 +1,7 @@
 import { Meta, Title } from "@solidjs/meta";
 import { createMemo, createSignal } from "solid-js";
 
+import { ActionLink } from "../../../components/editorial/ActionLink";
 import { PageSection } from "../../../components/editorial/PageSection";
 import { StateCard } from "../../../components/editorial/StateCard";
 import {
@@ -111,6 +112,16 @@ export default function StatesIndexPage() {
 								coverage posture stays visible without turning this page into a
 								scorecard.
 							</p>
+							<div class="mt-4 flex flex-wrap items-center gap-3">
+								<ActionLink href="/states/clusters" intent="secondary">
+									Open cluster reading paths
+								</ActionLink>
+								<p class="text-sm leading-7 text-ink-subtle">
+									Prefer the same ten published records grouped by status,
+									proposal focus, and region? Use <code>/states/clusters</code>{" "}
+									for the editorial cluster surface.
+								</p>
+							</div>
 						</div>
 						<div class="flex flex-wrap gap-3">
 							<label class="data-chip min-w-[10.75rem] justify-between gap-4 text-[0.72rem] focus-within:border-accent-muted">
