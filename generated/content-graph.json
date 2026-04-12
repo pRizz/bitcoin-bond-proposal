@@ -78,9 +78,9 @@
       "status": "Referred to Rules Committee",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-01-29",
-      "statusAgeDays": 437,
+      "statusAgeDays": 438,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 10,
+      "reviewAgeDays": 11,
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
     },
@@ -102,9 +102,9 @@
       "status": "Board approved; further approval and counsel condition pending",
       "legislativeStatusGroup": "approved",
       "statusAsOf": "2025-11-17",
-      "statusAgeDays": 145,
+      "statusAgeDays": 146,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 10,
+      "reviewAgeDays": 11,
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
     },
@@ -126,9 +126,9 @@
       "status": "Ref To Com On Rules and Operations of the Senate",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-19",
-      "statusAgeDays": 388,
+      "statusAgeDays": 389,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "medium",
       "path": "content/states/north-carolina-s-327.md"
     },
@@ -150,9 +150,9 @@
       "status": "Vetoed by Governor",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2025-05-02",
-      "statusAgeDays": 344,
+      "statusAgeDays": 345,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 10,
+      "reviewAgeDays": 11,
       "confidence": "high",
       "path": "content/states/arizona-sb-1025.md"
     },
@@ -174,9 +174,9 @@
       "status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-11",
-      "statusAgeDays": 396,
+      "statusAgeDays": 397,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "medium",
       "path": "content/states/maryland-hb-1389.md"
     },
@@ -198,9 +198,9 @@
       "status": "Referred to Committee on Communications and Technology",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2026-03-19",
-      "statusAgeDays": 23,
+      "statusAgeDays": 24,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/michigan-hb-4087.md"
     },
@@ -222,9 +222,9 @@
       "status": "Public Hearing Completed (House)",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-24",
-      "statusAgeDays": 383,
+      "statusAgeDays": 384,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/missouri-hb-1217.md"
     },
@@ -246,9 +246,9 @@
       "status": "Engrossed to Senate",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-25",
-      "statusAgeDays": 382,
+      "statusAgeDays": 383,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 10,
+      "reviewAgeDays": 11,
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
     },
@@ -270,9 +270,9 @@
       "status": "Referred to Committee on Ways and Means",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-27",
-      "statusAgeDays": 380,
+      "statusAgeDays": 381,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/south-carolina-h-4256.md"
     },
@@ -294,9 +294,9 @@
       "status": "Enrolled; effective by law",
       "legislativeStatusGroup": "enacted",
       "statusAsOf": "2025-06-20",
-      "statusAgeDays": 295,
+      "statusAgeDays": 296,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 10,
+      "reviewAgeDays": 11,
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
     }
@@ -768,7 +768,7 @@
       "south-carolina",
       "texas"
     ],
-    "generatedAt": "2026-04-11T00:00:00.000Z",
+    "generatedAt": "2026-04-12T00:00:00.000Z",
     "groups": {
       "byRegion": {
         "northeast": {

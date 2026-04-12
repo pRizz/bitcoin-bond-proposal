@@ -14,6 +14,7 @@
 		"hooks:install": "git config core.hooksPath .githooks",
 		"lint": "bunx @biomejs/biome lint --error-on-warnings .",
 		"precommit": "bun scripts/precommit.ts",
+		"refresh:queue": "bun scripts/build-refresh-queue.ts",
 		"start": "vinxi start",
 		"test": "bun test",
 		"validate:content": "bun scripts/validate-content.ts"

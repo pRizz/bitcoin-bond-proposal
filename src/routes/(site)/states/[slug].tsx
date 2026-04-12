@@ -131,6 +131,17 @@ export default function StateDetailPage() {
 								financing structure matters lives in the first explainer.
 							</p>
 						</div>
+						<div class="support-panel mt-6 rounded-[var(--radius-card)] p-4 text-sm leading-7 text-ink-subtle">
+							<p class="font-semibold text-ink">Freshness</p>
+							<p class="mt-2 font-medium text-ink">
+								{state.freshnessCue.title}
+							</p>
+							<p class="mt-2">{state.freshnessCue.detail}</p>
+							<p class="mt-3">
+								Status snapshot {state.statusAsOf}. Last reviewed{" "}
+								{state.lastReviewed}.
+							</p>
+						</div>
 					</aside>
 					<div class="reading-surface rounded-[calc(var(--radius-soft)+0.25rem)] p-6 sm:p-8">
 						<MarkdownContent html={renderMarkdown(body)} />

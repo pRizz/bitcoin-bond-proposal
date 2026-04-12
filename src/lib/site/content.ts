@@ -10,6 +10,12 @@ import {
 	type StatesClusterModel,
 	type StatesComparisonModel,
 } from "./states-surfaces";
+import type * as RegistryFreshness from "./registry-freshness";
+import {
+	buildRefreshQueueModel,
+	buildRegistryFreshnessSummary,
+	buildStateFreshnessCue,
+} from "./registry-freshness";
 export type {
 	ClusterSectionKey,
 	ClusterState,
@@ -21,6 +27,13 @@ export type {
 	StatesComparisonModel,
 	StatesComparisonSection,
 } from "./states-surfaces";
+export type FreshnessCounts = RegistryFreshness.FreshnessCounts;
+export type FreshnessCue = RegistryFreshness.FreshnessCue;
+export type FreshnessTone = RegistryFreshness.FreshnessTone;
+export type RefreshQueueEntry = RegistryFreshness.RefreshQueueEntry;
+export type RefreshQueueModel = RegistryFreshness.RefreshQueueModel;
+export type RegistryFreshnessSummary =
+	RegistryFreshness.RegistryFreshnessSummary;
 
 export type RegistryStatus = "unresearched" | "queued" | "published";
 export type EditorialPriority =
@@ -111,6 +124,7 @@ export type ConfidenceCue = {
 export type PublishedState = GraphState & {
 	manifest: GraphManifestEntry | undefined;
 	confidenceCue: ConfidenceCue;
+	freshnessCue: RegistryFreshness.FreshnessCue;
 };
 
 export type StateGroup<TBucket extends string> = {
@@ -146,6 +160,7 @@ export type StatesIndexModel = {
 		byLegislativeStatusGroup: Array<StateGroup<LegislativeStatusGroup>>;
 	};
 	freshness: FreshnessSummary;
+	freshnessSummary: RegistryFreshness.RegistryFreshnessSummary;
 	stats: RegistryStats;
 };
 
@@ -253,6 +268,7 @@ function buildPublishedState(
 		...state,
 		manifest: manifestLookup.get(state.slug),
 		confidenceCue: buildConfidenceCue(state),
+		freshnessCue: buildStateFreshnessCue(state),
 	};
 }
 
@@ -357,6 +373,10 @@ export function buildStatesIndexModel(
 		publishedStates,
 		graphData.registry.generatedAt,
 	);
+	const freshnessSummary = buildRegistryFreshnessSummary(
+		publishedStates,
+		graphData.registry.generatedAt,
+	);
 	const stats = {
 		publishedCount: publishedStates.length,
 		bondPriorityCount: publishedStates.filter(
@@ -388,6 +408,7 @@ export function buildStatesIndexModel(
 			),
 		},
 		freshness,
+		freshnessSummary,
 		stats,
 	};
 }
@@ -442,12 +463,26 @@ export function getStatesIndexModel() {
 	return buildStatesIndexModel(contentGraph);
 }
 
+export function getRegistryFreshnessSummary() {
+	return buildRegistryFreshnessSummary(
+		getPublishedStates(),
+		contentGraph.registry.generatedAt,
+	);
+}
+
 export function getStatesClusterModel() {
 	return buildStatesClusterModel(contentGraph);
 }
 
 export function getStatesComparisonModel() {
 	return buildStatesComparisonModel(contentGraph);
+}
+
+export function getRefreshQueueModel(): RegistryFreshness.RefreshQueueModel {
+	return buildRefreshQueueModel(
+		getPublishedStates(),
+		contentGraph.registry.generatedAt,
+	);
 }
 
 export function getSortedPublishedStates(sortMode: StatesIndexSortMode) {

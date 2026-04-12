@@ -195,6 +195,7 @@ test("getStatesIndexModel and getStateBySlug expose the same shared confidence c
 	expect(maybeDetailState?.confidenceCue).toEqual(
 		maybeIndexState?.confidenceCue,
 	);
+	expect(maybeDetailState?.freshnessCue).toEqual(maybeIndexState?.freshnessCue);
 });
 
 test("buildStatesClusterModel returns editorial sections for legislative status, proposal focus, and region", () => {

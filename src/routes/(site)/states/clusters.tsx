@@ -2,8 +2,10 @@ import { Meta, Title } from "@solidjs/meta";
 
 import { ActionLink } from "../../../components/editorial/ActionLink";
 import { PageSection } from "../../../components/editorial/PageSection";
+import { RegistryFreshnessPanel } from "../../../components/editorial/RegistryFreshnessPanel";
 import { StateCard } from "../../../components/editorial/StateCard";
 import {
+	getRegistryFreshnessSummary,
 	getStatesClusterModel,
 	type StatesClusterBucket,
 } from "../../../lib/site/content";
@@ -32,6 +34,7 @@ function ClusterBucketPanel(props: { bucket: StatesClusterBucket }) {
 						state={state.state}
 						billId={state.billId}
 						status={state.status}
+						statusAsOf={state.statusAsOf}
 						proposalKind={state.proposalKind}
 						badgeLabel={state.badgeLabel}
 						badgeTone={state.badgeTone}
@@ -48,6 +51,7 @@ function ClusterBucketPanel(props: { bucket: StatesClusterBucket }) {
 
 export default function StatesClustersPage() {
 	const statesClusterModel = getStatesClusterModel();
+	const registryFreshness = getRegistryFreshnessSummary();
 
 	return (
 		<>
@@ -62,6 +66,10 @@ export default function StatesClustersPage() {
 				title="Browse the registry in grouped reading lanes"
 				lead="This surface turns the current ten-state batch into editorial clusters by status, proposal focus, and geography without changing the registry into a scoreboard."
 			>
+				<RegistryFreshnessPanel
+					summary={registryFreshness}
+					note="Grouped browsing now keeps the same dated-snapshot cues as the base catalog, so readers can compare clusters without losing track of review timing."
+				/>
 				<div class="panel-wash rounded-[var(--radius-card)] p-5 sm:p-6">
 					<div class="max-w-3xl">
 						<p class="text-sm leading-7 text-ink-subtle">

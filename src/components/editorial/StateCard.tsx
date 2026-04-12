@@ -10,6 +10,7 @@ type StateCardProps = {
 	state: string;
 	billId: string;
 	status: string;
+	statusAsOf: string;
 	proposalKind: string;
 	summary: string;
 	significance: string;
@@ -74,9 +75,16 @@ export function StateCard(props: StateCardProps) {
 			</div>
 			<div class="mt-5 border-t border-border-soft/80 pt-4">
 				<p class="text-sm leading-7 text-ink-subtle/90">{props.significance}</p>
-				<p class="mt-4 text-xs uppercase tracking-[0.14em] text-ink-subtle">
-					Reviewed {props.lastReviewed}
-				</p>
+				<dl class="mt-4 grid gap-3 text-xs uppercase tracking-[0.14em] text-ink-subtle sm:grid-cols-2">
+					<div>
+						<dt>Status as of</dt>
+						<dd class="mt-1 text-ink">{props.statusAsOf}</dd>
+					</div>
+					<div>
+						<dt>Reviewed</dt>
+						<dd class="mt-1 text-ink">{props.lastReviewed}</dd>
+					</div>
+				</dl>
 			</div>
 		</A>
 	);

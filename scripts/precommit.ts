@@ -42,6 +42,7 @@ function run() {
 		runStep("Lint source", "bun", ["run", "lint"]);
 		runStep("Validate content", "bun", ["run", "validate:content"]);
 		runStep("Compile content graph", "bun", ["run", "compile:content"]);
+		runStep("Build refresh queue", "bun", ["run", "refresh:queue"]);
 		runStep("Build packet PDFs", "bun", ["run", "build:pdf"]);
 		assertRequiredArtifactsExist();
 		console.log("Pre-commit checks passed.");

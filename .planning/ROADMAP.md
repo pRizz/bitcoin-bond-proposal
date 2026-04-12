@@ -69,8 +69,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 13-01: Implement a repo-owned refresh queue or report workflow.
-- [ ] 13-02: Apply freshness cues and QA across registry and comparison surfaces.
+- [x] 13-01: Implement a repo-owned refresh queue or report workflow.
+- [x] 13-02: Apply freshness cues and QA across registry and comparison surfaces.
 
 ## Progress
 
@@ -79,7 +79,7 @@ Plans:
 | 10. Coverage Expansion Contract and Data Shape | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 11. Broader National Publication Batch | v1.2 | 2/2 | Complete    | 2026-04-11 |
 | 12. Cluster and Comparison Surfaces | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 13. Refresh Workflow and Freshness QA | v1.2 | 0/2 | Not started | - |
+| 13. Refresh Workflow and Freshness QA | v1.2 | 2/2 | Complete    | 2026-04-11 |
 
 ## Backlog
 

@@ -3,8 +3,10 @@ import { createMemo, createSignal } from "solid-js";
 
 import { ActionLink } from "../../../components/editorial/ActionLink";
 import { PageSection } from "../../../components/editorial/PageSection";
+import { RegistryFreshnessPanel } from "../../../components/editorial/RegistryFreshnessPanel";
 import { StateCard } from "../../../components/editorial/StateCard";
 import {
+	getRegistryFreshnessSummary,
 	getStatesIndexModel,
 	type ProposalKind,
 	type StatesIndexSortMode,
@@ -35,6 +37,7 @@ const legislativeStatusLabels = {
 
 export default function StatesIndexPage() {
 	const statesIndexModel = getStatesIndexModel();
+	const registryFreshness = getRegistryFreshnessSummary();
 	const [proposalKindFilter, setProposalKindFilter] = createSignal<
 		ProposalKind | "all"
 	>("all");
@@ -87,6 +90,10 @@ export default function StatesIndexPage() {
 				title="State proposals"
 				lead="The registry stays medium-density: enough structure to browse published records by focus, region, and legislative position while keeping record footing visible without pretending this surface is a live tracker."
 			>
+				<RegistryFreshnessPanel
+					summary={registryFreshness}
+					note="Every state card below carries explicit status and review dates so freshness stays visible without turning the registry into a live tracker."
+				/>
 				<div class="panel-wash mb-6 rounded-[var(--radius-card)] p-4 sm:p-5">
 					<div class="flex flex-wrap items-start justify-between gap-4">
 						<div class="max-w-2xl">
@@ -96,15 +103,8 @@ export default function StatesIndexPage() {
 							<p class="mt-2 text-sm leading-7 text-ink-subtle">
 								Showing {visibleStates().length} of{" "}
 								{statesIndexModel.stats.publishedCount} published records.
-								Latest review{" "}
-								{statesIndexModel.stats.latestReview ?? "Unavailable"}. Status
-								snapshots currently span{" "}
-								{statesIndexModel.freshness.freshestStatusAgeDays ??
-									"Unavailable"}{" "}
-								to{" "}
-								{statesIndexModel.freshness.stalestStatusAgeDays ??
-									"Unavailable"}{" "}
-								days because this catalog remains explicitly dated.
+								Filter by type or sort order without losing the registry&apos;s
+								explicitly dated snapshot posture.
 							</p>
 							<p class="mt-3 text-sm leading-7 text-ink-subtle">
 								Each card notes whether the record is an early-stage bill, an
@@ -201,6 +201,7 @@ export default function StatesIndexPage() {
 								state={state.state}
 								billId={state.billId}
 								status={state.status}
+								statusAsOf={state.statusAsOf}
 								proposalKind={state.proposalKind}
 								summary={state.summary}
 								significance={state.shortNote}

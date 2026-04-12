@@ -19,9 +19,9 @@
 
 ### Refresh Workflow
 
-- [ ] **REFR-01**: Maintainer can generate a repo-owned refresh queue for entries whose review dates or legislative status need attention.
+- [x] **REFR-01**: Maintainer can generate a repo-owned refresh queue for entries whose review dates or legislative status need attention.
 - [x] **REFR-02**: Maintainer can distinguish refresh workflow artifacts from published canonical state content.
-- [ ] **REFR-03**: Reader can see visible freshness cues across catalog, comparison, and state-detail surfaces.
+- [x] **REFR-03**: Reader can see visible freshness cues across catalog, comparison, and state-detail surfaces.
 
 ## Future Requirements
 
@@ -55,9 +55,9 @@
 | SITE-07 | Phase 12 | Complete |
 | SITE-08 | Phase 12 | Complete |
 | SITE-09 | Phase 12 | Complete |
-| REFR-01 | Phase 13 | Pending |
+| REFR-01 | Phase 13 | Complete |
 | REFR-02 | Phase 10 | Complete |
-| REFR-03 | Phase 13 | Pending |
+| REFR-03 | Phase 13 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 9 total

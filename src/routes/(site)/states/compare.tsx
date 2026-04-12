@@ -2,12 +2,17 @@ import { Meta, Title } from "@solidjs/meta";
 
 import { ActionLink } from "../../../components/editorial/ActionLink";
 import { PageSection } from "../../../components/editorial/PageSection";
+import { RegistryFreshnessPanel } from "../../../components/editorial/RegistryFreshnessPanel";
 import { StateCard } from "../../../components/editorial/StateCard";
-import { getStatesComparisonModel } from "../../../lib/site/content";
+import {
+	getRegistryFreshnessSummary,
+	getStatesComparisonModel,
+} from "../../../lib/site/content";
 import { makePageTitle } from "../../../lib/site/seo";
 
 export default function StatesComparePage() {
 	const statesComparisonModel = getStatesComparisonModel();
+	const registryFreshness = getRegistryFreshnessSummary();
 
 	return (
 		<>
@@ -22,6 +27,10 @@ export default function StatesComparePage() {
 				title="Compare the current registry without losing the source trail"
 				lead="This route keeps the comparison work narrative and selective: it highlights the most meaningful differences in the current ten-state set and routes every example back to its canonical state record."
 			>
+				<RegistryFreshnessPanel
+					summary={registryFreshness}
+					note="Comparison sections stay narrative, but they now carry the same dated-snapshot freshness contract as the catalog and detail routes."
+				/>
 				<div class="panel-wash rounded-[var(--radius-card)] p-5 sm:p-6">
 					<div class="max-w-3xl">
 						<p class="text-sm leading-7 text-ink-subtle">
@@ -60,6 +69,7 @@ export default function StatesComparePage() {
 								state={state.state}
 								billId={state.billId}
 								status={state.status}
+								statusAsOf={state.statusAsOf}
 								proposalKind={state.proposalKind}
 								badgeLabel={state.badgeLabel}
 								badgeTone={state.badgeTone}

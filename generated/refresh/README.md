@@ -11,3 +11,12 @@ It is outside canonical authored content on purpose:
 
 If a refresh artifact identifies work that should become public, promote that work
 through the normal authored-content path under `content/`.
+
+Current generated outputs:
+
+- `generated/refresh/state-refresh-queue.json` — machine-readable refresh queue
+- `generated/refresh/state-refresh-queue.md` — maintainer-readable refresh queue
+
+Regenerate with:
+
+- `bun run refresh:queue`
