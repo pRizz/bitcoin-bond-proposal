@@ -12,11 +12,12 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 - Shipped `v1.0` on 2026-04-03.
 - Shipped `v1.1` on 2026-04-04.
-- Started `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-11.
-- Completed Phase 10 on 2026-04-11, locking the registry grouping contract, grouped content graph, and `/states` browse cues for v1.2.
-- Completed Phase 11 on 2026-04-11, expanding the published registry to ten state records and integrating calm confidence/completeness cues across the existing registry surfaces.
-- Completed Phase 12 on 2026-04-11, adding dedicated cluster and comparison reading paths while keeping canonical state detail pages as the source-backed destination.
-- Completed Phase 13 on 2026-04-11, adding a repo-owned refresh queue plus shared freshness cues across the public registry surfaces.
+- Shipped `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-12.
+- The registry now exposes ten published state records plus dedicated `/states/clusters`
+  and `/states/compare` reading paths.
+- Maintainers can generate a repo-owned refresh queue under `generated/refresh/`, and
+  public registry surfaces now share explicit freshness cues without implying live
+  tracking.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -55,7 +56,9 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ### Active
 
-- None — `v1.2` milestone phases are complete and ready for closeout.
+- [ ] Broaden publishable national coverage beyond the current ten-state registry.
+- [ ] Evaluate selective theme or `mystic-ui` upgrades only where they materially improve comparison or proof surfaces.
+- [ ] Explore semi-automated intake or prioritization signals that strengthen refresh operations without creating pseudo-live public claims.
 
 ### Out of Scope
 
@@ -66,15 +69,13 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Broad visual-system rewrites or wholesale `mystic-ui` adoption — defer unless a specific comparison or refresh surface proves the editorial value clearly.
 - Full 50-state deep publication in a single milestone — the next credible batch plus reusable comparison and refresh contracts has higher leverage.
 
-## Current Milestone: v1.2 National Coverage, Comparison, and Refresh
+## Next Milestone Goals
 
-**Goal:** Turn the Illinois-first product into a broader national research surface that can compare states credibly and stay fresh without pretending to be live.
-
-**Target features:**
-- broader publishable national coverage beyond the initial five state entries
-- cluster and comparison surfaces for status, proposal type, and regional pattern reading
-- repo-owned refresh queue and freshness cues across registry surfaces
-- only selective UI experimentation when it directly strengthens comprehension or trust
+- deepen the state registry beyond the current ten publishable records
+- selectively improve theme or motion hierarchy only where it helps comparison, proof,
+  or readability
+- add smarter maintainer prioritization for refresh work without weakening the
+  snapshot-based trust contract
 
 ## Context
 
@@ -136,6 +137,22 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
 
 <details>
+<summary>Archived v1.2 milestone framing</summary>
+
+Previous current milestone: **v1.2 National Coverage, Comparison, and Refresh**
+
+Goal:
+- turn the Illinois-first product into a broader national research surface that can compare states credibly and stay fresh without pretending to be live
+
+Target features:
+- broader publishable national coverage beyond the initial five state entries
+- cluster and comparison surfaces for status, proposal type, and regional pattern reading
+- repo-owned refresh queue and freshness cues across registry surfaces
+- only selective UI experimentation when it directly strengthens comprehension or trust
+
+</details>
+
+<details>
 <summary>Archived v1.1 milestone framing</summary>
 
 Previous current milestone: **v1.1 Dark Mode Editorial Refactor**
@@ -169,4 +186,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-11 after Phase 13 completion*
+*Last updated: 2026-04-12 after v1.2 milestone*

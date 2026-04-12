@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: National Coverage, Comparison, and Refresh
-current_phase: 13
-current_phase_name: Refresh Workflow and Freshness QA
-current_plan: Complete
-status: completed
-stopped_at: Phase 13 complete; milestone ready to complete
-last_updated: "2026-04-12T01:26:42.000Z"
-last_activity: 2026-04-11
+current_phase: none
+current_phase_name: No active phase
+current_plan: N/A
+status: between_milestones
+stopped_at: v1.2 archived; ready to define the next milestone
+last_updated: "2026-04-12T13:40:00.000Z"
+last_activity: 2026-04-12
 progress:
   total_phases: 4
   completed_phases: 4
@@ -21,22 +21,22 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-04-11)
+See: .planning/PROJECT.md (updated 2026-04-12)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Milestone closeout after Phase 13 verification
+**Current focus:** Planning the next milestone
 
 ## Current Position
 
-**Current Phase:** 13
-**Current Phase Name:** Refresh Workflow and Freshness QA
-**Current Plan:** Complete
+**Current Phase:** none
+**Current Phase Name:** No active phase
+**Current Plan:** N/A
 **Total Phases:** 13
-**Total Plans in Phase:** 2
-**Status:** Phase complete
-**Last Activity:** 2026-04-11
-Phase: 13 of 13 (Refresh Workflow and Freshness QA)
-Plan: Complete
+**Total Plans in Phase:** 0
+**Status:** Between milestones
+**Last Activity:** 2026-04-12
+Phase: none (v1.2 shipped)
+Plan: N/A
 
 Progress: ██████████ 100%
 **Progress:** 100%
@@ -80,8 +80,8 @@ Recent decisions are archived in:
 
 Current milestone decisions:
 
-- Broader national coverage, comparison, and refresh workflows are the primary v1.2 scope.
-- `mystic-ui` remains backlog support work, not a milestone driver.
+- v1.2 archives now live under `.planning/milestones/`.
+- The next milestone should build from deeper national coverage, selective UI upgrades, and smarter refresh prioritization.
 
 ### Pending Todos
 
@@ -90,10 +90,10 @@ None.
 ### Blockers/Concerns
 
 No active blockers.
-Phase 13 verification passed; milestone is ready for closeout.
+The project is waiting for `/gsd-new-milestone`.
 
 ## Session
 
-**Last Date:** 2026-04-12T01:26:42.000Z
-**Stopped At:** Phase 13 complete; milestone ready to complete
-**Resume File:** .planning/ROADMAP.md
+**Last Date:** 2026-04-12T13:40:00.000Z
+**Stopped At:** v1.2 archived; ready to define the next milestone
+**Resume File:** .planning/PROJECT.md

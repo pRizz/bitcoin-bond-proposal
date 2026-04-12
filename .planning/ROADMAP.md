@@ -4,82 +4,44 @@
 
 - ✅ **v1.0 Illinois-first MVP** — shipped 2026-04-03. See [v1.0 roadmap archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-ROADMAP.md), [v1.0 requirements archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-REQUIREMENTS.md), and [v1.0 audit archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-MILESTONE-AUDIT.md).
 - ✅ **v1.1 Dark Mode Editorial Refactor** — shipped 2026-04-04. See [v1.1 roadmap archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-ROADMAP.md), [v1.1 requirements archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-REQUIREMENTS.md), and [v1.1 audit archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-MILESTONE-AUDIT.md).
-- 🚧 **v1.2 National Coverage, Comparison, and Refresh** — phases 10-13 (initialized 2026-04-11)
-
-## Overview
-
-v1.2 turns the shipped Illinois-first product into a broader national research surface. The milestone extends the canonical registry contract, publishes the next deliberate state batch, adds cluster and comparison reading paths, and finishes with repo-owned refresh workflow support and freshness QA.
+- ✅ **v1.2 National Coverage, Comparison, and Refresh** — shipped 2026-04-12. See [v1.2 roadmap archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-ROADMAP.md), [v1.2 requirements archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-REQUIREMENTS.md), and [v1.2 audit archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-MILESTONE-AUDIT.md).
 
 ## Phases
 
-### 🚧 v1.2 National Coverage, Comparison, and Refresh
+<details>
+<summary>✅ v1.0 Illinois-first MVP (Phases 1-7) — SHIPPED 2026-04-03</summary>
 
-**Milestone Goal:** Turn the Illinois-first product into a broader national research surface that can compare states credibly and stay fresh without pretending to be live.
+- [x] Phase 1: Foundation and Trust Contracts (4/4 plans) — completed 2026-04-03
+- [x] Phase 2: Illinois Flagship Package (3/3 plans) — completed 2026-04-03
+- [x] Phase 3: Research Registry Core (3/3 plans) — completed 2026-04-03
+- [x] Phase 4: Public Site Shell (3/3 plans) — completed 2026-04-03
+- [x] Phase 5: Editorial Polish and Explainers (3/3 plans) — completed 2026-04-03
+- [x] Phase 6: Public Packet Access and Illinois Model Separation (2/2 plans) — completed 2026-04-03
+- [x] Phase 7: Tooling Guardrail Cleanup (2/2 plans) — completed 2026-04-03
 
-#### Phase 10: Coverage Expansion Contract and Data Shape
-**Goal**: Extend the canonical registry contract and generated content graph so broader coverage, grouping, and refresh cues have a trustworthy foundation.
-**Depends on**: Phase 9
-**Requirements**: [CATA-08, REFR-02]
-**Success Criteria** (what must be TRUE):
-  1. Maintainer can author or derive the metadata needed for grouping by status, proposal type, and region.
-  2. Comparison- and freshness-ready data exists in the generated content graph instead of ad hoc route logic.
-  3. Published content and refresh workflow artifacts are distinguishable in the canonical project structure.
-**Plans**: 2 plans
+</details>
 
-Plans:
-- [x] 10-01: Extend canonical schemas and manifest fields for comparison and refresh contracts.
-- [x] 10-02: Propagate grouped and freshness-aware data through the compile pipeline and site loaders.
+<details>
+<summary>✅ v1.1 Dark Mode Editorial Refactor (Phases 8-9) — SHIPPED 2026-04-04</summary>
 
-#### Phase 11: Broader National Publication Batch
-**Goal**: Publish the next deliberate batch of state entries under the stronger registry contract and visible confidence/freshness rules.
-**Depends on**: Phase 10
-**Requirements**: [CATA-07, CATA-09]
-**Success Criteria** (what must be TRUE):
-  1. Reader can access more publishable state entries than the initial five-state batch.
-  2. Expanded entries expose confidence or completeness cues when research depth varies.
-  3. The catalog and state-detail content stay aligned with the manifest and canonical sources.
-**Plans**: 2 plans
+- [x] Phase 8: Dark Theme Foundation (2/2 plans) — completed 2026-04-04
+- [x] Phase 9: Route Polish and Readability QA (2/2 plans) — completed 2026-04-04
 
-Plans:
-- [x] 11-01: Research and publish the next state batch using the stronger registry contract.
-- [x] 11-02: Integrate the expanded batch into existing registry surfaces with confidence cues.
+</details>
 
-#### Phase 12: Cluster and Comparison Surfaces
-**Goal**: Ship editorial cluster and comparison surfaces that help readers understand legislative patterns without leaving the canonical source trail.
-**Depends on**: Phase 11
-**Requirements**: [SITE-07, SITE-08, SITE-09]
-**Success Criteria** (what must be TRUE):
-  1. Reader can browse grouped views by status, proposal type, or region.
-  2. Reader can use comparison surfaces that explain meaningful differences between states.
-  3. Reader can move from comparison views into canonical state detail pages without losing context.
-**Plans**: 2 plans
+<details>
+<summary>✅ v1.2 National Coverage, Comparison, and Refresh (Phases 10-13) — SHIPPED 2026-04-12</summary>
 
-Plans:
-- [x] 12-01: Build cluster reading paths for the expanded registry.
-- [x] 12-02: Build comparison storytelling surfaces and cross-links back to state detail pages.
+- [x] Phase 10: Coverage Expansion Contract and Data Shape (2/2 plans) — completed 2026-04-11
+- [x] Phase 11: Broader National Publication Batch (2/2 plans) — completed 2026-04-11
+- [x] Phase 12: Cluster and Comparison Surfaces (2/2 plans) — completed 2026-04-11
+- [x] Phase 13: Refresh Workflow and Freshness QA (2/2 plans) — completed 2026-04-11
 
-#### Phase 13: Refresh Workflow and Freshness QA
-**Goal**: Make broader coverage maintainable through repo-owned refresh workflow support and cross-surface freshness QA.
-**Depends on**: Phase 12
-**Requirements**: [REFR-01, REFR-03]
-**Success Criteria** (what must be TRUE):
-  1. Maintainer can generate an auditable refresh queue for stale or status-sensitive entries.
-  2. Reader sees consistent freshness cues across catalog, comparison, and state-detail surfaces.
-  3. Refresh workflow support does not create pseudo-live publication claims or bypass the canonical review path.
-**Plans**: 2 plans
+</details>
 
-Plans:
-- [x] 13-01: Implement a repo-owned refresh queue or report workflow.
-- [x] 13-02: Apply freshness cues and QA across registry and comparison surfaces.
+### 📋 Next Milestone
 
-## Progress
-
-| Phase | Milestone | Plans Complete | Status | Completed |
-|-------|-----------|----------------|--------|-----------|
-| 10. Coverage Expansion Contract and Data Shape | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 11. Broader National Publication Batch | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 12. Cluster and Comparison Surfaces | v1.2 | 2/2 | Complete    | 2026-04-11 |
-| 13. Refresh Workflow and Freshness QA | v1.2 | 2/2 | Complete    | 2026-04-11 |
+- Not defined yet — start with `/gsd-new-milestone`
 
 ## Backlog
 
