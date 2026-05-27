@@ -75,26 +75,26 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CATA-10 | TBD | Pending |
-| CATA-11 | TBD | Pending |
-| CATA-12 | TBD | Pending |
-| CATA-13 | TBD | Pending |
-| CATA-14 | TBD | Pending |
-| CATA-15 | TBD | Pending |
-| REFR-04 | TBD | Pending |
-| REFR-05 | TBD | Pending |
-| REFR-06 | TBD | Pending |
-| SITE-10 | TBD | Pending |
-| SITE-11 | TBD | Pending |
-| SITE-12 | TBD | Pending |
-| QA-01 | TBD | Pending |
-| QA-02 | TBD | Pending |
+| CATA-10 | Phase 14 | Pending |
+| CATA-11 | Phase 14 | Pending |
+| CATA-12 | Phase 16 | Pending |
+| CATA-13 | Phase 16 | Pending |
+| CATA-14 | Phase 15 | Pending |
+| CATA-15 | Phase 15 | Pending |
+| REFR-04 | Phase 14 | Pending |
+| REFR-05 | Phase 15 | Pending |
+| REFR-06 | Phase 14 | Pending |
+| SITE-10 | Phase 17 | Pending |
+| SITE-11 | Phase 17 | Pending |
+| SITE-12 | Phase 17 | Pending |
+| QA-01 | Phase 17 | Pending |
+| QA-02 | Phase 17 | Pending |
 
 **Coverage:**
 - v1.3 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14
+- Mapped to phases: 14
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-05-27*
-*Last updated: 2026-05-27 after initial definition*
+*Last updated: 2026-05-27 after roadmap traceability mapping*

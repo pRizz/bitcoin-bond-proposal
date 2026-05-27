@@ -5,6 +5,7 @@
 - ✅ **v1.0 Illinois-first MVP** — shipped 2026-04-03. See [v1.0 roadmap archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-ROADMAP.md), [v1.0 requirements archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-REQUIREMENTS.md), and [v1.0 audit archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.0-MILESTONE-AUDIT.md).
 - ✅ **v1.1 Dark Mode Editorial Refactor** — shipped 2026-04-04. See [v1.1 roadmap archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-ROADMAP.md), [v1.1 requirements archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-REQUIREMENTS.md), and [v1.1 audit archive](/Users/peterryszkiewicz/.codex/worktrees/8fd7/bitcoin-bond-proposal/.planning/milestones/v1.1-MILESTONE-AUDIT.md).
 - ✅ **v1.2 National Coverage, Comparison, and Refresh** — shipped 2026-04-12. See [v1.2 roadmap archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-ROADMAP.md), [v1.2 requirements archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-REQUIREMENTS.md), and [v1.2 audit archive](/Users/peterryszkiewicz/Repos/bitcoin-bond-proposal/.planning/milestones/v1.2-MILESTONE-AUDIT.md).
+- **v1.3 Deeper National Coverage** — active, started 2026-05-27. Expands beyond the current ten-state set by publishing as many additional states as pass credibility, completeness, and freshness gates.
 
 ## Phases
 
@@ -39,9 +40,77 @@
 
 </details>
 
-### 📋 Next Milestone
+### v1.3 Deeper National Coverage (Phases 14-17) — ACTIVE
 
-- Not defined yet — start with `/gsd-new-milestone`
+- [ ] Phase 14: Candidate Priority and Refresh Intake (0 plans) — ready to discuss
+- [ ] Phase 15: First Expansion Publication Wave (0 plans) — pending Phase 14
+- [ ] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15
+- [ ] Phase 17: Expanded Surface QA and Closeout Prep (0 plans) — pending Phase 16
+
+### Phase 14: Candidate Priority and Refresh Intake
+
+**Goal:** Extend the repo-owned queue workflow so maintainers can choose the next state work from both stale published records and unpublished candidate readiness.  
+**Depends on:** Phase 13  
+**Requirements:** CATA-10, CATA-11, REFR-04, REFR-06  
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD
+
+**Success criteria:**
+1. Maintainer can generate or read a dated priority artifact that includes stale published records and unpublished candidate states.
+2. Each unpublished candidate can be classified by source availability, proposal relevance, readiness, and next action without creating an unverified public state page.
+3. Refresh and candidate-priority outputs remain under `generated/refresh/` with clear generated-artifact boundaries.
+4. The workflow gives a concrete first publication queue for Phase 15.
+
+### Phase 15: First Expansion Publication Wave
+
+**Goal:** Publish the first high-readiness v1.3 state batch and prove the publication path still validates cleanly at expanded scale.  
+**Depends on:** Phase 14  
+**Requirements:** CATA-14, CATA-15, REFR-05  
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD
+
+**Success criteria:**
+1. Newly authored state records include official primary sources, status dates, review dates, proposal classification, confidence cues, and policy-effect summaries.
+2. Any active or review-due existing records that block publication or comparison work are refreshed before lower-risk expansion proceeds.
+3. Manifest updates, content validation, and content compilation succeed without route-specific exceptions.
+4. New state-detail pages render from the same canonical content path as the existing ten records.
+
+### Phase 16: Throughput Expansion and Deferral Ledger
+
+**Goal:** Continue publishing credible candidates until the milestone's source-quality gates become the limiting factor, then record why remaining high-interest states were deferred.  
+**Depends on:** Phase 15  
+**Requirements:** CATA-12, CATA-13  
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD
+
+**Success criteria:**
+1. The published registry grows beyond the Phase 15 batch with every additional state passing the same source, schema, confidence, and dated-snapshot contract.
+2. Candidate states that cannot be published credibly have explicit deferral reasons recorded outside public state-entry content.
+3. The final v1.3 publication count is driven by verified source availability and editorial completeness rather than an arbitrary quota.
+4. The shipped state list and deferred candidate list are ready for final surface QA and milestone closeout.
+
+### Phase 17: Expanded Surface QA and Closeout Prep
+
+**Goal:** Make the expanded registry easy to scan, compare, and verify across public surfaces, then record final coverage and evidence for milestone closeout.  
+**Depends on:** Phase 16  
+**Requirements:** SITE-10, SITE-11, SITE-12, QA-01, QA-02  
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD
+
+**Success criteria:**
+1. `/states` remains scannable at the expanded published count with confidence, completeness, freshness, status, proposal-type, and region cues intact.
+2. `/states/clusters` and `/states/compare` reflect the expanded registry without stale grouping copy, broken links, or unclear drill-down paths.
+3. New and existing state-detail pages expose consistent provenance, status, freshness, and comparison context.
+4. Verification covers content validation, content compilation, refresh/candidate generation, TypeScript, build, tests, and targeted browser checks.
+5. Closeout records the newly published state count, shipped states, deferred candidates, and verification evidence.
 
 ## Backlog
 
