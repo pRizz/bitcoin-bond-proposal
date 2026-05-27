@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-04-12T00:00:00.000Z",
+	"generatedAt": "2026-05-27T00:00:00.000Z",
 	"latestReview": "2026-04-11",
 	"thresholds": {
 		"activeReviewSoonDays": 14,
@@ -10,15 +10,15 @@
 		"terminalReviewDueDays": 45
 	},
 	"summary": {
-		"generatedAt": "2026-04-12T00:00:00.000Z",
+		"generatedAt": "2026-05-27T00:00:00.000Z",
 		"latestReview": "2026-04-11",
 		"counts": {
-			"current": 2,
-			"aging": 1,
-			"due": 7
+			"current": 0,
+			"aging": 0,
+			"due": 10
 		},
-		"lead": "This registry stays explicitly dated: 2 current snapshots, 1 review-soon records, and 7 review-due records.",
-		"queueCount": 8
+		"lead": "This registry stays explicitly dated: 0 current snapshots, 0 review-soon records, and 10 review-due records.",
+		"queueCount": 10
 	},
 	"entries": [
 		{
@@ -39,9 +39,9 @@
 			"status": "Referred to Rules Committee",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-01-29",
-			"statusAgeDays": 438,
+			"statusAgeDays": 483,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 11,
+			"reviewAgeDays": 56,
 			"confidence": "high",
 			"path": "content/states/illinois-hb-1844.md",
 			"manifest": {
@@ -60,11 +60,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 11 days ago. The active status snapshot is 438 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 56 days ago. The active status snapshot is 483 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 438d"
+				"review age 56d",
+				"active status age 483d"
 			]
 		},
 		{
@@ -85,9 +86,9 @@
 			"status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-11",
-			"statusAgeDays": 397,
+			"statusAgeDays": 442,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 1,
+			"reviewAgeDays": 46,
 			"confidence": "medium",
 			"path": "content/states/maryland-hb-1389.md",
 			"manifest": {
@@ -106,11 +107,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 1 days ago. The active status snapshot is 397 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 46 days ago. The active status snapshot is 442 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 397d"
+				"review age 46d",
+				"active status age 442d"
 			]
 		},
 		{
@@ -131,9 +133,9 @@
 			"status": "Ref To Com On Rules and Operations of the Senate",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-19",
-			"statusAgeDays": 389,
+			"statusAgeDays": 434,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 1,
+			"reviewAgeDays": 46,
 			"confidence": "medium",
 			"path": "content/states/north-carolina-s-327.md",
 			"manifest": {
@@ -152,11 +154,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 1 days ago. The active status snapshot is 389 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 46 days ago. The active status snapshot is 434 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 389d"
+				"review age 46d",
+				"active status age 434d"
 			]
 		},
 		{
@@ -177,9 +180,9 @@
 			"status": "Public Hearing Completed (House)",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2025-03-24",
-			"statusAgeDays": 384,
+			"statusAgeDays": 429,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 1,
+			"reviewAgeDays": 46,
 			"confidence": "high",
 			"path": "content/states/missouri-hb-1217.md",
 			"manifest": {
@@ -198,11 +201,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 1 days ago. The active status snapshot is 384 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 46 days ago. The active status snapshot is 429 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 384d"
+				"review age 46d",
+				"active status age 429d"
 			]
 		},
 		{
@@ -223,9 +227,9 @@
 			"status": "Engrossed to Senate",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2025-03-25",
-			"statusAgeDays": 383,
+			"statusAgeDays": 428,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 11,
+			"reviewAgeDays": 56,
 			"confidence": "high",
 			"path": "content/states/oklahoma-hb-1203.md",
 			"manifest": {
@@ -244,11 +248,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 11 days ago. The active status snapshot is 383 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 56 days ago. The active status snapshot is 428 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 383d"
+				"review age 56d",
+				"active status age 428d"
 			]
 		},
 		{
@@ -269,9 +274,9 @@
 			"status": "Referred to Committee on Ways and Means",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-27",
-			"statusAgeDays": 381,
+			"statusAgeDays": 426,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 1,
+			"reviewAgeDays": 46,
 			"confidence": "high",
 			"path": "content/states/south-carolina-h-4256.md",
 			"manifest": {
@@ -290,11 +295,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 1 days ago. The active status snapshot is 381 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 46 days ago. The active status snapshot is 426 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 381d"
+				"review age 46d",
+				"active status age 426d"
 			]
 		},
 		{
@@ -315,9 +321,9 @@
 			"status": "Board approved; further approval and counsel condition pending",
 			"legislativeStatusGroup": "approved",
 			"statusAsOf": "2025-11-17",
-			"statusAgeDays": 146,
+			"statusAgeDays": 191,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 11,
+			"reviewAgeDays": 56,
 			"confidence": "high",
 			"path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md",
 			"manifest": {
@@ -336,11 +342,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 11 days ago. The active status snapshot is 146 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 56 days ago. The active status snapshot is 191 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"active status age 146d"
+				"review age 56d",
+				"active status age 191d"
 			]
 		},
 		{
@@ -361,9 +368,9 @@
 			"status": "Referred to Committee on Communications and Technology",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2026-03-19",
-			"statusAgeDays": 24,
+			"statusAgeDays": 69,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 1,
+			"reviewAgeDays": 46,
 			"confidence": "high",
 			"path": "content/states/michigan-hb-4087.md",
 			"manifest": {
@@ -380,13 +387,106 @@
 				"detail": "Official bill text and dated status are present, and the measure has moved beyond introduction."
 			},
 			"freshnessCue": {
-				"tone": "aging",
-				"title": "Review soon",
-				"detail": "Reviewed 1 days ago. The active status snapshot is 24 days old, so this record should be refreshed soon."
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 69 days old, so this record needs a fresh source check."
 			},
-			"priority": "aging",
+			"priority": "due",
 			"reasons": [
-				"active status age 24d"
+				"review age 46d",
+				"active status age 69d"
+			]
+		},
+		{
+			"title": "Arizona SB1025",
+			"slug": "arizona",
+			"state": "Arizona",
+			"summary": "Arizona Senate bill to permit public-fund investment in virtual currency holdings up to a defined cap, later vetoed by the Governor.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "west",
+			"shortNote": "High-significance reserve exemplar for the first publishable batch.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "SB1025",
+			"chamber": "Arizona Senate",
+			"status": "Vetoed by Governor",
+			"legislativeStatusGroup": "failed",
+			"statusAsOf": "2025-05-02",
+			"statusAgeDays": 390,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/arizona-sb-1025.md",
+			"manifest": {
+				"state": "Arizona",
+				"slug": "arizona",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "west",
+				"shortNote": "High-significance reserve exemplar for the first publishable batch.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Failed bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure remains useful because it reached an official veto or failure point."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d"
+			]
+		},
+		{
+			"title": "Texas SB21",
+			"slug": "texas",
+			"state": "Texas",
+			"summary": "Texas enacted the Texas Strategic Bitcoin Reserve and Investment Act, establishing a state reserve structure administered by the comptroller with defined custody, investment, and reporting rules.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "south",
+			"shortNote": "High-significance reserve-law benchmark for the first published batch.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "SB21",
+			"chamber": "Texas Senate",
+			"status": "Enrolled; effective by law",
+			"legislativeStatusGroup": "enacted",
+			"statusAsOf": "2025-06-20",
+			"statusAgeDays": 341,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/texas-sb-21.md",
+			"manifest": {
+				"state": "Texas",
+				"slug": "texas",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "south",
+				"shortNote": "High-significance reserve-law benchmark for the first published batch.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Enacted bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure has reached enacted-law status."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d"
 			]
 		}
 	]
