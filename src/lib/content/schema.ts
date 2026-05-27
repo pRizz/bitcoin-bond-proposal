@@ -8,9 +8,32 @@ const SlugSchema = NonEmptyStringSchema.regex(
 	slugPattern,
 	"slug must use lowercase letters, numbers, and hyphens",
 );
+
+function isValidIsoDate(value: string): boolean {
+	const match = isoDatePattern.exec(value);
+	if (!match) {
+		return false;
+	}
+
+	const [yearText, monthText, dayText] = value.split("-");
+	const year = Number(yearText);
+	const month = Number(monthText);
+	const day = Number(dayText);
+	const parsed = new Date(Date.UTC(year, month - 1, day));
+
+	return (
+		parsed.getUTCFullYear() === year &&
+		parsed.getUTCMonth() === month - 1 &&
+		parsed.getUTCDate() === day
+	);
+}
+
 const IsoDateStringSchema = NonEmptyStringSchema.regex(
 	isoDatePattern,
 	"date must use YYYY-MM-DD format",
+).refine(
+	isValidIsoDate,
+	"date must be a valid calendar date in YYYY-MM-DD format",
 );
 const IsoDateSchema = z.preprocess((value) => {
 	if (value instanceof Date) {
@@ -51,6 +74,29 @@ const RecordTypeSchema = z.enum([
 	"executive-action",
 	"other-official-record",
 ]);
+const CandidateSourceAvailabilitySchema = z.enum([
+	"official-bill-page",
+	"official-pdf-only",
+	"official-state-record",
+	"secondary-only",
+	"none-found",
+]);
+const CandidateProposalRelevanceSchema = z.enum(["high", "medium", "low"]);
+const CandidateReadinessSchema = z.enum([
+	"ready-to-author",
+	"needs-status-confirmation",
+	"defer",
+]);
+const CandidateNextActionSchema = z.enum([
+	"author-state-entry",
+	"confirm-final-status",
+	"defer-until-stronger-official-source",
+]);
+const expectedNextActionByReadiness = {
+	"ready-to-author": "author-state-entry",
+	"needs-status-confirmation": "confirm-final-status",
+	defer: "defer-until-stronger-official-source",
+} as const;
 
 const TaxonomyValueSchema = z.object({
 	value: NonEmptyStringSchema,
@@ -112,6 +158,67 @@ export const StateEntryFrontmatterSchema = z.object({
 	effect: NonEmptyStringSchema,
 	classificationNote: z.string().trim().optional(),
 });
+export const StateCandidateIntakeEntrySchema = z
+	.object({
+		state: NonEmptyStringSchema,
+		slug: SlugSchema,
+		sourceAvailability: CandidateSourceAvailabilitySchema,
+		proposalRelevance: CandidateProposalRelevanceSchema,
+		readiness: CandidateReadinessSchema,
+		status: NonEmptyStringSchema,
+		statusAsOf: IsoDateSchema,
+		officialSourceUrl: SourceLinkSchema.optional(),
+		evidenceNote: NonEmptyStringSchema,
+		nextAction: CandidateNextActionSchema,
+		deferralReason: z.string().trim().optional(),
+	})
+	.superRefine((entry, context) => {
+		const hasOfficialSource = [
+			"official-bill-page",
+			"official-pdf-only",
+			"official-state-record",
+		].includes(entry.sourceAvailability);
+
+		if (entry.readiness === "ready-to-author") {
+			if (!hasOfficialSource) {
+				context.addIssue({
+					code: "custom",
+					message:
+						"ready-to-author candidates require official source availability",
+					path: ["sourceAvailability"],
+				});
+			}
+
+			if (!entry.officialSourceUrl) {
+				context.addIssue({
+					code: "custom",
+					message: "ready-to-author candidates require an officialSourceUrl",
+					path: ["officialSourceUrl"],
+				});
+			}
+		}
+
+		if (entry.readiness === "defer" && !entry.deferralReason) {
+			context.addIssue({
+				code: "custom",
+				message: "deferred candidates require a deferralReason",
+				path: ["deferralReason"],
+			});
+		}
+
+		const expectedNextAction = expectedNextActionByReadiness[entry.readiness];
+		if (entry.nextAction !== expectedNextAction) {
+			context.addIssue({
+				code: "custom",
+				message: `${entry.readiness} candidates require nextAction ${expectedNextAction}`,
+				path: ["nextAction"],
+			});
+		}
+	});
+
+export const StateCandidateIntakeSchema = z.object({
+	candidates: z.array(StateCandidateIntakeEntrySchema),
+});
 
 export type ProposalTaxonomy = z.infer<typeof ProposalTaxonomySchema>;
 export type Region = z.infer<typeof RegionSchema>;
@@ -125,6 +232,18 @@ export type StateRegistryManifestEntry = z.infer<
 >;
 export type DocumentFrontmatter = z.infer<typeof DocumentFrontmatterSchema>;
 export type StateEntryFrontmatter = z.infer<typeof StateEntryFrontmatterSchema>;
+export type CandidateSourceAvailability = z.infer<
+	typeof CandidateSourceAvailabilitySchema
+>;
+export type CandidateProposalRelevance = z.infer<
+	typeof CandidateProposalRelevanceSchema
+>;
+export type CandidateReadiness = z.infer<typeof CandidateReadinessSchema>;
+export type CandidateNextAction = z.infer<typeof CandidateNextActionSchema>;
+export type StateCandidateIntakeEntry = z.infer<
+	typeof StateCandidateIntakeEntrySchema
+>;
+export type StateCandidateIntake = z.infer<typeof StateCandidateIntakeSchema>;
 
 export type MarkdownRecord<TFrontmatter> = {
 	body: string;
@@ -152,6 +271,12 @@ export function parseStateEntryFrontmatter(
 	rawFrontmatter: unknown,
 ): StateEntryFrontmatter {
 	return StateEntryFrontmatterSchema.parse(rawFrontmatter);
+}
+
+export function parseStateCandidateIntake(
+	rawCandidates: unknown,
+): StateCandidateIntake {
+	return StateCandidateIntakeSchema.parse(rawCandidates);
 }
 
 export function assertKnownProposalClassification(

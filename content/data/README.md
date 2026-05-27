@@ -7,6 +7,9 @@ Use it for:
 - controlled vocabularies such as proposal kinds and subtypes;
 - small manifests and lookup tables for canonical published content;
 - seed data that validation and compile scripts consume directly.
+- `state-candidate-intake.json`, controlled maintainer input for unpublished
+  candidate prioritization; it is not canonical public state content and must be
+  parsed before use.
 
 Do not use this directory for:
 

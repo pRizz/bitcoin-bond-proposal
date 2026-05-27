@@ -1,0 +1,88 @@
+{
+	"candidates": [
+		{
+			"state": "Florida",
+			"slug": "florida",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Died in Banking and Insurance",
+			"statusAsOf": "2025-06-16",
+			"officialSourceUrl": "https://www.flsenate.gov/Session/Bill/2025/550",
+			"evidenceNote": "Official Senate page identifies SB 550, its Bitcoin public-funds investment authority, companion HB 487, and terminal committee posture.",
+			"nextAction": "author-state-entry"
+		},
+		{
+			"state": "Ohio",
+			"slug": "ohio",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "In House Committee",
+			"statusAsOf": "2025-01-28",
+			"officialSourceUrl": "https://www.legislature.ohio.gov/legislation/136/hb18",
+			"evidenceNote": "Official bill page identifies HB 18 as the Ohio Strategic Cryptocurrency Reserve Act and places it in the House Technology and Innovation Committee.",
+			"nextAction": "author-state-entry"
+		},
+		{
+			"state": "Kansas",
+			"slug": "kansas",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Died in Committee",
+			"statusAsOf": "2025-05-02",
+			"officialSourceUrl": "https://kslegislature.gov/b2025_26/bills/sb352/",
+			"evidenceNote": "Official bill page identifies SB 352 as a bitcoin and digital assets reserve fund proposal with a terminal session posture.",
+			"nextAction": "author-state-entry"
+		},
+		{
+			"state": "North Dakota",
+			"slug": "north-dakota",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Second reading, failed to pass",
+			"statusAsOf": "2025-01-31",
+			"officialSourceUrl": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo1184.html?bill_number=1184&bill_year=2025",
+			"evidenceNote": "Official overview page marks HB 1184 failed and describes digital asset and precious metal investment authority.",
+			"nextAction": "author-state-entry"
+		},
+		{
+			"state": "South Dakota",
+			"slug": "south-dakota",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "high",
+			"readiness": "needs-status-confirmation",
+			"status": "Official introduced text found; final status needs confirmation",
+			"statusAsOf": "2026-01-01",
+			"officialSourceUrl": "https://mylrc.sdlegislature.gov/api/Documents/298084.pdf",
+			"evidenceNote": "Official introduced text would permit state investment in Bitcoin, but the final status should be confirmed from the legislature status route before authoring.",
+			"nextAction": "confirm-final-status"
+		},
+		{
+			"state": "Wyoming",
+			"slug": "wyoming",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "high",
+			"readiness": "needs-status-confirmation",
+			"status": "Official introduced text found; final status needs confirmation",
+			"statusAsOf": "2025-01-01",
+			"officialSourceUrl": "https://www.wyoleg.gov/2025/Introduced/HB0201.pdf",
+			"evidenceNote": "Official introduced text would authorize investment of state funds and permanent funds in Bitcoin, but the final status should be confirmed from the legislature summary route before authoring.",
+			"nextAction": "confirm-final-status"
+		},
+		{
+			"state": "Utah",
+			"slug": "utah",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "medium",
+			"readiness": "ready-to-author",
+			"status": "Enrolled bill available",
+			"statusAsOf": "2025-03-25",
+			"officialSourceUrl": "https://le.utah.gov/Session/2025/bills/enrolled/HB0230.pdf",
+			"evidenceNote": "Official enrolled text and static bill page are available, but the entry should explain that final enacted content is broader digital-innovation legislation rather than a narrow Bitcoin-reserve bill.",
+			"nextAction": "author-state-entry"
+		}
+	]
+}

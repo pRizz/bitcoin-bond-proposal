@@ -10,8 +10,8 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 ### Coverage Intake
 
-- [ ] **CATA-10**: Maintainer can triage unpublished state manifest entries by source availability, proposal relevance, freshness risk, readiness, and explicit deferral reason.
-- [ ] **CATA-11**: Maintainer can identify the next best publication candidates from a queue or report that considers both unpublished candidates and stale published records.
+- [x] **CATA-10**: Maintainer can triage unpublished state manifest entries by source availability, proposal relevance, freshness risk, readiness, and explicit deferral reason.
+- [x] **CATA-11**: Maintainer can identify the next best publication candidates from a queue or report that considers both unpublished candidates and stale published records.
 - [ ] **CATA-12**: Maintainer can record why high-interest states remain unpublished without exposing unverified claims as public state entries.
 
 ### State Publication
@@ -22,9 +22,9 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 ### Refresh Prioritization
 
-- [ ] **REFR-04**: Refresh workflow output prioritizes stale published records and promising unpublished candidates with transparent reasons instead of manual guesswork.
+- [x] **REFR-04**: Refresh workflow output prioritizes stale published records and promising unpublished candidates with transparent reasons instead of manual guesswork.
 - [ ] **REFR-05**: Active or review-due records that need source refresh before publication or comparison work are surfaced ahead of lower-risk expansion work.
-- [ ] **REFR-06**: Generated refresh and candidate-priority artifacts remain clearly dated and outside canonical published state content.
+- [x] **REFR-06**: Generated refresh and candidate-priority artifacts remain clearly dated and outside canonical published state content.
 
 ### Registry Surfaces
 
@@ -75,15 +75,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CATA-10 | Phase 14 | Pending |
-| CATA-11 | Phase 14 | Pending |
+| CATA-10 | Phase 14 | Complete |
+| CATA-11 | Phase 14 | Complete |
 | CATA-12 | Phase 16 | Pending |
 | CATA-13 | Phase 16 | Pending |
 | CATA-14 | Phase 15 | Pending |
 | CATA-15 | Phase 15 | Pending |
-| REFR-04 | Phase 14 | Pending |
+| REFR-04 | Phase 14 | Complete |
 | REFR-05 | Phase 15 | Pending |
-| REFR-06 | Phase 14 | Pending |
+| REFR-06 | Phase 14 | Complete |
 | SITE-10 | Phase 17 | Pending |
 | SITE-11 | Phase 17 | Pending |
 | SITE-12 | Phase 17 | Pending |

@@ -4,6 +4,7 @@ import {
 	assertKnownProposalClassification,
 	assertUniqueSlugs,
 	parseProposalTaxonomy,
+	parseStateCandidateIntake,
 	parseStateEntryFrontmatter,
 	parseStateRegistryManifest,
 	toDateLabel,
@@ -210,5 +211,143 @@ describe("toDateLabel", () => {
 
 		// Assert
 		expect(result).toBe("2026-04-01");
+	});
+});
+
+describe("parseStateCandidateIntake", () => {
+	const officialCandidate = {
+		state: "Ohio",
+		slug: "ohio",
+		sourceAvailability: "official-bill-page",
+		proposalRelevance: "high",
+		readiness: "ready-to-author",
+		status: "In House Committee",
+		statusAsOf: "2026-05-27",
+		officialSourceUrl: "https://www.legislature.ohio.gov/legislation/136/hb18",
+		evidenceNote:
+			"Official bill page identifies the proposal and committee posture.",
+		nextAction: "author-state-entry",
+	};
+
+	test("accepts ready candidates with official bill-page evidence", () => {
+		// Arrange
+		const intake = {
+			candidates: [officialCandidate],
+		};
+
+		// Act
+		const result = parseStateCandidateIntake(intake);
+
+		// Assert
+		expect(result.candidates[0]?.readiness).toBe("ready-to-author");
+		expect(result.candidates[0]?.sourceAvailability).toBe("official-bill-page");
+	});
+
+	test("rejects ready candidates backed only by secondary coverage", () => {
+		// Arrange
+		const intake = {
+			candidates: [
+				{
+					...officialCandidate,
+					sourceAvailability: "secondary-only",
+				},
+			],
+		};
+
+		// Act
+		const execution = () => parseStateCandidateIntake(intake);
+
+		// Assert
+		expect(execution).toThrow(
+			"ready-to-author candidates require official source availability",
+		);
+	});
+
+	test("rejects deferred candidates without a deferral reason", () => {
+		// Arrange
+		const intake = {
+			candidates: [
+				{
+					...officialCandidate,
+					readiness: "defer",
+					nextAction: "defer-until-stronger-official-source",
+					deferralReason: " ",
+				},
+			],
+		};
+
+		// Act
+		const execution = () => parseStateCandidateIntake(intake);
+
+		// Assert
+		expect(execution).toThrow("deferred candidates require a deferralReason");
+	});
+
+	test("rejects impossible candidate status dates", () => {
+		// Arrange
+		const invalidDates = ["2026-02-30", "2026-99-99"];
+
+		for (const statusAsOf of invalidDates) {
+			const intake = {
+				candidates: [
+					{
+						...officialCandidate,
+						statusAsOf,
+					},
+				],
+			};
+
+			// Act
+			const execution = () => parseStateCandidateIntake(intake);
+
+			// Assert
+			expect(execution).toThrow(
+				"date must be a valid calendar date in YYYY-MM-DD format",
+			);
+		}
+	});
+
+	test("rejects mismatched readiness and nextAction values", () => {
+		// Arrange
+		const intake = {
+			candidates: [
+				{
+					...officialCandidate,
+					nextAction: "confirm-final-status",
+				},
+			],
+		};
+
+		// Act
+		const execution = () => parseStateCandidateIntake(intake);
+
+		// Assert
+		expect(execution).toThrow(
+			"ready-to-author candidates require nextAction author-state-entry",
+		);
+	});
+
+	test("accepts source-rich terminal candidates ready for authoring", () => {
+		// Arrange
+		const intake = {
+			candidates: [
+				{
+					...officialCandidate,
+					state: "Florida",
+					slug: "florida",
+					status: "Died in Banking and Insurance",
+					statusAsOf: "2025-06-16",
+					officialSourceUrl: "https://www.flsenate.gov/Session/Bill/2025/550",
+					evidenceNote:
+						"Official Senate page records the terminal bill posture.",
+				},
+			],
+		};
+
+		// Act
+		const result = parseStateCandidateIntake(intake);
+
+		// Assert
+		expect(result.candidates[0]?.status).toBe("Died in Banking and Insurance");
 	});
 });

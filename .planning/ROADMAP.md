@@ -42,7 +42,7 @@
 
 ### v1.3 Deeper National Coverage (Phases 14-17) — ACTIVE
 
-- [ ] Phase 14: Candidate Priority and Refresh Intake (3 plans) — planned
+- [x] Phase 14: Candidate Priority and Refresh Intake (3 plans) — completed 2026-05-27
 - [ ] Phase 15: First Expansion Publication Wave (0 plans) — pending Phase 14
 - [ ] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15
 - [ ] Phase 17: Expanded Surface QA and Closeout Prep (0 plans) — pending Phase 16
@@ -52,12 +52,12 @@
 **Goal:** Extend the repo-owned queue workflow so maintainers can choose the next state work from both stale published records and unpublished candidate readiness.  
 **Depends on:** Phase 13  
 **Requirements:** CATA-10, CATA-11, REFR-04, REFR-06  
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 14-01-PLAN.md — Define candidate intake schema, seed controlled candidate data, and document the non-public content boundary.
-- [ ] 14-02-PLAN.md — Build pure candidate classification, sorting, freshness-risk, and combined priority models with unit tests.
-- [ ] 14-03-PLAN.md — Extend `bun run refresh:queue` to write combined priority artifacts under `generated/refresh/` while preserving existing refresh outputs.
+- [x] 14-01-PLAN.md — Define candidate intake schema, seed controlled candidate data, and document the non-public content boundary.
+- [x] 14-02-PLAN.md — Build pure candidate classification, sorting, freshness-risk, and combined priority models with unit tests.
+- [x] 14-03-PLAN.md — Extend `bun run refresh:queue` to write combined priority artifacts under `generated/refresh/` while preserving existing refresh outputs.
 
 **Success criteria:**
 1. Maintainer can generate or read a dated priority artifact that includes stale published records and unpublished candidate states.

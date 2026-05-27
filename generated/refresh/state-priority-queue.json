@@ -1,0 +1,788 @@
+{
+	"generatedAt": "2026-05-27T00:00:00.000Z",
+	"sourceBoundary": "Published refresh work comes from canonical published records; candidate work comes from content/data/state-candidate-intake.json.",
+	"summary": {
+		"publishedRefreshCount": 10,
+		"publishedRefreshDueCount": 10,
+		"candidateCount": 7,
+		"firstPublicationCandidateCount": 7
+	},
+	"publishedRefreshWork": [
+		{
+			"title": "Illinois HB1844",
+			"slug": "illinois",
+			"state": "Illinois",
+			"summary": "Illinois House bill to create a Strategic Bitcoin Reserve Fund under the State Treasurer with donation, custody, holding-period, and reporting provisions.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "both",
+			"region": "midwest",
+			"shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
+			"editorialPriority": "bond-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "strategic-reserve",
+			"billId": "HB1844",
+			"chamber": "Illinois House",
+			"status": "Referred to Rules Committee",
+			"legislativeStatusGroup": "introduced",
+			"statusAsOf": "2025-01-29",
+			"statusAgeDays": 483,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/illinois-hb-1844.md",
+			"manifest": {
+				"state": "Illinois",
+				"slug": "illinois",
+				"registryStatus": "published",
+				"proposalFocus": "both",
+				"region": "midwest",
+				"shortNote": "Flagship state; registry entry must remain descriptive and distinct from the normative packet.",
+				"editorialPriority": "bond-priority"
+			},
+			"confidenceCue": {
+				"title": "Early-stage bill with clear official footing",
+				"detail": "Official bill text and dated status are present, but the measure remains at an early legislative stage."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. The active status snapshot is 483 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d",
+				"active status age 483d"
+			]
+		},
+		{
+			"title": "Maryland HB1389",
+			"slug": "maryland",
+			"state": "Maryland",
+			"summary": "Maryland House bill to create a Maryland Bitcoin Reserve Fund, capitalized in part with certain seized gambling proceeds and invested only in bitcoin under State Treasurer custody rules.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "south",
+			"shortNote": "Bitcoin reserve fund bill tied to seized-gambling proceeds, with official hearing and custody details on the Maryland General Assembly record.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "strategic-reserve",
+			"billId": "HB1389",
+			"chamber": "Maryland House",
+			"status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
+			"legislativeStatusGroup": "introduced",
+			"statusAsOf": "2025-03-11",
+			"statusAgeDays": 442,
+			"lastReviewed": "2026-04-11",
+			"reviewAgeDays": 46,
+			"confidence": "medium",
+			"path": "content/states/maryland-hb-1389.md",
+			"manifest": {
+				"state": "Maryland",
+				"slug": "maryland",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "south",
+				"shortNote": "Bitcoin reserve fund bill tied to seized-gambling proceeds, with official hearing and custody details on the Maryland General Assembly record.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Early-stage bill with developing official footing",
+				"detail": "Official bill text and dated status are present, but the measure remains at an early legislative stage."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 442 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 46d",
+				"active status age 442d"
+			]
+		},
+		{
+			"title": "North Carolina S327",
+			"slug": "north-carolina",
+			"state": "North Carolina",
+			"summary": "North Carolina Senate bill to establish a Bitcoin reserve, authorize the State Treasurer to allocate public funds into bitcoin, and expressly permit the reserve to back bonds for public projects.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "both",
+			"region": "south",
+			"shortNote": "Official reserve bill also contemplates Bitcoin-backed bond use, making it the clearest crossover signal in the expanded batch.",
+			"editorialPriority": "bond-priority",
+			"proposalKind": "both",
+			"proposalSubtype": "reserve-financing-bond",
+			"billId": "S327",
+			"chamber": "North Carolina Senate",
+			"status": "Ref To Com On Rules and Operations of the Senate",
+			"legislativeStatusGroup": "introduced",
+			"statusAsOf": "2025-03-19",
+			"statusAgeDays": 434,
+			"lastReviewed": "2026-04-11",
+			"reviewAgeDays": 46,
+			"confidence": "medium",
+			"path": "content/states/north-carolina-s-327.md",
+			"manifest": {
+				"state": "North Carolina",
+				"slug": "north-carolina",
+				"registryStatus": "published",
+				"proposalFocus": "both",
+				"region": "south",
+				"shortNote": "Official reserve bill also contemplates Bitcoin-backed bond use, making it the clearest crossover signal in the expanded batch.",
+				"editorialPriority": "bond-priority"
+			},
+			"confidenceCue": {
+				"title": "Early-stage bill with developing official footing",
+				"detail": "Official bill text and dated status are present, but the measure remains at an early legislative stage."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 434 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 46d",
+				"active status age 434d"
+			]
+		},
+		{
+			"title": "Missouri HB1217",
+			"slug": "missouri",
+			"state": "Missouri",
+			"summary": "Missouri House bill to create a Bitcoin Strategic Reserve Fund, require a five-year holding period for contributed bitcoin, and broaden the State Treasurer's authority to invest in and hold cryptocurrency.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "midwest",
+			"shortNote": "Bitcoin strategic reserve fund bill pairs direct treasury custody with a five-year holding rule and a completed House public hearing.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "HB1217",
+			"chamber": "Missouri House",
+			"status": "Public Hearing Completed (House)",
+			"legislativeStatusGroup": "advanced",
+			"statusAsOf": "2025-03-24",
+			"statusAgeDays": 429,
+			"lastReviewed": "2026-04-11",
+			"reviewAgeDays": 46,
+			"confidence": "high",
+			"path": "content/states/missouri-hb-1217.md",
+			"manifest": {
+				"state": "Missouri",
+				"slug": "missouri",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "midwest",
+				"shortNote": "Bitcoin strategic reserve fund bill pairs direct treasury custody with a five-year holding rule and a completed House public hearing.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Advanced bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure has moved beyond introduction."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 429 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 46d",
+				"active status age 429d"
+			]
+		},
+		{
+			"title": "Oklahoma HB1203",
+			"slug": "oklahoma",
+			"state": "Oklahoma",
+			"summary": "Oklahoma bill to create the Strategic Bitcoin Reserve Act and permit capped digital-asset investments by the State Treasurer and certain retirement funds.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "south",
+			"shortNote": "Reserve-side exemplar for the first published batch.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "HB1203",
+			"chamber": "Oklahoma House",
+			"status": "Engrossed to Senate",
+			"legislativeStatusGroup": "advanced",
+			"statusAsOf": "2025-03-25",
+			"statusAgeDays": 428,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/oklahoma-hb-1203.md",
+			"manifest": {
+				"state": "Oklahoma",
+				"slug": "oklahoma",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "south",
+				"shortNote": "Reserve-side exemplar for the first published batch.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Advanced bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure has moved beyond introduction."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. The active status snapshot is 428 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d",
+				"active status age 428d"
+			]
+		},
+		{
+			"title": "South Carolina H4256",
+			"slug": "south-carolina",
+			"state": "South Carolina",
+			"summary": "South Carolina House bill to create a Strategic Digital Assets Reserve, authorize capped treasury investment in digital assets including bitcoin, and require custody, reporting, and donation procedures.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "south",
+			"shortNote": "Strategic digital assets reserve bill would authorize capped treasury investment, donations, custody controls, and biennial reporting.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "H4256",
+			"chamber": "South Carolina House",
+			"status": "Referred to Committee on Ways and Means",
+			"legislativeStatusGroup": "introduced",
+			"statusAsOf": "2025-03-27",
+			"statusAgeDays": 426,
+			"lastReviewed": "2026-04-11",
+			"reviewAgeDays": 46,
+			"confidence": "high",
+			"path": "content/states/south-carolina-h-4256.md",
+			"manifest": {
+				"state": "South Carolina",
+				"slug": "south-carolina",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "south",
+				"shortNote": "Strategic digital assets reserve bill would authorize capped treasury investment, donations, custody controls, and biennial reporting.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Early-stage bill with clear official footing",
+				"detail": "Official bill text and dated status are present, but the measure remains at an early legislative stage."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 426 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 46d",
+				"active status age 426d"
+			]
+		},
+		{
+			"title": "New Hampshire BFA Bitcoin-Backed Bond Approval",
+			"slug": "new-hampshire",
+			"state": "New Hampshire",
+			"summary": "New Hampshire Business Finance Authority board approval of up to $100 million in bonds for a project to acquire and hold digital currency, framed publicly as a bitcoin-backed municipal bond.",
+			"recordType": "authority-action",
+			"registryStatus": "published",
+			"proposalFocus": "bond",
+			"region": "northeast",
+			"shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
+			"editorialPriority": "bond-priority",
+			"proposalKind": "bond",
+			"proposalSubtype": "bitcoin-collateralized-bond",
+			"billId": "NHBFA Digital Currency Bond Resolution (Nov. 17, 2025)",
+			"chamber": "New Hampshire Business Finance Authority Board of Directors",
+			"status": "Board approved; further approval and counsel condition pending",
+			"legislativeStatusGroup": "approved",
+			"statusAsOf": "2025-11-17",
+			"statusAgeDays": 191,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md",
+			"manifest": {
+				"state": "New Hampshire",
+				"slug": "new-hampshire",
+				"registryStatus": "published",
+				"proposalFocus": "bond",
+				"region": "northeast",
+				"shortNote": "Strongest official bond-side signal in the first batch; record type must remain explicit.",
+				"editorialPriority": "bond-priority"
+			},
+			"confidenceCue": {
+				"title": "Authority action with clear official footing",
+				"detail": "The record rests on official authority action rather than a legislature-filed bill, with the approval posture reflected in the source trail."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. The active status snapshot is 191 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d",
+				"active status age 191d"
+			]
+		},
+		{
+			"title": "Michigan HB4087",
+			"slug": "michigan",
+			"state": "Michigan",
+			"summary": "Michigan House bill to establish a strategic bitcoin reserve by allowing the State Treasurer to invest capped portions of the general fund and budget stabilization fund in cryptocurrency with regulated custody options.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "midwest",
+			"shortNote": "Strategic bitcoin reserve bill would let the treasurer invest capped state funds in cryptocurrency through official custody channels.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "HB4087",
+			"chamber": "Michigan House",
+			"status": "Referred to Committee on Communications and Technology",
+			"legislativeStatusGroup": "advanced",
+			"statusAsOf": "2026-03-19",
+			"statusAgeDays": 69,
+			"lastReviewed": "2026-04-11",
+			"reviewAgeDays": 46,
+			"confidence": "high",
+			"path": "content/states/michigan-hb-4087.md",
+			"manifest": {
+				"state": "Michigan",
+				"slug": "michigan",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "midwest",
+				"shortNote": "Strategic bitcoin reserve bill would let the treasurer invest capped state funds in cryptocurrency through official custody channels.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Advanced bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure has moved beyond introduction."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 46 days ago. The active status snapshot is 69 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 46d",
+				"active status age 69d"
+			]
+		},
+		{
+			"title": "Arizona SB1025",
+			"slug": "arizona",
+			"state": "Arizona",
+			"summary": "Arizona Senate bill to permit public-fund investment in virtual currency holdings up to a defined cap, later vetoed by the Governor.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "west",
+			"shortNote": "High-significance reserve exemplar for the first publishable batch.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "SB1025",
+			"chamber": "Arizona Senate",
+			"status": "Vetoed by Governor",
+			"legislativeStatusGroup": "failed",
+			"statusAsOf": "2025-05-02",
+			"statusAgeDays": 390,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/arizona-sb-1025.md",
+			"manifest": {
+				"state": "Arizona",
+				"slug": "arizona",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "west",
+				"shortNote": "High-significance reserve exemplar for the first publishable batch.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Failed bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure remains useful because it reached an official veto or failure point."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d"
+			]
+		},
+		{
+			"title": "Texas SB21",
+			"slug": "texas",
+			"state": "Texas",
+			"summary": "Texas enacted the Texas Strategic Bitcoin Reserve and Investment Act, establishing a state reserve structure administered by the comptroller with defined custody, investment, and reporting rules.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "south",
+			"shortNote": "High-significance reserve-law benchmark for the first published batch.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "SB21",
+			"chamber": "Texas Senate",
+			"status": "Enrolled; effective by law",
+			"legislativeStatusGroup": "enacted",
+			"statusAsOf": "2025-06-20",
+			"statusAgeDays": 341,
+			"lastReviewed": "2026-04-01",
+			"reviewAgeDays": 56,
+			"confidence": "high",
+			"path": "content/states/texas-sb-21.md",
+			"manifest": {
+				"state": "Texas",
+				"slug": "texas",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "south",
+				"shortNote": "High-significance reserve-law benchmark for the first published batch.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Enacted bill with clear official footing",
+				"detail": "Official bill text and dated status are present, and the measure has reached enacted-law status."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+			},
+			"priority": "due",
+			"reasons": [
+				"review age 56d"
+			]
+		}
+	],
+	"firstPublicationCandidates": [
+		{
+			"state": "Florida",
+			"slug": "florida",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Died in Banking and Insurance",
+			"statusAsOf": "2025-06-16",
+			"officialSourceUrl": "https://www.flsenate.gov/Session/Bill/2025/550",
+			"evidenceNote": "Official Senate page identifies SB 550, its Bitcoin public-funds investment authority, companion HB 487, and terminal committee posture.",
+			"nextAction": "author-state-entry",
+			"rank": 1,
+			"statusAgeDays": 345,
+			"freshnessRisk": "stale",
+			"authorable": true,
+			"reasons": [
+				"source availability: official-bill-page",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "Kansas",
+			"slug": "kansas",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Died in Committee",
+			"statusAsOf": "2025-05-02",
+			"officialSourceUrl": "https://kslegislature.gov/b2025_26/bills/sb352/",
+			"evidenceNote": "Official bill page identifies SB 352 as a bitcoin and digital assets reserve fund proposal with a terminal session posture.",
+			"nextAction": "author-state-entry",
+			"rank": 2,
+			"statusAgeDays": 390,
+			"freshnessRisk": "stale",
+			"authorable": true,
+			"reasons": [
+				"source availability: official-bill-page",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "North Dakota",
+			"slug": "north-dakota",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "Second reading, failed to pass",
+			"statusAsOf": "2025-01-31",
+			"officialSourceUrl": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo1184.html?bill_number=1184&bill_year=2025",
+			"evidenceNote": "Official overview page marks HB 1184 failed and describes digital asset and precious metal investment authority.",
+			"nextAction": "author-state-entry",
+			"rank": 3,
+			"statusAgeDays": 481,
+			"freshnessRisk": "stale",
+			"authorable": true,
+			"reasons": [
+				"source availability: official-bill-page",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "Ohio",
+			"slug": "ohio",
+			"sourceAvailability": "official-bill-page",
+			"proposalRelevance": "high",
+			"readiness": "ready-to-author",
+			"status": "In House Committee",
+			"statusAsOf": "2025-01-28",
+			"officialSourceUrl": "https://www.legislature.ohio.gov/legislation/136/hb18",
+			"evidenceNote": "Official bill page identifies HB 18 as the Ohio Strategic Cryptocurrency Reserve Act and places it in the House Technology and Innovation Committee.",
+			"nextAction": "author-state-entry",
+			"rank": 4,
+			"statusAgeDays": 484,
+			"freshnessRisk": "stale",
+			"authorable": true,
+			"reasons": [
+				"source availability: official-bill-page",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "Utah",
+			"slug": "utah",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "medium",
+			"readiness": "ready-to-author",
+			"status": "Enrolled bill available",
+			"statusAsOf": "2025-03-25",
+			"officialSourceUrl": "https://le.utah.gov/Session/2025/bills/enrolled/HB0230.pdf",
+			"evidenceNote": "Official enrolled text and static bill page are available, but the entry should explain that final enacted content is broader digital-innovation legislation rather than a narrow Bitcoin-reserve bill.",
+			"nextAction": "author-state-entry",
+			"rank": 5,
+			"statusAgeDays": 428,
+			"freshnessRisk": "stale",
+			"authorable": true,
+			"reasons": [
+				"source availability: official-pdf-only",
+				"proposal relevance: medium",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "South Dakota",
+			"slug": "south-dakota",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "high",
+			"readiness": "needs-status-confirmation",
+			"status": "Official introduced text found; final status needs confirmation",
+			"statusAsOf": "2026-01-01",
+			"officialSourceUrl": "https://mylrc.sdlegislature.gov/api/Documents/298084.pdf",
+			"evidenceNote": "Official introduced text would permit state investment in Bitcoin, but the final status should be confirmed from the legislature status route before authoring.",
+			"nextAction": "confirm-final-status",
+			"rank": 6,
+			"statusAgeDays": 146,
+			"freshnessRisk": "stale",
+			"authorable": false,
+			"reasons": [
+				"source availability: official-pdf-only",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		},
+		{
+			"state": "Wyoming",
+			"slug": "wyoming",
+			"sourceAvailability": "official-pdf-only",
+			"proposalRelevance": "high",
+			"readiness": "needs-status-confirmation",
+			"status": "Official introduced text found; final status needs confirmation",
+			"statusAsOf": "2025-01-01",
+			"officialSourceUrl": "https://www.wyoleg.gov/2025/Introduced/HB0201.pdf",
+			"evidenceNote": "Official introduced text would authorize investment of state funds and permanent funds in Bitcoin, but the final status should be confirmed from the legislature summary route before authoring.",
+			"nextAction": "confirm-final-status",
+			"rank": 7,
+			"statusAgeDays": 511,
+			"freshnessRisk": "stale",
+			"authorable": false,
+			"reasons": [
+				"source availability: official-pdf-only",
+				"proposal relevance: high",
+				"freshness risk: stale"
+			]
+		}
+	],
+	"candidateIntake": {
+		"generatedAt": "2026-05-27T00:00:00.000Z",
+		"summary": {
+			"candidateCount": 7,
+			"readyToAuthorCount": 5,
+			"needsStatusConfirmationCount": 2,
+			"deferredCount": 0,
+			"authorableCount": 5
+		},
+		"entries": [
+			{
+				"state": "Florida",
+				"slug": "florida",
+				"sourceAvailability": "official-bill-page",
+				"proposalRelevance": "high",
+				"readiness": "ready-to-author",
+				"status": "Died in Banking and Insurance",
+				"statusAsOf": "2025-06-16",
+				"officialSourceUrl": "https://www.flsenate.gov/Session/Bill/2025/550",
+				"evidenceNote": "Official Senate page identifies SB 550, its Bitcoin public-funds investment authority, companion HB 487, and terminal committee posture.",
+				"nextAction": "author-state-entry",
+				"rank": 1,
+				"statusAgeDays": 345,
+				"freshnessRisk": "stale",
+				"authorable": true,
+				"reasons": [
+					"source availability: official-bill-page",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "Kansas",
+				"slug": "kansas",
+				"sourceAvailability": "official-bill-page",
+				"proposalRelevance": "high",
+				"readiness": "ready-to-author",
+				"status": "Died in Committee",
+				"statusAsOf": "2025-05-02",
+				"officialSourceUrl": "https://kslegislature.gov/b2025_26/bills/sb352/",
+				"evidenceNote": "Official bill page identifies SB 352 as a bitcoin and digital assets reserve fund proposal with a terminal session posture.",
+				"nextAction": "author-state-entry",
+				"rank": 2,
+				"statusAgeDays": 390,
+				"freshnessRisk": "stale",
+				"authorable": true,
+				"reasons": [
+					"source availability: official-bill-page",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "North Dakota",
+				"slug": "north-dakota",
+				"sourceAvailability": "official-bill-page",
+				"proposalRelevance": "high",
+				"readiness": "ready-to-author",
+				"status": "Second reading, failed to pass",
+				"statusAsOf": "2025-01-31",
+				"officialSourceUrl": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo1184.html?bill_number=1184&bill_year=2025",
+				"evidenceNote": "Official overview page marks HB 1184 failed and describes digital asset and precious metal investment authority.",
+				"nextAction": "author-state-entry",
+				"rank": 3,
+				"statusAgeDays": 481,
+				"freshnessRisk": "stale",
+				"authorable": true,
+				"reasons": [
+					"source availability: official-bill-page",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "Ohio",
+				"slug": "ohio",
+				"sourceAvailability": "official-bill-page",
+				"proposalRelevance": "high",
+				"readiness": "ready-to-author",
+				"status": "In House Committee",
+				"statusAsOf": "2025-01-28",
+				"officialSourceUrl": "https://www.legislature.ohio.gov/legislation/136/hb18",
+				"evidenceNote": "Official bill page identifies HB 18 as the Ohio Strategic Cryptocurrency Reserve Act and places it in the House Technology and Innovation Committee.",
+				"nextAction": "author-state-entry",
+				"rank": 4,
+				"statusAgeDays": 484,
+				"freshnessRisk": "stale",
+				"authorable": true,
+				"reasons": [
+					"source availability: official-bill-page",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "Utah",
+				"slug": "utah",
+				"sourceAvailability": "official-pdf-only",
+				"proposalRelevance": "medium",
+				"readiness": "ready-to-author",
+				"status": "Enrolled bill available",
+				"statusAsOf": "2025-03-25",
+				"officialSourceUrl": "https://le.utah.gov/Session/2025/bills/enrolled/HB0230.pdf",
+				"evidenceNote": "Official enrolled text and static bill page are available, but the entry should explain that final enacted content is broader digital-innovation legislation rather than a narrow Bitcoin-reserve bill.",
+				"nextAction": "author-state-entry",
+				"rank": 5,
+				"statusAgeDays": 428,
+				"freshnessRisk": "stale",
+				"authorable": true,
+				"reasons": [
+					"source availability: official-pdf-only",
+					"proposal relevance: medium",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "South Dakota",
+				"slug": "south-dakota",
+				"sourceAvailability": "official-pdf-only",
+				"proposalRelevance": "high",
+				"readiness": "needs-status-confirmation",
+				"status": "Official introduced text found; final status needs confirmation",
+				"statusAsOf": "2026-01-01",
+				"officialSourceUrl": "https://mylrc.sdlegislature.gov/api/Documents/298084.pdf",
+				"evidenceNote": "Official introduced text would permit state investment in Bitcoin, but the final status should be confirmed from the legislature status route before authoring.",
+				"nextAction": "confirm-final-status",
+				"rank": 6,
+				"statusAgeDays": 146,
+				"freshnessRisk": "stale",
+				"authorable": false,
+				"reasons": [
+					"source availability: official-pdf-only",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			},
+			{
+				"state": "Wyoming",
+				"slug": "wyoming",
+				"sourceAvailability": "official-pdf-only",
+				"proposalRelevance": "high",
+				"readiness": "needs-status-confirmation",
+				"status": "Official introduced text found; final status needs confirmation",
+				"statusAsOf": "2025-01-01",
+				"officialSourceUrl": "https://www.wyoleg.gov/2025/Introduced/HB0201.pdf",
+				"evidenceNote": "Official introduced text would authorize investment of state funds and permanent funds in Bitcoin, but the final status should be confirmed from the legislature summary route before authoring.",
+				"nextAction": "confirm-final-status",
+				"rank": 7,
+				"statusAgeDays": 511,
+				"freshnessRisk": "stale",
+				"authorable": false,
+				"reasons": [
+					"source availability: official-pdf-only",
+					"proposal relevance: high",
+					"freshness risk: stale"
+				]
+			}
+		]
+	}
+}
