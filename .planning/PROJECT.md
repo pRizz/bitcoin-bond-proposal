@@ -8,11 +8,22 @@ Bitcoin Bond Proposal is a shipped Illinois-first policy and research product. I
 
 Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.
 
+## Current Milestone: v1.3 Deeper National Coverage
+
+**Goal:** Expand beyond the current ten-state publication set by shipping as many additional state briefs as can pass the project's credibility, completeness, and freshness standards.
+
+**Target features:**
+- Publish a larger national state set selected by credible source availability and readiness rather than a fixed quota.
+- Improve refresh and candidate prioritization so maintainers can decide which new states and stale evidence deserve attention first.
+- Add selective catalog, detail, cluster, or comparison improvements only where expanded coverage needs better browsing, freshness cues, or side-by-side use.
+- Preserve confidence, completeness, provenance, and dated-snapshot cues as hard publication gates.
+
 ## Current State
 
 - Shipped `v1.0` on 2026-04-03.
 - Shipped `v1.1` on 2026-04-04.
 - Shipped `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-12.
+- Started `v1.3 Deeper National Coverage` on 2026-05-27.
 - The registry now exposes ten published state records plus dedicated `/states/clusters`
   and `/states/compare` reading paths.
 - Maintainers can generate a repo-owned refresh queue under `generated/refresh/`, and
@@ -56,9 +67,10 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ### Active
 
-- [ ] Broaden publishable national coverage beyond the current ten-state registry.
-- [ ] Evaluate selective theme or `mystic-ui` upgrades only where they materially improve comparison or proof surfaces.
-- [ ] Explore semi-automated intake or prioritization signals that strengthen refresh operations without creating pseudo-live public claims.
+- [ ] Broaden publishable national coverage beyond the current ten-state registry by publishing every additional state record that clears credibility, completeness, and freshness gates during the milestone.
+- [ ] Strengthen candidate readiness and refresh prioritization so maintainers can see which unpublished or stale states deserve attention first.
+- [ ] Keep catalog, state-detail, cluster, and comparison surfaces understandable as the published state count grows.
+- [ ] Record explicit deferral reasons for high-interest states that cannot be published credibly in this milestone.
 
 ### Out of Scope
 
@@ -67,15 +79,14 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Municipal or non-state proposal coverage — future milestones should broaden state coverage first.
 - Database-first architecture or admin UI — repo-tracked content still fits the editorial model.
 - Broad visual-system rewrites or wholesale `mystic-ui` adoption — defer unless a specific comparison or refresh surface proves the editorial value clearly.
-- Full 50-state deep publication in a single milestone — the next credible batch plus reusable comparison and refresh contracts has higher leverage.
+- Lowering source, confidence, or freshness standards to increase the state count — credibility remains more important than coverage volume.
+- Full 50-state deep publication as a required v1.3 outcome — publish as many states as are credible, but do not force low-evidence entries into the public set.
 
-## Next Milestone Goals
+## Follow-On Goals
 
-- deepen the state registry beyond the current ten publishable records
-- selectively improve theme or motion hierarchy only where it helps comparison, proof,
-  or readability
-- add smarter maintainer prioritization for refresh work without weakening the
-  snapshot-based trust contract
+- Complete any remaining 50-state deep coverage after v1.3 once source availability and workflow throughput justify it.
+- Revisit selective `mystic-ui` or theme upgrades only after expanded coverage reveals concrete comparison or proof-surface needs.
+- Consider more structured intake tooling after the repo-owned queue and publication workflow have proven their shape.
 
 ## Context
 
@@ -111,6 +122,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - **Audience**: Mixed public and policy audiences remain the primary design constraint.
 - **Trust model**: Official legislative sources remain the anchor for publishable state entries.
 - **Freshness**: Snapshot-based research with visible dates remains preferable to implied real-time certainty.
+- **Coverage count**: v1.3 optimizes for the maximum credible published batch, not a predetermined state quota.
 - **Architecture**: The site should stay close to the content-first research pattern unless future milestones create clear pressure to change it.
 - **Workflow**: The repository should continue to enforce source-level and content/PDF guardrails through repo-owned automation.
 - **Comparisons**: Cluster and comparison pages must explain, not gamify, the legislative landscape.
@@ -135,6 +147,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Make broader coverage, comparison, and refresh the v1.2 driver | The next leverage point is research utility and maintainability, not another shell-only polish cycle | ✓ Implemented across Phases 10-13 |
 | Use shared freshness thresholds for both public trust cues and maintainer refresh workflow | The public site and refresh queue should agree on what counts as current versus review-due | ✓ Implemented in Phase 13 |
 | Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
+| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | — Pending |
 
 <details>
 <summary>Archived v1.2 milestone framing</summary>
@@ -186,4 +199,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-12 after v1.2 milestone*
+*Last updated: 2026-05-27 after v1.3 milestone kickoff*
