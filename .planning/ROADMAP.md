@@ -70,10 +70,10 @@ Plans:
 **Goal:** Publish the first high-readiness v1.3 state batch and prove the publication path still validates cleanly at expanded scale.  
 **Depends on:** Phase 14  
 **Requirements:** CATA-14, CATA-15, REFR-05  
-**Plans:** 3 plans
+**Plans:** 1/3 plans executed
 
 Plans:
-- [ ] 15-01-PLAN.md — Publish Florida, Kansas, and North Dakota terminal official-source records.
+- [x] 15-01-PLAN.md — Publish Florida, Kansas, and North Dakota terminal official-source records.
 - [ ] 15-02-PLAN.md — Publish Ohio active committee and Utah broader enacted digital-asset records.
 - [ ] 15-03-PLAN.md — Clean candidate intake, regenerate content/refresh artifacts, and run full publication verification.
 

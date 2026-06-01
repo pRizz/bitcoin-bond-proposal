@@ -4,17 +4,17 @@ milestone: v1.3
 milestone_name: Deeper National Coverage
 current_phase: 15
 current_phase_name: First Expansion Publication Wave
-current_plan: 1
+current_plan: 2
 status: executing
-stopped_at: Phase 15 UI-SPEC approved
-last_updated: "2026-06-01T01:15:56.295Z"
+stopped_at: Completed 15-01-PLAN.md
+last_updated: "2026-06-01T01:27:59.000Z"
 last_activity: 2026-06-01
 progress:
   total_phases: 5
   completed_phases: 1
   total_plans: 6
-  completed_plans: 3
-  percent: 50
+  completed_plans: 4
+  percent: 67
 ---
 
 # Project State
@@ -30,16 +30,16 @@ See: .planning/PROJECT.md (updated 2026-05-27)
 
 **Current Phase:** 15
 **Current Phase Name:** First Expansion Publication Wave
-**Current Plan:** 1
+**Current Plan:** 2
 **Total Phases:** 4
 **Total Plans in Phase:** 3
-**Status:** Executing Phase 15
+**Status:** Ready to execute
 **Last Activity:** 2026-06-01
 Phase: 15 (First Expansion Publication Wave) — EXECUTING
-Plan: 1 of 3
+Plan: 2 of 3
 
-Progress: ██░░░░░░░░ 25%
-**Progress:** 25%
+Progress: [███████░░░] 67%
+**Progress:** [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -67,6 +67,7 @@ Progress: ██░░░░░░░░ 25%
 | 12 | 2 | - | - |
 | 13 | 2 | - | - |
 | 14 | 3 | - | - |
+| Phase 15 P01 | 9 min | 3 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -86,6 +87,9 @@ Current milestone decisions:
 - Refresh prioritization and selective UI/comparison improvements are in scope only where they support expanded coverage.
 - Raw state count must not override source quality, dated-snapshot freshness, or confidence/completeness cues.
 - v1.3 continues phase numbering from the shipped v1.2 milestone, so active execution begins at Phase 14.
+- [Phase 15]: REFR-05 gate treated published refresh work as blocker-only; no broad refresh performed before terminal failed-state authoring.
+- [Phase 15]: South Dakota and Wyoming remained unresearched during Plan 15-01 to preserve the optional-candidate boundary.
+- [Phase 15]: Kansas SB 352 public record uses official 2026-04-10 Died in Committee posture instead of the stale generated queue date.
 
 ### Pending Todos
 
@@ -94,10 +98,10 @@ None.
 ### Blockers/Concerns
 
 No active blockers.
-Phase 15 is ready to plan.
+Phase 15 Plan 2 is ready to execute.
 
 ## Session
 
-**Last Date:** 2026-06-01T00:19:54.039Z
-**Stopped At:** Phase 15 UI-SPEC approved
-**Resume File:** .planning/phases/15-first-expansion-publication-wave/15-UI-SPEC.md
+**Last Date:** 2026-06-01T01:27:45.246Z
+**Stopped At:** Completed 15-01-PLAN.md
+**Resume File:** None

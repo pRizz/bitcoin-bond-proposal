@@ -18,12 +18,12 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 - [ ] **CATA-13**: Reader can access a larger published state registry beyond the current ten entries, with every new entry passing the canonical source, schema, confidence, and dated-snapshot contract.
 - [ ] **CATA-14**: Newly published state entries compile into the manifest, content graph, generated route data, and public state-detail pages without route-specific exceptions.
-- [ ] **CATA-15**: Each newly published state entry includes official primary sources, status dates, review dates, proposal classification, confidence cues, and a concise policy-effect summary.
+- [x] **CATA-15**: Each newly published state entry includes official primary sources, status dates, review dates, proposal classification, confidence cues, and a concise policy-effect summary.
 
 ### Refresh Prioritization
 
 - [x] **REFR-04**: Refresh workflow output prioritizes stale published records and promising unpublished candidates with transparent reasons instead of manual guesswork.
-- [ ] **REFR-05**: Active or review-due records that need source refresh before publication or comparison work are surfaced ahead of lower-risk expansion work.
+- [x] **REFR-05**: Active or review-due records that need source refresh before publication or comparison work are surfaced ahead of lower-risk expansion work.
 - [x] **REFR-06**: Generated refresh and candidate-priority artifacts remain clearly dated and outside canonical published state content.
 
 ### Registry Surfaces
@@ -80,9 +80,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CATA-12 | Phase 16 | Pending |
 | CATA-13 | Phase 16 | Pending |
 | CATA-14 | Phase 15 | Pending |
-| CATA-15 | Phase 15 | Pending |
+| CATA-15 | Phase 15 | Complete |
 | REFR-04 | Phase 14 | Complete |
-| REFR-05 | Phase 15 | Pending |
+| REFR-05 | Phase 15 | Complete |
 | REFR-06 | Phase 14 | Complete |
 | SITE-10 | Phase 17 | Pending |
 | SITE-11 | Phase 17 | Pending |
