@@ -75,7 +75,7 @@
 		{
 			"state": "Florida",
 			"slug": "florida",
-			"registryStatus": "unresearched",
+			"registryStatus": "queued",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
 			"editorialPriority": "neutral",
@@ -138,7 +138,7 @@
 		{
 			"state": "Kansas",
 			"slug": "kansas",
-			"registryStatus": "unresearched",
+			"registryStatus": "queued",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
 			"editorialPriority": "neutral",
@@ -300,7 +300,7 @@
 		{
 			"state": "North Dakota",
 			"slug": "north-dakota",
-			"registryStatus": "unresearched",
+			"registryStatus": "queued",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
 			"editorialPriority": "neutral",
