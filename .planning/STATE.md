@@ -84,7 +84,7 @@ Recent decisions are archived in:
 Current milestone decisions:
 
 - v1.2 archives now live under `.planning/milestones/`.
-- v1.3 should maximize credible state publication beyond the current ten records.
+- v1.3 should maximize credible state publication beyond the prior ten-record baseline.
 - Refresh prioritization and selective UI/comparison improvements are in scope only where they support expanded coverage.
 - Raw state count must not override source quality, dated-snapshot freshness, or confidence/completeness cues.
 - v1.3 continues phase numbering from the shipped v1.2 milestone, so active execution begins at Phase 14.

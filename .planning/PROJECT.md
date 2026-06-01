@@ -10,7 +10,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ## Current Milestone: v1.3 Deeper National Coverage
 
-**Goal:** Expand beyond the current ten-state publication set by shipping as many additional state briefs as can pass the project's credibility, completeness, and freshness standards.
+**Goal:** Expand beyond the current fifteen-state publication set by shipping as many additional state briefs as can pass the project's credibility, completeness, and freshness standards.
 
 **Target features:**
 - Publish a larger national state set selected by credible source availability and readiness rather than a fixed quota.
@@ -24,11 +24,11 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Shipped `v1.1` on 2026-04-04.
 - Shipped `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-12.
 - Started `v1.3 Deeper National Coverage` on 2026-05-27.
-- The registry now exposes ten published state records plus dedicated `/states/clusters`
+- The registry now exposes fifteen published state records plus dedicated `/states/clusters`
   and `/states/compare` reading paths.
-- Maintainers can generate a repo-owned refresh queue under `generated/refresh/`, and
-  public registry surfaces now share explicit freshness cues without implying live
-  tracking.
+- Maintainers can generate repo-owned refresh and combined priority queues under
+  `generated/refresh/`, with stale published-record work kept ahead of remaining
+  first-publication candidates.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -41,7 +41,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Illinois packet route
   - financing explainer route
   - state catalog
-  - ten published state-detail pages
+  - fifteen published state-detail pages
 - Source-level format and lint checks remain restored and enforced in pre-commit alongside the content/PDF trust contract.
 
 ## Requirements
@@ -64,11 +64,14 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Reader can use an editorial comparison surface with direct links back to canonical state detail pages — `Phase 12 / v1.2`
 - ✓ Maintainer can generate a repo-owned refresh queue for published entries whose review dates or active legislative posture need attention — `Phase 13 / v1.2`
 - ✓ Reader can see explicit freshness cues across catalog, grouped comparison surfaces, and state-detail pages — `Phase 13 / v1.2`
+- ✓ Maintainer can generate a combined priority artifact that surfaces stale published records and unpublished candidate readiness together — `Phase 14 / v1.3`
+- ✓ Reader can access the first v1.3 expansion wave as a fifteen-state registry with five additional official-source-backed records — `Phase 15 / v1.3`
+- ✓ Expanded registry surfaces avoid stale hard-coded count copy and route new detail pages through the canonical content path — `Phase 15 / v1.3`
 
 ### Active
 
-- [ ] Broaden publishable national coverage beyond the current ten-state registry by publishing every additional state record that clears credibility, completeness, and freshness gates during the milestone.
-- [ ] Strengthen candidate readiness and refresh prioritization so maintainers can see which unpublished or stale states deserve attention first.
+- [ ] Continue broadening publishable national coverage beyond the current fifteen-state registry where additional candidates clear credibility, completeness, and freshness gates.
+- [ ] Use candidate readiness and refresh prioritization outputs to choose the next unpublished or stale states.
 - [ ] Keep catalog, state-detail, cluster, and comparison surfaces understandable as the published state count grows.
 - [ ] Record explicit deferral reasons for high-interest states that cannot be published credibly in this milestone.
 
@@ -147,7 +150,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Make broader coverage, comparison, and refresh the v1.2 driver | The next leverage point is research utility and maintainability, not another shell-only polish cycle | ✓ Implemented across Phases 10-13 |
 | Use shared freshness thresholds for both public trust cues and maintainer refresh workflow | The public site and refresh queue should agree on what counts as current versus review-due | ✓ Implemented in Phase 13 |
 | Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
-| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | — Pending |
+| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | In progress; Phase 15 expanded the registry to fifteen published records and left South Dakota/Wyoming as remaining candidates |
 
 <details>
 <summary>Archived v1.2 milestone framing</summary>
