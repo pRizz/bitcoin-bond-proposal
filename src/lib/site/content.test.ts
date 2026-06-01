@@ -58,10 +58,10 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 
 	// Assert
 	const expectedRegionCounts = {
-		midwest: 3,
+		midwest: 6,
 		northeast: 1,
-		south: 5,
-		west: 1,
+		south: 6,
+		west: 2,
 	};
 
 	// Act
@@ -83,7 +83,7 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 		model.groups.byLegislativeStatusGroup
 			.find((group) => group.key === "enacted")
 			?.states.map((state) => state.slug),
-	).toEqual(["texas"]);
+	).toEqual(["texas", "utah"]);
 });
 
 test("summarizeStateFreshness exposes stable review and status age facts without mutating the source array", () => {
@@ -226,11 +226,11 @@ test("buildStatesClusterModel returns editorial sections for legislative status,
 			bucket.count,
 		]),
 	).toEqual([
-		["introduced", 4],
+		["introduced", 5],
 		["advanced", 3],
 		["approved", 1],
-		["enacted", 1],
-		["failed", 1],
+		["enacted", 2],
+		["failed", 4],
 	]);
 	expect(
 		proposalFocusSection.buckets
@@ -243,6 +243,7 @@ test("buildStatesClusterModel returns editorial sections for legislative status,
 			?.states.map((state) => state.slug),
 	).toEqual([
 		"north-carolina",
+		"florida",
 		"maryland",
 		"oklahoma",
 		"south-carolina",
