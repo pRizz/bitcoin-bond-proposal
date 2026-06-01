@@ -78,9 +78,9 @@
       "status": "Referred to Rules Committee",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-01-29",
-      "statusAgeDays": 483,
+      "statusAgeDays": 488,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 56,
+      "reviewAgeDays": 61,
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
     },
@@ -102,9 +102,9 @@
       "status": "Board approved; further approval and counsel condition pending",
       "legislativeStatusGroup": "approved",
       "statusAsOf": "2025-11-17",
-      "statusAgeDays": 191,
+      "statusAgeDays": 196,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 56,
+      "reviewAgeDays": 61,
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
     },
@@ -126,9 +126,9 @@
       "status": "Ref To Com On Rules and Operations of the Senate",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-19",
-      "statusAgeDays": 434,
+      "statusAgeDays": 439,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 46,
+      "reviewAgeDays": 51,
       "confidence": "medium",
       "path": "content/states/north-carolina-s-327.md"
     },
@@ -150,11 +150,59 @@
       "status": "Vetoed by Governor",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2025-05-02",
-      "statusAgeDays": 390,
+      "statusAgeDays": 395,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 56,
+      "reviewAgeDays": 61,
       "confidence": "high",
       "path": "content/states/arizona-sb-1025.md"
+    },
+    {
+      "title": "Florida SB 550",
+      "slug": "florida",
+      "state": "Florida",
+      "summary": "Florida Senate bill to authorize public-fund investment in Bitcoin by the Chief Financial Officer and State Board of Administration, later dying in committee.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "south",
+      "shortNote": "Failed 2025 public-funds Bitcoin investment proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "SB 550",
+      "chamber": "Florida Senate",
+      "status": "Died in Banking and Insurance",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2025-06-16",
+      "statusAgeDays": 350,
+      "lastReviewed": "2026-06-01",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/florida-sb-550.md"
+    },
+    {
+      "title": "Kansas SB 352",
+      "slug": "kansas",
+      "state": "Kansas",
+      "summary": "Kansas Senate bill to create a bitcoin and digital assets reserve fund administered by the State Treasurer, later dying in committee.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Failed 2026 bitcoin and digital assets reserve fund proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "SB 352",
+      "chamber": "Kansas Senate",
+      "status": "Died in Committee",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2026-04-10",
+      "statusAgeDays": 52,
+      "lastReviewed": "2026-06-01",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/kansas-sb-352.md"
     },
     {
       "title": "Maryland HB1389",
@@ -174,9 +222,9 @@
       "status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-11",
-      "statusAgeDays": 442,
+      "statusAgeDays": 447,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 46,
+      "reviewAgeDays": 51,
       "confidence": "medium",
       "path": "content/states/maryland-hb-1389.md"
     },
@@ -198,9 +246,9 @@
       "status": "Referred to Committee on Communications and Technology",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2026-03-19",
-      "statusAgeDays": 69,
+      "statusAgeDays": 74,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 46,
+      "reviewAgeDays": 51,
       "confidence": "high",
       "path": "content/states/michigan-hb-4087.md"
     },
@@ -222,11 +270,59 @@
       "status": "Public Hearing Completed (House)",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-24",
-      "statusAgeDays": 429,
+      "statusAgeDays": 434,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 46,
+      "reviewAgeDays": 51,
       "confidence": "high",
       "path": "content/states/missouri-hb-1217.md"
+    },
+    {
+      "title": "North Dakota HB 1184",
+      "slug": "north-dakota",
+      "state": "North Dakota",
+      "summary": "North Dakota House bill to authorize limited investment of specified state-managed funds in precious metals, qualifying digital assets, or stablecoins, later failing on second reading.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Failed 2025 digital-asset and precious-metals investment proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "HB 1184",
+      "chamber": "North Dakota House",
+      "status": "Second reading, failed to pass, yeas 32 nays 57",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2025-01-31",
+      "statusAgeDays": 486,
+      "lastReviewed": "2026-06-01",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/north-dakota-hb-1184.md"
+    },
+    {
+      "title": "Ohio HB 18",
+      "slug": "ohio",
+      "state": "Ohio",
+      "summary": "HB 18 would permit the Treasurer of State to invest certain interim funds in digital assets and remains in House Technology and Innovation Committee.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Active House committee cryptocurrency reserve proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "mixed-digital-asset-reserve",
+      "billId": "HB 18",
+      "chamber": "Ohio House",
+      "status": "Referred to committee Technology and Innovation",
+      "legislativeStatusGroup": "introduced",
+      "statusAsOf": "2025-01-28",
+      "statusAgeDays": 489,
+      "lastReviewed": "2026-06-01",
+      "reviewAgeDays": 0,
+      "confidence": "medium",
+      "path": "content/states/ohio-hb-18.md"
     },
     {
       "title": "Oklahoma HB1203",
@@ -246,9 +342,9 @@
       "status": "Engrossed to Senate",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-25",
-      "statusAgeDays": 428,
+      "statusAgeDays": 433,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 56,
+      "reviewAgeDays": 61,
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
     },
@@ -270,9 +366,9 @@
       "status": "Referred to Committee on Ways and Means",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-27",
-      "statusAgeDays": 426,
+      "statusAgeDays": 431,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 46,
+      "reviewAgeDays": 51,
       "confidence": "high",
       "path": "content/states/south-carolina-h-4256.md"
     },
@@ -294,11 +390,35 @@
       "status": "Enrolled; effective by law",
       "legislativeStatusGroup": "enacted",
       "statusAsOf": "2025-06-20",
-      "statusAgeDays": 341,
+      "statusAgeDays": 346,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 56,
+      "reviewAgeDays": 61,
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
+    },
+    {
+      "title": "Utah HB 230",
+      "slug": "utah",
+      "state": "Utah",
+      "summary": "HB 230 enacted broader blockchain and digital-asset legislation effective May 7, 2025 and should not be read as a narrow Bitcoin reserve enactment.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "west",
+      "shortNote": "Enacted 2025 broader blockchain and digital-asset law.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "other-explained",
+      "billId": "HB 230",
+      "chamber": "Utah House",
+      "status": "Enrolled Copy; takes effect May 7, 2025",
+      "legislativeStatusGroup": "enacted",
+      "statusAsOf": "2025-05-07",
+      "statusAgeDays": 390,
+      "lastReviewed": "2026-06-01",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/utah-hb-230.md"
     }
   ],
   "registry": {
@@ -379,11 +499,11 @@
         {
           "state": "Florida",
           "slug": "florida",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "south",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Failed 2025 public-funds Bitcoin investment proposal.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Georgia",
@@ -442,11 +562,11 @@
         {
           "state": "Kansas",
           "slug": "kansas",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Failed 2026 bitcoin and digital assets reserve fund proposal.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Kentucky",
@@ -604,20 +724,20 @@
         {
           "state": "North Dakota",
           "slug": "north-dakota",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Failed 2025 digital-asset and precious-metals investment proposal.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Ohio",
           "slug": "ohio",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Active House committee cryptocurrency reserve proposal.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Oklahoma",
@@ -694,11 +814,11 @@
         {
           "state": "Utah",
           "slug": "utah",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "west",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Enacted 2025 broader blockchain and digital-asset law.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Vermont",
@@ -761,14 +881,19 @@
       "new-hampshire",
       "north-carolina",
       "arizona",
+      "florida",
+      "kansas",
       "maryland",
       "michigan",
       "missouri",
+      "north-dakota",
+      "ohio",
       "oklahoma",
       "south-carolina",
-      "texas"
+      "texas",
+      "utah"
     ],
-    "generatedAt": "2026-05-27T00:00:00.000Z",
+    "generatedAt": "2026-06-01T00:00:00.000Z",
     "groups": {
       "byRegion": {
         "northeast": {
@@ -778,17 +903,21 @@
           ]
         },
         "midwest": {
-          "count": 3,
+          "count": 6,
           "slugs": [
             "illinois",
+            "kansas",
             "michigan",
-            "missouri"
+            "missouri",
+            "north-dakota",
+            "ohio"
           ]
         },
         "south": {
-          "count": 5,
+          "count": 6,
           "slugs": [
             "north-carolina",
+            "florida",
             "maryland",
             "oklahoma",
             "south-carolina",
@@ -796,9 +925,10 @@
           ]
         },
         "west": {
-          "count": 1,
+          "count": 2,
           "slugs": [
-            "arizona"
+            "arizona",
+            "utah"
           ]
         }
       },
@@ -810,15 +940,20 @@
           ]
         },
         "reserve": {
-          "count": 7,
+          "count": 12,
           "slugs": [
             "arizona",
+            "florida",
+            "kansas",
             "maryland",
             "michigan",
             "missouri",
+            "north-dakota",
+            "ohio",
             "oklahoma",
             "south-carolina",
-            "texas"
+            "texas",
+            "utah"
           ]
         },
         "both": {
@@ -835,11 +970,12 @@
       },
       "byLegislativeStatusGroup": {
         "introduced": {
-          "count": 4,
+          "count": 5,
           "slugs": [
             "illinois",
             "north-carolina",
             "maryland",
+            "ohio",
             "south-carolina"
           ]
         },
@@ -858,15 +994,19 @@
           ]
         },
         "enacted": {
-          "count": 1,
+          "count": 2,
           "slugs": [
-            "texas"
+            "texas",
+            "utah"
           ]
         },
         "failed": {
-          "count": 1,
+          "count": 4,
           "slugs": [
-            "arizona"
+            "arizona",
+            "florida",
+            "kansas",
+            "north-dakota"
           ]
         }
       }

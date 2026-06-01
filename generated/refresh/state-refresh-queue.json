@@ -1,6 +1,6 @@
 {
-	"generatedAt": "2026-05-27T00:00:00.000Z",
-	"latestReview": "2026-04-11",
+	"generatedAt": "2026-06-01T00:00:00.000Z",
+	"latestReview": "2026-06-01",
 	"thresholds": {
 		"activeReviewSoonDays": 14,
 		"activeReviewDueDays": 30,
@@ -10,17 +10,63 @@
 		"terminalReviewDueDays": 45
 	},
 	"summary": {
-		"generatedAt": "2026-05-27T00:00:00.000Z",
-		"latestReview": "2026-04-11",
+		"generatedAt": "2026-06-01T00:00:00.000Z",
+		"latestReview": "2026-06-01",
 		"counts": {
-			"current": 0,
+			"current": 4,
 			"aging": 0,
-			"due": 10
+			"due": 11
 		},
-		"lead": "This registry stays explicitly dated: 0 current snapshots, 0 review-soon records, and 10 review-due records.",
-		"queueCount": 10
+		"lead": "This registry stays explicitly dated: 4 current snapshots, 0 review-soon records, and 11 review-due records.",
+		"queueCount": 11
 	},
 	"entries": [
+		{
+			"title": "Ohio HB 18",
+			"slug": "ohio",
+			"state": "Ohio",
+			"summary": "HB 18 would permit the Treasurer of State to invest certain interim funds in digital assets and remains in House Technology and Innovation Committee.",
+			"recordType": "legislative-bill",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"region": "midwest",
+			"shortNote": "Active House committee cryptocurrency reserve proposal.",
+			"editorialPriority": "reserve-priority",
+			"proposalKind": "reserve",
+			"proposalSubtype": "mixed-digital-asset-reserve",
+			"billId": "HB 18",
+			"chamber": "Ohio House",
+			"status": "Referred to committee Technology and Innovation",
+			"legislativeStatusGroup": "introduced",
+			"statusAsOf": "2025-01-28",
+			"statusAgeDays": 489,
+			"lastReviewed": "2026-06-01",
+			"reviewAgeDays": 0,
+			"confidence": "medium",
+			"path": "content/states/ohio-hb-18.md",
+			"manifest": {
+				"state": "Ohio",
+				"slug": "ohio",
+				"registryStatus": "published",
+				"proposalFocus": "reserve",
+				"region": "midwest",
+				"shortNote": "Active House committee cryptocurrency reserve proposal.",
+				"editorialPriority": "reserve-priority"
+			},
+			"confidenceCue": {
+				"title": "Early-stage bill with developing official footing",
+				"detail": "Official bill text and dated status are present, but the measure remains at an early legislative stage."
+			},
+			"freshnessCue": {
+				"tone": "due",
+				"title": "Review due",
+				"detail": "Reviewed 0 days ago. The active status snapshot is 489 days old, so this record needs a fresh source check."
+			},
+			"priority": "due",
+			"reasons": [
+				"active status age 489d"
+			]
+		},
 		{
 			"title": "Illinois HB1844",
 			"slug": "illinois",
@@ -39,9 +85,9 @@
 			"status": "Referred to Rules Committee",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-01-29",
-			"statusAgeDays": 483,
+			"statusAgeDays": 488,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 56,
+			"reviewAgeDays": 61,
 			"confidence": "high",
 			"path": "content/states/illinois-hb-1844.md",
 			"manifest": {
@@ -60,12 +106,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 56 days ago. The active status snapshot is 483 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 61 days ago. The active status snapshot is 488 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 56d",
-				"active status age 483d"
+				"review age 61d",
+				"active status age 488d"
 			]
 		},
 		{
@@ -86,9 +132,9 @@
 			"status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-11",
-			"statusAgeDays": 442,
+			"statusAgeDays": 447,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 46,
+			"reviewAgeDays": 51,
 			"confidence": "medium",
 			"path": "content/states/maryland-hb-1389.md",
 			"manifest": {
@@ -107,12 +153,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 46 days ago. The active status snapshot is 442 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 51 days ago. The active status snapshot is 447 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 46d",
-				"active status age 442d"
+				"review age 51d",
+				"active status age 447d"
 			]
 		},
 		{
@@ -133,9 +179,9 @@
 			"status": "Ref To Com On Rules and Operations of the Senate",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-19",
-			"statusAgeDays": 434,
+			"statusAgeDays": 439,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 46,
+			"reviewAgeDays": 51,
 			"confidence": "medium",
 			"path": "content/states/north-carolina-s-327.md",
 			"manifest": {
@@ -154,12 +200,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 46 days ago. The active status snapshot is 434 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 51 days ago. The active status snapshot is 439 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 46d",
-				"active status age 434d"
+				"review age 51d",
+				"active status age 439d"
 			]
 		},
 		{
@@ -180,9 +226,9 @@
 			"status": "Public Hearing Completed (House)",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2025-03-24",
-			"statusAgeDays": 429,
+			"statusAgeDays": 434,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 46,
+			"reviewAgeDays": 51,
 			"confidence": "high",
 			"path": "content/states/missouri-hb-1217.md",
 			"manifest": {
@@ -201,12 +247,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 46 days ago. The active status snapshot is 429 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 51 days ago. The active status snapshot is 434 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 46d",
-				"active status age 429d"
+				"review age 51d",
+				"active status age 434d"
 			]
 		},
 		{
@@ -227,9 +273,9 @@
 			"status": "Engrossed to Senate",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2025-03-25",
-			"statusAgeDays": 428,
+			"statusAgeDays": 433,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 56,
+			"reviewAgeDays": 61,
 			"confidence": "high",
 			"path": "content/states/oklahoma-hb-1203.md",
 			"manifest": {
@@ -248,12 +294,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 56 days ago. The active status snapshot is 428 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 61 days ago. The active status snapshot is 433 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 56d",
-				"active status age 428d"
+				"review age 61d",
+				"active status age 433d"
 			]
 		},
 		{
@@ -274,9 +320,9 @@
 			"status": "Referred to Committee on Ways and Means",
 			"legislativeStatusGroup": "introduced",
 			"statusAsOf": "2025-03-27",
-			"statusAgeDays": 426,
+			"statusAgeDays": 431,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 46,
+			"reviewAgeDays": 51,
 			"confidence": "high",
 			"path": "content/states/south-carolina-h-4256.md",
 			"manifest": {
@@ -295,12 +341,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 46 days ago. The active status snapshot is 426 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 51 days ago. The active status snapshot is 431 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 46d",
-				"active status age 426d"
+				"review age 51d",
+				"active status age 431d"
 			]
 		},
 		{
@@ -321,9 +367,9 @@
 			"status": "Board approved; further approval and counsel condition pending",
 			"legislativeStatusGroup": "approved",
 			"statusAsOf": "2025-11-17",
-			"statusAgeDays": 191,
+			"statusAgeDays": 196,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 56,
+			"reviewAgeDays": 61,
 			"confidence": "high",
 			"path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md",
 			"manifest": {
@@ -342,12 +388,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 56 days ago. The active status snapshot is 191 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 61 days ago. The active status snapshot is 196 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 56d",
-				"active status age 191d"
+				"review age 61d",
+				"active status age 196d"
 			]
 		},
 		{
@@ -368,9 +414,9 @@
 			"status": "Referred to Committee on Communications and Technology",
 			"legislativeStatusGroup": "advanced",
 			"statusAsOf": "2026-03-19",
-			"statusAgeDays": 69,
+			"statusAgeDays": 74,
 			"lastReviewed": "2026-04-11",
-			"reviewAgeDays": 46,
+			"reviewAgeDays": 51,
 			"confidence": "high",
 			"path": "content/states/michigan-hb-4087.md",
 			"manifest": {
@@ -389,12 +435,12 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 46 days ago. The active status snapshot is 69 days old, so this record needs a fresh source check."
+				"detail": "Reviewed 51 days ago. The active status snapshot is 74 days old, so this record needs a fresh source check."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 46d",
-				"active status age 69d"
+				"review age 51d",
+				"active status age 74d"
 			]
 		},
 		{
@@ -415,9 +461,9 @@
 			"status": "Vetoed by Governor",
 			"legislativeStatusGroup": "failed",
 			"statusAsOf": "2025-05-02",
-			"statusAgeDays": 390,
+			"statusAgeDays": 395,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 56,
+			"reviewAgeDays": 61,
 			"confidence": "high",
 			"path": "content/states/arizona-sb-1025.md",
 			"manifest": {
@@ -436,11 +482,11 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+				"detail": "Reviewed 61 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 56d"
+				"review age 61d"
 			]
 		},
 		{
@@ -461,9 +507,9 @@
 			"status": "Enrolled; effective by law",
 			"legislativeStatusGroup": "enacted",
 			"statusAsOf": "2025-06-20",
-			"statusAgeDays": 341,
+			"statusAgeDays": 346,
 			"lastReviewed": "2026-04-01",
-			"reviewAgeDays": 56,
+			"reviewAgeDays": 61,
 			"confidence": "high",
 			"path": "content/states/texas-sb-21.md",
 			"manifest": {
@@ -482,11 +528,11 @@
 			"freshnessCue": {
 				"tone": "due",
 				"title": "Review due",
-				"detail": "Reviewed 56 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
+				"detail": "Reviewed 61 days ago. This terminal-status record is due for a scheduled refresh before readers treat the snapshot as current."
 			},
 			"priority": "due",
 			"reasons": [
-				"review age 56d"
+				"review age 61d"
 			]
 		}
 	]
