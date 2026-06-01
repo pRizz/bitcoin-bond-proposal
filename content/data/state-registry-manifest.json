@@ -309,10 +309,10 @@
 		{
 			"state": "Ohio",
 			"slug": "ohio",
-			"registryStatus": "queued",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Active House committee cryptocurrency reserve proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
@@ -390,10 +390,10 @@
 		{
 			"state": "Utah",
 			"slug": "utah",
-			"registryStatus": "queued",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Enacted 2025 broader blockchain and digital-asset law.",
+			"editorialPriority": "reserve-priority",
 			"region": "west"
 		},
 		{
