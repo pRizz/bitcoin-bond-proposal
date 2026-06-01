@@ -97,7 +97,7 @@ Each task was committed atomically:
 - **Verification:** `bun run validate:content` passed before Task 2 commit; Task 3 manifest checks passed after the final publication update.
 - **Committed in:** `3bfdca8` and resolved to final state in `498c35d`
 
----
+***
 
 **Total deviations:** 1 auto-fixed (1 blocking)
 **Impact on plan:** No scope expansion. The intermediate queued status existed only to satisfy hook-managed validation between atomic task commits; final manifest state matches the plan.
@@ -125,6 +125,6 @@ None - no external service configuration required.
 
 Plan 15-02 can proceed with the next Phase 15 publication targets. Plan 15-03 should remain responsible for generated content/refresh artifact cleanup and full publication verification.
 
----
+***
 *Phase: 15-first-expansion-publication-wave*
 *Completed: 2026-06-01*

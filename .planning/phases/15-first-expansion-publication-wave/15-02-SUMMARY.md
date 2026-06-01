@@ -95,7 +95,7 @@ Each task was committed atomically:
 - **Verification:** `bun run validate:content` and `bun run precommit` passed before the Task 1 commit; Task 2 manifest checks passed after final publication.
 - **Committed in:** `3d77a17`, then resolved to final state in `339be6c`
 
----
+***
 
 **Total deviations:** 1 auto-fixed blocking issue  
 **Impact on plan:** No scope expansion. Final manifest state matches the plan exactly.
@@ -122,6 +122,6 @@ None - no external service configuration required.
 
 Plan 15-03 can proceed with candidate-intake cleanup, generated content graph and refresh artifact commits, route/card smoke checks, and the full Phase 15 verification suite.
 
----
+***
 *Phase: 15-first-expansion-publication-wave*
 *Completed: 2026-06-01*
