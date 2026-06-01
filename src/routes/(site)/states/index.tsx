@@ -38,6 +38,7 @@ const legislativeStatusLabels = {
 export default function StatesIndexPage() {
 	const statesIndexModel = getStatesIndexModel();
 	const registryFreshness = getRegistryFreshnessSummary();
+	const publishedRecordCount = statesIndexModel.stats.publishedCount;
 	const [proposalKindFilter, setProposalKindFilter] = createSignal<
 		ProposalKind | "all"
 	>("all");
@@ -101,10 +102,9 @@ export default function StatesIndexPage() {
 								Published states
 							</p>
 							<p class="mt-2 text-sm leading-7 text-ink-subtle">
-								Showing {visibleStates().length} of{" "}
-								{statesIndexModel.stats.publishedCount} published records.
-								Filter by type or sort order without losing the registry&apos;s
-								explicitly dated snapshot posture.
+								Showing {visibleStates().length} of {publishedRecordCount}{" "}
+								published records. Filter by type or sort order without losing
+								the registry&apos;s explicitly dated snapshot posture.
 							</p>
 							<p class="mt-3 text-sm leading-7 text-ink-subtle">
 								Each card notes whether the record is an early-stage bill, an
@@ -120,11 +120,11 @@ export default function StatesIndexPage() {
 									Open comparison surfaces
 								</ActionLink>
 								<p class="text-sm leading-7 text-ink-subtle">
-									Prefer the same ten published records grouped by status,
-									proposal focus, and region? Use <code>/states/clusters</code>{" "}
-									for the editorial cluster surface. Want the strongest reserve,
-									crossover, and bond-side comparisons? Use{" "}
-									<code>/states/compare</code>.
+									Prefer the same {publishedRecordCount} published records
+									grouped by status, proposal focus, and region? Use{" "}
+									<code>/states/clusters</code> for the editorial cluster
+									surface. Want the strongest reserve, crossover, and bond-side
+									comparisons? Use <code>/states/compare</code>.
 								</p>
 							</div>
 						</div>

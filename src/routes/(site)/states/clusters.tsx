@@ -6,6 +6,7 @@ import { RegistryFreshnessPanel } from "../../../components/editorial/RegistryFr
 import { StateCard } from "../../../components/editorial/StateCard";
 import {
 	getRegistryFreshnessSummary,
+	getRegistryStats,
 	getStatesClusterModel,
 	type StatesClusterBucket,
 } from "../../../lib/site/content";
@@ -52,19 +53,20 @@ function ClusterBucketPanel(props: { bucket: StatesClusterBucket }) {
 export default function StatesClustersPage() {
 	const statesClusterModel = getStatesClusterModel();
 	const registryFreshness = getRegistryFreshnessSummary();
+	const registryStats = getRegistryStats();
 
 	return (
 		<>
 			<Title>{makePageTitle("State Clusters")}</Title>
 			<Meta
 				name="description"
-				content="Browse the ten-state registry through editorial clusters organized by legislative status, proposal focus, and region."
+				content={`Browse the ${registryStats.publishedCount}-record registry through editorial clusters organized by legislative status, proposal focus, and region.`}
 			/>
 
 			<PageSection
 				eyebrow="Cluster reading paths"
 				title="Browse the registry in grouped reading lanes"
-				lead="This surface turns the current ten-state batch into editorial clusters by status, proposal focus, and geography without changing the registry into a scoreboard."
+				lead={`This surface turns the current ${registryStats.publishedCount}-record batch into editorial clusters by status, proposal focus, and geography without changing the registry into a scoreboard.`}
 			>
 				<RegistryFreshnessPanel
 					summary={registryFreshness}

@@ -74,7 +74,7 @@ type ClusterBucketCopy = {
 const legislativeStatusClusterCopy = {
 	eyebrow: "Legislative posture",
 	title: "Browse by legislative status",
-	lead: "Use legislative posture to separate enacted or advanced measures from early-stage and failed signals in the ten-state registry.",
+	lead: "Use legislative posture to separate enacted or advanced measures from early-stage and failed signals in the published registry.",
 	buckets: {
 		introduced: {
 			title: "Early-stage filings",
@@ -92,9 +92,9 @@ const legislativeStatusClusterCopy = {
 				"This cluster captures records that already cleared a formal approval step even when the path did not run through a standard bill track.",
 		},
 		enacted: {
-			title: "Enacted benchmark",
+			title: "Enacted records",
 			description:
-				"The current published batch includes one enacted reserve benchmark that shows the farthest-confirmed posture in the registry.",
+				"The current published batch includes enacted records with different policy weight, including a reserve benchmark and a broader digital-asset law.",
 		},
 		failed: {
 			title: "Failed but still instructive",
@@ -122,7 +122,7 @@ const proposalFocusClusterCopy = {
 		reserve: {
 			title: "Reserve-side records",
 			description:
-				"Most published records currently sit on the reserve side, making this the deepest lane in the ten-state set.",
+				"Most published records currently sit on the reserve side, making this the deepest lane in the published set.",
 		},
 		both: {
 			title: "Crossover records",
@@ -165,7 +165,7 @@ const regionClusterCopy = {
 		west: {
 			title: "Western cluster",
 			description:
-				"The West currently shows one high-significance reserve record with a failed end state.",
+				"The West currently combines a vetoed reserve proposal with a broader enacted digital-asset law.",
 		},
 	},
 } satisfies {

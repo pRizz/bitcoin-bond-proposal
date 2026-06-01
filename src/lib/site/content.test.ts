@@ -84,6 +84,46 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 			.find((group) => group.key === "enacted")
 			?.states.map((state) => state.slug),
 	).toEqual(["texas", "utah"]);
+	expect(model.stats.publishedCount).toBe(15);
+});
+
+test("state surface copy avoids stale hard-coded registry counts", async () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+	const staleCountTerms = ["ten-state", "ten published records"];
+	const routeFiles = [
+		"src/routes/(site)/states/index.tsx",
+		"src/routes/(site)/states/clusters.tsx",
+		"src/routes/(site)/states/compare.tsx",
+	];
+
+	// Act
+	const clusterModel = buildStatesClusterModel(fixtureGraph);
+	const comparisonModel = buildStatesComparisonModel(fixtureGraph);
+	const routeCopy = await Promise.all(
+		routeFiles.map((path) => Bun.file(path).text()),
+	);
+	const modelCopy = [
+		...clusterModel.sections.flatMap((section) => [
+			section.title,
+			section.lead,
+			...section.buckets.flatMap((bucket) => [
+				bucket.title,
+				bucket.description,
+			]),
+		]),
+		...comparisonModel.sections.flatMap((section) => [
+			section.title,
+			section.lead,
+			section.comparison,
+		]),
+		...routeCopy,
+	].join("\n");
+
+	// Assert
+	for (const staleCountTerm of staleCountTerms) {
+		expect(modelCopy).not.toContain(staleCountTerm);
+	}
 });
 
 test("summarizeStateFreshness exposes stable review and status age facts without mutating the source array", () => {

@@ -6,6 +6,7 @@ import { RegistryFreshnessPanel } from "../../../components/editorial/RegistryFr
 import { StateCard } from "../../../components/editorial/StateCard";
 import {
 	getRegistryFreshnessSummary,
+	getRegistryStats,
 	getStatesComparisonModel,
 } from "../../../lib/site/content";
 import { makePageTitle } from "../../../lib/site/seo";
@@ -13,19 +14,20 @@ import { makePageTitle } from "../../../lib/site/seo";
 export default function StatesComparePage() {
 	const statesComparisonModel = getStatesComparisonModel();
 	const registryFreshness = getRegistryFreshnessSummary();
+	const registryStats = getRegistryStats();
 
 	return (
 		<>
 			<Title>{makePageTitle("State Comparisons")}</Title>
 			<Meta
 				name="description"
-				content="Compare the current ten-state registry through editorial reserve, crossover, and bond-side reading paths."
+				content={`Compare the current ${registryStats.publishedCount}-record registry through editorial reserve, crossover, and bond-side reading paths.`}
 			/>
 
 			<PageSection
 				eyebrow="Comparison surfaces"
 				title="Compare the current registry without losing the source trail"
-				lead="This route keeps the comparison work narrative and selective: it highlights the most meaningful differences in the current ten-state set and routes every example back to its canonical state record."
+				lead={`This route keeps the comparison work narrative and selective: it highlights the most meaningful differences in the current ${registryStats.publishedCount}-record set and routes every example back to its canonical state record.`}
 			>
 				<RegistryFreshnessPanel
 					summary={registryFreshness}

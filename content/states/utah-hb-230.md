@@ -20,15 +20,15 @@ primarySources:
   - https://le.utah.gov/Session/2025/bills/enrolled/HB0230.pdf
 secondarySources: []
 confidence: high
-effect: Enacted provisions cover digital-asset acceptance and custody rights, blockchain protocol activity, money-transmitter exemptions, and digital asset mining zoning restrictions, while the enrolled text also references state treasurer authority to invest public funds in certain digital assets.
-classificationNote: Utah HB 230 is not a narrow Bitcoin reserve enactment; it is broader blockchain and digital-asset legislation with reserve-adjacent public-funds language.
+effect: Enacted provisions cover digital-asset acceptance and custody rights, blockchain protocol activity, money-transmitter exemptions, and digital asset mining zoning restrictions; the enrolled long title references public-funds investment authority, but the operative enacted sections do not add that treasurer authority.
+classificationNote: Utah HB 230 is not a narrow Bitcoin reserve enactment; it is broader blockchain and digital-asset legislation, with reserve relevance limited to non-operative long-title language.
 ---
 
 # Utah HB 230
 
 ## At a Glance
 
-Utah HB 230 is an enacted 2025 blockchain and digital-asset law. It belongs in the reserve registry because the enrolled text includes public-funds digital-asset investment language, but its final statutory package is broader than a narrow Bitcoin reserve enactment.
+Utah HB 230 is an enacted 2025 blockchain and digital-asset law. It belongs in the reserve registry only as a conservative boundary case: the enrolled long title references state treasurer public-funds investment authority, but the operative enacted sections do not add that authority.
 
 ## Legislative Status
 
@@ -45,15 +45,15 @@ Utah HB 230 is an enacted 2025 blockchain and digital-asset law. It belongs in t
 
 ## What This Would Actually Do
 
-HB 230 enacted broader digital-asset and blockchain provisions effective May 7, 2025. The enrolled text addresses rights to accept digital assets as payment, take custody of digital assets, participate in staking on blockchain protocols, and conduct blockchain protocol activity without triggering money-transmitter licensing in specified circumstances. It also includes digital asset mining zoning restrictions and references state treasurer investment of public funds in certain digital assets.
+HB 230 enacted broader digital-asset and blockchain provisions effective May 7, 2025. The operative enacted sections address rights to accept digital assets as payment, take custody of digital assets, participate in staking on blockchain protocols, and conduct blockchain protocol activity without triggering money-transmitter licensing in specified circumstances. They also include digital asset mining zoning restrictions. The long title references state treasurer investment of public funds in certain digital assets, but the enacted sections listed in the enrolled copy do not carry that authority into operative statutory text.
 
 ## Bond / Reserve Analysis
 
-**Supports:** broader digital-asset policy with reserve-adjacent public-funds authority  
+**Supports:** broader digital-asset policy with a non-operative reserve-adjacent reference  
 **Bond-financed reserve accumulation:** no meaningful support in the enacted law  
 **Meaningful reading:** broader enacted digital-asset law, not a narrow Bitcoin reserve enactment
 
-Utah matters because HB 230 is enacted law, not just an introduced proposal. Its reserve relevance should still be framed carefully: the official enrolled text is a broad blockchain and digital-asset bill, and the public-funds language sits inside that wider statutory package.
+Utah matters because HB 230 is enacted law, not just an introduced proposal. Its reserve relevance should still be framed narrowly: the official enrolled text is a broad blockchain and digital-asset bill, and the public-funds investment language appears in the long title without matching operative treasurer-investment sections in the enrolled copy.
 
 ## Key Statutory Mechanics
 
@@ -62,11 +62,11 @@ Utah matters because HB 230 is enacted law, not just an introduced proposal. Its
 - Addresses participation in staking on blockchain protocols and other blockchain protocol activity.
 - Creates specified money-transmitter licensing exemptions for blockchain protocol activity.
 - Adds digital asset mining zoning restrictions.
-- References authority for the state treasurer to invest public funds in certain digital assets.
+- References state treasurer public-funds digital-asset investment authority in the long title, without adding matching operative treasurer-investment sections in the enrolled copy.
 
 ## Why This Matters
 
-HB 230 is useful as an enacted state-law signal that digital assets are moving into ordinary statutory frameworks for payments, custody, blockchain activity, mining, and public-funds authority. It should not be overread as a fully developed strategic Bitcoin reserve model.
+HB 230 is useful as an enacted state-law signal that digital assets are moving into ordinary statutory frameworks for payments, custody, blockchain activity, and mining. It should not be overread as a fully developed strategic Bitcoin reserve model or as enacted treasurer public-funds investment authority.
 
 ## Source Trail
 
@@ -75,4 +75,4 @@ HB 230 is useful as an enacted state-law signal that digital assets are moving i
 
 ## Confidence / Completeness Note
 
-High confidence on enacted status, effective date, sponsor names, and broad statutory mechanics because they are all confirmed by the official enrolled copy. Classification is intentionally conservative because the enacted law is not a narrow Bitcoin reserve enactment.
+High confidence on enacted status, effective date, sponsor names, and broad statutory mechanics because they are all confirmed by the official enrolled copy. Classification is intentionally conservative because the enacted law is not a narrow Bitcoin reserve enactment, and the long-title public-funds reference is not mirrored by operative treasurer-investment sections.
