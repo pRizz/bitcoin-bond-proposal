@@ -43,7 +43,7 @@
 ### v1.3 Deeper National Coverage (Phases 14-17) — ACTIVE
 
 - [x] Phase 14: Candidate Priority and Refresh Intake (3 plans) — completed 2026-05-27
-- [ ] Phase 15: First Expansion Publication Wave (0 plans) — pending Phase 14
+- [x] Phase 15: First Expansion Publication Wave (3 plans) — completed 2026-06-01
 - [ ] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15
 - [ ] Phase 17: Expanded Surface QA and Closeout Prep (0 plans) — pending Phase 16
 
@@ -70,12 +70,12 @@ Plans:
 **Goal:** Publish the first high-readiness v1.3 state batch and prove the publication path still validates cleanly at expanded scale.  
 **Depends on:** Phase 14  
 **Requirements:** CATA-14, CATA-15, REFR-05  
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 
 Plans:
 - [x] 15-01-PLAN.md — Publish Florida, Kansas, and North Dakota terminal official-source records.
 - [x] 15-02-PLAN.md — Publish Ohio active committee and Utah broader enacted digital-asset records.
-- [ ] 15-03-PLAN.md — Clean candidate intake, regenerate content/refresh artifacts, and run full publication verification.
+- [x] 15-03-PLAN.md — Clean candidate intake, regenerate content/refresh artifacts, and run full publication verification.
 
 **Success criteria:**
 1. Newly authored state records include official primary sources, status dates, review dates, proposal classification, confidence cues, and policy-effect summaries.

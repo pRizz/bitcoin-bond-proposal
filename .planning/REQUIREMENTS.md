@@ -17,7 +17,7 @@ Requirements for this milestone. Success is measured by credible publication thr
 ### State Publication
 
 - [ ] **CATA-13**: Reader can access a larger published state registry beyond the current ten entries, with every new entry passing the canonical source, schema, confidence, and dated-snapshot contract.
-- [ ] **CATA-14**: Newly published state entries compile into the manifest, content graph, generated route data, and public state-detail pages without route-specific exceptions.
+- [x] **CATA-14**: Newly published state entries compile into the manifest, content graph, generated route data, and public state-detail pages without route-specific exceptions.
 - [x] **CATA-15**: Each newly published state entry includes official primary sources, status dates, review dates, proposal classification, confidence cues, and a concise policy-effect summary.
 
 ### Refresh Prioritization
@@ -79,7 +79,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CATA-11 | Phase 14 | Complete |
 | CATA-12 | Phase 16 | Pending |
 | CATA-13 | Phase 16 | Pending |
-| CATA-14 | Phase 15 | Pending |
+| CATA-14 | Phase 15 | Complete |
 | CATA-15 | Phase 15 | Complete |
 | REFR-04 | Phase 14 | Complete |
 | REFR-05 | Phase 15 | Complete |

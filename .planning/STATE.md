@@ -5,16 +5,16 @@ milestone_name: Deeper National Coverage
 current_phase: 15
 current_phase_name: First Expansion Publication Wave
 current_plan: 3
-status: executing
-stopped_at: Completed 15-02-PLAN.md
-last_updated: "2026-06-01T01:40:01.015Z"
+status: verifying
+stopped_at: Completed 15-03-PLAN.md
+last_updated: "2026-06-01T01:50:35.703Z"
 last_activity: 2026-06-01
 progress:
   total_phases: 5
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 6
-  completed_plans: 5
-  percent: 83
+  completed_plans: 6
+  percent: 100
 ---
 
 # Project State
@@ -33,13 +33,12 @@ See: .planning/PROJECT.md (updated 2026-05-27)
 **Current Plan:** 3
 **Total Phases:** 4
 **Total Plans in Phase:** 3
-**Status:** Ready to execute
+**Status:** Phase complete — ready for verification
 **Last Activity:** 2026-06-01
-Phase: 15 (First Expansion Publication Wave) — EXECUTING
+Phase: 15 (First Expansion Publication Wave) — READY FOR VERIFICATION
 Plan: 3 of 3
 
-Progress: [███████░░░] 67%
-**Progress:** [████████░░] 83%
+**Progress:** [██████████] 100%
 
 ## Performance Metrics
 
@@ -69,6 +68,7 @@ Progress: [███████░░░] 67%
 | 14 | 3 | - | - |
 | Phase 15 P01 | 9 min | 3 tasks | 4 files |
 | Phase 15-first-expansion-publication-wave P02 | 8 min | 2 tasks | 4 files |
+| Phase 15-first-expansion-publication-wave P03 | 4 min | 3 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -94,6 +94,9 @@ Current milestone decisions:
 - [Phase 15]: Ohio HB 18 is published as an active House committee record with medium confidence, not enacted law.
 - [Phase 15]: Utah HB 230 is published as broader enacted blockchain and digital-asset legislation, not a narrow Bitcoin reserve enactment.
 - [Phase 15]: South Dakota and Wyoming remain unresearched for the remaining-candidate workflow.
+- [Phase 15]: Keep South Dakota and Wyoming as the only remaining first-publication candidates after the required Phase 15 batch.
+- [Phase 15]: Commit generated content and refresh artifacts from repo-owned scripts, with no route-specific exceptions or UI changes.
+- [Phase 15]: Update stale generated-data test expectations to match the 15-state compiled graph while preserving canonical slug-link assertions.
 
 ### Pending Todos
 
@@ -102,10 +105,10 @@ None.
 ### Blockers/Concerns
 
 No active blockers.
-Phase 15 Plan 2 is ready to execute.
+Phase 15 is complete and ready for verification.
 
 ## Session
 
-**Last Date:** 2026-06-01T01:40:01.012Z
-**Stopped At:** Completed 15-02-PLAN.md
+**Last Date:** 2026-06-01T01:50:35.700Z
+**Stopped At:** Completed 15-03-PLAN.md
 **Resume File:** None
