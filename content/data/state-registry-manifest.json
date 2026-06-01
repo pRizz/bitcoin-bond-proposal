@@ -309,7 +309,7 @@
 		{
 			"state": "Ohio",
 			"slug": "ohio",
-			"registryStatus": "unresearched",
+			"registryStatus": "queued",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
 			"editorialPriority": "neutral",
@@ -390,7 +390,7 @@
 		{
 			"state": "Utah",
 			"slug": "utah",
-			"registryStatus": "unresearched",
+			"registryStatus": "queued",
 			"proposalFocus": "unknown",
 			"shortNote": "No publishable reserve or bond record added yet.",
 			"editorialPriority": "neutral",
