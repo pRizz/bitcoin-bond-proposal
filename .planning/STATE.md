@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Deeper National Coverage
-current_phase: 15
-current_phase_name: First Expansion Publication Wave
-current_plan: 3
-status: verifying
-stopped_at: Completed 15-03-PLAN.md
-last_updated: "2026-06-01T01:50:35.703Z"
+current_phase: 16
+current_phase_name: Throughput Expansion and Deferral Ledger
+current_plan: Not started
+status: planning
+stopped_at: Phase 15 verified and complete; ready to plan Phase 16
+last_updated: "2026-06-01T02:21:40Z"
 last_activity: 2026-06-01
 progress:
-  total_phases: 5
+  total_phases: 4
   completed_phases: 2
   total_plans: 6
   completed_plans: 6
-  percent: 100
+  percent: 50
 ---
 
 # Project State
@@ -24,27 +24,26 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-27)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Phase 15 — First Expansion Publication Wave
+**Current focus:** Phase 16 — Throughput Expansion and Deferral Ledger
 
 ## Current Position
 
-**Current Phase:** 15
-**Current Phase Name:** First Expansion Publication Wave
-**Current Plan:** 3
+**Current Phase:** 16
+**Current Phase Name:** Throughput Expansion and Deferral Ledger
+**Current Plan:** Not started
 **Total Phases:** 4
-**Total Plans in Phase:** 3
-**Status:** Phase complete — ready for verification
+**Total Plans in Phase:** 0
+**Status:** Ready to plan
 **Last Activity:** 2026-06-01
-Phase: 15 (First Expansion Publication Wave) — READY FOR VERIFICATION
-Plan: 3 of 3
+Phase 15 verified and complete; Phase 16 is ready for planning.
 
-**Progress:** [██████████] 100%
+**Progress:** [█████-----] 50%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 33
+- Total plans completed: 36
 - Average duration: 8 min
 - Total execution time: 3.1 hours
 
@@ -69,6 +68,7 @@ Plan: 3 of 3
 | Phase 15 P01 | 9 min | 3 tasks | 4 files |
 | Phase 15-first-expansion-publication-wave P02 | 8 min | 2 tasks | 4 files |
 | Phase 15-first-expansion-publication-wave P03 | 4 min | 3 tasks | 7 files |
+| 15 | 3 | - | - |
 
 ## Accumulated Context
 
@@ -105,10 +105,10 @@ None.
 ### Blockers/Concerns
 
 No active blockers.
-Phase 15 is complete and ready for verification.
+Phase 16 is ready for planning.
 
 ## Session
 
-**Last Date:** 2026-06-01T01:50:35.700Z
-**Stopped At:** Completed 15-03-PLAN.md
+**Last Date:** 2026-06-01T02:21:40Z
+**Stopped At:** Phase 15 verified and complete; ready to plan Phase 16
 **Resume File:** None
