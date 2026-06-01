@@ -75,10 +75,10 @@
 		{
 			"state": "Florida",
 			"slug": "florida",
-			"registryStatus": "queued",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Failed 2025 public-funds Bitcoin investment proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "south"
 		},
 		{
@@ -138,10 +138,10 @@
 		{
 			"state": "Kansas",
 			"slug": "kansas",
-			"registryStatus": "queued",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Failed 2026 bitcoin and digital assets reserve fund proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
@@ -300,10 +300,10 @@
 		{
 			"state": "North Dakota",
 			"slug": "north-dakota",
-			"registryStatus": "queued",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Failed 2025 digital-asset and precious-metals investment proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
