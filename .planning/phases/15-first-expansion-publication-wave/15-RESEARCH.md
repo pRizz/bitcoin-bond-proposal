@@ -384,17 +384,17 @@ All claims in this research were verified against repo files, local commands, np
 |---|-------|---------|---------------|
 | None | No assumed claims recorded. [VERIFIED: manual review of this file] | All sections | N/A |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Should optional South Dakota and Wyoming be included in Phase 15?** [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
+   - RESOLVED: Do not include South Dakota or Wyoming in the required Phase 15 publication scope. Keep them out of the public set for this phase even though official-source status can be confirmed; they remain optional follow-up candidates outside the required five-state batch. [VERIFIED: user revision decision; VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
    - What we know: South Dakota final official action is confirmed as deferred to the 41st legislative day on 2026-02-06, and Wyoming final official action is confirmed as inactive/died in committee on 2025-03-03. [CITED: https://sdlegislature.gov/api/Bills/ActionLog/26633; CITED: https://api.wyoleg.gov/v1/odata/BillReferences?year=2025&billNumber=HB0201&expand=substituteBills,vetoes,amendments]
-   - What's unclear: The user locked those states as optional, not required, so including them depends on desired implementation scope rather than source availability. [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
-   - Recommendation: Plan them as a separate optional task after the required five states pass validation. [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
+   - Decision impact: Required Phase 15 plans publish Florida, Kansas, North Dakota, Ohio, and Utah only; South Dakota and Wyoming remain `unresearched` in the manifest and remain in unpublished candidate intake/queue visibility after the required batch. [VERIFIED: user revision decision; VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
 
 2. **How much existing published refresh work must happen before expansion?** [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
+   - RESOLVED: Refresh only concrete blockers before expansion. Broad refresh of all due published records is not a prerequisite for Phase 15; keep broad refresh surfaced through generated queue visibility unless a specific stale published record blocks trustworthy comparison, catalog, or freshness claims. [VERIFIED: user revision decision; VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
    - What we know: The current priority queue marks all 10 published records as due, and the phase only requires refreshing records whose stale posture would block trustworthy comparison/catalog/freshness claims. [VERIFIED: generated/refresh/state-priority-queue.md; VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
-   - What's unclear: No specific published record was identified in the phase context as blocking this publication wave. [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md]
-   - Recommendation: Include a Wave 0 gate that inspects active/review-due records for blockers, but do not make broad refresh of all 10 published entries a prerequisite unless a concrete blocking claim is found. [VERIFIED: .planning/phases/15-first-expansion-publication-wave/15-CONTEXT.md; VERIFIED: generated/refresh/state-priority-queue.md]
+   - Decision impact: Plan 15-01 must include a pre-authoring REFR-05 gate that inspects `publishedRefreshWork`, records a refresh/no-blocker outcome, and stops only if a concrete blocker is found. Plans must not convert all due published refresh entries into required Phase 15 authoring work. [VERIFIED: user revision decision; VERIFIED: generated/refresh/state-priority-queue.md]
 
 ## Environment Availability
 
