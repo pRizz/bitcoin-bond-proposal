@@ -78,9 +78,9 @@
       "status": "Referred to Rules Committee",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-01-29",
-      "statusAgeDays": 488,
+      "statusAgeDays": 489,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 61,
+      "reviewAgeDays": 62,
       "confidence": "high",
       "path": "content/states/illinois-hb-1844.md"
     },
@@ -102,9 +102,9 @@
       "status": "Board approved; further approval and counsel condition pending",
       "legislativeStatusGroup": "approved",
       "statusAsOf": "2025-11-17",
-      "statusAgeDays": 196,
+      "statusAgeDays": 197,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 61,
+      "reviewAgeDays": 62,
       "confidence": "high",
       "path": "content/states/new-hampshire-bfa-bitcoin-backed-bond.md"
     },
@@ -126,9 +126,9 @@
       "status": "Ref To Com On Rules and Operations of the Senate",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-19",
-      "statusAgeDays": 439,
+      "statusAgeDays": 440,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 51,
+      "reviewAgeDays": 52,
       "confidence": "medium",
       "path": "content/states/north-carolina-s-327.md"
     },
@@ -150,9 +150,9 @@
       "status": "Vetoed by Governor",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2025-05-02",
-      "statusAgeDays": 395,
+      "statusAgeDays": 396,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 61,
+      "reviewAgeDays": 62,
       "confidence": "high",
       "path": "content/states/arizona-sb-1025.md"
     },
@@ -174,9 +174,9 @@
       "status": "Died in Banking and Insurance",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2025-06-16",
-      "statusAgeDays": 350,
+      "statusAgeDays": 351,
       "lastReviewed": "2026-06-01",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/florida-sb-550.md"
     },
@@ -198,9 +198,9 @@
       "status": "Died in Committee",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2026-04-10",
-      "statusAgeDays": 52,
+      "statusAgeDays": 53,
       "lastReviewed": "2026-06-01",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/kansas-sb-352.md"
     },
@@ -222,9 +222,9 @@
       "status": "In the House - Hearing 3/11 at 1:00 p.m. (Judiciary)",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-11",
-      "statusAgeDays": 447,
+      "statusAgeDays": 448,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 51,
+      "reviewAgeDays": 52,
       "confidence": "medium",
       "path": "content/states/maryland-hb-1389.md"
     },
@@ -246,9 +246,9 @@
       "status": "Referred to Committee on Communications and Technology",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2026-03-19",
-      "statusAgeDays": 74,
+      "statusAgeDays": 75,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 51,
+      "reviewAgeDays": 52,
       "confidence": "high",
       "path": "content/states/michigan-hb-4087.md"
     },
@@ -270,9 +270,9 @@
       "status": "Public Hearing Completed (House)",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-24",
-      "statusAgeDays": 434,
+      "statusAgeDays": 435,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 51,
+      "reviewAgeDays": 52,
       "confidence": "high",
       "path": "content/states/missouri-hb-1217.md"
     },
@@ -294,9 +294,9 @@
       "status": "Second reading, failed to pass, yeas 32 nays 57",
       "legislativeStatusGroup": "failed",
       "statusAsOf": "2025-01-31",
-      "statusAgeDays": 486,
+      "statusAgeDays": 487,
       "lastReviewed": "2026-06-01",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/north-dakota-hb-1184.md"
     },
@@ -318,9 +318,9 @@
       "status": "Referred to committee Technology and Innovation",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-01-28",
-      "statusAgeDays": 489,
+      "statusAgeDays": 490,
       "lastReviewed": "2026-06-01",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "medium",
       "path": "content/states/ohio-hb-18.md"
     },
@@ -342,9 +342,9 @@
       "status": "Engrossed to Senate",
       "legislativeStatusGroup": "advanced",
       "statusAsOf": "2025-03-25",
-      "statusAgeDays": 433,
+      "statusAgeDays": 434,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 61,
+      "reviewAgeDays": 62,
       "confidence": "high",
       "path": "content/states/oklahoma-hb-1203.md"
     },
@@ -366,11 +366,35 @@
       "status": "Referred to Committee on Ways and Means",
       "legislativeStatusGroup": "introduced",
       "statusAsOf": "2025-03-27",
-      "statusAgeDays": 431,
+      "statusAgeDays": 432,
       "lastReviewed": "2026-04-11",
-      "reviewAgeDays": 51,
+      "reviewAgeDays": 52,
       "confidence": "high",
       "path": "content/states/south-carolina-h-4256.md"
+    },
+    {
+      "title": "South Dakota HB 1155",
+      "slug": "south-dakota",
+      "state": "South Dakota",
+      "summary": "South Dakota House bill to permit State Investment Council Bitcoin investment authority, later deferred to the 41st legislative day.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "midwest",
+      "shortNote": "Failed 2026 State Investment Council Bitcoin authority proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB 1155",
+      "chamber": "South Dakota House",
+      "status": "Deferred to the 41st legislative day",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2026-02-06",
+      "statusAgeDays": 116,
+      "lastReviewed": "2026-06-02",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/south-dakota-hb-1155.md"
     },
     {
       "title": "Texas SB21",
@@ -390,9 +414,9 @@
       "status": "Enrolled; effective by law",
       "legislativeStatusGroup": "enacted",
       "statusAsOf": "2025-06-20",
-      "statusAgeDays": 346,
+      "statusAgeDays": 347,
       "lastReviewed": "2026-04-01",
-      "reviewAgeDays": 61,
+      "reviewAgeDays": 62,
       "confidence": "high",
       "path": "content/states/texas-sb-21.md"
     },
@@ -414,11 +438,35 @@
       "status": "Enrolled Copy; takes effect May 7, 2025",
       "legislativeStatusGroup": "enacted",
       "statusAsOf": "2025-05-07",
-      "statusAgeDays": 390,
+      "statusAgeDays": 391,
       "lastReviewed": "2026-06-01",
-      "reviewAgeDays": 0,
+      "reviewAgeDays": 1,
       "confidence": "high",
       "path": "content/states/utah-hb-230.md"
+    },
+    {
+      "title": "Wyoming HB0201",
+      "slug": "wyoming",
+      "state": "Wyoming",
+      "summary": "Wyoming House bill to authorize limited state-fund and permanent-fund Bitcoin investment authority, later dying in committee.",
+      "recordType": "legislative-bill",
+      "registryStatus": "published",
+      "proposalFocus": "reserve",
+      "region": "west",
+      "shortNote": "Failed 2025 state-funds Bitcoin investment proposal.",
+      "editorialPriority": "reserve-priority",
+      "proposalKind": "reserve",
+      "proposalSubtype": "strategic-reserve",
+      "billId": "HB0201",
+      "chamber": "Wyoming House",
+      "status": "H:Died in Committee Returned Bill Pursuant to HR 5-4",
+      "legislativeStatusGroup": "failed",
+      "statusAsOf": "2025-03-03",
+      "statusAgeDays": 456,
+      "lastReviewed": "2026-06-02",
+      "reviewAgeDays": 0,
+      "confidence": "high",
+      "path": "content/states/wyoming-hb-0201.md"
     }
   ],
   "registry": {
@@ -787,11 +835,11 @@
         {
           "state": "South Dakota",
           "slug": "south-dakota",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "midwest",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Failed 2026 State Investment Council Bitcoin authority proposal.",
+          "editorialPriority": "reserve-priority"
         },
         {
           "state": "Tennessee",
@@ -868,11 +916,11 @@
         {
           "state": "Wyoming",
           "slug": "wyoming",
-          "registryStatus": "unresearched",
-          "proposalFocus": "unknown",
+          "registryStatus": "published",
+          "proposalFocus": "reserve",
           "region": "west",
-          "shortNote": "No publishable reserve or bond record added yet.",
-          "editorialPriority": "neutral"
+          "shortNote": "Failed 2025 state-funds Bitcoin investment proposal.",
+          "editorialPriority": "reserve-priority"
         }
       ]
     },
@@ -890,10 +938,12 @@
       "ohio",
       "oklahoma",
       "south-carolina",
+      "south-dakota",
       "texas",
-      "utah"
+      "utah",
+      "wyoming"
     ],
-    "generatedAt": "2026-06-01T00:00:00.000Z",
+    "generatedAt": "2026-06-02T00:00:00.000Z",
     "groups": {
       "byRegion": {
         "northeast": {
@@ -903,14 +953,15 @@
           ]
         },
         "midwest": {
-          "count": 6,
+          "count": 7,
           "slugs": [
             "illinois",
             "kansas",
             "michigan",
             "missouri",
             "north-dakota",
-            "ohio"
+            "ohio",
+            "south-dakota"
           ]
         },
         "south": {
@@ -925,10 +976,11 @@
           ]
         },
         "west": {
-          "count": 2,
+          "count": 3,
           "slugs": [
             "arizona",
-            "utah"
+            "utah",
+            "wyoming"
           ]
         }
       },
@@ -940,7 +992,7 @@
           ]
         },
         "reserve": {
-          "count": 12,
+          "count": 14,
           "slugs": [
             "arizona",
             "florida",
@@ -952,8 +1004,10 @@
             "ohio",
             "oklahoma",
             "south-carolina",
+            "south-dakota",
             "texas",
-            "utah"
+            "utah",
+            "wyoming"
           ]
         },
         "both": {
@@ -1001,12 +1055,14 @@
           ]
         },
         "failed": {
-          "count": 4,
+          "count": 6,
           "slugs": [
             "arizona",
             "florida",
             "kansas",
-            "north-dakota"
+            "north-dakota",
+            "south-dakota",
+            "wyoming"
           ]
         }
       }
