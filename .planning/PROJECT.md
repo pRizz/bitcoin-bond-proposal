@@ -10,7 +10,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 
 ## Current Milestone: v1.3 Deeper National Coverage
 
-**Goal:** Expand beyond the current fifteen-state publication set by shipping as many additional state briefs as can pass the project's credibility, completeness, and freshness standards.
+**Goal:** Expand beyond the current seventeen-state publication set by shipping as many additional state briefs as can pass the project's credibility, completeness, and freshness standards.
 
 **Target features:**
 - Publish a larger national state set selected by credible source availability and readiness rather than a fixed quota.
@@ -24,11 +24,11 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Shipped `v1.1` on 2026-04-04.
 - Shipped `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-12.
 - Started `v1.3 Deeper National Coverage` on 2026-05-27.
-- The registry now exposes fifteen published state records plus dedicated `/states/clusters`
+- The registry now exposes seventeen published state records plus dedicated `/states/clusters`
   and `/states/compare` reading paths.
 - Maintainers can generate repo-owned refresh and combined priority queues under
-  `generated/refresh/`, with stale published-record work kept ahead of remaining
-  first-publication candidates.
+  `generated/refresh/`; Phase 16 cleared the current first-publication candidate
+  intake after South Dakota and Wyoming passed official-source publication gates.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -67,13 +67,14 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Maintainer can generate a combined priority artifact that surfaces stale published records and unpublished candidate readiness together — `Phase 14 / v1.3`
 - ✓ Reader can access the first v1.3 expansion wave as a fifteen-state registry with five additional official-source-backed records — `Phase 15 / v1.3`
 - ✓ Expanded registry surfaces avoid stale hard-coded count copy and route new detail pages through the canonical content path — `Phase 15 / v1.3`
+- ✓ Maintainer can resolve high-interest unpublished candidates through publication or a non-public deferral ledger without exposing unverified public entries — `Phase 16 / v1.3`
+- ✓ Reader can access a seventeen-state registry after South Dakota HB 1155 and Wyoming HB0201 passed official-source publication gates — `Phase 16 / v1.3`
 
 ### Active
 
-- [ ] Continue broadening publishable national coverage beyond the current fifteen-state registry where additional candidates clear credibility, completeness, and freshness gates.
-- [ ] Use candidate readiness and refresh prioritization outputs to choose the next unpublished or stale states.
+- [ ] Continue broadening publishable national coverage beyond the current seventeen-state registry where additional candidates clear credibility, completeness, and freshness gates.
+- [ ] Use refresh prioritization outputs and any future candidate intake to choose the next unpublished or stale states.
 - [ ] Keep catalog, state-detail, cluster, and comparison surfaces understandable as the published state count grows.
-- [ ] Record explicit deferral reasons for high-interest states that cannot be published credibly in this milestone.
 
 ### Out of Scope
 
@@ -150,7 +151,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Make broader coverage, comparison, and refresh the v1.2 driver | The next leverage point is research utility and maintainability, not another shell-only polish cycle | ✓ Implemented across Phases 10-13 |
 | Use shared freshness thresholds for both public trust cues and maintainer refresh workflow | The public site and refresh queue should agree on what counts as current versus review-due | ✓ Implemented in Phase 13 |
 | Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
-| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | In progress; Phase 15 expanded the registry to fifteen published records and left South Dakota/Wyoming as remaining candidates |
+| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | In progress; Phase 16 expanded the registry to seventeen published records and cleared the current candidate intake |
 
 <details>
 <summary>Archived v1.2 milestone framing</summary>
@@ -202,4 +203,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-27 after v1.3 milestone kickoff*
+*Last updated: 2026-06-02 after Phase 16 throughput expansion*
