@@ -58,10 +58,10 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 
 	// Assert
 	const expectedRegionCounts = {
-		midwest: 6,
+		midwest: 7,
 		northeast: 1,
 		south: 6,
-		west: 2,
+		west: 3,
 	};
 
 	// Act
@@ -84,7 +84,7 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 			.find((group) => group.key === "enacted")
 			?.states.map((state) => state.slug),
 	).toEqual(["texas", "utah"]);
-	expect(model.stats.publishedCount).toBe(15);
+	expect(model.stats.publishedCount).toBe(17);
 });
 
 test("state surface copy avoids stale hard-coded registry counts", async () => {
@@ -270,7 +270,7 @@ test("buildStatesClusterModel returns editorial sections for legislative status,
 		["advanced", 3],
 		["approved", 1],
 		["enacted", 2],
-		["failed", 4],
+		["failed", 6],
 	]);
 	expect(
 		proposalFocusSection.buckets

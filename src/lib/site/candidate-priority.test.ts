@@ -287,6 +287,38 @@ test("combined model includes firstPublicationCandidates with due refresh work",
 	});
 });
 
+test("empty candidate intake produces no first-publication work", () => {
+	// Arrange
+	const refreshQueue = buildRefreshQueueFixture();
+	const candidates: StateCandidateIntakeEntry[] = [];
+	const generatedAt = "2026-06-02T00:00:00.000Z";
+
+	// Act
+	const candidateModel = buildCandidatePriorityModel(candidates, generatedAt);
+	const combinedModel = buildCombinedPriorityQueueModel({
+		refreshQueue,
+		candidates,
+		generatedAt,
+	});
+
+	// Assert
+	expect(candidateModel.summary).toEqual({
+		candidateCount: 0,
+		readyToAuthorCount: 0,
+		needsStatusConfirmationCount: 0,
+		deferredCount: 0,
+		authorableCount: 0,
+	});
+	expect(candidateModel.entries).toEqual([]);
+	expect(combinedModel.summary).toEqual({
+		publishedRefreshCount: 1,
+		publishedRefreshDueCount: 1,
+		candidateCount: 0,
+		firstPublicationCandidateCount: 0,
+	});
+	expect(combinedModel.firstPublicationCandidates).toEqual([]);
+});
+
 test("combined model sourceBoundary names published and candidate sources", () => {
 	// Arrange
 	const refreshQueue = buildRefreshQueueFixture();
