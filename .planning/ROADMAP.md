@@ -104,10 +104,10 @@ Plans:
 **Goal:** Make the expanded registry easy to scan, compare, and verify across public surfaces, then record final coverage and evidence for milestone closeout.  
 **Depends on:** Phase 16  
 **Requirements:** SITE-10, SITE-11, SITE-12, QA-01, QA-02  
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 17-01-PLAN.md — Harden public registry surfaces and stale closeout copy.
+- [x] 17-01-PLAN.md — Harden public registry surfaces and stale closeout copy.
 - [ ] 17-02-PLAN.md — Regenerate artifacts, run browser QA, and record closeout evidence.
 
 **Success criteria:**

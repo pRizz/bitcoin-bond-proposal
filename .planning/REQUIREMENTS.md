@@ -28,9 +28,9 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 ### Registry Surfaces
 
-- [ ] **SITE-10**: Reader can scan the expanded state catalog without losing confidence, completeness, freshness, status, proposal-type, and region cues.
-- [ ] **SITE-11**: Reader can use cluster and comparison routes with the expanded registry without stale assumptions, broken grouping, or unclear drill-down paths.
-- [ ] **SITE-12**: Reader can move from any expanded catalog, cluster, or comparison entry into the canonical state-detail page and see consistent provenance and freshness context.
+- [x] **SITE-10**: Reader can scan the expanded state catalog without losing confidence, completeness, freshness, status, proposal-type, and region cues.
+- [x] **SITE-11**: Reader can use cluster and comparison routes with the expanded registry without stale assumptions, broken grouping, or unclear drill-down paths.
+- [x] **SITE-12**: Reader can move from any expanded catalog, cluster, or comparison entry into the canonical state-detail page and see consistent provenance and freshness context.
 
 ### Verification and Closeout
 
@@ -84,9 +84,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | REFR-04 | Phase 14 | Complete |
 | REFR-05 | Phase 15 | Complete |
 | REFR-06 | Phase 14 | Complete |
-| SITE-10 | Phase 17 | Pending |
-| SITE-11 | Phase 17 | Pending |
-| SITE-12 | Phase 17 | Pending |
+| SITE-10 | Phase 17 | Complete |
+| SITE-11 | Phase 17 | Complete |
+| SITE-12 | Phase 17 | Complete |
 | QA-01 | Phase 17 | Pending |
 | QA-02 | Phase 17 | Pending |
 

@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Deeper National Coverage
-current_phase: 999.1
-current_phase_name: selective mystic ui adoption across the public webapp
-current_plan: Not started
+current_phase: 17
+current_phase_name: expanded-surface-qa-and-closeout-prep
+current_plan: 2
 status: executing
-stopped_at: Phase 17 context gathered
-last_updated: "2026-06-02T21:39:37.782Z"
+stopped_at: Completed 17-01-PLAN.md
+last_updated: "2026-06-02T21:49:16.811Z"
 last_activity: 2026-06-02
 progress:
   total_phases: 5
   completed_phases: 3
   total_plans: 10
-  completed_plans: 8
-  percent: 80
+  completed_plans: 9
+  percent: 90
 ---
 
 # Project State
@@ -24,22 +24,22 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-27)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Phase 16 — throughput-expansion-and-deferral-ledger
+**Current focus:** Phase 17 — expanded-surface-qa-and-closeout-prep
 
 ## Current Position
 
-Phase: 16 (throughput-expansion-and-deferral-ledger) — EXECUTING
+Phase: 17 (expanded-surface-qa-and-closeout-prep) — EXECUTING
 Plan: 2 of 2
-**Current Phase:** 999.1
-**Current Phase Name:** selective mystic ui adoption across the public webapp
-**Current Plan:** Not started
+**Current Phase:** 17
+**Current Phase Name:** expanded-surface-qa-and-closeout-prep
+**Current Plan:** 2
 **Total Phases:** 4
 **Total Plans in Phase:** 2
 **Status:** Ready to execute
 **Last Activity:** 2026-06-02
 Phase 15 verified and complete; Phase 16 is ready for planning.
 
-**Progress:** [█████████░] 88%
+**Progress:** [█████████░] 90%
 
 ## Performance Metrics
 
@@ -73,6 +73,7 @@ Phase 15 verified and complete; Phase 16 is ready for planning.
 | 15 | 3 | - | - |
 | Phase 16 P01 | 49 min | 3 tasks | 4 files |
 | 16 | 2 | - | - |
+| Phase 17 P01 | 8 min | 3 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -113,6 +114,6 @@ Phase 16 is ready for planning.
 
 ## Session
 
-**Last Date:** 2026-06-02T21:08:03.533Z
-**Stopped At:** Phase 17 context gathered
-**Resume File:** .planning/phases/17-expanded-surface-qa-and-closeout-prep/17-CONTEXT.md
+**Last Date:** 2026-06-02T21:49:16.809Z
+**Stopped At:** Completed 17-01-PLAN.md
+**Resume File:** None
