@@ -363,10 +363,10 @@
 		{
 			"state": "South Dakota",
 			"slug": "south-dakota",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Failed 2026 State Investment Council Bitcoin authority proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "midwest"
 		},
 		{
@@ -444,10 +444,10 @@
 		{
 			"state": "Wyoming",
 			"slug": "wyoming",
-			"registryStatus": "unresearched",
-			"proposalFocus": "unknown",
-			"shortNote": "No publishable reserve or bond record added yet.",
-			"editorialPriority": "neutral",
+			"registryStatus": "published",
+			"proposalFocus": "reserve",
+			"shortNote": "Failed 2025 state-funds Bitcoin investment proposal.",
+			"editorialPriority": "reserve-priority",
 			"region": "west"
 		}
 	]

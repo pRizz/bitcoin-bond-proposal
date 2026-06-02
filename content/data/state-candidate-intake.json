@@ -1,28 +1,3 @@
 {
-	"candidates": [
-		{
-			"state": "South Dakota",
-			"slug": "south-dakota",
-			"sourceAvailability": "official-pdf-only",
-			"proposalRelevance": "high",
-			"readiness": "needs-status-confirmation",
-			"status": "Official introduced text found; final status needs confirmation",
-			"statusAsOf": "2026-01-01",
-			"officialSourceUrl": "https://mylrc.sdlegislature.gov/api/Documents/298084.pdf",
-			"evidenceNote": "Official introduced text would permit state investment in Bitcoin, but the final status should be confirmed from the legislature status route before authoring.",
-			"nextAction": "confirm-final-status"
-		},
-		{
-			"state": "Wyoming",
-			"slug": "wyoming",
-			"sourceAvailability": "official-pdf-only",
-			"proposalRelevance": "high",
-			"readiness": "needs-status-confirmation",
-			"status": "Official introduced text found; final status needs confirmation",
-			"statusAsOf": "2025-01-01",
-			"officialSourceUrl": "https://www.wyoleg.gov/2025/Introduced/HB0201.pdf",
-			"evidenceNote": "Official introduced text would authorize investment of state funds and permanent funds in Bitcoin, but the final status should be confirmed from the legislature summary route before authoring.",
-			"nextAction": "confirm-final-status"
-		}
-	]
+	"candidates": []
 }
