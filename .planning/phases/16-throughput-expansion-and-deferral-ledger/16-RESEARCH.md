@@ -435,9 +435,9 @@ Source: official source checks performed during research. [VERIFIED: local curl/
 |---|-------|---------|---------------|
 | A1 | None. All planning-relevant claims are supported by local repo files, official state sources, npm registry checks, local tool checks, or pinned Bright Builds standards. | All sections | N/A |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **None blocking.**
+1. **RESOLVED: None blocking.**
    - What we know: Official source footing is sufficient to plan publication for South Dakota and Wyoming. [VERIFIED: official SD/WY sources]
    - What's unclear: Execution must still perform the D-04 re-check immediately before authoring because the phase context requires it. [VERIFIED: `16-CONTEXT.md` D-04]
    - Recommendation: Plan a source-confirmation task first, then publish both if checks match this research; use the deferral fallback only on a source regression. [VERIFIED: `16-CONTEXT.md` D-05/D-06]
