@@ -90,8 +90,15 @@ test("buildStatesIndexModel groups published states by region, proposal focus, a
 test("state surface copy avoids stale hard-coded registry counts", async () => {
 	// Arrange
 	const fixtureGraph = structuredClone(contentGraph);
-	const staleCountTerms = ["ten-state", "ten published records"];
-	const routeFiles = [
+	const staleCountTerms = [
+		"fifteen published state-detail pages",
+		"15-state",
+		"15 state",
+		"ten-state",
+		"ten published records",
+	];
+	const surfaceFiles = [
+		".planning/PROJECT.md",
 		"src/routes/(site)/states/index.tsx",
 		"src/routes/(site)/states/clusters.tsx",
 		"src/routes/(site)/states/compare.tsx",
@@ -100,8 +107,8 @@ test("state surface copy avoids stale hard-coded registry counts", async () => {
 	// Act
 	const clusterModel = buildStatesClusterModel(fixtureGraph);
 	const comparisonModel = buildStatesComparisonModel(fixtureGraph);
-	const routeCopy = await Promise.all(
-		routeFiles.map((path) => Bun.file(path).text()),
+	const surfaceCopy = await Promise.all(
+		surfaceFiles.map((path) => Bun.file(path).text()),
 	);
 	const modelCopy = [
 		...clusterModel.sections.flatMap((section) => [
@@ -117,7 +124,7 @@ test("state surface copy avoids stale hard-coded registry counts", async () => {
 			section.lead,
 			section.comparison,
 		]),
-		...routeCopy,
+		...surfaceCopy,
 	].join("\n");
 
 	// Assert
@@ -236,6 +243,27 @@ test("getStatesIndexModel and getStateBySlug expose the same shared confidence c
 		maybeIndexState?.confidenceCue,
 	);
 	expect(maybeDetailState?.freshnessCue).toEqual(maybeIndexState?.freshnessCue);
+});
+
+test("representative expanded detail records expose provenance and freshness context", () => {
+	// Arrange
+	const representativeSlugs = ["south-dakota", "wyoming", "texas"];
+
+	// Act
+	const detailStates = representativeSlugs.map((slug) => getStateBySlug(slug));
+
+	// Assert
+	for (const [index, maybeState] of detailStates.entries()) {
+		expect(maybeState).toBeDefined();
+		expect(maybeState?.slug).toBe(representativeSlugs[index]);
+		expect(maybeState?.status.length).toBeGreaterThan(0);
+		expect(maybeState?.statusAsOf.length).toBeGreaterThan(0);
+		expect(maybeState?.lastReviewed.length).toBeGreaterThan(0);
+		expect(maybeState?.confidenceCue.title.length).toBeGreaterThan(0);
+		expect(maybeState?.confidenceCue.detail.length).toBeGreaterThan(0);
+		expect(maybeState?.freshnessCue.title.length).toBeGreaterThan(0);
+		expect(maybeState?.freshnessCue.detail.length).toBeGreaterThan(0);
+	}
 });
 
 test("buildStatesClusterModel returns editorial sections for legislative status, proposal focus, and region", () => {
