@@ -2,12 +2,12 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Deeper National Coverage
-current_phase: 17
-current_phase_name: expanded-surface-qa-and-closeout-prep
-current_plan: 2
-status: verifying
+current_phase: 999.1
+current_phase_name: selective mystic ui adoption across the public webapp
+current_plan: Not started
+status: planning
 stopped_at: Completed 17-02-PLAN.md
-last_updated: "2026-06-02T21:59:43.032Z"
+last_updated: "2026-06-02T22:10:19.768Z"
 last_activity: 2026-06-02
 progress:
   total_phases: 5
@@ -30,12 +30,12 @@ See: .planning/PROJECT.md (updated 2026-05-27)
 
 Phase: 17 (expanded-surface-qa-and-closeout-prep) — EXECUTING
 Plan: 2 of 2
-**Current Phase:** 17
-**Current Phase Name:** expanded-surface-qa-and-closeout-prep
-**Current Plan:** 2
+**Current Phase:** 999.1
+**Current Phase Name:** selective mystic ui adoption across the public webapp
+**Current Plan:** Not started
 **Total Phases:** 4
 **Total Plans in Phase:** 2
-**Status:** Phase complete — ready for verification
+**Status:** Ready to plan
 **Last Activity:** 2026-06-02
 Phase 15 verified and complete; Phase 16 is ready for planning.
 
@@ -45,7 +45,7 @@ Phase 15 verified and complete; Phase 16 is ready for planning.
 
 **Velocity:**
 
-- Total plans completed: 38
+- Total plans completed: 40
 - Average duration: 8 min
 - Total execution time: 3.1 hours
 
@@ -75,6 +75,7 @@ Phase 15 verified and complete; Phase 16 is ready for planning.
 | 16 | 2 | - | - |
 | Phase 17 P01 | 8 min | 3 tasks | 3 files |
 | Phase 17 P02 | 10 min | 3 tasks | 3 files |
+| 17 | 2 | - | - |
 
 ## Accumulated Context
 
