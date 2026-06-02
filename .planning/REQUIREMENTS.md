@@ -34,8 +34,8 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 ### Verification and Closeout
 
-- [ ] **QA-01**: Maintainer verification proves content validation, content compilation, refresh/candidate generation, TypeScript, build, tests, and targeted browser checks pass after the expanded batch.
-- [ ] **QA-02**: Milestone closeout records the final newly published state count, shipped states, deferred candidates, and verification evidence.
+- [x] **QA-01**: Maintainer verification proves content validation, content compilation, refresh/candidate generation, TypeScript, build, tests, and targeted browser checks pass after the expanded batch.
+- [x] **QA-02**: Milestone closeout records the final newly published state count, shipped states, deferred candidates, and verification evidence.
 
 ## Future Requirements
 
@@ -87,8 +87,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SITE-10 | Phase 17 | Complete |
 | SITE-11 | Phase 17 | Complete |
 | SITE-12 | Phase 17 | Complete |
-| QA-01 | Phase 17 | Pending |
-| QA-02 | Phase 17 | Pending |
+| QA-01 | Phase 17 | Complete |
+| QA-02 | Phase 17 | Complete |
 
 **Coverage:**
 - v1.3 requirements: 14 total

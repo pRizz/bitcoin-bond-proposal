@@ -45,7 +45,7 @@
 - [x] Phase 14: Candidate Priority and Refresh Intake (3 plans) — completed 2026-05-27
 - [x] Phase 15: First Expansion Publication Wave (3 plans) — completed 2026-06-01
 - [x] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15 (completed 2026-06-02)
-- [ ] Phase 17: Expanded Surface QA and Closeout Prep (2 plans) — pending Phase 16
+- [x] Phase 17: Expanded Surface QA and Closeout Prep (2 plans) — pending Phase 16 (completed 2026-06-02)
 
 ### Phase 14: Candidate Priority and Refresh Intake
 
@@ -104,11 +104,11 @@ Plans:
 **Goal:** Make the expanded registry easy to scan, compare, and verify across public surfaces, then record final coverage and evidence for milestone closeout.  
 **Depends on:** Phase 16  
 **Requirements:** SITE-10, SITE-11, SITE-12, QA-01, QA-02  
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 17-01-PLAN.md — Harden public registry surfaces and stale closeout copy.
-- [ ] 17-02-PLAN.md — Regenerate artifacts, run browser QA, and record closeout evidence.
+- [x] 17-02-PLAN.md — Regenerate artifacts, run browser QA, and record closeout evidence.
 
 **Success criteria:**
 1. `/states` remains scannable at the expanded published count with confidence, completeness, freshness, status, proposal-type, and region cues intact.
