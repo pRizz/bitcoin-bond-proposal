@@ -44,7 +44,7 @@
 
 - [x] Phase 14: Candidate Priority and Refresh Intake (3 plans) — completed 2026-05-27
 - [x] Phase 15: First Expansion Publication Wave (3 plans) — completed 2026-06-01
-- [ ] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15
+- [x] Phase 16: Throughput Expansion and Deferral Ledger (0 plans) — pending Phase 15 (completed 2026-06-02)
 - [ ] Phase 17: Expanded Surface QA and Closeout Prep (0 plans) — pending Phase 16
 
 ### Phase 14: Candidate Priority and Refresh Intake
@@ -88,7 +88,7 @@ Plans:
 **Goal:** Continue publishing credible candidates until the milestone's source-quality gates become the limiting factor, then record why remaining high-interest states were deferred.  
 **Depends on:** Phase 15  
 **Requirements:** CATA-12, CATA-13  
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] TBD

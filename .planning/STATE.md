@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Deeper National Coverage
-current_phase: 16
-current_phase_name: throughput-expansion-and-deferral-ledger
-current_plan: 2
-status: executing
+current_phase: 999.1
+current_phase_name: selective mystic ui adoption across the public webapp
+current_plan: Not started
+status: planning
 stopped_at: Completed 16-01-PLAN.md
-last_updated: "2026-06-02T16:03:11.103Z"
+last_updated: "2026-06-02T16:48:55.720Z"
 last_activity: 2026-06-02
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 8
-  completed_plans: 7
-  percent: 88
+  completed_plans: 8
+  percent: 100
 ---
 
 # Project State
@@ -30,12 +30,12 @@ See: .planning/PROJECT.md (updated 2026-05-27)
 
 Phase: 16 (throughput-expansion-and-deferral-ledger) — EXECUTING
 Plan: 2 of 2
-**Current Phase:** 16
-**Current Phase Name:** throughput-expansion-and-deferral-ledger
-**Current Plan:** 2
+**Current Phase:** 999.1
+**Current Phase Name:** selective mystic ui adoption across the public webapp
+**Current Plan:** Not started
 **Total Phases:** 4
 **Total Plans in Phase:** 2
-**Status:** Ready to execute
+**Status:** Ready to plan
 **Last Activity:** 2026-06-02
 Phase 15 verified and complete; Phase 16 is ready for planning.
 
@@ -45,7 +45,7 @@ Phase 15 verified and complete; Phase 16 is ready for planning.
 
 **Velocity:**
 
-- Total plans completed: 36
+- Total plans completed: 38
 - Average duration: 8 min
 - Total execution time: 3.1 hours
 
@@ -72,6 +72,7 @@ Phase 15 verified and complete; Phase 16 is ready for planning.
 | Phase 15-first-expansion-publication-wave P03 | 4 min | 3 tasks | 7 files |
 | 15 | 3 | - | - |
 | Phase 16 P01 | 49 min | 3 tasks | 4 files |
+| 16 | 2 | - | - |
 
 ## Accumulated Context
 

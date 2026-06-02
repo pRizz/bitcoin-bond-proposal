@@ -12,11 +12,11 @@ Requirements for this milestone. Success is measured by credible publication thr
 
 - [x] **CATA-10**: Maintainer can triage unpublished state manifest entries by source availability, proposal relevance, freshness risk, readiness, and explicit deferral reason.
 - [x] **CATA-11**: Maintainer can identify the next best publication candidates from a queue or report that considers both unpublished candidates and stale published records.
-- [ ] **CATA-12**: Maintainer can record why high-interest states remain unpublished without exposing unverified claims as public state entries.
+- [x] **CATA-12**: Maintainer can record why high-interest states remain unpublished without exposing unverified claims as public state entries.
 
 ### State Publication
 
-- [ ] **CATA-13**: Reader can access a larger published state registry beyond the current ten entries, with every new entry passing the canonical source, schema, confidence, and dated-snapshot contract.
+- [x] **CATA-13**: Reader can access a larger published state registry beyond the current ten entries, with every new entry passing the canonical source, schema, confidence, and dated-snapshot contract.
 - [x] **CATA-14**: Newly published state entries compile into the manifest, content graph, generated route data, and public state-detail pages without route-specific exceptions.
 - [x] **CATA-15**: Each newly published state entry includes official primary sources, status dates, review dates, proposal classification, confidence cues, and a concise policy-effect summary.
 
@@ -77,8 +77,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | CATA-10 | Phase 14 | Complete |
 | CATA-11 | Phase 14 | Complete |
-| CATA-12 | Phase 16 | Pending |
-| CATA-13 | Phase 16 | Pending |
+| CATA-12 | Phase 16 | Complete |
+| CATA-13 | Phase 16 | Complete |
 | CATA-14 | Phase 15 | Complete |
 | CATA-15 | Phase 15 | Complete |
 | REFR-04 | Phase 14 | Complete |
