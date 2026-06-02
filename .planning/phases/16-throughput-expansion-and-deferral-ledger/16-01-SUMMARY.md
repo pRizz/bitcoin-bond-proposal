@@ -104,8 +104,6 @@ Each task was completed in one content/data implementation commit:
 - **Verification:** `rg -i "deferred to the 41st Legislative Day"` matched the official committee report, and `bun run validate:content` passed with 17 published state entries.
 - **Committed in:** `cb42bad` (part of task commit)
 
----
-
 **Total deviations:** 1 auto-fixed (1 bug)
 **Impact on plan:** No scope change. The official source confirms the planned terminal action; only the verification casing was relaxed.
 
@@ -128,6 +126,5 @@ Plan 16-02 can regenerate derived artifacts, update focused tests for 17 publish
 - Wyoming official OData, introduced text, and digest checks passed.
 - South Dakota and Wyoming public files exist, manifest rows are published, and candidate intake is empty.
 
----
 *Phase: 16-throughput-expansion-and-deferral-ledger*
 *Completed: 2026-06-02*
