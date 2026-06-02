@@ -309,12 +309,13 @@ Use representative slug browser checks rather than adding state-specific route e
 |---|-------|---------|---------------|
 | None | All planning-critical claims in this research were verified from required context, codebase inspection, command output, package registry probes, or pinned Bright Builds standards. | All sections | None identified. |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Which exact closeout document should receive the final milestone record before archive?** [VERIFIED: QA-02 requires closeout evidence, but the archive command creates milestone artifacts later]
+1. **RESOLVED: Which exact closeout document should receive the final milestone record before archive?** [VERIFIED: QA-02 requires closeout evidence, but the archive command creates milestone artifacts later]
    - What we know: Phase 17 must record final published count, shipped states, deferred candidates, and verification evidence. [VERIFIED: .planning/REQUIREMENTS.md, 17-CONTEXT.md]
-   - What's unclear: Whether execution should update only Phase 17 summary/verification artifacts or also patch `.planning/PROJECT.md` before milestone archive. [VERIFIED: .planning/PROJECT.md currently has one stale 15-page line]
-   - Recommendation: Plan a closeout record task that updates `.planning/PROJECT.md` stale current-state copy and ensures Phase 17 summary/verification artifacts contain the final evidence table. [VERIFIED: rg stale-copy scan; QA-02]
+   - Resolved decision: Plan 17-01 updates stale `.planning/PROJECT.md` current-state copy, and Plan 17-02 creates `.planning/phases/17-expanded-surface-qa-and-closeout-prep/17-CLOSEOUT-EVIDENCE.md` as the milestone-ready evidence record.
+   - Archived milestone files stay unchanged in Phase 17; the later milestone archive/audit workflow can consume `17-CLOSEOUT-EVIDENCE.md` plus the Phase 17 summary and verification artifacts.
+   - Recommendation applied: Closeout evidence is local to Phase 17, while `.planning/PROJECT.md` receives only the narrow current-state copy correction. [VERIFIED: 17-01-PLAN.md; 17-02-PLAN.md; QA-02]
 
 ## Environment Availability
 
