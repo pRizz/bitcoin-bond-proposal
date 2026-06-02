@@ -211,8 +211,13 @@ export default function StatesIndexPage() {
 						))}
 					</div>
 				) : (
-					<div class="panel-wash rounded-[var(--radius-card)] p-6 text-sm leading-7 text-ink-subtle">
-						No published records match the current filters.
+					<div class="panel-wash rounded-[var(--radius-card)] p-6">
+						<p class="text-base font-semibold text-ink">
+							No matching state records
+						</p>
+						<p class="mt-2 text-sm leading-7 text-ink-subtle">
+							Adjust the type filter or return to all published states.
+						</p>
 					</div>
 				)}
 			</PageSection>

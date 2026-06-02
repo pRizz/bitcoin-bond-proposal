@@ -41,7 +41,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
   - Illinois packet route
   - financing explainer route
   - state catalog
-  - fifteen published state-detail pages
+  - seventeen published state-detail pages
 - Source-level format and lint checks remain restored and enforced in pre-commit alongside the content/PDF trust contract.
 
 ## Requirements
@@ -58,7 +58,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Desktop/mobile readability and interaction QA passed across homepage, methodology, packet, explainer, catalog, and state-detail surfaces — `v1.1`
 - ✓ Reader can browse richer registry metadata by status, proposal type, and region through the canonical registry contract and `/states` surface — `Phase 10 / v1.2`
 - ✓ Maintainer can distinguish refresh workflow artifacts from published canonical state content through the `generated/refresh/` boundary and supporting docs — `Phase 10 / v1.2`
-- ✓ Reader can access an expanded ten-state publishable registry batch beyond the initial five records without weakening the source and freshness contract — `Phase 11 / v1.2`
+- ✓ Reader can access the first national publishable registry batch beyond the initial five records without weakening the source and freshness contract — `Phase 11 / v1.2`
 - ✓ Reader can see calm confidence/completeness cues when coverage depth varies across states on the existing catalog and detail surfaces — `Phase 11 / v1.2`
 - ✓ Reader can browse dedicated cluster views grouped by status, proposal type, and region under the existing states subtree — `Phase 12 / v1.2`
 - ✓ Reader can use an editorial comparison surface with direct links back to canonical state detail pages — `Phase 12 / v1.2`
