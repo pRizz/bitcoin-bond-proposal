@@ -8,11 +8,13 @@ import {
 	getRegistryFreshnessSummary,
 	getRegistryStats,
 	getStatesComparisonModel,
+	getStatesComparisonProofLanes,
 } from "../../../lib/site/content";
 import { makePageTitle } from "../../../lib/site/seo";
 
 export default function StatesComparePage() {
 	const statesComparisonModel = getStatesComparisonModel();
+	const comparisonProofLanes = getStatesComparisonProofLanes();
 	const registryFreshness = getRegistryFreshnessSummary();
 	const registryStats = getRegistryStats();
 
@@ -34,6 +36,41 @@ export default function StatesComparePage() {
 					note="Comparison sections stay narrative, but they now carry the same dated-snapshot freshness contract as the catalog and detail routes."
 				/>
 				<div class="panel-wash rounded-[var(--radius-card)] p-5 sm:p-6">
+					<div class="max-w-3xl">
+						<p class="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-accent-soft">
+							Comparison proof lanes
+						</p>
+						<p class="mt-2 text-sm leading-7 text-ink-subtle">
+							A compact dated snapshot of the reserve, crossover, and
+							bond-side proof lanes keeps representative records visible before
+							the narrative comparison sections.
+						</p>
+					</div>
+					<div class="mt-5 grid gap-4 lg:grid-cols-3">
+						{comparisonProofLanes.map((lane) => (
+							<div class="border-t border-border-soft pt-4 first:border-t-0 first:pt-0 lg:border-l lg:border-t-0 lg:pl-4 lg:pt-0 lg:first:border-l-0 lg:first:pl-0">
+								<div class="flex flex-wrap items-center gap-2">
+									<p class="text-sm font-semibold text-ink">{lane.label}</p>
+									<span class="data-chip text-[0.72rem] font-semibold uppercase tracking-[0.12em]">
+										{lane.countLabel}
+									</span>
+								</div>
+								<p class="mt-3 text-base font-semibold text-accent-soft">
+									{lane.representativeState.state}
+								</p>
+								<p class="mt-2 text-sm leading-7 text-ink-subtle">
+									{lane.context}
+								</p>
+								<div class="mt-4">
+									<ActionLink href={lane.href} intent="secondary">
+										Open state record
+									</ActionLink>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+				<div class="panel-wash mt-6 rounded-[var(--radius-card)] p-5 sm:p-6">
 					<div class="max-w-3xl">
 						<p class="text-sm leading-7 text-ink-subtle">
 							Use this route when you want a sharper reserve-versus-bond and
