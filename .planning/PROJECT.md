@@ -24,11 +24,15 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Shipped `v1.1` on 2026-04-04.
 - Shipped `v1.2 National Coverage, Comparison, and Refresh` on 2026-04-12.
 - Started `v1.3 Deeper National Coverage` on 2026-05-27.
+- Completed planned `v1.3 Deeper National Coverage` phase work on 2026-06-03.
 - The registry now exposes seventeen published state records plus dedicated `/states/clusters`
   and `/states/compare` reading paths.
 - Maintainers can generate repo-owned refresh and combined priority queues under
   `generated/refresh/`; Phase 16 cleared the current first-publication candidate
   intake after South Dakota and Wyoming passed official-source publication gates.
+- `/states/compare` now includes a route-local proof-lane panel for reserve
+  benchmarks, crossover proposals, and bond-side signals derived from the existing
+  comparison model; direct `mystic-ui` package adoption remains rejected for now.
 - Canonical packet documents now exist for:
   - Illinois one-pager
   - Illinois draft bill
@@ -69,6 +73,7 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - ✓ Expanded registry surfaces avoid stale hard-coded count copy and route new detail pages through the canonical content path — `Phase 15 / v1.3`
 - ✓ Maintainer can resolve high-interest unpublished candidates through publication or a non-public deferral ledger without exposing unverified public entries — `Phase 16 / v1.3`
 - ✓ Reader can access a seventeen-state registry after South Dakota HB 1155 and Wyoming HB0201 passed official-source publication gates — `Phase 16 / v1.3`
+- ✓ Reader can use a selective `/states/compare` proof-lane upgrade without taking on broad `mystic-ui` dependency or matrix/filter scope — `Phase 999.1 / v1.3`
 
 ### Active
 
@@ -82,14 +87,14 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 - Real-time legislative tracking automation — snapshot-based research remains more credible than pseudo-live status claims.
 - Municipal or non-state proposal coverage — future milestones should broaden state coverage first.
 - Database-first architecture or admin UI — repo-tracked content still fits the editorial model.
-- Broad visual-system rewrites or wholesale `mystic-ui` adoption — defer unless a specific comparison or refresh surface proves the editorial value clearly.
+- Broad visual-system rewrites or wholesale `mystic-ui` adoption — Phase 999.1 rejected direct package adoption for now; future UI work still needs a specific comparison or refresh-surface need.
 - Lowering source, confidence, or freshness standards to increase the state count — credibility remains more important than coverage volume.
 - Full 50-state deep publication as a required v1.3 outcome — publish as many states as are credible, but do not force low-evidence entries into the public set.
 
 ## Follow-On Goals
 
 - Complete any remaining 50-state deep coverage after v1.3 once source availability and workflow throughput justify it.
-- Revisit selective `mystic-ui` or theme upgrades only after expanded coverage reveals concrete comparison or proof-surface needs.
+- Revisit direct `mystic-ui` package adoption only if the package clears Tailwind CSS v4, SolidStart, token, and trust-surface gates and a future surface need justifies it.
 - Consider more structured intake tooling after the repo-owned queue and publication workflow have proven their shape.
 
 ## Context
@@ -150,8 +155,8 @@ Produce a credible, reusable Illinois-first legislative package and research reg
 | Preserve route structure while improving dark-mode readability and interaction clarity | The visual refactor should clarify the reading path, not redesign the product | ✓ Implemented in Phase 9 |
 | Make broader coverage, comparison, and refresh the v1.2 driver | The next leverage point is research utility and maintainability, not another shell-only polish cycle | ✓ Implemented across Phases 10-13 |
 | Use shared freshness thresholds for both public trust cues and maintainer refresh workflow | The public site and refresh queue should agree on what counts as current versus review-due | ✓ Implemented in Phase 13 |
-| Keep `mystic-ui` as selective backlog support instead of milestone scope | UI experimentation should follow proven information needs and Tailwind v4 compatibility | — Pending |
-| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | In progress; Phase 16 expanded the registry to seventeen published records and cleared the current candidate intake |
+| Reject direct `mystic-ui` package adoption for now, but locally adapt a comparison proof-lane pattern | The package did not clear the repo's Tailwind CSS v4, SolidStart, token, and trust-surface gates, while `/states/compare` had a concrete proof-surface need | ✓ Phase 999.1 shipped route-local proof lanes with no package or lockfile changes |
+| Make v1.3 throughput-driven but gate-limited | The user wants as many publishable states as can be credibly finished, while preserving the trust contract over raw count | ✓ Completed; Phase 16 expanded the registry to seventeen published records, and Phase 999.1 added scoped comparison proof lanes |
 
 <details>
 <summary>Archived v1.2 milestone framing</summary>
@@ -203,4 +208,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-06-02 after Phase 16 throughput expansion*
+*Last updated: 2026-06-03 after Phase 999.1 selective UI proof-lane closeout*

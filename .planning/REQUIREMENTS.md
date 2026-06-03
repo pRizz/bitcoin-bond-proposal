@@ -53,8 +53,8 @@ Deferred to future release. Tracked but not in current roadmap.
 
 ### Public Experience
 
-- **UI-01**: Reader benefits from selective `mystic-ui` or theme upgrades on comparison or proof surfaces after a concrete expanded-coverage need is identified.
-- **SITE-13**: Reader can use more advanced state filtering or matrix-style comparison if the expanded published count exceeds the current editorial route patterns.
+- **UI-01**: Reader benefits from selective `mystic-ui` or theme upgrades on comparison or proof surfaces after a concrete expanded-coverage need is identified. Exercised in Phase 999.1 through a local `/states/compare` proof-lane adaptation; direct package adoption remains rejected for now.
+- **SITE-13**: Reader can use more advanced state filtering or matrix-style comparison if the expanded published count exceeds the current editorial route patterns. Exercised only as constrained proof/comparison support in Phase 999.1; matrix, ranking, search, and advanced-filter surfaces remain deferred.
 
 ## Out of Scope
 
@@ -89,6 +89,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SITE-12 | Phase 17 | Complete |
 | QA-01 | Phase 17 | Complete |
 | QA-02 | Phase 17 | Complete |
+| UI-01 | Phase 999.1 | Complete as constrained |
+| SITE-13 | Phase 999.1 | Complete as constrained |
 
 **Coverage:**
 - v1.3 requirements: 14 total
@@ -97,4 +99,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-05-27*
-*Last updated: 2026-05-27 after roadmap traceability mapping*
+*Last updated: 2026-06-03 after Phase 999.1 selective UI proof-lane closeout*

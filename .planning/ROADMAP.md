@@ -123,8 +123,8 @@ Plans:
 
 **Goal:** Evaluate and selectively adopt [`mystic-ui`](https://github.com/pRizz/mystic-ui) across the public SolidStart webapp where it materially improves the editorial product without compromising Tailwind CSS v4 compatibility, dark-theme coherence, performance, or trust cues.
 **Requirements:** Validate the library's SolidStart and Tailwind CSS v4 fit first; preserve the current dark editorial token system and route structure; favor high-signal surfaces such as hero treatment, motion accents, proof panels, navigation accents, and state/catalog cards over a wholesale component rewrite.
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 999.1-01-PLAN.md — Record the Mystic UI compatibility decision and implement the local `/states/compare` proof-lane adaptation.
-- [ ] 999.1-02-PLAN.md — Run targeted browser QA, the full verification ladder, and final closeout evidence for the local adaptation.
+- [x] 999.1-01-PLAN.md — Record the Mystic UI compatibility decision and implement the local `/states/compare` proof-lane adaptation.
+- [x] 999.1-02-PLAN.md — Run targeted browser QA, the full verification ladder, and final closeout evidence for the local adaptation.
