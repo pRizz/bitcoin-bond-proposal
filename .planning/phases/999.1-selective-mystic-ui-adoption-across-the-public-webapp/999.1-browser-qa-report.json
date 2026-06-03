@@ -1,0 +1,279 @@
+{
+	"status": "passed",
+	"generatedAt": "2026-06-03T12:45:01.126Z",
+	"baseUrl": "http://127.0.0.1:4173",
+	"viewports": [
+		{
+			"name": "mobile",
+			"width": 390,
+			"height": 844
+		},
+		{
+			"name": "tablet",
+			"width": 768,
+			"height": 1024
+		},
+		{
+			"name": "desktop",
+			"width": 1280,
+			"height": 900
+		}
+	],
+	"routes": [
+		"/states/compare"
+	],
+	"routeChecks": [
+		{
+			"route": "/states/compare",
+			"viewport": {
+				"name": "mobile",
+				"width": 390,
+				"height": 844
+			},
+			"status": "passed",
+			"responseStatus": 200,
+			"requiredText": [
+				"Compare the current registry without losing the source trail",
+				"Freshness",
+				"Comparison proof lanes",
+				"Reserve benchmarks",
+				"Crossover proposals",
+				"Bond-side signals",
+				"Open state record",
+				"dated snapshot",
+				"Back to the full registry",
+				"Open cluster reading paths"
+			],
+			"pageOverflow": {
+				"scrollWidth": 390,
+				"viewportWidth": 390,
+				"passed": true
+			},
+			"elementOverflow": {
+				"checkedCount": 141,
+				"overflowingElements": [],
+				"passed": true
+			},
+			"links": {
+				"anchors": [
+					"/",
+					"/explainers/bond-financed-reserve-accumulation",
+					"/methodology",
+					"/packet/illinois",
+					"/states",
+					"/states/arizona",
+					"/states/clusters",
+					"/states/illinois",
+					"/states/maryland",
+					"/states/michigan",
+					"/states/missouri",
+					"/states/new-hampshire",
+					"/states/north-carolina",
+					"/states/oklahoma",
+					"/states/south-carolina",
+					"/states/texas"
+				],
+				"requiredLinks": [
+					"/states/texas",
+					"/states/north-carolina",
+					"/states/new-hampshire",
+					"/states",
+					"/states/clusters"
+				],
+				"passed": true
+			},
+			"representativeRequests": [
+				{
+					"href": "/states/texas",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/north-carolina",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/new-hampshire",
+					"status": 200,
+					"ok": true
+				}
+			],
+			"focus": {
+				"text": "Open state record",
+				"href": "/states/texas",
+				"outlineStyle": "none",
+				"boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+				"passed": true
+			}
+		},
+		{
+			"route": "/states/compare",
+			"viewport": {
+				"name": "tablet",
+				"width": 768,
+				"height": 1024
+			},
+			"status": "passed",
+			"responseStatus": 200,
+			"requiredText": [
+				"Compare the current registry without losing the source trail",
+				"Freshness",
+				"Comparison proof lanes",
+				"Reserve benchmarks",
+				"Crossover proposals",
+				"Bond-side signals",
+				"Open state record",
+				"dated snapshot",
+				"Back to the full registry",
+				"Open cluster reading paths"
+			],
+			"pageOverflow": {
+				"scrollWidth": 768,
+				"viewportWidth": 768,
+				"passed": true
+			},
+			"elementOverflow": {
+				"checkedCount": 141,
+				"overflowingElements": [],
+				"passed": true
+			},
+			"links": {
+				"anchors": [
+					"/",
+					"/explainers/bond-financed-reserve-accumulation",
+					"/methodology",
+					"/packet/illinois",
+					"/states",
+					"/states/arizona",
+					"/states/clusters",
+					"/states/illinois",
+					"/states/maryland",
+					"/states/michigan",
+					"/states/missouri",
+					"/states/new-hampshire",
+					"/states/north-carolina",
+					"/states/oklahoma",
+					"/states/south-carolina",
+					"/states/texas"
+				],
+				"requiredLinks": [
+					"/states/texas",
+					"/states/north-carolina",
+					"/states/new-hampshire",
+					"/states",
+					"/states/clusters"
+				],
+				"passed": true
+			},
+			"representativeRequests": [
+				{
+					"href": "/states/texas",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/north-carolina",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/new-hampshire",
+					"status": 200,
+					"ok": true
+				}
+			],
+			"focus": {
+				"text": "Open state record",
+				"href": "/states/texas",
+				"outlineStyle": "none",
+				"boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+				"passed": true
+			}
+		},
+		{
+			"route": "/states/compare",
+			"viewport": {
+				"name": "desktop",
+				"width": 1280,
+				"height": 900
+			},
+			"status": "passed",
+			"responseStatus": 200,
+			"requiredText": [
+				"Compare the current registry without losing the source trail",
+				"Freshness",
+				"Comparison proof lanes",
+				"Reserve benchmarks",
+				"Crossover proposals",
+				"Bond-side signals",
+				"Open state record",
+				"dated snapshot",
+				"Back to the full registry",
+				"Open cluster reading paths"
+			],
+			"pageOverflow": {
+				"scrollWidth": 1280,
+				"viewportWidth": 1280,
+				"passed": true
+			},
+			"elementOverflow": {
+				"checkedCount": 141,
+				"overflowingElements": [],
+				"passed": true
+			},
+			"links": {
+				"anchors": [
+					"/",
+					"/explainers/bond-financed-reserve-accumulation",
+					"/methodology",
+					"/packet/illinois",
+					"/states",
+					"/states/arizona",
+					"/states/clusters",
+					"/states/illinois",
+					"/states/maryland",
+					"/states/michigan",
+					"/states/missouri",
+					"/states/new-hampshire",
+					"/states/north-carolina",
+					"/states/oklahoma",
+					"/states/south-carolina",
+					"/states/texas"
+				],
+				"requiredLinks": [
+					"/states/texas",
+					"/states/north-carolina",
+					"/states/new-hampshire",
+					"/states",
+					"/states/clusters"
+				],
+				"passed": true
+			},
+			"representativeRequests": [
+				{
+					"href": "/states/texas",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/north-carolina",
+					"status": 200,
+					"ok": true
+				},
+				{
+					"href": "/states/new-hampshire",
+					"status": 200,
+					"ok": true
+				}
+			],
+			"focus": {
+				"text": "Open state record",
+				"href": "/states/texas",
+				"outlineStyle": "none",
+				"boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+				"passed": true
+			}
+		}
+	]
+}

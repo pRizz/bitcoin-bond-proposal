@@ -41,9 +41,9 @@ export default function StatesComparePage() {
 							Comparison proof lanes
 						</p>
 						<p class="mt-2 text-sm leading-7 text-ink-subtle">
-							A compact dated snapshot of the reserve, crossover, and
-							bond-side proof lanes keeps representative records visible before
-							the narrative comparison sections.
+							A compact dated snapshot of the reserve, crossover, and bond-side
+							proof lanes keeps representative records visible before the
+							narrative comparison sections.
 						</p>
 					</div>
 					<div class="mt-5 grid gap-4 lg:grid-cols-3">

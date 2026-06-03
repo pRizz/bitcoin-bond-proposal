@@ -315,7 +315,10 @@ function getRequiredComparisonProofRepresentative(
 	section: StatesComparisonSection,
 	slug: string,
 ): ComparisonState {
-	const sectionStates = [...section.featuredStates, ...section.supportingStates];
+	const sectionStates = [
+		...section.featuredStates,
+		...section.supportingStates,
+	];
 	const maybeRepresentativeState = sectionStates.find(
 		(state) => state.slug === slug,
 	);
