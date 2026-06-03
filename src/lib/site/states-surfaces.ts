@@ -66,9 +66,25 @@ export type StatesComparisonModel = {
 	sections: StatesComparisonSection[];
 };
 
+export type StatesComparisonProofLane = {
+	key: ComparisonSectionKey;
+	label: string;
+	countLabel: string;
+	context: string;
+	representativeState: ComparisonState;
+	href: string;
+};
+
 type ClusterBucketCopy = {
 	title: string;
 	description: string;
+};
+
+type ComparisonProofLaneCopy = {
+	key: ComparisonSectionKey;
+	label: string;
+	context: string;
+	representativeSlug: string;
 };
 
 const legislativeStatusClusterCopy = {
@@ -175,6 +191,30 @@ const regionClusterCopy = {
 	buckets: Record<Region, ClusterBucketCopy>;
 };
 
+const comparisonProofLaneCopy = [
+	{
+		key: "reserve-benchmarks",
+		label: "Reserve benchmarks",
+		context:
+			"Dated snapshot records show enacted, advanced, introduced, and failed reserve signals while preserving the narrative comparison model.",
+		representativeSlug: "texas",
+	},
+	{
+		key: "crossover-records",
+		label: "Crossover proposals",
+		context:
+			"Source-backed crossover records connect reserve policy to financing or packet context while keeping the canonical state page as the source of record.",
+		representativeSlug: "north-carolina",
+	},
+	{
+		key: "bond-side-signals",
+		label: "Bond-side signals",
+		context:
+			"Official bond-side evidence is narrower than the reserve lane, so each dated source-backed signal gets explicit context.",
+		representativeSlug: "new-hampshire",
+	},
+] satisfies ComparisonProofLaneCopy[];
+
 function mapClusterStates(
 	states: ReadonlyArray<PublishedState>,
 ): Array<ClusterState> {
@@ -250,6 +290,67 @@ function mapComparisonStates(
 	slugs: ReadonlyArray<string>,
 ): Array<ComparisonState> {
 	return slugs.map((slug) => getRequiredComparisonState(statesBySlug, slug));
+}
+
+function formatRecordCount(count: number): string {
+	return count === 1 ? "1 record" : `${count} records`;
+}
+
+function getRequiredComparisonProofSection(
+	statesComparisonModel: StatesComparisonModel,
+	key: ComparisonSectionKey,
+): StatesComparisonSection {
+	const maybeSection = statesComparisonModel.sections.find(
+		(section) => section.key === key,
+	);
+
+	if (!maybeSection) {
+		throw new Error(`Missing comparison proof section: ${key}`);
+	}
+
+	return maybeSection;
+}
+
+function getRequiredComparisonProofRepresentative(
+	section: StatesComparisonSection,
+	slug: string,
+): ComparisonState {
+	const sectionStates = [...section.featuredStates, ...section.supportingStates];
+	const maybeRepresentativeState = sectionStates.find(
+		(state) => state.slug === slug,
+	);
+
+	if (!maybeRepresentativeState) {
+		throw new Error(`Missing comparison proof representative: ${slug}`);
+	}
+
+	return maybeRepresentativeState;
+}
+
+export function buildStatesComparisonProofLanesFromComparisonModel(
+	statesComparisonModel: StatesComparisonModel,
+): StatesComparisonProofLane[] {
+	return comparisonProofLaneCopy.map((laneCopy) => {
+		const section = getRequiredComparisonProofSection(
+			statesComparisonModel,
+			laneCopy.key,
+		);
+		const representativeState = getRequiredComparisonProofRepresentative(
+			section,
+			laneCopy.representativeSlug,
+		);
+		const count =
+			section.featuredStates.length + section.supportingStates.length;
+
+		return {
+			key: laneCopy.key,
+			label: laneCopy.label,
+			countLabel: formatRecordCount(count),
+			context: laneCopy.context,
+			representativeState,
+			href: representativeState.href,
+		};
+	});
 }
 
 export function buildStatesClusterModelFromIndexModel(

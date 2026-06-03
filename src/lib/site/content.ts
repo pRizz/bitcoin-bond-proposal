@@ -7,8 +7,10 @@ import type {
 import {
 	buildStatesClusterModelFromIndexModel,
 	buildStatesComparisonModelFromIndexModel,
+	buildStatesComparisonProofLanesFromComparisonModel,
 	type StatesClusterModel,
 	type StatesComparisonModel,
+	type StatesComparisonProofLane,
 } from "./states-surfaces";
 import type * as RegistryFreshness from "./registry-freshness";
 import {
@@ -25,6 +27,7 @@ export type {
 	StatesClusterModel,
 	StatesClusterSection,
 	StatesComparisonModel,
+	StatesComparisonProofLane,
 	StatesComparisonSection,
 } from "./states-surfaces";
 export type FreshnessCounts = RegistryFreshness.FreshnessCounts;
@@ -429,6 +432,14 @@ export function buildStatesComparisonModel(
 	);
 }
 
+export function buildStatesComparisonProofLanes(
+	graphData: ContentGraph,
+): StatesComparisonProofLane[] {
+	return buildStatesComparisonProofLanesFromComparisonModel(
+		buildStatesComparisonModel(graphData),
+	);
+}
+
 export function getMethodologyDocument() {
 	return contentGraph.docs.find((doc) => doc.slug === "methodology");
 }
@@ -476,6 +487,10 @@ export function getStatesClusterModel() {
 
 export function getStatesComparisonModel() {
 	return buildStatesComparisonModel(contentGraph);
+}
+
+export function getStatesComparisonProofLanes() {
+	return buildStatesComparisonProofLanes(contentGraph);
 }
 
 export function getRefreshQueueModel(): RegistryFreshness.RefreshQueueModel {
