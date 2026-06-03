@@ -4,11 +4,13 @@ import graph from "../../../generated/content-graph.json";
 import {
 	buildConfidenceCue,
 	buildStatesComparisonModel,
+	buildStatesComparisonProofLanes,
 	buildStatesClusterModel,
 	buildStatesIndexModel,
 	type ContentGraph,
 	getStateBySlug,
 	getStatesComparisonModel,
+	getStatesComparisonProofLanes,
 	getStatesClusterModel,
 	getStatesIndexModel,
 	summarizeStateFreshness,
@@ -439,6 +441,70 @@ test("buildStatesComparisonModel returns editorial comparison frames for reserve
 		"new-hampshire",
 		"north-carolina",
 	]);
+});
+
+test("buildStatesComparisonProofLanes returns source-aware proof lanes with canonical representatives", () => {
+	// Arrange
+	const fixtureGraph = structuredClone(contentGraph);
+
+	// Act
+	const lanes = buildStatesComparisonProofLanes(fixtureGraph);
+
+	// Assert
+	expect(lanes.map((lane) => lane.key)).toEqual([
+		"reserve-benchmarks",
+		"crossover-records",
+		"bond-side-signals",
+	]);
+	expect(lanes.map((lane) => lane.label)).toEqual([
+		"Reserve benchmarks",
+		"Crossover proposals",
+		"Bond-side signals",
+	]);
+	expect(lanes.map((lane) => lane.countLabel)).toEqual([
+		"7 records",
+		"2 records",
+		"2 records",
+	]);
+	expect(lanes.map((lane) => lane.representativeState.slug)).toEqual([
+		"texas",
+		"north-carolina",
+		"new-hampshire",
+	]);
+	expect(lanes.map((lane) => lane.href)).toEqual([
+		"/states/texas",
+		"/states/north-carolina",
+		"/states/new-hampshire",
+	]);
+	expect(
+		lanes.every((lane) =>
+			/Dated snapshot|Source-backed|source-backed|source of record/.test(
+				lane.context,
+			),
+		),
+	).toBeTrue();
+});
+
+test("getStatesComparisonProofLanes avoids matrix ranking scorecard search and advanced filter copy", () => {
+	// Arrange
+
+	// Act
+	const lanes = getStatesComparisonProofLanes();
+	const joinedProofLaneCopy = lanes
+		.flatMap((lane) => [
+			lane.label,
+			lane.countLabel,
+			lane.context,
+			lane.representativeState.state,
+			lane.href,
+		])
+		.join("\n");
+
+	// Assert
+	expect(lanes).toHaveLength(3);
+	expect(joinedProofLaneCopy).not.toMatch(
+		/matrix|ranking|scorecard|search|advanced filter/i,
+	);
 });
 
 test("getStatesComparisonModel keeps canonical state detail links in every comparison section", () => {
