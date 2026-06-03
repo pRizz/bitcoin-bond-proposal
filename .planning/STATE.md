@@ -3,11 +3,11 @@ gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Deeper National Coverage
 current_phase: 999.1
-current_phase_name: selective mystic ui adoption across the public webapp
-current_plan: Not started
+current_phase_name: selective-mystic-ui-adoption-across-the-public-webapp
+current_plan: 1
 status: executing
 stopped_at: Phase 999.1 UI-SPEC approved
-last_updated: "2026-06-03T02:20:23.918Z"
+last_updated: "2026-06-03T02:20:55.951Z"
 last_activity: 2026-06-03
 progress:
   total_phases: 5
@@ -24,18 +24,18 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-27)
 
 **Core value:** Produce a credible, reusable Illinois-first legislative package and research registry that makes Bitcoin reserve and bond policy understandable, sourceable, and practical enough for real state-level adoption.  
-**Current focus:** Phase 17 — expanded-surface-qa-and-closeout-prep
+**Current focus:** Phase 999.1 — selective-mystic-ui-adoption-across-the-public-webapp
 
 ## Current Position
 
-Phase: 17 (expanded-surface-qa-and-closeout-prep) — EXECUTING
-Plan: 2 of 2
+Phase: 999.1 (selective-mystic-ui-adoption-across-the-public-webapp) — EXECUTING
+Plan: 1 of 2
 **Current Phase:** 999.1
-**Current Phase Name:** selective mystic ui adoption across the public webapp
-**Current Plan:** Not started
+**Current Phase Name:** selective-mystic-ui-adoption-across-the-public-webapp
+**Current Plan:** 1
 **Total Phases:** 4
 **Total Plans in Phase:** 2
-**Status:** Ready to execute
+**Status:** Executing Phase 999.1
 **Last Activity:** 2026-06-03
 Phase 15 verified and complete; Phase 16 is ready for planning.
 
